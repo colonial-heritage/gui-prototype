@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Search page | Research App</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div class="bg-[#faf6e0] w-full inline-flex  flex-row justify-center items-center text-sm px-4 py-2 gap-1 sm:gap-3 border-b border-[#ece7d0;]"> <span class="flex flex-row items-center gap-1 sm:gap-">
+    <!-- wrench-screwdriver Hero icon  -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill--[#a7a492]">
+      <path fill-rule="evenodd" d="M12 6.75a5.25 5.25 0 016.775-5.025.75.75 0 01.313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 011.248.313 5.25 5.25 0 01-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 112.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0112 6.75zM4.117 19.125a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z" clip-rule="evenodd" />
+      <path d="M10.076 8.64l-2.201-2.2V4.874a.75.75 0 00-.364-.643l-3.75-2.25a.75.75 0 00-.916.113l-.75.75a.75.75 0 00-.113.916l2.25 3.75a.75.75 0 00.643.364h1.564l2.062 2.062 1.575-1.297z" />
+      <path fill-rule="evenodd" d="M12.556 17.329l4.183 4.182a3.375 3.375 0 004.773-4.773l-3.306-3.305a6.803 6.803 0 01-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 00-.167.063l-3.086 3.748zm3.414-1.36a.75.75 0 011.06 0l1.875 1.876a.75.75 0 11-1.06 1.06L15.97 17.03a.75.75 0 010-1.06z" clip-rule="evenodd" />
+    </svg>
+    <!-- // wrench-screwdriver Hero icon  -->
+  <span class="text-center text-[#484635]">This site is a work in progress.</span>
+</span>
+            <a
+            href="link_to_roapmap_page" class="text-center text-sky-900">Read more<span class="hidden sm:inline"> about the current status and roadmap of this project</span>.</a>
+        </div>
+        <div class="
+            
+            mx-auto
+            h-full 
+            min-h-screen 
+            flex 
+            flex-col 
+            justify-stretch 
+            items-stretch
+            gap-8
+            pb-[800px]">
+            <header class="w-full border-b">
+                <div class="w-full px-4 sm:px-10 py-4 flex justify-between items-center max-w-[1800px] mx-auto">
+                    <div class="">Search page</div>
+                    <div class="relative">
+                        <button class="px-4 py-2 text-sm rounded-full bg-greenGrey-100 hover:bg-greenGrey-200 transition text-greenGrey-800 flex items-center gap-1">Login</button>
+                    </div>
+                </div>
+            </header>
+            <div class="flex px-10 mt-10 mb-4 w-full max-w-[1800px] mx-auto">
+                <button class="flex bg-neutral-100 rounded-t p-2 items-center gap-1 text-neutral-800 font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-neutral-800">
+                        <path d="M18.876,14.136c-.315-1.479-3.352-2.362-5.025-2.758-.081-.022-.334-.069-.334-.069V7.187a10.928,10.928,0,0,0,1.549-1.215.912.912,0,0,0,0-1.473H8.409a.912.912,0,0,0,0,1.473A10.936,10.936,0,0,0,9.958,7.187v4.121s-4.952.916-5.359,2.827a14.876,14.876,0,0,0,.914,6.61c.508,1.155,1.834,3.938,2.409,5.2a1.212,1.212,0,0,0,1.121.619h5.387a1.212,1.212,0,0,0,1.121-.619c.575-1.257,1.9-4.041,2.409-5.2A14.875,14.875,0,0,0,18.876,14.136Z"
+                        transform="translate(0.665 -3.529)" />
+                        <path d="M15.056,90.812,11.5,93.675l-.3-3.719L8.582,91.078l-.805-4.014L5.814,89.956"
+                        transform="translate(0.178 -74.647)" />
+                    </svg>Search for objects</button>
+                <button class="flex rounded-t p-2 items-center border border-neutral-200 text-neutral-500 gap-1 hover:border-neutral-500 hover:text-neutral-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-neutral-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M30.285,134.707c-.083.047-.164.091-.242.128a9.788,9.788,0,0,1-3.585.7,9.926,9.926,0,0,1-3.585-.7L22.8,134.8a1.3,1.3,0,0,0,.477,2.506h6.97a1.3,1.3,0,0,0,.04-2.6Z"
+                        transform="translate(-14.516 -114.272)" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.805,78.989c-1.153-.294-2.442-.085-3.04-.368-.3-.143-.412-.525-.54-.834a2.629,2.629,0,0,1-.083-.891,4.644,4.644,0,0,1-2.611,1.22,2.765,2.765,0,0,1-1.5-.726.864.864,0,0,1-.082.4c-.128.308-.238.691-.54.834-.6.283-1.888.074-3.04.368-.579.148-1.949.248-1.864,1.5.123,1.79,2.561,4.267,4,4.953a9.924,9.924,0,0,0,3.585.7,9.786,9.786,0,0,0,3.585-.7c1.436-.686,3.874-3.163,4-4.953C16.754,79.237,15.384,79.137,14.805,78.989Z"
+                        transform="translate(2.968 -64.91)" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M34.395,30.622a8.677,8.677,0,0,0,.073-2.662,2.7,2.7,0,0,0-1-.85c-.3-.173-1.045-.164-1.264-.453-.167-.221.035-.989-.17-1.161-.294-.247-1.074.308-1.434.255-.4-.059-1.092-.853-1.482-.736-.277.083-.448.9-.7,1.048-.153.087-.433.405-.694.388a9.408,9.408,0,0,0,.126,4.945c.377.835,1.836,2.328,2.746,2.428s2.6-1.073,3.188-1.766c.04-.047.079-.1.117-.154A8.318,8.318,0,0,1,34.395,30.622Z"
+                        transform="translate(-19.196 -20.598)" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.45,6.312c-.258-.114-.395-.834-.427-1.153-.041-.4.659-.96.8-1.331.087-.226.044-.789.194-.963.115-.133.5-.066.632-.17.319-.246.692-1.049,1.058-1.178.348-.122.971.429,1.329.495.258.047.565.227.819.155.312-.088.851-.689,1.166-.623s.607,1.181.88,1.349c.372.229,1.435-.671,1.745-.339.33.353.249,1.568.486,2.011.168.315.854.637.948.991.088.335-.295,1.009-.292,1.36,0,.161.14.462.146.623s-.126.447-.1.595c.061.316.662.724.656,1.048-.006.388-.714.852-.826,1.218-.119.387.1,1.26-.024,1.643-.106.318-.5.931-.778,1.02a1.525,1.525,0,0,1-1.409-.538c-.2-.457.535-1.954.535-1.954a8.676,8.676,0,0,0,.073-2.662,2.7,2.7,0,0,0-1-.85c-.3-.173-1.045-.164-1.264-.453-.167-.221.035-.989-.17-1.161-.294-.247-1.074.308-1.434.255-.4-.059-1.092-.853-1.482-.736-.276.083-.448.9-.7,1.048A3.233,3.233,0,0,1,20.45,6.312Z"
+                        transform="translate(-12.846 -0.53)" />
+                    </svg>Search for persons</button>
+                <button class="flex rounded-t p-2 items-center border border-neutral-200 text-neutral-500 gap-1 hover:border-neutral-500 hover:text-neutral-800">Search history</button>
+            </div>
+            <div class="
+              flex
+              flex-col md:flex-row 
+
+              h-full 
+              items-stretch 
+              grow 
+              content-stretch 
+              self-stretch 
+              gap-4 md:gap-16
+              w-full max-w-[1800px] mx-auto 
+               
+              mx-auto
+              px-10
+              ">
+                <aside class="w-full md:w-1/3 lg:w-1/5  order-2 md:order-1">
+                    <div class="w-full flex flex-col gap-6">
+                        <div class="w-full max-w-[450px] relative">
+                            <label for="text-search" class="font-semibold">Search for text</label>
+                            <div class="flex flex-row w-full">
+                                <input class="
+            py-1 
+            px-3 
+            w-full 
+            rounded-l 
+            border
+            border-neutral-700
+            " type="search" id="text-search" name="q">
+                                <button class="
+            bg-neutral-700
+            py-1 
+            px-3 
+            rounded-r 
+            border-t  
+            border-b  
+            border-r
+            border-neutral-700" aria-label="Click to search" value="amster">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-4 h-4 fill-white">
+                                        <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                        clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- facet -->
+                        <div class="
+                  w-full 
+                  max-w-[450px]">
+                            <div class="font-semibold">Owners</div>
+                            <!-- facet item -->
+                            <div class="flex 
+                      flex-row 
+                      justify-between 
+                      gap-2 
+                      w-full 
+                      mb-2
+                      items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+              w-5 
+              h-5 
+              mr-2
+              rounded 
+              border-gray-300 
+              text-rpBrand1-700 
+              focus:ring-rpBrand1-700
+              
+              " type="checkbox" id="0" name="0" value="">
+                                    <label for="0">Library</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">12</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                      flex-row 
+                      justify-between 
+                      gap-2 
+                      w-full 
+                      mb-2
+                      items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+              w-5 
+              h-5 
+              mr-2
+              rounded 
+              border-gray-300 
+              text-rpBrand1-700 
+              focus:ring-rpBrand1-700
+              
+              " type="checkbox" id="1" name="1" value="">
+                                    <label for="1">Museum</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">48</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                      flex-row 
+                      justify-between 
+                      gap-2 
+                      w-full 
+                      mb-2
+                      items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+              w-5 
+              h-5 
+              mr-2
+              rounded 
+              border-gray-300 
+              text-rpBrand1-700 
+              focus:ring-rpBrand1-700
+              
+              " type="checkbox" id="2" name="2" value="">
+                                    <label for="2">Research Organisation</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">111</div>
+                            </div>
+                            <!-- facet item -->
+                            <button class="text-base flex flex-row text-sky-700 items-center justify-start gap-1">More
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-4 h-4 fill-bg-sky-700">
+                                    <path fill-rule="evenodd" d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- //facet -->
+                        <!-- facet -->
+                        <div class="
+                  w-full 
+                  max-w-[450px]">
+                            <div class="font-semibold">Types</div>
+                            <!-- facet item -->
+                            <div class="flex 
+                      flex-row 
+                      justify-between 
+                      gap-2 
+                      w-full 
+                      mb-2
+                      items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+              w-5 
+              h-5 
+              mr-2
+              rounded 
+              border-gray-300 
+              text-rpBrand1-700 
+              focus:ring-rpBrand1-700
+              
+              " type="checkbox" id="0" name="0" value="">
+                                    <label for="0">Afghaan-tapijt</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">12</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                      flex-row 
+                      justify-between 
+                      gap-2 
+                      w-full 
+                      mb-2
+                      items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+              w-5 
+              h-5 
+              mr-2
+              rounded 
+              border-gray-300 
+              text-rpBrand1-700 
+              focus:ring-rpBrand1-700
+              
+              " type="checkbox" id="1" name="1" value="">
+                                    <label for="1">Amritsar-tapijt</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">48</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                      flex-row 
+                      justify-between 
+                      gap-2 
+                      w-full 
+                      mb-2
+                      items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+              w-5 
+              h-5 
+              mr-2
+              rounded 
+              border-gray-300 
+              text-rpBrand1-700 
+              focus:ring-rpBrand1-700
+              
+              " type="checkbox" id="2" name="2" value="">
+                                    <label for="2">Beloetsjistan-tapijt</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">112</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                      flex-row 
+                      justify-between 
+                      gap-2 
+                      w-full 
+                      mb-2
+                      items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+              w-5 
+              h-5 
+              mr-2
+              rounded 
+              border-gray-300 
+              text-rpBrand1-700 
+              focus:ring-rpBrand1-700
+              
+              " type="checkbox" id="3" name="3" value="">
+                                    <label for="3">Bergama-tapijt</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">12</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                      flex-row 
+                      justify-between 
+                      gap-2 
+                      w-full 
+                      mb-2
+                      items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+              w-5 
+              h-5 
+              mr-2
+              rounded 
+              border-gray-300 
+              text-rpBrand1-700 
+              focus:ring-rpBrand1-700
+              
+              " type="checkbox" id="4" name="4" value="">
+                                    <label for="4">Bokhara-tapijt</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">55</div>
+                            </div>
+                            <!-- facet item -->
+                            <button class="text-base flex flex-row text-sky-700 items-center justify-start gap-1">More
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-4 h-4 fill-bg-sky-700">
+                                    <path fill-rule="evenodd" d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- //facet -->
+                        <!-- facet -->
+                        <div class="
+                  w-full 
+                  max-w-[450px]">
+                            <div class="font-semibold">Subjects</div>
+                            <!-- facet item -->
+                            <div class="flex 
+                      flex-row 
+                      justify-between 
+                      gap-2 
+                      w-full 
+                      mb-2
+                      items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+              w-5 
+              h-5 
+              mr-2
+              rounded 
+              border-gray-300 
+              text-rpBrand1-700 
+              focus:ring-rpBrand1-700
+              
+              " type="checkbox" id="0" name="0" value="">
+                                    <label for="0">Castle</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">12</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                      flex-row 
+                      justify-between 
+                      gap-2 
+                      w-full 
+                      mb-2
+                      items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+              w-5 
+              h-5 
+              mr-2
+              rounded 
+              border-gray-300 
+              text-rpBrand1-700 
+              focus:ring-rpBrand1-700
+              
+              " type="checkbox" id="1" name="1" value="">
+                                    <label for="1">Celebrations</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">48</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                      flex-row 
+                      justify-between 
+                      gap-2 
+                      w-full 
+                      mb-2
+                      items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+              w-5 
+              h-5 
+              mr-2
+              rounded 
+              border-gray-300 
+              text-rpBrand1-700 
+              focus:ring-rpBrand1-700
+              
+              " type="checkbox" id="2" name="2" value="">
+                                    <label for="2">Cottage</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">112</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                      flex-row 
+                      justify-between 
+                      gap-2 
+                      w-full 
+                      mb-2
+                      items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+              w-5 
+              h-5 
+              mr-2
+              rounded 
+              border-gray-300 
+              text-rpBrand1-700 
+              focus:ring-rpBrand1-700
+              
+              " type="checkbox" id="3" name="3" value="">
+                                    <label for="3">Palace</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">12</div>
+                            </div>
+                            <!-- facet item -->
+                            <button class="text-base flex flex-row text-sky-700 items-center justify-start gap-1">More
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-4 h-4 fill-bg-sky-700">
+                                    <path fill-rule="evenodd" d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- //facet -->
+                    </div>
+                </aside>
+                <main class="w-full md:w-2/3 lg:w-4/5  order-2 md:order-1">
+                    <div class="flex flex-col sm:flex-row sm:justify-between">
+                         <h2 class="text-xl">10 Objects</h2>
+
+                        <div class="flex flex-col sm:flex-row justify-end gap-2">
+                            <select name="location" class="mt-1 block  rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-sky-600 focus:outline-none focus:ring-sky-600 sm:text-sm"
+                            aria-label="Select to change the ordering of the result">
+                                <option value="relevanceDesc">Result amount</option>
+                                <option value="nameAsc">10</option>
+                                <option value="nameDesc">25</option>
+                                <option value="nameDesc">50</option>
+                                <option value="nameDesc">100</option>
+                            </select>
+                            <select name="location" class="mt-1 block  rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-sky-600 focus:outline-none focus:ring-sky-600 sm:text-sm"
+                            aria-label="Select to change the ordering of the result">
+                                <option value="relevanceDesc">Relevance</option>
+                                <option value="nameAsc">Name - Ascending</option>
+                                <option value="nameDesc">Name - Descending</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 mt-6"> <a href="object.html" class="border 
+              border-blueGrey-200 
+              text-blueGrey-800
+              bg-greenGrey-50
+              rounded-sm
+                  flex
+                  flex-col
+                  sm:flex-row
+                  gap-2
+                  cursor-pointer
+                  hover:bg-white">
+              
+              
+                  <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
+                  
+                  sm:w-1/2
+                  ">
+                      <div class="font-semibold mt-4">Commemorative Queen Mother Head </div>
+                      <div class="text-sm opacity-70">Nationaal Museum van Wereldculturen and Wereldmuseum - Amsterdam (NL)</div>
+                  </div>
+              
+                  <div class="w-full sm:w-1/2 flex justify-center items-center bg-neutral-100">
+                      <div class="w-full  flex  justify-center items-center">
+                          <img src="images/objects/beeld1.webp" alt="" class="w-full">
+                      </div>
+                  </div>
+                      
+              </a>
+ <a href="object.html" class="border 
+              border-blueGrey-200 
+              text-blueGrey-800
+              bg-greenGrey-50
+              rounded-sm
+                  flex
+                  flex-col
+                  sm:flex-row
+                  gap-2
+                  cursor-pointer
+                  hover:bg-white">
+              
+              
+                  <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
+                  ">
+                      <div class="font-semibold mt-4">Lans veroverd op den vijand te Pamangkat (Borneo&#x27;s Westkust) </div>
+                      <div class="text-sm opacity-70">Museum Bronbeek - Arnhem (NL)</div>
+                  </div>
+              
+                  <div class="bg-neutral-100 w-full sm:w-10 flex flex-col justify-center items-center">
+                      <div class="text-neutral-400 text-xs sm:rotate-90 py-2 sm:py-0">No&nbsp;image</div>
+                  </div>
+                  
+                      
+              </a>
+ <a href="object.html" class="border 
+              border-blueGrey-200 
+              text-blueGrey-800
+              bg-greenGrey-50
+              rounded-sm
+                  flex
+                  flex-col
+                  sm:flex-row
+                  gap-2
+                  cursor-pointer
+                  hover:bg-white">
+              
+              
+                  <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
+                  
+                  sm:w-1/2
+                  ">
+                      <div class="font-semibold mt-4">Lans </div>
+                      <div class="text-sm opacity-70">Nationaal Museum van Wereldculturen and Wereldmuseum - Amsterdam (NL)</div>
+                  </div>
+              
+                  <div class="w-full sm:w-1/2 flex justify-center items-center bg-neutral-100">
+                      <div class="w-full  flex  justify-center items-center">
+                          <img src="images/objects/beeld2.webp" alt="" class="w-full ">
+                      </div>
+                  </div>
+                      
+              </a>
+ <a href="object.html" class="border 
+              border-blueGrey-200 
+              text-blueGrey-800
+              bg-greenGrey-50
+              rounded-sm
+                  flex
+                  flex-col
+                  sm:flex-row
+                  gap-2
+                  cursor-pointer
+                  hover:bg-white">
+              
+              
+                  <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
+                  ">
+                      <div class="font-semibold mt-4">Donderbus </div>
+                      <div class="text-sm opacity-70">Nationaal Museum van Wereldculturen and Wereldmuseum - Amsterdam (NL)</div>
+                  </div>
+              
+                  <div class="bg-neutral-100 w-full sm:w-10 flex flex-col justify-center items-center">
+                      <div class="text-neutral-400 text-xs sm:rotate-90 py-2 sm:py-0">No&nbsp;image</div>
+                  </div>
+                  
+                      
+              </a>
+ <a href="object.html" class="border 
+              border-blueGrey-200 
+              text-blueGrey-800
+              bg-greenGrey-50
+              rounded-sm
+                  flex
+                  flex-col
+                  sm:flex-row
+                  gap-2
+                  cursor-pointer
+                  hover:bg-white">
+              
+              
+                  <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
+                  
+                  sm:w-1/2
+                  ">
+                      <div class="font-semibold mt-4">Lans </div>
+                      <div class="text-sm opacity-70">Museum Bronbeek - Arnhem (NL)</div>
+                  </div>
+              
+                  <div class="w-full sm:w-1/2 flex justify-center items-center bg-neutral-100">
+                      <div class="w-full  flex  justify-center items-center">
+                          <img src="images/objects/beeld1.webp" alt="" class="w-full">
+                      </div>
+                  </div>
+                      
+              </a>
+ <a href="object.html" class="border 
+              border-blueGrey-200 
+              text-blueGrey-800
+              bg-greenGrey-50
+              rounded-sm
+                  flex
+                  flex-col
+                  sm:flex-row
+                  gap-2
+                  cursor-pointer
+                  hover:bg-white">
+              
+              
+                  <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
+                  
+                  sm:w-1/2
+                  ">
+                      <div class="font-semibold mt-4">lans </div>
+                      <div class="text-sm opacity-70">Museum Bronbeek - Arnhem (NL)</div>
+                  </div>
+              
+                  <div class="w-full sm:w-1/2 flex justify-center items-center bg-neutral-100">
+                      <div class="w-full  flex  justify-center items-center">
+                          <img src="images/objects/beeld2.webp" alt="" class="w-full ">
+                      </div>
+                  </div>
+                      
+              </a>
+ <a href="object.html" class="border 
+              border-blueGrey-200 
+              text-blueGrey-800
+              bg-greenGrey-50
+              rounded-sm
+                  flex
+                  flex-col
+                  sm:flex-row
+                  gap-2
+                  cursor-pointer
+                  hover:bg-white">
+              
+              
+                  <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
+                  ">
+                      <div class="font-semibold mt-4">Lans van Borneo&#x27;s Westkust </div>
+                      <div class="text-sm opacity-70">Museum Bronbeek - Arnhem (NL)</div>
+                  </div>
+              
+                  <div class="bg-neutral-100 w-full sm:w-10 flex flex-col justify-center items-center">
+                      <div class="text-neutral-400 text-xs sm:rotate-90 py-2 sm:py-0">No&nbsp;image</div>
+                  </div>
+                  
+                      
+              </a>
+ <a href="object.html" class="border 
+              border-blueGrey-200 
+              text-blueGrey-800
+              bg-greenGrey-50
+              rounded-sm
+                  flex
+                  flex-col
+                  sm:flex-row
+                  gap-2
+                  cursor-pointer
+                  hover:bg-white">
+              
+              
+                  <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
+                  ">
+                      <div class="font-semibold mt-4">Geweer M1815 no. 2 tot percussie gemodificeerd </div>
+                      <div class="text-sm opacity-70">Nationaal Museum van Wereldculturen and Wereldmuseum - Amsterdam (NL)</div>
+                  </div>
+              
+                  <div class="bg-neutral-100 w-full sm:w-10 flex flex-col justify-center items-center">
+                      <div class="text-neutral-400 text-xs sm:rotate-90 py-2 sm:py-0">No&nbsp;image</div>
+                  </div>
+                  
+                      
+              </a>
+ <a href="object.html" class="border 
+              border-blueGrey-200 
+              text-blueGrey-800
+              bg-greenGrey-50
+              rounded-sm
+                  flex
+                  flex-col
+                  sm:flex-row
+                  gap-2
+                  cursor-pointer
+                  hover:bg-white">
+              
+              
+                  <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
+                  ">
+                      <div class="font-semibold mt-4">Nederlands Marinegeweer Model 1818 </div>
+                      <div class="text-sm opacity-70">Nationaal Museum van Wereldculturen and Wereldmuseum - Amsterdam (NL)</div>
+                  </div>
+              
+                  <div class="bg-neutral-100 w-full sm:w-10 flex flex-col justify-center items-center">
+                      <div class="text-neutral-400 text-xs sm:rotate-90 py-2 sm:py-0">No&nbsp;image</div>
+                  </div>
+                  
+                      
+              </a>
+ <a href="object.html" class="border 
+              border-blueGrey-200 
+              text-blueGrey-800
+              bg-greenGrey-50
+              rounded-sm
+                  flex
+                  flex-col
+                  sm:flex-row
+                  gap-2
+                  cursor-pointer
+                  hover:bg-white">
+              
+              
+                  <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
+                  
+                  sm:w-1/2
+                  ">
+                      <div class="font-semibold mt-4">Portret van R.C. van Prehn Wiese </div>
+                      <div class="text-sm opacity-70">Museum Bronbeek - Arnhem (NL)</div>
+                  </div>
+              
+                  <div class="w-full sm:w-1/2 flex justify-center items-center bg-neutral-100">
+                      <div class="w-full  flex  justify-center items-center">
+                          <img src="images/objects/beeld1.webp" alt="" class="w-full">
+                      </div>
+                  </div>
+                      
+              </a>
+
+                    </div>
+                    <nav aria-label="Pagination" class="mt-10 w-full">
+                        <ul class="list-style-none flex gap-1 justify-center">
+                            <li> <a class="pointer-events-none relative block rounded bg-transparent px-3 py-1.5 transition-all duration-300 dark:text-sand-400 text-sand-300">Vorige</a
+              >
+            </li>
+            <li>
+              <a
+                class="relative block rounded bg-transparent px-3 py-1.5 text-sand-800 transition-all duration-300 hover:bg-sand-100  dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                href="#!"
+                >1</a
+              >
+            </li>
+            <li aria-current="page">
+              <a
+                class="relative block rounded bg-sand-100 px-3 py-1.5 font-medium text-sand-800 transition-all duration-300"
+                href="#!"
+                >2
+                <span
+                  class="absolute -m-px h-px w-px overflow-hidden whitespace-nowrap border-0 p-0 [clip:rect(0,0,0,0)]"
+                  >(Huidige)</span
+                >
+              </a>
+
+                            </li>
+                            <li> <a class="relative block rounded bg-transparent px-3 py-1.5 text-sand-800 transition-all duration-300 hover:bg-sand-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                                href="#!">3</a
+              >
+            </li>
+            <li>
+              <a
+                class="relative block rounded bg-transparent px-3 py-1.5 text-sand-800 transition-all duration-300 hover:bg-sand-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                href="#!"
+                >Volgende</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+    </main>
+
+    
+
+  </div>
+
+
+</div>
+
+<aside id="sidePanel" class="fixed bg-neutral-100 top-0 right-0 bottom-0 border-l p-6 w-full md:w-96 shadow-2xl hidden flex-col gap-4">
+  
+  
+  
+  
+  <div class="flex flex-row justify-end items-center w-full">
+    <button class="p-1 rounded" onclick="closeAside()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 fill-sand-800">
+        <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="flex flex-col gap-4 mt-4" id="form1">
+    <h2 class="text-lg">Add metatdata</h2>
+    <label for="11">
+      <div class="font-semibold">Description</div>
+      <div class=" text-sm">Add your narrative to the the description of this object. It will be displayed with your name and organisation. Other visitors can react on your narrative by clicking the Helpful button</div>
+    </label>
+    <textarea name="11" id="" class="border border-neutral-200 w-full h-40"></textarea>
+    <div class="">
+      <button class="py-2 px-3 rounded-full text-xs bg-sand-700 hover:bg-sand-800 transition text-sand-50 flex items-center gap-1">
+        Add your description to this object
+      </button>
+    </div>
+    
+  </div>
+
+  <div id="info1" class="hidden flex-col gap-4 mt-4">
+    <h2>Nationaal Museum van Wereldculturen and Wereldmuseum</h2>
+    
+    <span>Willemskade 25,<br> 3016 DM Rotterdam,<br> Netherlands</span>
+    <a href="">Website</a>
+ <a href="">More about the dataset</a>
+
+            </div>
+            <div id="info2" class="hidden flex-col gap-4 mt-4">
+                 <h2>Information about <em>Material</em></h2>
+
+                <p>This category includes a range of Ceremonial Regalia which were most likely
+                    worn by Oba's, chiefs and members of the Benin royal palace societies until
+                    1897. Certain clothing and objects would be worn to mark status and rank,
+                    often at ceremonial occasions and the use of certain materials such as
+                    ivory, coral, brass and bronze would be controlled by the Oba.</p>
+            </div>
+            </aside>
+            <script src="js/states.js"></script>
+    </body>
+
+</html>
