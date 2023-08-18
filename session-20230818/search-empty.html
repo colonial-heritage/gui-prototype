@@ -3,8 +3,9 @@
     
     <head>
         <meta charset="utf-8">
-        <title>Search page | Research App</title>
-        <link href="css/style.css" rel="stylesheet">
+        <title>Search page no action | Research App</title>
+        <link href="css/style.css"
+        rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -577,425 +578,54 @@
                     </div>
                 </aside>
                 <main class="w-full md:w-2/3 lg:w-4/5  order-2 md:order-1">
-                    <div class="flex flex-col sm:flex-row sm:justify-between">
-                         <h2 class="text-xl">10 Heritage Objects</h2>
+                     <h2 class="text-xl">Search for Heritage Objects (52,267)</h2>
 
-                        <div class="flex flex-col sm:flex-row justify-end gap-2">
-                            <select name="location" class="mt-1 block  rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-sky-600 focus:outline-none focus:ring-sky-600 sm:text-sm"
-                            aria-label="Select to change the ordering of the result">
-                                <option value="relevanceDesc">Result amount</option>
-                                <option value="nameAsc">10</option>
-                                <option value="nameDesc">25</option>
-                                <option value="nameDesc">50</option>
-                                <option value="nameDesc">100</option>
-                            </select>
-                            <select name="location" class="mt-1 block  rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-sky-600 focus:outline-none focus:ring-sky-600 sm:text-sm"
-                            aria-label="Select to change the ordering of the result">
-                                <option value="relevanceDesc">Relevance</option>
-                                <option value="nameAsc">Name - Ascending</option>
-                                <option value="nameDesc">Name - Descending</option>
-                            </select>
+                    <div class="flex flex-col gap-2 border rounded mt-6 p-6 max-w-xl">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6 fill-neutral-500">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                                clip-rule="evenodd" />
+                            </svg>
                         </div>
+                        <p>Use the facets on the left side of the page to make a selection. After
+                            you selected one or more facets the results will appear in this space.
+                            Then click on a result card to see all the details about that object or
+                            person.</p>
                     </div>
-                    <div class="flex flex-row items-center gap-2  mb-6 py-6 flex-wrap border-b">
-                        <div class="text-sm text-neutral-500">Selected facets:</div>
-                        <!-- selected filter badge -->
-                        <buttton class="
-                    rounded 
-                    bg-blueGrey-100 
-                    text-blueGrey-900 
-                    py-1 
-                    px-1 
-                    text-sm 
-                    flex 
-                    flex-row"> <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)-600">
-              <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
-            </svg>
-            
-            
-            </span>
- <span class="">shrine</span>
- <span class="ml-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-(lookup . &#x27;twColor&#x27;)-800">
-              <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
-            </svg>
-            </span>
+                </main>
+            </div>
+        </div>
+        <aside id="sidePanel" class="fixed bg-neutral-100 top-0 right-0 bottom-0 border-l p-6 w-full md:w-96 shadow-2xl hidden flex-col gap-4">
+            <div class="flex flex-row justify-end items-center w-full">
+                <button class="p-1 rounded" onclick="closeAside()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-8 h-8 fill-sand-800">
+                        <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col gap-4 mt-4" id="form1">
+                 <h2 class="text-lg">Add metatdata</h2>
 
-                        </buttton>
-                        <!-- // selected filter badge -->
-                        <!-- selected filter badge -->
-                        <buttton class="
-                    rounded 
-                    bg-blueGrey-100 
-                    text-blueGrey-900 
-                    py-1 
-                    px-1 
-                    text-sm 
-                    flex 
-                    flex-row"> <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)-600">
-              <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-            </svg>
-            
-            
-            </span>
- <span class="">Suriname</span>
- <span class="ml-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-(lookup . &#x27;twColor&#x27;)-800">
-              <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
-            </svg>
-            </span>
+                <label for="11">
+                    <div class="font-semibold">Description</div>
+                    <div class=" text-sm">Add your narrative to the the description of this object. It will be displayed
+                        with your name and organisation. Other visitors can react on your narrative
+                        by clicking the Helpful button</div>
+                </label>
+                <textarea name="11" id="" class="border border-neutral-200 w-full h-40"></textarea>
+                <div class="">
+                    <button class="py-2 px-3 rounded-full text-xs bg-sand-700 hover:bg-sand-800 transition text-sand-50 flex items-center gap-1">Add your description to this object</button>
+                </div>
+            </div>
+            <div id="info1" class="hidden flex-col gap-4 mt-4">
+                 <h2>Nationaal Museum van Wereldculturen and Wereldmuseum</h2>
+ <span>Willemskade 25,<br> 3016 DM Rotterdam,<br> Netherlands</span>
 
-                        </buttton>
-                        <!-- // selected filter badge -->
-                    </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-6 mt-6"> <a href="object.html" class="border 
-            border-blueGrey-200 
-            text-blueGrey-800
-            bg-greenGrey-50
-            rounded-sm
-                flex
-                flex-col
-                sm:flex-row
-                gap-2
-                cursor-pointer
-                hover:bg-white">
-            
-            
-                <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
-                
-                sm:w-1/2
-                ">
-                    <div class="font-semibold mt-4">Commemorative Queen Mother Head </div>
-                    <div class="text-sm opacity-70">Nationaal Museum van Wereldculturen and Wereldmuseum - Amsterdam (NL)</div>
-                </div>
-            
-                <div class="w-full sm:w-1/2 flex justify-center items-center bg-neutral-100">
-                    <div class="w-full  flex  justify-center items-center">
-                        <img src="images/objects/beeld1.webp" alt="" class="w-full">
-                    </div>
-                </div>
-                    
-            </a>
- <a href="object.html" class="border 
-            border-blueGrey-200 
-            text-blueGrey-800
-            bg-greenGrey-50
-            rounded-sm
-                flex
-                flex-col
-                sm:flex-row
-                gap-2
-                cursor-pointer
-                hover:bg-white">
-            
-            
-                <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
-                ">
-                    <div class="font-semibold mt-4">Lans veroverd op den vijand te Pamangkat (Borneo&#x27;s Westkust) </div>
-                    <div class="text-sm opacity-70">Museum Bronbeek - Arnhem (NL)</div>
-                </div>
-            
-                <div class="bg-neutral-100 w-full sm:w-10 flex flex-col justify-center items-center">
-                    <div class="text-neutral-400 text-xs sm:rotate-90 py-2 sm:py-0">No&nbsp;image</div>
-                </div>
-                
-                    
-            </a>
- <a href="object.html" class="border 
-            border-blueGrey-200 
-            text-blueGrey-800
-            bg-greenGrey-50
-            rounded-sm
-                flex
-                flex-col
-                sm:flex-row
-                gap-2
-                cursor-pointer
-                hover:bg-white">
-            
-            
-                <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
-                
-                sm:w-1/2
-                ">
-                    <div class="font-semibold mt-4">Lans </div>
-                    <div class="text-sm opacity-70">Nationaal Museum van Wereldculturen and Wereldmuseum - Amsterdam (NL)</div>
-                </div>
-            
-                <div class="w-full sm:w-1/2 flex justify-center items-center bg-neutral-100">
-                    <div class="w-full  flex  justify-center items-center">
-                        <img src="images/objects/beeld2.webp" alt="" class="w-full ">
-                    </div>
-                </div>
-                    
-            </a>
- <a href="object.html" class="border 
-            border-blueGrey-200 
-            text-blueGrey-800
-            bg-greenGrey-50
-            rounded-sm
-                flex
-                flex-col
-                sm:flex-row
-                gap-2
-                cursor-pointer
-                hover:bg-white">
-            
-            
-                <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
-                ">
-                    <div class="font-semibold mt-4">Donderbus </div>
-                    <div class="text-sm opacity-70">Nationaal Museum van Wereldculturen and Wereldmuseum - Amsterdam (NL)</div>
-                </div>
-            
-                <div class="bg-neutral-100 w-full sm:w-10 flex flex-col justify-center items-center">
-                    <div class="text-neutral-400 text-xs sm:rotate-90 py-2 sm:py-0">No&nbsp;image</div>
-                </div>
-                
-                    
-            </a>
- <a href="object.html" class="border 
-            border-blueGrey-200 
-            text-blueGrey-800
-            bg-greenGrey-50
-            rounded-sm
-                flex
-                flex-col
-                sm:flex-row
-                gap-2
-                cursor-pointer
-                hover:bg-white">
-            
-            
-                <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
-                
-                sm:w-1/2
-                ">
-                    <div class="font-semibold mt-4">Lans </div>
-                    <div class="text-sm opacity-70">Museum Bronbeek - Arnhem (NL)</div>
-                </div>
-            
-                <div class="w-full sm:w-1/2 flex justify-center items-center bg-neutral-100">
-                    <div class="w-full  flex  justify-center items-center">
-                        <img src="images/objects/beeld1.webp" alt="" class="w-full">
-                    </div>
-                </div>
-                    
-            </a>
- <a href="object.html" class="border 
-            border-blueGrey-200 
-            text-blueGrey-800
-            bg-greenGrey-50
-            rounded-sm
-                flex
-                flex-col
-                sm:flex-row
-                gap-2
-                cursor-pointer
-                hover:bg-white">
-            
-            
-                <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
-                
-                sm:w-1/2
-                ">
-                    <div class="font-semibold mt-4">lans </div>
-                    <div class="text-sm opacity-70">Museum Bronbeek - Arnhem (NL)</div>
-                </div>
-            
-                <div class="w-full sm:w-1/2 flex justify-center items-center bg-neutral-100">
-                    <div class="w-full  flex  justify-center items-center">
-                        <img src="images/objects/beeld2.webp" alt="" class="w-full ">
-                    </div>
-                </div>
-                    
-            </a>
- <a href="object.html" class="border 
-            border-blueGrey-200 
-            text-blueGrey-800
-            bg-greenGrey-50
-            rounded-sm
-                flex
-                flex-col
-                sm:flex-row
-                gap-2
-                cursor-pointer
-                hover:bg-white">
-            
-            
-                <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
-                ">
-                    <div class="font-semibold mt-4">Lans van Borneo&#x27;s Westkust </div>
-                    <div class="text-sm opacity-70">Museum Bronbeek - Arnhem (NL)</div>
-                </div>
-            
-                <div class="bg-neutral-100 w-full sm:w-10 flex flex-col justify-center items-center">
-                    <div class="text-neutral-400 text-xs sm:rotate-90 py-2 sm:py-0">No&nbsp;image</div>
-                </div>
-                
-                    
-            </a>
- <a href="object.html" class="border 
-            border-blueGrey-200 
-            text-blueGrey-800
-            bg-greenGrey-50
-            rounded-sm
-                flex
-                flex-col
-                sm:flex-row
-                gap-2
-                cursor-pointer
-                hover:bg-white">
-            
-            
-                <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
-                ">
-                    <div class="font-semibold mt-4">Geweer M1815 no. 2 tot percussie gemodificeerd </div>
-                    <div class="text-sm opacity-70">Nationaal Museum van Wereldculturen and Wereldmuseum - Amsterdam (NL)</div>
-                </div>
-            
-                <div class="bg-neutral-100 w-full sm:w-10 flex flex-col justify-center items-center">
-                    <div class="text-neutral-400 text-xs sm:rotate-90 py-2 sm:py-0">No&nbsp;image</div>
-                </div>
-                
-                    
-            </a>
- <a href="object.html" class="border 
-            border-blueGrey-200 
-            text-blueGrey-800
-            bg-greenGrey-50
-            rounded-sm
-                flex
-                flex-col
-                sm:flex-row
-                gap-2
-                cursor-pointer
-                hover:bg-white">
-            
-            
-                <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
-                ">
-                    <div class="font-semibold mt-4">Nederlands Marinegeweer Model 1818 </div>
-                    <div class="text-sm opacity-70">Nationaal Museum van Wereldculturen and Wereldmuseum - Amsterdam (NL)</div>
-                </div>
-            
-                <div class="bg-neutral-100 w-full sm:w-10 flex flex-col justify-center items-center">
-                    <div class="text-neutral-400 text-xs sm:rotate-90 py-2 sm:py-0">No&nbsp;image</div>
-                </div>
-                
-                    
-            </a>
- <a href="object.html" class="border 
-            border-blueGrey-200 
-            text-blueGrey-800
-            bg-greenGrey-50
-            rounded-sm
-                flex
-                flex-col
-                sm:flex-row
-                gap-2
-                cursor-pointer
-                hover:bg-white">
-            
-            
-                <div class="w-full p-2 flex flex-col justify-between gap-2 min-h-[200px] 
-                
-                sm:w-1/2
-                ">
-                    <div class="font-semibold mt-4">Portret van R.C. van Prehn Wiese </div>
-                    <div class="text-sm opacity-70">Museum Bronbeek - Arnhem (NL)</div>
-                </div>
-            
-                <div class="w-full sm:w-1/2 flex justify-center items-center bg-neutral-100">
-                    <div class="w-full  flex  justify-center items-center">
-                        <img src="images/objects/beeld1.webp" alt="" class="w-full">
-                    </div>
-                </div>
-                    
-            </a>
-
-                    </div>
-                    <nav aria-label="Pagination" class="mt-10 w-full">
-                        <ul class="list-style-none flex gap-1 justify-center">
-                            <li> <a class="pointer-events-none relative block rounded bg-transparent px-3 py-1.5 transition-all duration-300 dark:text-sand-400 text-sand-300">Vorige</a
-              >
-            </li>
-            <li>
-              <a
-                class="relative block rounded bg-transparent px-3 py-1.5 text-sand-800 transition-all duration-300 hover:bg-sand-100  dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
-                href="#!"
-                >1</a
-              >
-            </li>
-            <li aria-current="page">
-              <a
-                class="relative block rounded bg-sand-100 px-3 py-1.5 font-medium text-sand-800 transition-all duration-300"
-                href="#!"
-                >2
-                <span
-                  class="absolute -m-px h-px w-px overflow-hidden whitespace-nowrap border-0 p-0 [clip:rect(0,0,0,0)]"
-                  >(Huidige)</span
-                >
-              </a>
-
-                            </li>
-                            <li> <a class="relative block rounded bg-transparent px-3 py-1.5 text-sand-800 transition-all duration-300 hover:bg-sand-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
-                                href="#!">3</a
-              >
-            </li>
-            <li>
-              <a
-                class="relative block rounded bg-transparent px-3 py-1.5 text-sand-800 transition-all duration-300 hover:bg-sand-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
-                href="#!"
-                >Volgende</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-
-
-      </main>
-
-
-
-    </div>
-
-
-  </div>
-
-  <aside id="sidePanel" class="fixed bg-neutral-100 top-0 right-0 bottom-0 border-l p-6 w-full md:w-96 shadow-2xl hidden flex-col gap-4">
-    
-    
-    
-    
-    <div class="flex flex-row justify-end items-center w-full">
-      <button class="p-1 rounded" onclick="closeAside()">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 fill-sand-800">
-          <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
-        </svg>
-      </button>
-    </div>
-  
-    <div class="flex flex-col gap-4 mt-4" id="form1">
-      <h2 class="text-lg">Add metatdata</h2>
-      <label for="11">
-        <div class="font-semibold">Description</div>
-        <div class=" text-sm">Add your narrative to the the description of this object. It will be displayed with your name and organisation. Other visitors can react on your narrative by clicking the Helpful button</div>
-      </label>
-      <textarea name="11" id="" class="border border-neutral-200 w-full h-40"></textarea>
-      <div class="">
-        <button class="py-2 px-3 rounded-full text-xs bg-sand-700 hover:bg-sand-800 transition text-sand-50 flex items-center gap-1">
-          Add your description to this object
-        </button>
-      </div>
-      
-    </div>
-  
-    <div id="info1" class="hidden flex-col gap-4 mt-4">
-      <h2>Nationaal Museum van Wereldculturen and Wereldmuseum</h2>
-      
-      <span>Willemskade 25,<br> 3016 DM Rotterdam,<br> Netherlands</span>
-      <a href="">Website</a>
- <a href="">More about the dataset</a>
+                <a
+                href="">Website</a> <a href="">More about the dataset</a>
 
             </div>
             <div id="info2" class="hidden flex-col gap-4 mt-4">
@@ -1007,8 +637,8 @@
                     often at ceremonial occasions and the use of certain materials such as
                     ivory, coral, brass and bronze would be controlled by the Oba.</p>
             </div>
-            </aside>
-            <script src="js/states.js"></script>
+        </aside>
+        <script src="js/states.js"></script>
     </body>
 
 </html>
