@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Republic | Textannovis</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    </head>
+    
+    <body class="font-public min-h-screen">
+        <main class="w-full h-full min-h-screen flex flex-col justify-stretch items-stretch ">
+            <!-- Header -->
+            <header class="
+          border-b 
+          border-rpBrand1-200
+      
+          text-rpBrand1-700
+      
+          ">
+                <div class="
+      
+              px-6
+              w-full
+              max-w-[1700px]
+              mx-auto
+      
+              flex 
+              flex-row 
+              items-center 
+              justify-between
+          ">
+                    <div class="
+              flex 
+              flex-row 
+              items-center 
+              justify-start">
+                        <div class="
+                  bg-rpBrand1-100
+                  text-rpBrand1-800
+                   
+                  pl-3
+       
+                  -mx-6
+      
+                  flex
+                  flex-row
+                  gap-3
+                  justify-start
+                  items-center
+                  "> <span class="uppercase">Republic</span>
+
+                            <div class="bg-rpBrand2-300 h-12 w-12 flex justify-center items-center"> <a href="annovis-search.html">
+                          <img src="images/logo-republic-temp.png" alt="" class="h-7 w-7 invisible">
+                      </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="images/logo-huygens-instituut.png" alt="" class="h-6 sm:h-10">
+                    </div>
+                </div>
+            </header>
+            <!-- // Header -->
+            <div class="flex flex-row w-full h-full items-stretch grow content-stretch self-stretch max-w-[1700px] mx-auto">
+                <!-- facets col -->
+                <div class="hidden md:flex md:w-1/3 w-full grow self-stretch flex-col pt-16 pr-10 pl-6 gap-6 md:gap-10 bg-white"
+                id="facets">
+                    <div id="closeFacets" class="w-full text-right">
+                        <button onclick="handleStateFacets('false')" class="md:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6 fill-rpBrand1-700">
+                                <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                                clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="w-full max-w-[450px] relative z-10">
+                        <label for="text-search" class="font-semibold">Search for text</label>
+                        <div class="flex flex-row w-full">
+                            <input class="
+              py-1 
+              px-3 
+              w-full 
+              rounded-l 
+              border
+              border-rpBrand2-700
+              " type="search" id="text-search" name="q" onfocus="handleStateSearchSuggest('true')"
+                            onfocusout="handleStateSearchSuggest('false')">
+                            <button class="
+              bg-rpBrand2-700
+              py-1 
+              px-3 
+              rounded-r 
+              border-t  
+              border-b  
+              border-r
+              border-rpBrand2-700" aria-label="Click to search" value="amster">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-4 h-4 fill-white">
+                                    <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="suggest" class="hidden z-0 w-full absolute shadow-xl rounded-b">
+                            <ul class="divide-y divide-neutral-400 w-full bg-slate-50 border border-rpBrand2-700 border-t-0">
+                                <li class="p-2 flex flex-col cursor-pointer hover:bg-slate-100 w-full">
+                                    <div class="">Amsterdam</div>
+                                    <div class="text-sm text-neutral-600 italic">Search for the location Amsterdam</div>
+                                </li>
+                                <li class="p-2 flex flex-col cursor-pointer hover:bg-slate-100 w-full">
+                                    <div class="">Amsterdam</div>
+                                    <div class="text-sm text-neutral-600 italic">Search for the location Amsterdam</div>
+                                </li>
+                                <li class="p-2 flex flex-col cursor-pointer hover:bg-slate-100 w-full">
+                                    <div class="">Amsterdam</div>
+                                    <div class="text-sm text-neutral-600 italic">Search for the location Amsterdam</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full max-w-[450px] flex flex-col lg:flex-row gap-4">
+                        <div class="">
+                            <label for="d1" class="font-semibold">From date</label>
+                            <input class="
+                py-1 
+                px-3 
+                w-full
+                border
+                border-neutral-700
+                rounded
+                text-sm
+                z-0
+                relative
+                " type="date" id="d1" name="">
+                        </div>
+                        <div class="">
+                            <label for="d2" class="font-semibold">Till date</label>
+                            <input class="
+                py-1 
+                px-3 
+                w-full
+                border
+                border-neutral-700
+                rounded
+                text-sm
+                z-0
+                relative
+                " type="date" id="d2" name="">
+                        </div>
+                    </div>
+                    <!-- facet -->
+                    <div class="
+                    w-full 
+                    max-w-[450px]">
+                        <div class="font-semibold">Weekday</div>
+                        <!-- facet item -->
+                        <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                            <div class="flex flex-row">
+                                <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="0" name="0" value="">
+                                <label for="0">Veneris</label>
+                            </div>
+                            <div class="text-sm text-neutral-500">12</div>
+                        </div>
+                        <!-- facet item -->
+                        <!-- facet item -->
+                        <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                            <div class="flex flex-row">
+                                <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="1" name="1" value="">
+                                <label for="1">Lunae</label>
+                            </div>
+                            <div class="text-sm text-neutral-500">48</div>
+                        </div>
+                        <!-- facet item -->
+                        <!-- facet item -->
+                        <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                            <div class="flex flex-row">
+                                <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="2" name="2" value="">
+                                <label for="2">Martis</label>
+                            </div>
+                            <div class="text-sm text-neutral-500">111</div>
+                        </div>
+                        <!-- facet item -->
+                        <!-- facet item -->
+                        <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                            <div class="flex flex-row">
+                                <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="3" name="3" value="">
+                                <label for="3">Jovis</label>
+                            </div>
+                            <div class="text-sm text-neutral-500">312</div>
+                        </div>
+                        <!-- facet item -->
+                        <!-- facet item -->
+                        <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                            <div class="flex flex-row">
+                                <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="4" name="4" value="">
+                                <label for="4">Sabbathi</label>
+                            </div>
+                            <div class="text-sm text-neutral-500">35</div>
+                        </div>
+                        <!-- facet item -->
+                        <!-- facet item -->
+                        <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                            <div class="flex flex-row">
+                                <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="5" name="5" value="">
+                                <label for="5">Mercurii</label>
+                            </div>
+                            <div class="text-sm text-neutral-500">35</div>
+                        </div>
+                        <!-- facet item -->
+                        <button class="text-base flex flex-row text-sky-700 items-center justify-start gap-1">More
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 fill-bg-sky-700">
+                                <path fill-rule="evenodd" d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                                clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- //facet -->
+                    <!-- facet -->
+                    <div class="
+                    w-full 
+                    max-w-[450px]">
+                        <div class="font-semibold">Resolutie type</div>
+                        <!-- facet item -->
+                        <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                            <div class="flex flex-row">
+                                <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="0" name="0" value="">
+                                <label for="0">Missive</label>
+                            </div>
+                            <div class="text-sm text-neutral-500">12</div>
+                        </div>
+                        <!-- facet item -->
+                        <!-- facet item -->
+                        <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                            <div class="flex flex-row">
+                                <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="1" name="1" value="">
+                                <label for="1">Requeste</label>
+                            </div>
+                            <div class="text-sm text-neutral-500">48</div>
+                        </div>
+                        <!-- facet item -->
+                        <!-- facet item -->
+                        <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                            <div class="flex flex-row">
+                                <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="2" name="2" value="">
+                                <label for="2">Rapport</label>
+                            </div>
+                            <div class="text-sm text-neutral-500">112</div>
+                        </div>
+                        <!-- facet item -->
+                        <!-- facet item -->
+                        <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                            <div class="flex flex-row">
+                                <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="3" name="3" value="">
+                                <label for="3">Memorie</label>
+                            </div>
+                            <div class="text-sm text-neutral-500">12</div>
+                        </div>
+                        <!-- facet item -->
+                        <!-- facet item -->
+                        <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                            <div class="flex flex-row">
+                                <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="4" name="4" value="">
+                                <label for="4">Resolutie</label>
+                            </div>
+                            <div class="text-sm text-neutral-500">55</div>
+                        </div>
+                        <!-- facet item -->
+                        <button class="text-base flex flex-row text-sky-700 items-center justify-start gap-1">More
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 fill-bg-sky-700">
+                                <path fill-rule="evenodd" d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                                clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- //facet -->
+                </div>
+                <!-- results col -->
+                <div class="w-2/3 bg-rpBrand1grey-50 grow self-stretch py-16 px-10" id="results">
+                    <div id="facetButton" class="md:hidden mb-4">
+                        <button onclick="handleStateFacets('true')" class="flex flex-row border px-2 border-rpBrand1grey-700 rounded"> <span>Filters</span> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="w-6 h-6 fill-rpBrand1grey-700">
+                                <path d="M6 12a.75.75 0 01-.75-.75v-7.5a.75.75 0 111.5 0v7.5A.75.75 0 016 12zM18 12a.75.75 0 01-.75-.75v-7.5a.75.75 0 011.5 0v7.5A.75.75 0 0118 12zM6.75 20.25v-1.5a.75.75 0 00-1.5 0v1.5a.75.75 0 001.5 0zM18.75 18.75v1.5a.75.75 0 01-1.5 0v-1.5a.75.75 0 011.5 0zM12.75 5.25v-1.5a.75.75 0 00-1.5 0v1.5a.75.75 0 001.5 0zM12 21a.75.75 0 01-.75-.75v-7.5a.75.75 0 011.5 0v7.5A.75.75 0 0112 21zM3.75 15a2.25 2.25 0 104.5 0 2.25 2.25 0 00-4.5 0zM12 11.25a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zM15.75 15a2.25 2.25 0 104.5 0 2.25 2.25 0 00-4.5 0z"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- results header -->
+                    <div class="
+                      flex 
+                      flex-col 
+                      md:flex-row 
+                      gap-2 
+                      justify-between 
+                      mb-8"> <span class="font-semibold">15 resoluties gevonden</span>
+
+                        <select name="Ordering of the results"
+                        id="" class="rounded bg-white border border-rpBrand1grey-700 py-1 px-2 text-sm"
+                        aria-label="rdering of the results">
+                            <option value="">Volgorde: relevantie</option>
+                            <option value="">Volgorde: datum</option>
+                        </select>
+                    </div>
+                    <!-- // results header -->
+                    <!-- selected facets -->
+                    <div class="flex flex-row gap-2 my-8 flex-wrap items-center justify-start pb-8 border-b border-rpBrand1grey-100 -mx-10 px-10"> <span class="text-sm text-rpBrand1grey-600">Filters: </span>
+
+                        <!-- selected
+                        filter badge -->
+                        <buttton class="
+                  rounded 
+                  bg-yellow-100 
+                  text-yellow-900 
+                  py-1 
+                  px-1 
+                  text-sm 
+                  flex 
+                  flex-row"> <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)-600">
+            <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
+          </svg>
+          
+          
+          </span>
+ <span class="">idealistische</span>
+ <span class="ml-1 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-(lookup . &#x27;twColor&#x27;)-800">
+            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg>
+          </span>
+
+                        </buttton>
+                        <!-- // selected filter badge -->
+                        <!-- selected filter badge -->
+                        <buttton class="
+                  rounded 
+                  bg-greenGrey-100 
+                  text-greenGrey-900 
+                  py-1 
+                  px-1 
+                  text-sm 
+                  flex 
+                  flex-row"> <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)-600">
+            <path d="M11.584 2.376a.75.75 0 01.832 0l9 6a.75.75 0 11-.832 1.248L12 3.901 3.416 9.624a.75.75 0 01-.832-1.248l9-6z" />
+            <path fill-rule="evenodd" d="M20.25 10.332v9.918H21a.75.75 0 010 1.5H3a.75.75 0 010-1.5h.75v-9.918a.75.75 0 01.634-.74A49.109 49.109 0 0112 9c2.59 0 5.134.202 7.616.592a.75.75 0 01.634.74zm-7.5 2.418a.75.75 0 00-1.5 0v6.75a.75.75 0 001.5 0v-6.75zm3-.75a.75.75 0 01.75.75v6.75a.75.75 0 01-1.5 0v-6.75a.75.75 0 01.75-.75zM9 12.75a.75.75 0 00-1.5 0v6.75a.75.75 0 001.5 0v-6.75z" clip-rule="evenodd" />
+            <path d="M12 7.875a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" />
+          </svg>
+          </span>
+ <span class="">Ambassade in Caïro, Egypte</span>
+
+                            <span
+                            class="ml-1 cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5 fill-(lookup . &#x27;twColor&#x27;)-800">
+                                    <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                                </span>
+                        </buttton>
+                        <!-- // selected filter badge -->
+                        <!-- selected filter badge -->
+                        <buttton class="
+                  rounded 
+                  bg-greenGrey-100 
+                  text-greenGrey-900 
+                  py-1 
+                  px-1 
+                  text-sm 
+                  flex 
+                  flex-row"> <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)-600">
+            <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+          </svg>
+          
+          
+          </span>
+ <span class="">Amsterdam</span>
+ <span class="ml-1 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-(lookup . &#x27;twColor&#x27;)-800">
+            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg>
+          </span>
+
+                        </buttton>
+                        <!-- // selected filter badge -->
+                        <!-- selected filter badge -->
+                        <buttton class="
+                  rounded 
+                  bg-rpBrand1grey-100 
+                  text-rpBrand1grey-900 
+                  py-1 
+                  px-1 
+                  text-sm 
+                  flex 
+                  flex-row"> <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)-600">
+            <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z" clip-rule="evenodd" />
+          </svg>
+          </span>
+ <span class="">Clear all filters</span>
+ <span class="ml-1 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-(lookup . &#x27;twColor&#x27;)-800">
+            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg>
+          </span>
+
+                        </buttton>
+                        <!-- // selected filter badge -->
+                    </div>
+                    <!-- // selected facets -->
+                    <ul class="">
+                        <li class="mb-3 text-base">Maandag <strong class="font-semibold text-en">4 jan 1705</strong>
+                        </li>
+                        <!-- result card -->
+                        <li class="
+                      w-full
+                      rounded 
+                      border
+                      
+                      cursor-pointer
+            
+                      mb-6
+            
+                      divide-y
+                      divide-solid
+                      divide-rpBrand1grey-100
+                      hover:divide-rpBrand1grey-200
+            
+                      bg-white
+                      hover:bg-white
+            
+                      border-rpBrand1grey-50
+                      hover:border-rpBrand1grey-200
+                      transition
+                      shadow-sm
+            
+            " onclick="location.href='annovis-detail.html'">
+                            <div class="p-4 flex flex-col sm:flex-row justify-between">
+                                <div class="">Resolutie <strong class="font-semibold">15</strong>
+                                </div>
+                                <div class="text-neutral-500 text-sm">Viewed on 12-12-2021</div>
+                            </div>
+                            <div class="p-4 hover:bg-rpBrand1grey-50 w-full">
+                                <div class="text-base mb-1">… Suppliantover de voorschreeve Vryheyd en <span class="p-1 rounded bg-yellow-200">Heerlijkheyd</span> van
+                                    Hilvarenbeeeck gelieven te formeeren een …</div>
+                            </div>
+                            <div class="p-4 hover:bg-rpBrand1grey-50 w-full">
+                                <div class="text-base mb-1">…concurrentie van den Suppliantover de voorschreeve Vryheyd en <span class="p-1 rounded bg-yellow-200">Heerlijkheyd</span> van
+                                    Hilvarenbeeeck …</div>
+                            </div>
+                        </li>
+                        <!-- // result card -->
+                        <!-- result card -->
+                        <li class="
+                      w-full
+                      rounded 
+                      border
+                      
+                      cursor-pointer
+            
+                      mb-6
+            
+                      divide-y
+                      divide-solid
+                      divide-rpBrand1grey-100
+                      hover:divide-rpBrand1grey-200
+            
+                      bg-white
+                      hover:bg-white
+            
+                      border-rpBrand1grey-50
+                      hover:border-rpBrand1grey-200
+                      transition
+                      shadow-sm
+            
+            " onclick="location.href='annovis-detail.html'">
+                            <div class="p-4 flex flex-col sm:flex-row justify-between">
+                                <div class="">Resolutie <strong class="font-semibold">15</strong>
+                                </div>
+                                <div class="text-neutral-500 text-sm"></div>
+                            </div>
+                            <div class="p-4 hover:bg-rpBrand1grey-50 w-full">
+                                <div class="text-base mb-1">… Suppliantover de voorschreeve Vryheyd en <span class="p-1 rounded bg-yellow-200">Heerlijkheyd</span> van
+                                    Hilvarenbeeeck gelieven te formeeren een …</div>
+                            </div>
+                            <div class="p-4 hover:bg-rpBrand1grey-50 w-full">
+                                <div class="text-base mb-1">…concurrentie van den Suppliantover de voorschreeve Vryheyd en <span class="p-1 rounded bg-yellow-200">Heerlijkheyd</span> van
+                                    Hilvarenbeeeck …</div>
+                            </div>
+                            <div class="p-4 ">
+                                <button class="w-full flex flex-row justify-end gap-2">Show 2 more results
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor" class="w-5 h-5 fill-neutral-800">
+                                        <path fill-rule="evenodd" d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                                        clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
+                        <!-- // result card -->
+                        <li class="mt-10 mb-3 text-base">Dinsdag <strong class="font-semibold">5 jan 1705</strong>
+                        </li>
+                        <!-- result card -->
+                        <li class="
+                      w-full
+                      rounded 
+                      border
+                      
+                      cursor-pointer
+            
+                      mb-6
+            
+                      divide-y
+                      divide-solid
+                      divide-rpBrand1grey-100
+                      hover:divide-rpBrand1grey-200
+            
+                      bg-white
+                      hover:bg-white
+            
+                      border-rpBrand1grey-50
+                      hover:border-rpBrand1grey-200
+                      transition
+                      shadow-sm
+            
+            " onclick="location.href='annovis-detail.html'">
+                            <div class="p-4 flex flex-col sm:flex-row justify-between">
+                                <div class="">Resolutie <strong class="font-semibold">15</strong>
+                                </div>
+                                <div class="text-neutral-500 text-sm">Viewed on 12-12-2021</div>
+                            </div>
+                            <div class="p-4 hover:bg-rpBrand1grey-50 w-full">
+                                <div class="text-base mb-1">… Suppliantover de voorschreeve Vryheyd en <span class="p-1 rounded bg-yellow-200">Heerlijkheyd</span> van
+                                    Hilvarenbeeeck gelieven te formeeren een …</div>
+                            </div>
+                            <div class="p-4 hover:bg-rpBrand1grey-50 w-full">
+                                <div class="text-base mb-1">…concurrentie van den Suppliantover de voorschreeve Vryheyd en <span class="p-1 rounded bg-yellow-200">Heerlijkheyd</span> van
+                                    Hilvarenbeeeck …</div>
+                            </div>
+                        </li>
+                        <!-- // result card -->
+                        <!-- result card -->
+                        <li class="
+                      w-full
+                      rounded 
+                      border
+                      
+                      cursor-pointer
+            
+                      mb-6
+            
+                      divide-y
+                      divide-solid
+                      divide-rpBrand1grey-100
+                      hover:divide-rpBrand1grey-200
+            
+                      bg-white
+                      hover:bg-white
+            
+                      border-rpBrand1grey-50
+                      hover:border-rpBrand1grey-200
+                      transition
+                      shadow-sm
+            
+            " onclick="location.href='annovis-detail.html'">
+                            <div class="p-4 flex flex-col sm:flex-row justify-between">
+                                <div class="">Resolutie <strong class="font-semibold">15</strong>
+                                </div>
+                                <div class="text-neutral-500 text-sm"></div>
+                            </div>
+                            <div class="p-4 hover:bg-rpBrand1grey-50 w-full">
+                                <div class="text-base mb-1">… Suppliantover de voorschreeve Vryheyd en <span class="p-1 rounded bg-yellow-200">Heerlijkheyd</span> van
+                                    Hilvarenbeeeck gelieven te formeeren een …</div>
+                            </div>
+                            <div class="p-4 hover:bg-rpBrand1grey-50 w-full">
+                                <div class="text-base mb-1">…concurrentie van den Suppliantover de voorschreeve Vryheyd en <span class="p-1 rounded bg-yellow-200">Heerlijkheyd</span> van
+                                    Hilvarenbeeeck …</div>
+                            </div>
+                        </li>
+                        <!-- // result card -->
+                        <!-- result card -->
+                        <li class="
+                      w-full
+                      rounded 
+                      border
+                      
+                      cursor-pointer
+            
+                      mb-6
+            
+                      divide-y
+                      divide-solid
+                      divide-rpBrand1grey-100
+                      hover:divide-rpBrand1grey-200
+            
+                      bg-white
+                      hover:bg-white
+            
+                      border-rpBrand1grey-50
+                      hover:border-rpBrand1grey-200
+                      transition
+                      shadow-sm
+            
+            " onclick="location.href='annovis-detail.html'">
+                            <div class="p-4 flex flex-col sm:flex-row justify-between">
+                                <div class="">Resolutie <strong class="font-semibold">15</strong>
+                                </div>
+                                <div class="text-neutral-500 text-sm"></div>
+                            </div>
+                            <div class="p-4 hover:bg-rpBrand1grey-50 w-full">
+                                <div class="text-base mb-1">… Suppliantover de voorschreeve Vryheyd en <span class="p-1 rounded bg-yellow-200">Heerlijkheyd</span> van
+                                    Hilvarenbeeeck gelieven te formeeren een …</div>
+                            </div>
+                            <div class="p-4 hover:bg-rpBrand1grey-50 w-full">
+                                <div class="text-base mb-1">…concurrentie van den Suppliantover de voorschreeve Vryheyd en <span class="p-1 rounded bg-yellow-200">Heerlijkheyd</span> van
+                                    Hilvarenbeeeck …</div>
+                            </div>
+                        </li>
+                        <!-- // result card -->
+                    </ul>
+                    <nav aria-label="Pagination" class="my-6">
+                        <ul class="list-style-none flex gap-1 justify-center">
+                            <li> <a class="pointer-events-none relative block rounded bg-transparent px-3 py-1.5 text-rpBrand1grey-800 transition-all duration-300 dark:text-rpBrand1grey-400">Vorige</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative block rounded bg-transparent px-3 py-1.5 text-rpBrand1grey-800 transition-all duration-300 hover:bg-blueGrey-100  dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                  href="#!"
+                  >1</a
+                >
+              </li>
+              <li aria-current="page">
+                <a
+                  class="relative block rounded bg-rpBrand1grey-100 px-3 py-1.5 font-medium text-rpBrand1grey-800 transition-all duration-300"
+                  href="#!"
+                  >2
+                  <span
+                    class="absolute -m-px h-px w-px overflow-hidden whitespace-nowrap border-0 p-0 [clip:rect(0,0,0,0)]"
+                    >(Huidige)</span
+                  >
+                </a>
+
+                            </li>
+                            <li> <a class="relative block rounded bg-transparent px-3 py-1.5 text-rpBrand1grey-800 transition-all duration-300 hover:bg-blueGrey-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                                href="#!">3</a
+                >
+              </li>
+              <li>
+                <a
+                  class="relative block rounded bg-transparent px-3 py-1.5 text-rpBrand1grey-800 transition-all duration-300 hover:bg-rpBrand1grey-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                  href="#!"
+                  >Volgende</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="js/states.js"></script>
+    <script src="js/rpgui.js"></script>
+
+
+    
+  </body>
+</html>
