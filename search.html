@@ -47,6 +47,10 @@
                     </div>
                 </div>
             </header>
+            <div class=" px-4 sm:px-10 -mt-3 -mb-3 sm:-mb-9 flex gap-2 flex-row sm:justify-between w-full max-w-[1800px] mx-auto">
+                <div class=""></div>
+                <div class="sm:flex justify-end gap-4 hidden"></div>
+            </div>
             <div class="flex px-10 mt-10 mb-4 w-full max-w-[1800px] mx-auto">
                 <button class="flex bg-neutral-100 rounded-t p-2 items-center gap-1 text-neutral-800 font-semibold">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -67,7 +71,7 @@
                         transform="translate(-19.196 -20.598)" />
                         <path stroke-linecap="round" stroke-linejoin="round" d="M20.45,6.312c-.258-.114-.395-.834-.427-1.153-.041-.4.659-.96.8-1.331.087-.226.044-.789.194-.963.115-.133.5-.066.632-.17.319-.246.692-1.049,1.058-1.178.348-.122.971.429,1.329.495.258.047.565.227.819.155.312-.088.851-.689,1.166-.623s.607,1.181.88,1.349c.372.229,1.435-.671,1.745-.339.33.353.249,1.568.486,2.011.168.315.854.637.948.991.088.335-.295,1.009-.292,1.36,0,.161.14.462.146.623s-.126.447-.1.595c.061.316.662.724.656,1.048-.006.388-.714.852-.826,1.218-.119.387.1,1.26-.024,1.643-.106.318-.5.931-.778,1.02a1.525,1.525,0,0,1-1.409-.538c-.2-.457.535-1.954.535-1.954a8.676,8.676,0,0,0,.073-2.662,2.7,2.7,0,0,0-1-.85c-.3-.173-1.045-.164-1.264-.453-.167-.221.035-.989-.17-1.161-.294-.247-1.074.308-1.434.255-.4-.059-1.092-.853-1.482-.736-.276.083-.448.9-.7,1.048A3.233,3.233,0,0,1,20.45,6.312Z"
                         transform="translate(-12.846 -0.53)" />
-                    </svg>Search for persons</button>
+                    </svg>Search for actors</button>
                 <button class="flex rounded-t p-2 items-center border border-neutral-200 text-neutral-500 gap-1 hover:border-neutral-500 hover:text-neutral-800">Search history</button>
             </div>
             <div class="
@@ -97,7 +101,7 @@
               rounded-l 
               border
               border-neutral-700
-              " type="search" id="text-search" name="q">
+              " type="search" id="text-search" name="q" placeholder="">
                                 <button class="
               bg-neutral-700
               py-1 
@@ -945,48 +949,6 @@
                 </main>
             </div>
         </div>
-        <aside id="sidePanel" class="fixed bg-neutral-100 top-0 right-0 bottom-0 border-l p-6 w-full md:w-96 shadow-2xl hidden flex-col gap-4">
-            <div class="flex flex-row justify-end items-center w-full">
-                <button class="p-1 rounded" onclick="closeAside()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="w-8 h-8 fill-sand-800">
-                        <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
-                        clip-rule="evenodd" />
-                    </svg>
-                </button>
-            </div>
-            <div class="flex flex-col gap-4 mt-4" id="form1">
-                 <h2 class="text-lg">Add metatdata</h2>
-
-                <label for="11">
-                    <div class="font-semibold">Description</div>
-                    <div class=" text-sm">Add your narrative to the the description of this object. It will be displayed
-                        with your name and organisation. Other visitors can react on your narrative
-                        by clicking the Helpful button</div>
-                </label>
-                <textarea name="11" id="" class="border border-neutral-200 w-full h-40"></textarea>
-                <div class="">
-                    <button class="py-2 px-3 rounded-full text-xs bg-sand-700 hover:bg-sand-800 transition text-sand-50 flex items-center gap-1">Add your description to this object</button>
-                </div>
-            </div>
-            <div id="info1" class="hidden flex-col gap-4 mt-4">
-                 <h2>Nationaal Museum van Wereldculturen and Wereldmuseum</h2>
- <span>Willemskade 25,<br> 3016 DM Rotterdam,<br> Netherlands</span>
-
-                <a
-                href="">Website</a> <a href="">More about the dataset</a>
-
-            </div>
-            <div id="info2" class="hidden flex-col gap-4 mt-4">
-                 <h2>Information about <em>Material</em></h2>
-
-                <p>This category includes a range of Ceremonial Regalia which were most likely
-                    worn by Oba's, chiefs and members of the Benin royal palace societies until
-                    1897. Certain clothing and objects would be worn to mark status and rank,
-                    often at ceremonial occasions and the use of certain materials such as
-                    ivory, coral, brass and bronze would be controlled by the Oba.</p>
-            </div>
-        </aside>
         <script src="js/states.js"></script>
     </body>
 

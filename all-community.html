@@ -3,7 +3,7 @@
     
     <head>
         <meta charset="utf-8">
-        <title>Communities overview page | Research App</title>
+        <title>All communities overview page | Research App</title>
         <link href="css/style.css"
         rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
@@ -25,7 +25,6 @@
             href="link_to_roapmap_page" class="text-center text-sky-900">Read more<span class="hidden sm:inline"> about the current status and roadmap of this project</span>.</a>
         </div>
         <div class="
-            
             mx-auto
             h-full 
             min-h-screen 
@@ -49,12 +48,7 @@
                 </div>
             </header>
             <div class=" px-4 sm:px-10 -mt-3 -mb-3 sm:-mb-9 flex gap-2 flex-row sm:justify-between w-full max-w-[1800px] mx-auto">
-                <div class=""> <a href="search.html" class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-neutral-500">
-  <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
-</svg>
- All communities</a>
-
-                </div>
+                <div class=""></div>
                 <div class="sm:flex justify-end gap-4 hidden"></div>
             </div>
             <div class="px-4 my-10 sm:px-10 w-full max-w-[1800px] mx-auto">
@@ -62,144 +56,246 @@
 
             </div>
             <div class="
-            grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 
-
+            flex flex-col sm:flex-row justify-between 
               h-full 
-              items-stretch 
-              grow 
-              content-stretch 
-              self-stretch 
               gap-6
               w-full max-w-[1800px]
-               
               mx-auto
               px-4 sm:px-10
+              pb-4
+              mb-10
+              -mt-6
+              rounded
+              border-b
               ">
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Willemstad</div>
-                    <div class="text-sm text-stone-600">Curaçao (Antilles)</div>
-                    <div class="">A vibrant city known for its colorful architecture and historic Dutch
-                        colonial buildings.</div>
+                <div class="">
+                    <div class="w-full max-w-[450px] relative">
+                        <label for="text-search" class="font-semibold"></label>
+                        <div class="flex flex-row w-full">
+                            <input class="
+    py-1 
+    px-3 
+    w-full 
+    rounded-l 
+    border
+    border-stone-700
+    " type="search" id="text-search" name="q" placeholder="Search for community">
+                            <button class="
+    bg-stone-700
+    py-1 
+    px-3 
+    rounded-r 
+    border-t  
+    border-b  
+    border-r
+    border-stone-700" aria-label="Click to search" value="amster">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-4 h-4 fill-white">
+                                    <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Paramaribo</div>
-                    <div class="text-sm text-stone-600">Suriname</div>
-                    <div class="">The capital city with a mix of Dutch colonial and indigenous architecture,
-                        situated on the Suriname River.</div>
+                <div class="">
+                    <select name="order" class="mt-1 block  rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-sky-600 focus:outline-none focus:ring-sky-600 sm:text-sm"
+                    aria-label="Select to change the ordering of the communities">
+                        <option value="relevanceDesc">Date created</option>
+                        <option value="nameAsc">Name - Ascending</option>
+                        <option value="nameDesc">Name - Descending</option>
+                        <option value="nameAsc">Most members</option>
+                    </select>
                 </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Batavia</div>
-                    <div class="text-sm text-stone-600">Indonesia</div>
-                    <div class="">Former name of Jakarta, reflecting the Dutch colonial influence in the
-                        city&#x27;s history.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Cape Town</div>
-                    <div class="text-sm text-stone-600">South Africa</div>
-                    <div class="">A major port city with Dutch colonial roots, featuring landmarks like
-                        the Castle of Good Hope.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Oranjestad</div>
-                    <div class="text-sm text-stone-600">Aruba (Antilles)</div>
-                    <div class="">The capital of Aruba, known for its Dutch-style buildings and beautiful
-                        beaches.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Georgetown</div>
-                    <div class="text-sm text-stone-600">Guyana</div>
-                    <div class="">A city with British, Dutch, and French colonial history, reflecting its
-                        diverse heritage.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Paramaribo</div>
-                    <div class="text-sm text-stone-600">Suriname</div>
-                    <div class="">The capital city with a mix of Dutch colonial and indigenous architecture,
-                        situated on the Suriname River.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Pella</div>
-                    <div class="text-sm text-stone-600">South Africa</div>
-                    <div class="">A town with a strong Afrikaner and Dutch Reformed presence, showcasing
-                        Dutch colonial influence.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Bridgetown</div>
-                    <div class="text-sm text-stone-600">Barbados (Antilles)</div>
-                    <div class="">The capital and commercial center of Barbados, featuring historic Dutch-influenced
-                        architecture.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Jogjakarta</div>
-                    <div class="text-sm text-stone-600">Indonesia</div>
-                    <div class="">A city known for its traditional arts and cultural heritage, influenced
-                        by Javanese and Dutch elements.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Luanda</div>
-                    <div class="text-sm text-stone-600">Angola</div>
-                    <div class="">An African port city with a complex history involving Dutch and Portuguese
-                        colonialism.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Willemstad</div>
-                    <div class="text-sm text-stone-600">Curaçao (Antilles)</div>
-                    <div class="">A vibrant city known for its colorful architecture and historic Dutch
-                        colonial buildings.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Cayenne</div>
-                    <div class="text-sm text-stone-600">French Guiana</div>
-                    <div class="">A city with Dutch, French, and British colonial influences, located on
-                        the northeastern coast of South America.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Semarang</div>
-                    <div class="text-sm text-stone-600">Indonesia</div>
-                    <div class="">A port city on Java Island with a blend of Javanese and Dutch colonial
-                        architecture.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Stellenbosch</div>
-                    <div class="text-sm text-stone-600">South Africa</div>
-                    <div class="">A town known for its well-preserved Cape Dutch architecture and renowned
-                        vineyards.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Willemstad</div>
-                    <div class="text-sm text-stone-600">Guyana</div>
-                    <div class="">A historical village reflecting the Dutch colonial past of Guyana.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Willemstad</div>
-                    <div class="text-sm text-stone-600">Curaçao (Antilles)</div>
-                    <div class="">A vibrant city known for its colorful architecture and historic Dutch
-                        colonial buildings.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Colombo</div>
-                    <div class="text-sm text-stone-600">Sri Lanka</div>
-                    <div class="">The capital city with a history of Dutch and Portuguese colonial rule,
-                        leaving behind architectural and cultural traces.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Cape Town</div>
-                    <div class="text-sm text-stone-600">South Africa</div>
-                    <div class="">A major port city with Dutch colonial roots, featuring landmarks like
-                        the Castle of Good Hope.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Amsterdam</div>
-                    <div class="text-sm text-stone-600">South Africa</div>
-                    <div class="">A town in the Mpumalanga province with Dutch architectural influence from
-                        the 19th century.</div>
-                </div>
-                <div class="p-4 rounded bg-yellow-50">
-                    <div class="font-semibold">Jamestown</div>
-                    <div class="text-sm text-stone-600">Saint Helena (Antilles)</div>
-                    <div class="">The capital of Saint Helena, a British Overseas Territory, with a history
-                        of Dutch, Portuguese, and British presence.</div>
-                </div>
+            </div>
+            <div class="
+            grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 
+              h-full 
+              grow 
+              content-stretch 
+              gap-6
+              w-full max-w-[1800px]
+              mx-auto
+              px-4 sm:px-10
+              mt-10
+              "> <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition">
+      
+          <div class="-mt-20 w-full flex justify-center">
+              <img src="images/avatrs/communityAvatar1.png" alt="" class="w-36 h-auto rounded-full">
+          </div>
+      
+          <h1 class="text-xl font-normal w-full flex justify-center mt-4 px-4">
+              Community of <strong class="font-semibold ml-1">Willemstad</strong>
+          </h1>
+          <div class="text-center p-4">Willemstad, a vibrant city known for its colorful architecture and rich cultural heritage.</div>
+      
+          <div class="flex border-stone-300 border-t text-sm text-stone-600">
+              <div class="w-1/2 p-4 border-stone-300 border-r">28 members</div>
+              <div class="w-1/2 p-4">7 lists</div>
+          </div>
+      
+      </a>  <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition">
+      
+          <div class="-mt-20 w-full flex justify-center">
+              <img src="images/avatrs/communityAvatar2.png" alt="" class="w-36 h-auto rounded-full">
+          </div>
+      
+          <h1 class="text-xl font-normal w-full flex justify-center mt-4 px-4">
+              Community of <strong class="font-semibold ml-1">Paramaribo</strong>
+          </h1>
+          <div class="text-center p-4">Paramaribo, a city celebrated for its diverse culture and historic wooden architecture.</div>
+      
+          <div class="flex border-stone-300 border-t text-sm text-stone-600">
+              <div class="w-1/2 p-4 border-stone-300 border-r">35 members</div>
+              <div class="w-1/2 p-4">9 lists</div>
+          </div>
+      
+      </a>  <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition">
+      
+          <div class="-mt-20 w-full flex justify-center">
+              <img src="images/avatrs/communityAvatar3.png" alt="" class="w-36 h-auto rounded-full">
+          </div>
+      
+          <h1 class="text-xl font-normal w-full flex justify-center mt-4 px-4">
+              Community of <strong class="font-semibold ml-1">Bali</strong>
+          </h1>
+          <div class="text-center p-4">Bali, a tropical paradise known for its stunning beaches and unique Hindu traditions.</div>
+      
+          <div class="flex border-stone-300 border-t text-sm text-stone-600">
+              <div class="w-1/2 p-4 border-stone-300 border-r">42 members</div>
+              <div class="w-1/2 p-4">5 lists</div>
+          </div>
+      
+      </a>  <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition">
+      
+          <div class="-mt-20 w-full flex justify-center">
+              <img src="images/avatrs/communityAvatar1.png" alt="" class="w-36 h-auto rounded-full">
+          </div>
+      
+          <h1 class="text-xl font-normal w-full flex justify-center mt-4 px-4">
+              Community of <strong class="font-semibold ml-1">Accra</strong>
+          </h1>
+          <div class="text-center p-4">Accra, a bustling city celebrated for its lively markets and vibrant street life.</div>
+      
+          <div class="flex border-stone-300 border-t text-sm text-stone-600">
+              <div class="w-1/2 p-4 border-stone-300 border-r">19 members</div>
+              <div class="w-1/2 p-4">8 lists</div>
+          </div>
+      
+      </a>  <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition">
+      
+          <div class="-mt-20 w-full flex justify-center">
+              <img src="images/avatrs/communityAvatar2.png" alt="" class="w-36 h-auto rounded-full">
+          </div>
+      
+          <h1 class="text-xl font-normal w-full flex justify-center mt-4 px-4">
+              Community of <strong class="font-semibold ml-1">Java</strong>
+          </h1>
+          <div class="text-center p-4">Java, an island of natural beauty with lush landscapes and rich Javanese culture.</div>
+      
+          <div class="flex border-stone-300 border-t text-sm text-stone-600">
+              <div class="w-1/2 p-4 border-stone-300 border-r">30 members</div>
+              <div class="w-1/2 p-4">6 lists</div>
+          </div>
+      
+      </a>  <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition">
+      
+          <div class="-mt-20 w-full flex justify-center">
+              <img src="images/avatrs/communityAvatar3.png" alt="" class="w-36 h-auto rounded-full">
+          </div>
+      
+          <h1 class="text-xl font-normal w-full flex justify-center mt-4 px-4">
+              Community of <strong class="font-semibold ml-1">Willemstad</strong>
+          </h1>
+          <div class="text-center p-4">Willemstad, a vibrant city known for its colorful architecture and rich cultural heritage.</div>
+      
+          <div class="flex border-stone-300 border-t text-sm text-stone-600">
+              <div class="w-1/2 p-4 border-stone-300 border-r">28 members</div>
+              <div class="w-1/2 p-4">7 lists</div>
+          </div>
+      
+      </a>  <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition">
+      
+          <div class="-mt-20 w-full flex justify-center">
+              <img src="images/avatrs/communityAvatar1.png" alt="" class="w-36 h-auto rounded-full">
+          </div>
+      
+          <h1 class="text-xl font-normal w-full flex justify-center mt-4 px-4">
+              Community of <strong class="font-semibold ml-1">Jogja</strong>
+          </h1>
+          <div class="text-center p-4">Jogja, the heart of Javanese culture, famous for its temples and traditional arts.</div>
+      
+          <div class="flex border-stone-300 border-t text-sm text-stone-600">
+              <div class="w-1/2 p-4 border-stone-300 border-r">23 members</div>
+              <div class="w-1/2 p-4">4 lists</div>
+          </div>
+      
+      </a>  <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition">
+      
+          <div class="-mt-20 w-full flex justify-center">
+              <img src="images/avatrs/communityAvatar2.png" alt="" class="w-36 h-auto rounded-full">
+          </div>
+      
+          <h1 class="text-xl font-normal w-full flex justify-center mt-4 px-4">
+              Community of <strong class="font-semibold ml-1">Kumasi</strong>
+          </h1>
+          <div class="text-center p-4">Kumasi, a city steeped in Ashanti history and known for its craftsmanship.</div>
+      
+          <div class="flex border-stone-300 border-t text-sm text-stone-600">
+              <div class="w-1/2 p-4 border-stone-300 border-r">15 members</div>
+              <div class="w-1/2 p-4">10 lists</div>
+          </div>
+      
+      </a>  <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition">
+      
+          <div class="-mt-20 w-full flex justify-center">
+              <img src="images/avatrs/communityAvatar3.png" alt="" class="w-36 h-auto rounded-full">
+          </div>
+      
+          <h1 class="text-xl font-normal w-full flex justify-center mt-4 px-4">
+              Community of <strong class="font-semibold ml-1">Surabaya</strong>
+          </h1>
+          <div class="text-center p-4">Surabaya, a bustling port city with a rich maritime heritage.</div>
+      
+          <div class="flex border-stone-300 border-t text-sm text-stone-600">
+              <div class="w-1/2 p-4 border-stone-300 border-r">33 members</div>
+              <div class="w-1/2 p-4">3 lists</div>
+          </div>
+      
+      </a>  <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition">
+      
+          <div class="-mt-20 w-full flex justify-center">
+              <img src="images/avatrs/communityAvatar1.png" alt="" class="w-36 h-auto rounded-full">
+          </div>
+      
+          <h1 class="text-xl font-normal w-full flex justify-center mt-4 px-4">
+              Community of <strong class="font-semibold ml-1">Cape Coast</strong>
+          </h1>
+          <div class="text-center p-4">Cape Coast, home to historic forts and a vibrant fishing community.</div>
+      
+          <div class="flex border-stone-300 border-t text-sm text-stone-600">
+              <div class="w-1/2 p-4 border-stone-300 border-r">12 members</div>
+              <div class="w-1/2 p-4">2 lists</div>
+          </div>
+      
+      </a>  <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition">
+      
+          <div class="-mt-20 w-full flex justify-center">
+              <img src="images/avatrs/communityAvatar2.png" alt="" class="w-36 h-auto rounded-full">
+          </div>
+      
+          <h1 class="text-xl font-normal w-full flex justify-center mt-4 px-4">
+              Community of <strong class="font-semibold ml-1">Curaçao</strong>
+          </h1>
+          <div class="text-center p-4">Curaçao, a diverse island with a love for music, art, and cuisine.</div>
+      
+          <div class="flex border-stone-300 border-t text-sm text-stone-600">
+              <div class="w-1/2 p-4 border-stone-300 border-r">25 members</div>
+              <div class="w-1/2 p-4">5 lists</div>
+          </div>
+      
+      </a>
+
             </div>
         </div>
         <aside id="sidePanel" class="fixed bg-neutral-100 top-0 right-0 bottom-0 border-l p-6 w-full md:w-96 shadow-2xl hidden flex-col gap-4">
