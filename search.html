@@ -18,10 +18,11 @@
         <path fill-rule="evenodd" d="M12.556 17.329l4.183 4.182a3.375 3.375 0 004.773-4.773l-3.306-3.305a6.803 6.803 0 01-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 00-.167.063l-3.086 3.748zm3.414-1.36a.75.75 0 011.06 0l1.875 1.876a.75.75 0 11-1.06 1.06L15.97 17.03a.75.75 0 010-1.06z" clip-rule="evenodd" />
       </svg>
       <!-- // wrench-screwdriver Hero icon  -->
-    <span class="text-center text-[#484635]">This site is a work in progress.</span>
+      <span class="text-center text-[#484635]">This site is a work in progress.</span>
 </span>
             <a
-            href="link_to_roapmap_page" class="text-center text-sky-900">Read more<span class="hidden sm:inline"> about the current status and roadmap of this project</span>.</a>
+            href="link_to_roapmap_page" class="text-center">Read more<span class="hidden sm:inline"> about the current status
+        and roadmap of this project</span>.</a>
         </div>
         <div class="
             
@@ -38,10 +39,10 @@
                 <div class="w-full px-4 sm:px-10 py-4 flex justify-between items-center max-w-[1800px] mx-auto">
                     <div class="font-semibold">Heritage Objects Search</div>
                     <div class="relative flex">
-                        <nav class="flex items-center gap-4 mr-4"> <a href="search.html" class="text-neutral-900 font-semibold">Search objects</a>
+                        <nav class="flex items-center gap-4 mr-4"> <a href="search.html" class="text-neutral-900 font-semibold no-underline">Search objects</a>
 
                             <a
-                            href="all-community.html" class="text-neutral-900 font-semibold">Communities</a> <a href="" class="text-neutral-900 font-semibold">About</a>
+                            href="all-community.html" class="text-neutral-900 font-semibold no-underline">Communities</a> <a href="" class="text-neutral-900 font-semibold no-underline">About</a>
 
                         </nav>
                         <button class="px-4 py-2 text-sm rounded-full bg-greenGrey-100 hover:bg-greenGrey-200 transition text-greenGrey-800 flex items-center gap-1">Login</button>
@@ -144,9 +145,9 @@
                 focus:ring-rpBrand1-700
                 
                 " type="checkbox" id="0" name="0" value="">
-                                    <label for="0">Afrika</label>
+                                    <label for="0">Suriname</label>
                                 </div>
-                                <div class="text-sm text-neutral-500">112</div>
+                                <div class="text-sm text-neutral-500">124</div>
                             </div>
                             <!-- facet item -->
                             <!-- facet item -->
@@ -168,9 +169,9 @@
                 focus:ring-rpBrand1-700
                 
                 " type="checkbox" id="1" name="1" value="">
-                                    <label for="1">Eurazië</label>
+                                    <label for="1">Nigeria</label>
                                 </div>
-                                <div class="text-sm text-neutral-500">21</div>
+                                <div class="text-sm text-neutral-500">121</div>
                             </div>
                             <!-- facet item -->
                             <!-- facet item -->
@@ -192,9 +193,9 @@
                 focus:ring-rpBrand1-700
                 
                 " type="checkbox" id="2" name="2" value="">
-                                    <label for="2">Amerika</label>
+                                    <label for="2">Indonesia</label>
                                 </div>
-                                <div class="text-sm text-neutral-500">322</div>
+                                <div class="text-sm text-neutral-500">22</div>
                             </div>
                             <!-- facet item -->
                             <!-- facet item -->
@@ -216,9 +217,9 @@
                 focus:ring-rpBrand1-700
                 
                 " type="checkbox" id="3" name="3" value="">
-                                    <label for="3">Oceanië</label>
+                                    <label for="3">Sri Lanka</label>
                                 </div>
-                                <div class="text-sm text-neutral-500">58</div>
+                                <div class="text-sm text-neutral-500">20</div>
                             </div>
                             <!-- facet item -->
                             <!-- facet item -->
@@ -240,7 +241,7 @@
                 focus:ring-rpBrand1-700
                 
                 " type="checkbox" id="4" name="4" value="">
-                                    <label for="4">Azië</label>
+                                    <label for="4">Sint Eustatius</label>
                                 </div>
                                 <div class="text-sm text-neutral-500">11</div>
                             </div>
@@ -254,145 +255,53 @@
                             </button>
                         </div>
                         <!-- //facet -->
-                        <!-- facet -->
-                        <div class="
-                    w-full 
-                    max-w-[450px]">
-                            <div class="font-semibold">Object type</div>
-                            <!-- facet item -->
-                            <div class="flex 
-                        flex-row 
-                        justify-between 
-                        gap-2 
-                        w-full 
-                        mb-2
-                        items-center">
-                                <div class="flex flex-row">
-                                    <input class="
-                w-5 
-                h-5 
-                mr-2
-                rounded 
-                border-gray-300 
-                text-rpBrand1-700 
-                focus:ring-rpBrand1-700
-                
-                " type="checkbox" id="0" name="0" value="">
-                                    <label for="0">Afghaan-tapijt</label>
-                                </div>
-                                <div class="text-sm text-neutral-500">12</div>
+                        <div class="w-full max-w-[450px] flex flex-col lg:flex-row gap-4">
+                            <div class="">
+                                <label for="d1" class="font-semibold">From year</label>
+                                <select class="
+            py-1 
+            px-3 
+            w-full
+            border
+            border-neutral-700
+            rounded
+            text-sm
+            z-0
+            relative
+            bg-white
+            " type="date" id="d1">
+                                    <option value="">1699</option>
+                                    <option value="">1723</option>
+                                    <option value="">1734</option>
+                                    <option value="">1890</option>
+                                </select>
                             </div>
-                            <!-- facet item -->
-                            <!-- facet item -->
-                            <div class="flex 
-                        flex-row 
-                        justify-between 
-                        gap-2 
-                        w-full 
-                        mb-2
-                        items-center">
-                                <div class="flex flex-row">
-                                    <input class="
-                w-5 
-                h-5 
-                mr-2
-                rounded 
-                border-gray-300 
-                text-rpBrand1-700 
-                focus:ring-rpBrand1-700
-                
-                " type="checkbox" id="1" name="1" value="">
-                                    <label for="1">Amritsar-tapijt</label>
-                                </div>
-                                <div class="text-sm text-neutral-500">48</div>
+                            <div class="">
+                                <label for="d2" class="font-semibold">Till year</label>
+                                <select class="
+              py-1 
+              px-3 
+              w-full
+              border
+              border-neutral-700
+              rounded
+              text-sm
+              z-0
+              relative
+              bg-white
+              " type="date" id="d1">
+                                    <option value="">1723</option>
+                                    <option value="">1734</option>
+                                    <option value="">1890</option>
+                                    <option value="">1999</option>
+                                </select>
                             </div>
-                            <!-- facet item -->
-                            <!-- facet item -->
-                            <div class="flex 
-                        flex-row 
-                        justify-between 
-                        gap-2 
-                        w-full 
-                        mb-2
-                        items-center">
-                                <div class="flex flex-row">
-                                    <input class="
-                w-5 
-                h-5 
-                mr-2
-                rounded 
-                border-gray-300 
-                text-rpBrand1-700 
-                focus:ring-rpBrand1-700
-                
-                " type="checkbox" id="2" name="2" value="">
-                                    <label for="2">Beloetsjistan-tapijt</label>
-                                </div>
-                                <div class="text-sm text-neutral-500">112</div>
-                            </div>
-                            <!-- facet item -->
-                            <!-- facet item -->
-                            <div class="flex 
-                        flex-row 
-                        justify-between 
-                        gap-2 
-                        w-full 
-                        mb-2
-                        items-center">
-                                <div class="flex flex-row">
-                                    <input class="
-                w-5 
-                h-5 
-                mr-2
-                rounded 
-                border-gray-300 
-                text-rpBrand1-700 
-                focus:ring-rpBrand1-700
-                
-                " type="checkbox" id="3" name="3" value="">
-                                    <label for="3">Bergama-tapijt</label>
-                                </div>
-                                <div class="text-sm text-neutral-500">12</div>
-                            </div>
-                            <!-- facet item -->
-                            <!-- facet item -->
-                            <div class="flex 
-                        flex-row 
-                        justify-between 
-                        gap-2 
-                        w-full 
-                        mb-2
-                        items-center">
-                                <div class="flex flex-row">
-                                    <input class="
-                w-5 
-                h-5 
-                mr-2
-                rounded 
-                border-gray-300 
-                text-rpBrand1-700 
-                focus:ring-rpBrand1-700
-                
-                " type="checkbox" id="4" name="4" value="">
-                                    <label for="4">Bokhara-tapijt</label>
-                                </div>
-                                <div class="text-sm text-neutral-500">55</div>
-                            </div>
-                            <!-- facet item -->
-                            <button class="text-base flex flex-row text-sky-700 items-center justify-start gap-1">More
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 fill-bg-sky-700">
-                                    <path fill-rule="evenodd" d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
-                                    clip-rule="evenodd" />
-                                </svg>
-                            </button>
                         </div>
-                        <!-- //facet -->
                         <!-- facet -->
                         <div class="
                     w-full 
                     max-w-[450px]">
-                            <div class="font-semibold">Keyword</div>
+                            <div class="font-semibold">Subject</div>
                             <!-- facet item -->
                             <div class="flex 
                         flex-row 
@@ -412,9 +321,9 @@
                 focus:ring-rpBrand1-700
                 
                 " type="checkbox" id="0" name="0" value="">
-                                    <label for="0">Castle</label>
+                                    <label for="0">Decoration</label>
                                 </div>
-                                <div class="text-sm text-neutral-500">12</div>
+                                <div class="text-sm text-neutral-500">212</div>
                             </div>
                             <!-- facet item -->
                             <!-- facet item -->
@@ -438,7 +347,7 @@
                 " type="checkbox" id="1" name="1" value="">
                                     <label for="1">Celebrations</label>
                                 </div>
-                                <div class="text-sm text-neutral-500">48</div>
+                                <div class="text-sm text-neutral-500">148</div>
                             </div>
                             <!-- facet item -->
                             <!-- facet item -->
@@ -460,7 +369,7 @@
                 focus:ring-rpBrand1-700
                 
                 " type="checkbox" id="2" name="2" value="">
-                                    <label for="2">Cottage</label>
+                                    <label for="2">Tool</label>
                                 </div>
                                 <div class="text-sm text-neutral-500">112</div>
                             </div>
@@ -484,7 +393,7 @@
                 focus:ring-rpBrand1-700
                 
                 " type="checkbox" id="3" name="3" value="">
-                                    <label for="3">Palace</label>
+                                    <label for="3">Weapon</label>
                                 </div>
                                 <div class="text-sm text-neutral-500">12</div>
                             </div>
@@ -502,7 +411,227 @@
                         <div class="
                     w-full 
                     max-w-[450px]">
-                            <div class="font-semibold">Current object location</div>
+                            <div class="font-semibold">Material</div>
+                            <!-- facet item -->
+                            <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="0" name="0" value="">
+                                    <label for="0">Wood</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">12</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="1" name="1" value="">
+                                    <label for="1">Stone</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">48</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="2" name="2" value="">
+                                    <label for="2">Ivory</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">112</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="3" name="3" value="">
+                                    <label for="3">Iron</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">12</div>
+                            </div>
+                            <!-- facet item -->
+                            <button class="text-base flex flex-row text-sky-700 items-center justify-start gap-1">More
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-4 h-4 fill-bg-sky-700">
+                                    <path fill-rule="evenodd" d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- //facet -->
+                        <!-- facet -->
+                        <div class="
+                    w-full 
+                    max-w-[450px]">
+                            <div class="font-semibold">Creators</div>
+                            <!-- facet item -->
+                            <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="0" name="0" value="">
+                                    <label for="0">The people of Bini</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">12</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="1" name="1" value="">
+                                    <label for="1">The people of Bini</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">48</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="2" name="2" value="">
+                                    <label for="2">The people of Bini</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">112</div>
+                            </div>
+                            <!-- facet item -->
+                            <!-- facet item -->
+                            <div class="flex 
+                        flex-row 
+                        justify-between 
+                        gap-2 
+                        w-full 
+                        mb-2
+                        items-center">
+                                <div class="flex flex-row">
+                                    <input class="
+                w-5 
+                h-5 
+                mr-2
+                rounded 
+                border-gray-300 
+                text-rpBrand1-700 
+                focus:ring-rpBrand1-700
+                
+                " type="checkbox" id="3" name="3" value="">
+                                    <label for="3">The people of Bini</label>
+                                </div>
+                                <div class="text-sm text-neutral-500">12</div>
+                            </div>
+                            <!-- facet item -->
+                            <button class="text-base flex flex-row text-sky-700 items-center justify-start gap-1">More
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-4 h-4 fill-bg-sky-700">
+                                    <path fill-rule="evenodd" d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- //facet -->
+                        <!-- facet -->
+                        <div class="
+                    w-full 
+                    max-w-[450px]">
+                            <div class="font-semibold">Objectdata provider</div>
                             <!-- facet item -->
                             <div class="flex 
                         flex-row 
@@ -667,6 +796,7 @@
                 justify-between
                 gap-2
                 cursor-pointer
+                no-underline
                 hover:bg-white">
             
             
@@ -694,6 +824,7 @@
                 justify-between
                 gap-2
                 cursor-pointer
+                no-underline
                 hover:bg-white">
             
             
@@ -726,6 +857,7 @@
                 justify-between
                 gap-2
                 cursor-pointer
+                no-underline
                 hover:bg-white">
             
             
@@ -753,6 +885,7 @@
                 justify-between
                 gap-2
                 cursor-pointer
+                no-underline
                 hover:bg-white">
             
             
@@ -780,6 +913,7 @@
                 justify-between
                 gap-2
                 cursor-pointer
+                no-underline
                 hover:bg-white">
             
             
@@ -812,6 +946,7 @@
                 justify-between
                 gap-2
                 cursor-pointer
+                no-underline
                 hover:bg-white">
             
             
@@ -839,6 +974,7 @@
                 justify-between
                 gap-2
                 cursor-pointer
+                no-underline
                 hover:bg-white">
             
             
@@ -866,6 +1002,7 @@
                 justify-between
                 gap-2
                 cursor-pointer
+                no-underline
                 hover:bg-white">
             
             
@@ -898,6 +1035,7 @@
                 justify-between
                 gap-2
                 cursor-pointer
+                no-underline
                 hover:bg-white">
             
             
@@ -923,25 +1061,25 @@
                     </div>
                     <nav aria-label="Pagination" class="mt-10 w-full">
                         <ul class="list-style-none flex gap-1 justify-center">
-                            <li> <a class="pointer-events-none relative block rounded bg-transparent px-3 py-1.5 transition-all duration-300 dark:text-sand-400 text-sand-300">Previous</a>
+                            <li> <a class="no-underline pointer-events-none relative block rounded bg-transparent px-3 py-1.5 transition-all duration-300 dark:text-sand-400 text-sand-300">Previous</a>
 
                             </li>
-                            <li> <a class="relative block rounded bg-transparent px-3 py-1.5 text-sand-800 transition-all duration-300 hover:bg-sand-100  dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                            <li> <a class="no-underline relative block rounded bg-transparent px-3 py-1.5 text-sand-800 transition-all duration-300 hover:bg-sand-100  dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
                                 href="#!">1</a>
 
                             </li>
-                            <li aria-current="page"> <a class="relative block rounded bg-sand-100 px-3 py-1.5 font-medium text-sand-800 transition-all duration-300"
+                            <li aria-current="page"> <a class="no-underline relative block rounded bg-sand-100 px-3 py-1.5 font-medium text-sand-800 transition-all duration-300"
                                 href="#!">2
                 <span
                   class="absolute -m-px h-px w-px overflow-hidden whitespace-nowrap border-0 p-0 [clip:rect(0,0,0,0)]">(Huidige)</span>
               </a>
 
                             </li>
-                            <li> <a class="relative block rounded bg-transparent px-3 py-1.5 text-sand-800 transition-all duration-300 hover:bg-sand-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                            <li> <a class="no-underline relative block rounded bg-transparent px-3 py-1.5 text-sand-800 transition-all duration-300 hover:bg-sand-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
                                 href="#!">3</a>
 
                             </li>
-                            <li> <a class="relative block rounded bg-transparent px-3 py-1.5 text-sand-800 transition-all duration-300 hover:bg-sand-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
+                            <li> <a class="no-underline relative block rounded bg-transparent px-3 py-1.5 text-sand-800 transition-all duration-300 hover:bg-sand-100 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
                                 href="#!">Next</a>
 
                             </li>
