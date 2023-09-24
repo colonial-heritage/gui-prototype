@@ -108,13 +108,28 @@ function showResource() {
 }
 
 function openAddNarrForm(elemId) {
-    console.log(elemId);
     handleClass(elemId, 'add', 'flex');
     handleClass(elemId, 'remove', 'hidden')
 }
 
 function closeAddNarrForm(elemId) {
-    console.log(elemId);
     handleClass(elemId, 'add', 'hidden');
     handleClass(elemId, 'remove', 'flex')
+}
+
+
+function openAddListComm() {
+    handleClass('cNewList', 'add', 'flex');
+    handleClass('cNewList', 'remove', 'hidden')
+}
+
+function closeAddListComm() {
+    handleClass('cNewList', 'add', 'hidden');
+    handleClass('cNewList', 'remove', 'flex')
+}
+
+
+function openAddListCommMsse() {
+    handleClass('mssg', 'add', 'flex');
+    handleClass('mssg', 'remove', 'hidden')
 }
