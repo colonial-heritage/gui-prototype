@@ -133,3 +133,26 @@ function openAddListCommMsse() {
     handleClass('mssg', 'add', 'flex');
     handleClass('mssg', 'remove', 'hidden')
 }
+
+function expandFacet() {
+    handleClass('expandFacet', 'remove', 'hidden')
+    handleClass('expandFacet', 'add', 'flex');
+
+    // handleClass('collapsedFacet', 'remove', 'flex')
+    // handleClass('collapsedFacet', 'add', 'hidden');
+
+
+}
+
+function closeFacet() {
+    // handleClass('collapsedFacet', 'remove', 'hidden')
+    // handleClass('collapsedFacet', 'add', 'flex');
+
+    handleClass('expandFacet', 'remove', 'flex')
+    handleClass('expandFacet', 'add', 'hidden');
+}
+
+
+function unTrucate() {
+    handleClass('l0', 'remove', 'truncate')
+}

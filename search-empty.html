@@ -412,112 +412,283 @@
                         <!-- //facet -->
                         <!-- facet -->
                         <div class="
+          max-w-[450px]
                     w-full 
-                    max-w-[450px]">
-                            <div class="font-semibold">Material</div>
-                            <!-- facet item -->
-                            <div class="flex 
-                        flex-row 
-                        justify-between 
-                        gap-2 
-                        w-full 
-                        mb-2
-                        items-center">
-                                <div class="flex flex-row">
-                                    <input class="
-                w-5 
-                h-5 
-                mr-2
-                rounded 
-                border-gray-300 
-                text-rpBrand1-700 
-                focus:ring-rpBrand1-700
-                
-                " type="checkbox" id="0" name="0" value="">
-                                    <label for="0">Wood</label>
+                    ">
+                            <div id="collapsedFacet" class="w-full z-20 flex flex-col">
+                                <legend class="block font-semibold text-gray-900">Material</legend>
+                                <div class="flex items-center w-full my-1">
+                                    <input placeholder="Filter Material" type="text" class="block border rounded-md grow border-gray-300 px-4 py-1 shadow-sm focus:border-sky-700 focus:ring-sky-700 sm:text-sm"
+                                    value="">
+                                    <button id="buttonExpand" class="ml-3 inline-flex items-center text-sky-700"
+                                    onclick="expandFacet()"><span>Expand</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        fill="currentColor" class="w-4 h-4 fill-bg-sky-700">
+                                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                                            clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
                                 </div>
-                                <div class="text-sm text-neutral-500">12</div>
-                            </div>
-                            <!-- facet item -->
-                            <!-- facet item -->
-                            <div class="flex 
-                        flex-row 
-                        justify-between 
-                        gap-2 
-                        w-full 
-                        mb-2
-                        items-center">
-                                <div class="flex flex-row">
-                                    <input class="
-                w-5 
-                h-5 
-                mr-2
-                rounded 
-                border-gray-300 
-                text-rpBrand1-700 
-                focus:ring-rpBrand1-700
-                
-                " type="checkbox" id="1" name="1" value="">
-                                    <label for="1">Stone</label>
+                                <!-- facet item -->
+                                <div class="flex 
+                          flex-row 
+                          justify-between 
+                          gap-2 
+                          w-full 
+                          mb-2
+                          items-center
+                          max-w-[350px]">
+                                    <div class="flex flex-row">
+                                        <input class="
+                            w-5 
+                            h-5 
+                            mr-2
+                            rounded 
+                            border-gray-300 
+                            text-rpBrand1-700 
+                            focus:ring-rpBrand1-700
+                  " type="checkbox" id="0" name="0" value="">
+                                        <label for="0" class="">Wood</label>
+                                    </div>
+                                    <div class="text-sm text-neutral-500">12</div>
                                 </div>
-                                <div class="text-sm text-neutral-500">48</div>
-                            </div>
-                            <!-- facet item -->
-                            <!-- facet item -->
-                            <div class="flex 
-                        flex-row 
-                        justify-between 
-                        gap-2 
-                        w-full 
-                        mb-2
-                        items-center">
-                                <div class="flex flex-row">
-                                    <input class="
-                w-5 
-                h-5 
-                mr-2
-                rounded 
-                border-gray-300 
-                text-rpBrand1-700 
-                focus:ring-rpBrand1-700
-                
-                " type="checkbox" id="2" name="2" value="">
-                                    <label for="2">Ivory</label>
+                                <!-- facet item -->
+                                <!-- facet item -->
+                                <div class="flex 
+                          flex-row 
+                          justify-between 
+                          gap-2 
+                          w-full 
+                          mb-2
+                          items-center
+                          max-w-[350px]">
+                                    <div class="flex flex-row">
+                                        <input class="
+                            w-5 
+                            h-5 
+                            mr-2
+                            rounded 
+                            border-gray-300 
+                            text-rpBrand1-700 
+                            focus:ring-rpBrand1-700
+                  " type="checkbox" id="1" name="1" value="">
+                                        <label for="1" class="">Stone</label>
+                                    </div>
+                                    <div class="text-sm text-neutral-500">48</div>
                                 </div>
-                                <div class="text-sm text-neutral-500">112</div>
-                            </div>
-                            <!-- facet item -->
-                            <!-- facet item -->
-                            <div class="flex 
-                        flex-row 
-                        justify-between 
-                        gap-2 
-                        w-full 
-                        mb-2
-                        items-center">
-                                <div class="flex flex-row">
-                                    <input class="
-                w-5 
-                h-5 
-                mr-2
-                rounded 
-                border-gray-300 
-                text-rpBrand1-700 
-                focus:ring-rpBrand1-700
-                
-                " type="checkbox" id="3" name="3" value="">
-                                    <label for="3">Iron</label>
+                                <!-- facet item -->
+                                <!-- facet item -->
+                                <div class="flex 
+                          flex-row 
+                          justify-between 
+                          gap-2 
+                          w-full 
+                          mb-2
+                          items-center
+                          max-w-[350px]">
+                                    <div class="flex flex-row">
+                                        <input class="
+                            w-5 
+                            h-5 
+                            mr-2
+                            rounded 
+                            border-gray-300 
+                            text-rpBrand1-700 
+                            focus:ring-rpBrand1-700
+                  " type="checkbox" id="2" name="2" value="">
+                                        <label for="2" class="">Ivory</label>
+                                    </div>
+                                    <div class="text-sm text-neutral-500">112</div>
                                 </div>
-                                <div class="text-sm text-neutral-500">12</div>
+                                <!-- facet item -->
+                                <!-- facet item -->
+                                <div class="flex 
+                          flex-row 
+                          justify-between 
+                          gap-2 
+                          w-full 
+                          mb-2
+                          items-center
+                          max-w-[350px]">
+                                    <div class="flex flex-row">
+                                        <input class="
+                            w-5 
+                            h-5 
+                            mr-2
+                            rounded 
+                            border-gray-300 
+                            text-rpBrand1-700 
+                            focus:ring-rpBrand1-700
+                  " type="checkbox" id="3" name="3" value="">
+                                        <label for="3" class="">Iron</label>
+                                    </div>
+                                    <div class="text-sm text-neutral-500">12</div>
+                                </div>
+                                <!-- facet item -->
                             </div>
-                            <!-- facet item -->
-                            <button class="text-base flex flex-row text-sky-700 items-center justify-start gap-1">More
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 fill-bg-sky-700">
-                                    <path fill-rule="evenodd" d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
-                                    clip-rule="evenodd" />
-                                </svg>
-                            </button>
+                        </div>
+                        <div id="expandFacet" class="fixed top-0 bottom-0 right-0 left-0  bg-black/50 w-full  hidden flex-col justify-center items-center z-20">
+                            <div class="w-full max-w-[1700px] bg-white p-6 rounded overflow-y-auto max-h-[80vh]">
+                                <div class="flex justify-between  ">
+                                    <legend class="block font-semibold text-gray-900">Material</legend>
+                                    <div class="">
+                                        <button id="buttonCollapse" class="ml-3 items-center flex text-sky-700"
+                                        onclick="closeFacet()"><span>Close</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="currentColor" class="w-4 h-4 fill-bg-sky-700">
+                                                <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                                                clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col md:flex-row gap-4 md:gap-10">
+                                    <div class="ww-full md:w-1/2 lg:w-3/4 ">
+                                        <div class="my-4">
+                                            <div class="flex flex-col lg:flex-row justify-start gap-4">
+                                                <input placeholder="Filter Material" type="text" class="block border rounded-md grow border-gray-300 px-2 py-1 shadow-sm focus:border-sky-700 focus:ring-sky-700 sm:text-sm max-w-lg"
+                                                value="aardewerk">
+                                                <button class="px-4 py-2 text-sm rounded-full bg-neutral-100 hover:bg-neutral-200 transition text-neutral-800 flex items-center gap-1">Select all items with "aardewerk"</button>
+                                            </div>
+                                            <div class="py-4 my-4 border-y flex flex-col lg:flex-row justify-between">
+                                                <div class="flex flex-row gap-2 "><a href="B" class="no-underline">0-9</a>
+ <a href="A" class="no-underline px-1 bg-black text-white rounded">A</a>
+
+                                                    <a
+                                                    href="B" class="no-underline">B</a> <a href="C" class="no-underline">C</a>
+ <a href="D" class="no-underline">D</a>
+
+                                                        <a
+                                                        href="E" class="no-underline">E</a> <a href="F" class="no-underline">F</a>
+ <a href="G" class="no-underline">G</a>
+
+                                                            <a
+                                                            href="H" class="no-underline">H</a> <a href="J" class="no-underline">J</a>
+ <a href="K" class="no-underline">K</a>
+
+                                                                <a
+                                                                href="N" class="no-underline">N</a> <a href="R" class="no-underline">R</a>
+ <a href="S" class="no-underline">S</a>
+
+                                                                    <a
+                                                                    href="T" class="no-underline">T</a> <a href="V" class="no-underline">V</a>
+ <a href="W" class="no-underline">W</a>
+                                                </div>
+                                                <div class="">
+                                                    <select name="facetItemOrder" class="mt-1 block  rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-sky-600 focus:outline-none focus:ring-sky-600 sm:text-sm"
+                                                    aria-label="Select to change the ordering of the result">
+                                                        <option value="relevanceDesc">Order alphabetically</option>
+                                                        <option value="nameAsc">Order by count</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md:columns-1 lg:columns-2 xl:columns-3 gap-4"></div>
+                                    </div>
+                                    <div class="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-2">
+                                         <h3 class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-bg-sky-500">
+            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+          </svg>
+          
+          About these facets</h3>
+
+                                        <div class="pb-4">The data of these facet items are collected from multiple datasets. We
+                                            are in the process of improving the quality of these facets items.</div>
+                                         <h3>Selected items</h3>
+
+                                        <div class="flex gap-2 flex-wrap">
+                                            <!-- selected filter badge -->
+                                            <buttton class="
+                  rounded 
+                  bg-blueGrey-100 
+                  text-blueGrey-900 
+                  py-1 
+                  px-1 
+                  text-sm 
+                  flex 
+                  flex-row"> <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)-600">
+            <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 00-3 3v4.318a3 3 0 00.879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 005.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 00-2.122-.879H5.25zM6.375 7.5a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" clip-rule="evenodd" />
+          </svg>
+          
+          </span>
+ <span class="">Aardewerk ; verfstof</span>
+ <span class="ml-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-(lookup . &#x27;twColor&#x27;)-800">
+            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg>
+          </span>
+
+                                            </buttton>
+                                            <!-- // selected filter badge -->
+                                            <!-- selected filter badge -->
+                                            <buttton class="
+                  rounded 
+                  bg-blueGrey-100 
+                  text-blueGrey-900 
+                  py-1 
+                  px-1 
+                  text-sm 
+                  flex 
+                  flex-row"> <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)-600">
+            <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 00-3 3v4.318a3 3 0 00.879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 005.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 00-2.122-.879H5.25zM6.375 7.5a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" clip-rule="evenodd" />
+          </svg>
+          
+          </span>
+ <span class="">Aardewerk; glazuren</span>
+ <span class="ml-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-(lookup . &#x27;twColor&#x27;)-800">
+            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg>
+          </span>
+
+                                            </buttton>
+                                            <!-- // selected filter badge -->
+                                            <!-- selected filter badge -->
+                                            <buttton class="
+                  rounded 
+                  bg-blueGrey-100 
+                  text-blueGrey-900 
+                  py-1 
+                  px-1 
+                  text-sm 
+                  flex 
+                  flex-row"> <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)-600">
+            <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 00-3 3v4.318a3 3 0 00.879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 005.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 00-2.122-.879H5.25zM6.375 7.5a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" clip-rule="evenodd" />
+          </svg>
+          
+          </span>
+ <span class="">Aardewerk ; verfstof</span>
+ <span class="ml-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-(lookup . &#x27;twColor&#x27;)-800">
+            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg>
+          </span>
+
+                                            </buttton>
+                                            <!-- // selected filter badge -->
+                                            <!-- selected filter badge -->
+                                            <buttton class="
+                  rounded 
+                  bg-blueGrey-100 
+                  text-blueGrey-900 
+                  py-1 
+                  px-1 
+                  text-sm 
+                  flex 
+                  flex-row"> <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)-600">
+            <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 00-3 3v4.318a3 3 0 00.879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 005.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 00-2.122-.879H5.25zM6.375 7.5a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" clip-rule="evenodd" />
+          </svg>
+          
+          </span>
+ <span class="">Aardewerk; glazuren</span>
+ <span class="ml-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-(lookup . &#x27;twColor&#x27;)-800">
+            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg>
+          </span>
+
+                                            </buttton>
+                                            <!-- // selected filter badge -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!-- //facet -->
                         <!-- facet -->
