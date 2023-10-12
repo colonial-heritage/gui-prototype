@@ -258,46 +258,1062 @@
                             </button>
                         </div>
                         <!-- //facet -->
-                        <div class="w-full max-w-[450px] flex flex-col lg:flex-row gap-4">
-                            <div class="">
-                                <label for="d1" class="font-semibold">From year</label>
-                                <select class="
-            py-1 
-            px-3 
-            w-full
-            border
-            border-neutral-700
-            rounded
-            text-sm
-            z-0
-            relative
-            bg-white
-            " type="date" id="d1">
-                                    <option value="">1699</option>
-                                    <option value="">1723</option>
-                                    <option value="">1734</option>
-                                    <option value="">1890</option>
-                                </select>
+                        <div class="flex flex-col w-full max-w-[450px]">
+                            <div class="w-full flex flex-col md:flex-row gap-4 justify-between">
+                                <legend class="block font-semibold text-gray-900 w-full">Date made</legend>
+                                <div class="flex items-center w-full my-1 justify-end">
+                                    <button id="buttonExpand" class="ml-3 inline-flex items-center text-sky-700"
+                                    onclick="expandDateFacet()"><span>Expand</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        fill="currentColor" class="w-4 h-4 fill-bg-sky-700">
+                                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                                            clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="">
-                                <label for="d2" class="font-semibold">Till year</label>
-                                <select class="
-              py-1 
-              px-3 
-              w-full
-              border
-              border-neutral-700
-              rounded
-              text-sm
-              z-0
-              relative
-              bg-white
-              " type="date" id="d1">
-                                    <option value="">1723</option>
-                                    <option value="">1734</option>
-                                    <option value="">1890</option>
-                                    <option value="">1999</option>
-                                </select>
+                            <div class="flex flex-col lg:flex-row gap-2 lg:justify-between">
+                                <div class="flex justify-between lg:flex-col">
+                                    <label for="d1" class="font-semibold">From year</label>
+                                    <div class="">
+                                        <input type="number" min="-3500" max="2024" id="d1" name="d1" class="w-24 border border-neutral-700 rounded-md grow border-gray-300 px-4 py-1 sm:text-sm"
+                                        value="-3500">
+                                    </div>
+                                </div>
+                                <div class="flex justify-between lg:flex-col">
+                                    <label for=" d2" class="font-semibold">Till year</label>
+                                    <div class="">
+                                        <input type="number" min="-3500" max="2024" id="d2" name="d2" class="w-24 border border-neutral-700 rounded-md grow border-gray-300 px-4 py-1 sm:text-sm"
+                                        value="2024">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="expandFacetDate" class="fixed top-0 bottom-0 right-0 left-0  bg-black/50 w-full  hidden flex-col justify-center items-center z-20">
+                            <div class="w-full max-w-[1700px] bg-white p-6 rounded max-h-[80vh] flex flex-col">
+                                <div class="flex justify-between  grow">
+                                    <legend class="block font-semibold text-gray-900">Date made</legend>
+                                    <div class="">
+                                        <button id="buttonCollapse" class="ml-3 items-center flex text-sky-700"
+                                        onclick="closeDateFacet()"><span>Close</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="currentColor" class="w-4 h-4 fill-bg-sky-700">
+                                                <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                                                clip-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="border-y my-6 py-4">
+                                    <div class="flex gap-4">
+                                        <div class="">
+                                            <label for="d1" class="font-semibold">From year</label>
+                                            <input type="number" min="-3500" max="2024" id="d1" name="d1"
+                                            class="w-24 border border-neutral-700 rounded-md grow border-gray-300 px-4 py-1 sm:text-sm"
+                                            value="-3500">
+                                        </div>
+                                        <div class="">
+                                            <label for=" d2" class="font-semibold">Till year</label>
+                                            <input type="number" min="-3500" max="2024" id="d2" name="d2"
+                                            class="w-24 border border-neutral-700 rounded-md grow border-gray-300 px-4 py-1 sm:text-sm"
+                                            value="2024">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full overflow-y-auto flex flex-col md:flex-row gap-6">
+                                    <div class="flex flex-col w-full md:w-1/2 overflow-y-auto">
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b0" for="b0" class=" text-sm w-[115px]">2000 - 2024</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[5%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">6752</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b1" for="b1" class=" text-sm w-[115px]">1975 - 2000</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[62%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">82689</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b2" for="b2" class=" text-sm w-[115px]">1950 - 1975</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[77%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">103512</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b3" for="b3" class=" text-sm w-[115px]">1925 - 1950</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[100%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">135191</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b4" for="b4" class=" text-sm w-[115px]">1900 - 1925</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[49%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">66001</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b5" for="b5" class=" text-sm w-[115px]">1875 - 1900</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[22%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">29088</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b6" for="b6" class=" text-sm w-[115px]">1850 - 1875</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[9%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">11216</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b7" for="b7" class=" text-sm w-[115px]">1825 - 1850</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[4%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">4301</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b8" for="b8" class=" text-sm w-[115px]">1800 - 1825</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[3%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">3857</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b9" for="b9" class=" text-sm w-[115px]">1775 - 1800</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">1166</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b10" for="b10" class=" text-sm w-[115px]">1750 - 1775</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">175</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b11" for="b11" class=" text-sm w-[115px]">1725 - 1750</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">75</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b12" for="b12" class=" text-sm w-[115px]">1700 - 1725</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">151</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b13" for="b13" class=" text-sm w-[115px]">1675 - 1700</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">84</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b14" for="b14" class=" text-sm w-[115px]">1650 - 1675</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">59</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b15" for="b15" class=" text-sm w-[115px]">1625 - 1650</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">113</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b16" for="b16" class=" text-sm w-[115px]">1600 - 1625</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">130</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b17" for="b17" class=" text-sm w-[115px]">1575 - 1600</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">119</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b18" for="b18" class=" text-sm w-[115px]">1550 - 1575</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">297</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b19" for="b19" class=" text-sm w-[115px]">1525 - 1550</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">371</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b20" for="b20" class=" text-sm w-[115px]">1500 - 1525</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">424</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b21" for="b21" class=" text-sm w-[115px]">1475 - 1500</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">415</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b22" for="b22" class=" text-sm w-[115px]">1450 - 1475</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">119</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b23" for="b23" class=" text-sm w-[115px]">1425 - 1450</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">122</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b24" for="b24" class=" text-sm w-[115px]">1400 - 1425</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">287</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b25" for="b25" class=" text-sm w-[115px]">1375 - 1400</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">290</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b26" for="b26" class=" text-sm w-[115px]">1350 - 1375</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">6</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b27" for="b27" class=" text-sm w-[115px]">1325 - 1350</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">9</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b28" for="b28" class=" text-sm w-[115px]">1300 - 1325</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">61</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b29" for="b29" class=" text-sm w-[115px]">1275 - 1300</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">100</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b30" for="b30" class=" text-sm w-[115px]">1250 - 1275</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">3</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b31" for="b31" class=" text-sm w-[115px]">1225 - 1250</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">3</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b32" for="b32" class=" text-sm w-[115px]">1200 - 1225</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">68</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b33" for="b33" class=" text-sm w-[115px]">1175 - 1200</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">66</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b34" for="b34" class=" text-sm w-[115px]">1150 - 1175</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">3</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b35" for="b35" class=" text-sm w-[115px]">1125 - 1150</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">3</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b36" for="b36" class=" text-sm w-[115px]">1100 - 1125</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">23</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b37" for="b37" class=" text-sm w-[115px]">1000 - 1100</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">220</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b38" for="b38" class=" text-sm w-[115px]">900 - 1000</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">424</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b39" for="b39" class=" text-sm w-[115px]">800 - 900</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">207</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b40" for="b40" class=" text-sm w-[115px]">700 - 800</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">39</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b41" for="b41" class=" text-sm w-[115px]">600 - 700</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">147</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b42" for="b42" class=" text-sm w-[115px]">500 - 600</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">133</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b43" for="b43" class=" text-sm w-[115px]">400 - 500</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">88</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b44" for="b44" class=" text-sm w-[115px]">300 - 400</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">110</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b45" for="b45" class=" text-sm w-[115px]">200 - 300</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">88</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b46" for="b46" class=" text-sm w-[115px]">100 - 200</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">12</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b47" for="b47" class=" text-sm w-[115px]">0 - 100</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">112</div>
+                                        </button>
+                                        <!-- facet item -->
+                                        <!-- facet item -->
+                                        <button class="flex 
+                              flex-row 
+                              justify-between 
+                              gap-2 
+                              w-full 
+                              mb-2
+                              items-center
+                              max-w-[600px]
+                              p-1 hover:bg-neutral-50 rounded
+                              ">
+                                            <div class="flex flex-row w-full justify-between items-center ">
+                                                <div id="b48" for="b48" class=" text-sm w-[115px]">Before Chr</div>
+                                                <div class="w-full">
+                                                    <div class="bg-neutral-500 h-1 w-[1%]"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[65px] text-right text-sm text-neutral-500">209</div>
+                                        </button>
+                                        <!-- facet item -->
+                                    </div>
+                                    <div class="w-full md:w-1/2 flex flex-col gap-2">
+                                         <h3 class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-bg-sky-500">
+            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+          </svg>
+          
+          About these facets</h3>
+
+                                        <div class="pb-4">The data of these facet items are collected from multiple datasets. We
+                                            are in the process of improving the quality of these facets items.</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- facet -->
@@ -583,7 +1599,2178 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="md:columns-1 lg:columns-2 xl:columns-3 gap-4"></div>
+                                        <div class="md:columns-1 lg:columns-2 xl:columns-3 gap-4">
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i0" name="i0" value="">
+                                                    <label id="l0" for="i0" class="truncate max-w-[230px]">A.M. de Jong;[PL] Amsterdam [RO] uitgever;[NA] N.V. Boekhandel en Uitgever
+                                                        s-Mij „Ontwikkeling&quot;</label>
+                                                    <button onclick="unTrucate()">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                                        class="w-4 h-4 fill-bg-sky-700">
+                                                            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                                            clip-rule="evenodd" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i1" name="i1" value="">
+                                                    <label id="l1" for="i1" class="truncate max-w-[230px]">Aardewerk</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">193</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i2" name="i2" value="">
+                                                    <label id="l2" for="i2" class="truncate max-w-[230px]">Aardewerk ; bakken ; met de hand vervaardigen</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">2</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i3" name="i3" value="">
+                                                    <label id="l3" for="i3" class="truncate max-w-[230px]">Aardewerk ; bakken ; met de hand vormen</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i4" name="i4" value="">
+                                                    <label id="l4" for="i4" class="truncate max-w-[230px]">Aardewerk ; bakken op hoge temperatuur ; draaien</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i5" name="i5" value="">
+                                                    <label id="l5" for="i5" class="truncate max-w-[230px]">Aardewerk ; glazuur</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">4</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i6" name="i6" value="">
+                                                    <label id="l6" for="i6" class="truncate max-w-[230px]">Aardewerk ; glazuur ; verf</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">5</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i7" name="i7" value="">
+                                                    <label id="l7" for="i7" class="truncate max-w-[230px]">Aardewerk ; loodglazuur</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i8" name="i8" value="">
+                                                    <label id="l8" for="i8" class="truncate max-w-[230px]">Aardewerk ; verf</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">3</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i9" name="i9" value="">
+                                                    <label id="l9" for="i9" class="truncate max-w-[230px]">Aardewerk ; verf ; stro</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">3</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i10" name="i10" value="">
+                                                    <label id="l10" for="i10" class="truncate max-w-[230px]">Aardewerk ; verfstof</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">3</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i11" name="i11" value="">
+                                                    <label id="l11" for="i11" class="truncate max-w-[230px]">Aardewerk of kalebas</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i12" name="i12" value="">
+                                                    <label id="l12" for="i12" class="truncate max-w-[230px]">Aardewerk of steengoed</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">9</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i13" name="i13" value="">
+                                                    <label id="l13" for="i13" class="truncate max-w-[230px]">Aardewerk of steengoed ; geglazuurd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">5</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i14" name="i14" value="">
+                                                    <label id="l14" for="i14" class="truncate max-w-[230px]">Aardewerk of steengoed ; geglazuurd ; lak ; hout</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i15" name="i15" value="">
+                                                    <label id="l15" for="i15" class="truncate max-w-[230px]">Aardewerk of steengoed ; glazuur ; ivoor ; zijdebrokaat</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i16" name="i16" value="">
+                                                    <label id="l16" for="i16" class="truncate max-w-[230px]">Aardewerk of steengoed ; ivoor</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i17" name="i17" value="">
+                                                    <label id="l17" for="i17" class="truncate max-w-[230px]">Aardewerk of steengoed ; ivoor ; glazuur ; textiel</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i18" name="i18" value="">
+                                                    <label id="l18" for="i18" class="truncate max-w-[230px]">Aardewerk of steengoed ; lak</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i19" name="i19" value="">
+                                                    <label id="l19" for="i19" class="truncate max-w-[230px]">Aardewerk; glazuren.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i20" name="i20" value="">
+                                                    <label id="l20" for="i20" class="truncate max-w-[230px]">Aardewerk; kralen</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">3</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i21" name="i21" value="">
+                                                    <label id="l21" for="i21" class="truncate max-w-[230px]">Acetaatfolie; ontwikkelgelatinezilver negatief; zwartwitfotografie</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i22" name="i22" value="">
+                                                    <label id="l22" for="i22" class="truncate max-w-[230px]">Achterglas schildering glas</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i23" name="i23" value="">
+                                                    <label id="l23" for="i23" class="truncate max-w-[230px]">Acryl ; linnen</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i24" name="i24" value="">
+                                                    <label id="l24" for="i24" class="truncate max-w-[230px]">Acryl op canavs</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i25" name="i25" value="">
+                                                    <label id="l25" for="i25" class="truncate max-w-[230px]">Acryl op canvas</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">2</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i26" name="i26" value="">
+                                                    <label id="l26" for="i26" class="truncate max-w-[230px]">Acryl op doek</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i27" name="i27" value="">
+                                                    <label id="l27" for="i27" class="truncate max-w-[230px]">Acryl op doek.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i28" name="i28" value="">
+                                                    <label id="l28" for="i28" class="truncate max-w-[230px]">Acryl op paneel</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">3</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i29" name="i29" value="">
+                                                    <label id="l29" for="i29" class="truncate max-w-[230px]">Acryl; triplex</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i30" name="i30" value="">
+                                                    <label id="l30" for="i30" class="truncate max-w-[230px]">Acrylic, mussel shell, pearl shell, paua shell, turtle shell, cord</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i31" name="i31" value="">
+                                                    <label id="l31" for="i31" class="truncate max-w-[230px]">Acrylverf op canvas</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">23</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i32" name="i32" value="">
+                                                    <label id="l32" for="i32" class="truncate max-w-[230px]">Acrylverf op doek</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">7</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i33" name="i33" value="">
+                                                    <label id="l33" for="i33" class="truncate max-w-[230px]">Acrylverf op doek.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i34" name="i34" value="">
+                                                    <label id="l34" for="i34" class="truncate max-w-[230px]">Acrylverf op hout</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i35" name="i35" value="">
+                                                    <label id="l35" for="i35" class="truncate max-w-[230px]">Acrylverf op linnen</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i36" name="i36" value="">
+                                                    <label id="l36" for="i36" class="truncate max-w-[230px]">Acrylverf op papier</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">16</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i37" name="i37" value="">
+                                                    <label id="l37" for="i37" class="truncate max-w-[230px]">Acrylverf, inkt en collage op papier.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">2</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i38" name="i38" value="">
+                                                    <label id="l38" for="i38" class="truncate max-w-[230px]">Acrylverf, pastel, inkt en collage op papier.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i39" name="i39" value="">
+                                                    <label id="l39" for="i39" class="truncate max-w-[230px]">Acrylverf; hout</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i40" name="i40" value="">
+                                                    <label id="l40" for="i40" class="truncate max-w-[230px]">Acrylverf; kaasdoek</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">2</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i41" name="i41" value="">
+                                                    <label id="l41" for="i41" class="truncate max-w-[230px]">Acrylverf; linnen</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">5</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i42" name="i42" value="">
+                                                    <label id="l42" for="i42" class="truncate max-w-[230px]">Agfa Brovira, ontwikkelgelatinezilverdruk</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">3</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i43" name="i43" value="">
+                                                    <label id="l43" for="i43" class="truncate max-w-[230px]">Agfacolor</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">4</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i44" name="i44" value="">
+                                                    <label id="l44" for="i44" class="truncate max-w-[230px]">Akar-baha ; vezeltouw</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i45" name="i45" value="">
+                                                    <label id="l45" for="i45" class="truncate max-w-[230px]">Albuminedruk op barietpapier</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">27</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i46" name="i46" value="">
+                                                    <label id="l46" for="i46" class="truncate max-w-[230px]">Albuminedruk op karton</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">3</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i47" name="i47" value="">
+                                                    <label id="l47" for="i47" class="truncate max-w-[230px]">Aluminium, galvanized mild steel, electrical component</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i48" name="i48" value="">
+                                                    <label id="l48" for="i48" class="truncate max-w-[230px]">Aluminium; ijzer</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i49" name="i49" value="">
+                                                    <label id="l49" for="i49" class="truncate max-w-[230px]">Andesiet</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">16</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i50" name="i50" value="">
+                                                    <label id="l50" for="i50" class="truncate max-w-[230px]">Aquarel en crayon op papier</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i51" name="i51" value="">
+                                                    <label id="l51" for="i51" class="truncate max-w-[230px]">Aquarel en inkt op papier</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">7</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i52" name="i52" value="">
+                                                    <label id="l52" for="i52" class="truncate max-w-[230px]">Aquarel en potlood op papier. De Japanse namen zijn met potlood weergegeven.
+                                                        Bij sommige staat de Hollandse vertaling erachter.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i53" name="i53" value="">
+                                                    <label id="l53" for="i53" class="truncate max-w-[230px]">Aquarel op dik geribt papier</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i54" name="i54" value="">
+                                                    <label id="l54" for="i54" class="truncate max-w-[230px]">Aquarel op karton</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i55" name="i55" value="">
+                                                    <label id="l55" for="i55" class="truncate max-w-[230px]">Aquarel op karton. De aquarel is gevat in een gipsen passe-partoutlijst
+                                                        en zit achter glas. De kartonnen achterplaat is met spijkers bevestigd
+                                                        aan de lijst.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i56" name="i56" value="">
+                                                    <label id="l56" for="i56" class="truncate max-w-[230px]">Aquarel op papier</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">158</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i57" name="i57" value="">
+                                                    <label id="l57" for="i57" class="truncate max-w-[230px]">Aquarel op papier. De aquarel zit achter glas in een bruin gewaste houten
+                                                        lijst.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i58" name="i58" value="">
+                                                    <label id="l58" for="i58" class="truncate max-w-[230px]">Aquarel op papier. De aquarel zit in een grijs-witte passe-partout lijst
+                                                        van gips. De kortonnen achterplaat is met spijkertjes aan de lijst bevestigd.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i59" name="i59" value="">
+                                                    <label id="l59" for="i59" class="truncate max-w-[230px]">Aquarel op papier. De aquarel zit in een passe-partout en een bewerkte
+                                                        houten lijst.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i60" name="i60" value="">
+                                                    <label id="l60" for="i60" class="truncate max-w-[230px]">Aquarel op papier. De aquarel zit in passe-partout in messingkleurige
+                                                        lijst.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i61" name="i61" value="">
+                                                    <label id="l61" for="i61" class="truncate max-w-[230px]">Aquarel op vrij stevig tekenpapier.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">5</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i62" name="i62" value="">
+                                                    <label id="l62" for="i62" class="truncate max-w-[230px]">Aquatint op papier</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">14</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i63" name="i63" value="">
+                                                    <label id="l63" for="i63" class="truncate max-w-[230px]">Archer-papier &amp; inkt (gekleurd) &amp; verf &amp; hout &amp; aluminium
+                                                        geëtst &amp; gelithografeerd &amp; gegraveerd &amp;; geschilderd &amp;
+                                                        gekalligrafeerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i64" name="i64" value="">
+                                                    <label id="l64" for="i64" class="truncate max-w-[230px]">Archer-papier, inkt gedrukt</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">2</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i65" name="i65" value="">
+                                                    <label id="l65" for="i65" class="truncate max-w-[230px]">Archer-papier, inkt geetst Nummers 2,4,5,8,11 en 14 zijn gemengde technieken:
+                                                        het beeld is gelithografeerd op Archer-papier en de randkalligrafie is
+                                                        geëtst / gegaufreerd / gebosseleerd. Arabisch schrift in spiegelbeeld.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i66" name="i66" value="">
+                                                    <label id="l66" for="i66" class="truncate max-w-[230px]">Archer-papier, inkt geetst &amp; gelithografeerd &amp; gegraveerd &amp;
+                                                        geschilderd &amp; gekalligrafeerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i67" name="i67" value="">
+                                                    <label id="l67" for="i67" class="truncate max-w-[230px]">Archer-papier, inkt geëtst &amp; gekalligrafeerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i68" name="i68" value="">
+                                                    <label id="l68" for="i68" class="truncate max-w-[230px]">Archer-papier, inkt geëtst &amp; gelithografeerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i69" name="i69" value="">
+                                                    <label id="l69" for="i69" class="truncate max-w-[230px]">Archer-papier, inkt geetst &amp; gekalligrafeerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i70" name="i70" value="">
+                                                    <label id="l70" for="i70" class="truncate max-w-[230px]">Archer-papier, inkt (gekleurd), kleurpotlood geëtst &amp; gegraveerd &amp;
+                                                        gekleurd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i71" name="i71" value="">
+                                                    <label id="l71" for="i71" class="truncate max-w-[230px]">Archer-papier, inkt (gekleurd), verf</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i72" name="i72" value="">
+                                                    <label id="l72" for="i72" class="truncate max-w-[230px]">Archer-papier, inkt (gekleurd), verf gelithografeerd &amp; gegraveerd
+                                                        &amp; geschilderd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i73" name="i73" value="">
+                                                    <label id="l73" for="i73" class="truncate max-w-[230px]">Archer-papier, inkt (gekleurd), verf gelithografeerd &amp; gegraveerd
+                                                        &amp; geschilderd &amp; gekalligrafeerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i74" name="i74" value="">
+                                                    <label id="l74" for="i74" class="truncate max-w-[230px]">Archer-papier, inkt (gekleurd), verf, hout, aluminium geetst &amp; &amp;
+                                                        gelithografeerd &amp; gegraveerd &amp; geschilderd &amp; gekalligrafeerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i75" name="i75" value="">
+                                                    <label id="l75" for="i75" class="truncate max-w-[230px]">Archer-papier, inkt (o.a. gekleurd) geëtst &amp; gelithografeerd &amp;
+                                                        gegraveerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i76" name="i76" value="">
+                                                    <label id="l76" for="i76" class="truncate max-w-[230px]">Archer-papier, inkt (o.a. gekleurd) geëtst &amp; gelithografeerd &amp;
+                                                        gegraveerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i77" name="i77" value="">
+                                                    <label id="l77" for="i77" class="truncate max-w-[230px]">Archer-papier, inkt (o.a. gekleurd), verf geëtst &amp; gegraveerd &amp;
+                                                        gekalligrafeerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i78" name="i78" value="">
+                                                    <label id="l78" for="i78" class="truncate max-w-[230px]">Archer-papier, inkt (o.a. gekleurd), verf geëtst &amp; gelithografeerd
+                                                        &amp; gegraveerd &amp; geschilderd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i79" name="i79" value="">
+                                                    <label id="l79" for="i79" class="truncate max-w-[230px]">Archer-papier, inkt (o.a. gekleurd), verf geëtst &amp; gelithografeerd
+                                                        &amp; gegraveerd &amp; geschilderd &amp; gekalligrafeerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i80" name="i80" value="">
+                                                    <label id="l80" for="i80" class="truncate max-w-[230px]">Archer-papier, inkt (o.a. gekleurd), verf geëtst &amp; gelithografeerd
+                                                        &amp; gegraveerd &amp; geschilderd &amp; gekalligrafeerd &amp; gegaufreerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i81" name="i81" value="">
+                                                    <label id="l81" for="i81" class="truncate max-w-[230px]">Archer-papier, inkt (o.a. gekleurd), verf, kleurpotlood geëtst &amp; gelithografeerd
+                                                        &amp; gegraveerd &amp; geschilderd &amp; gekalligrafeerd &amp; gegaufreerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i82" name="i82" value="">
+                                                    <label id="l82" for="i82" class="truncate max-w-[230px]">Archer-papier, inkt, kleurpotlood geetst &amp; gekleurd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i83" name="i83" value="">
+                                                    <label id="l83" for="i83" class="truncate max-w-[230px]">Archer-papier, inkt, verf geetst &amp; gelithografeerd &amp; gegraveerd
+                                                        &amp; geschilderd &amp; gekalligrafeerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i84" name="i84" value="">
+                                                    <label id="l84" for="i84" class="truncate max-w-[230px]">Archer-papier, inkt, verf geetst &amp; gelithografeerd &amp; gegraveerd
+                                                        &amp; geschilderd &amp; gekalligrafeerd &amp; gegaufreerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">3</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i85" name="i85" value="">
+                                                    <label id="l85" for="i85" class="truncate max-w-[230px]">Archer-papier, inkt, verf geetst &amp; geschilderd &amp; gekalligrafeerd</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i86" name="i86" value="">
+                                                    <label id="l86" for="i86" class="truncate max-w-[230px]">Arita porselein</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">3</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i87" name="i87" value="">
+                                                    <label id="l87" for="i87" class="truncate max-w-[230px]">Armband uit schuins ineengevlochten repen rotan. Wordt gedragen in alle
+                                                        mannelijke leeftijdsklassen.</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                            <!-- facet item -->
+                                            <div class="flex 
+                                flex-row 
+                                justify-between 
+                                gap-2 
+                                w-full 
+                                mb-2
+                                items-center
+                                max-w-[350px]">
+                                                <div class="flex flex-row">
+                                                    <input class="
+                                  w-5 
+                                  h-5 
+                                  mr-2
+                                  rounded 
+                                  border-gray-300 
+                                  text-rpBrand1-700 
+                                  focus:ring-rpBrand1-700
+                        " type="checkbox" id="i88" name="i88" value="">
+                                                    <label id="l88" for="i88" class="truncate max-w-[230px]">Audiovisueel, film</label>
+                                                </div>
+                                                <div class="text-sm text-neutral-500">1</div>
+                                            </div>
+                                            <!-- facet item -->
+                                        </div>
                                     </div>
                                     <div class="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-2">
                                          <h3 class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 fill-bg-sky-500">

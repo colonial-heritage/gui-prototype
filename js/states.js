@@ -156,3 +156,14 @@ function closeFacet() {
 function unTrucate() {
     handleClass('l0', 'remove', 'truncate')
 }
+
+
+function expandDateFacet() {
+    handleClass('expandFacetDate', 'remove', 'hidden')
+    handleClass('expandFacetDate', 'add', 'flex');
+}
+
+function closeDateFacet() {
+    handleClass('expandFacetDate', 'remove', 'flex')
+    handleClass('expandFacetDate', 'add', 'hidden');
+}
