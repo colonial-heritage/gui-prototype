@@ -167,3 +167,123 @@ function closeDateFacet() {
     handleClass('expandFacetDate', 'remove', 'flex')
     handleClass('expandFacetDate', 'add', 'hidden');
 }
+
+
+
+// show hide prove
+
+
+function hideAllProvItem() {
+    handleClass('lip1', 'add', 'hidden')
+    handleClass('lip1', 'remove', 'flex')
+    handleClass('lip2', 'add', 'hidden')
+    handleClass('lip2', 'remove', 'flex')
+    handleClass('lip3', 'add', 'hidden')
+    handleClass('lip3', 'remove', 'flex')
+    handleClass('lip4', 'add', 'hidden')
+    handleClass('lip4', 'remove', 'flex')
+    handleClass('lip5', 'add', 'hidden')
+    handleClass('lip5', 'remove', 'flex')
+    handleClass('lip6', 'add', 'hidden')
+    handleClass('lip6', 'remove', 'flex')
+    handleClass('lip7', 'add', 'hidden')
+    handleClass('lip7', 'remove', 'flex')
+    handleClass('lip8', 'add', 'hidden')
+    handleClass('lip8', 'remove', 'flex')
+    handleClass('lip9', 'add', 'hidden')
+    handleClass('lip9', 'remove', 'flex')
+    handleClass('lip10', 'add', 'hidden')
+    handleClass('lip10', 'remove', 'flex')
+
+    handleClass('did1', 'add', 'hidden')
+    handleClass('did1', 'remove', 'block')
+    // handleClass('did2', 'add', 'hidden')
+    // handleClass('did2', 'remove', 'block')
+    handleClass('did3', 'add', 'hidden')
+    handleClass('did3', 'remove', 'block')
+    handleClass('did4', 'add', 'hidden')
+    handleClass('did4', 'remove', 'block')
+    handleClass('did5', 'add', 'hidden')
+    handleClass('did5', 'remove', 'block')
+}
+
+function showProvItem(elemId) {
+    handleClass(elemId, 'add', 'flex');
+    handleClass(elemId, 'remove', 'hidden')
+
+    handleClass('bAllItems', 'add', 'flex')
+    handleClass('bAllItems', 'remove', 'hidden')
+}
+
+
+function showAllProv() {
+
+    handleClass('lip1', 'add', 'flex')
+    handleClass('lip1', 'remove', 'hidden')
+    handleClass('lip2', 'add', 'flex')
+    handleClass('lip2', 'remove', 'hidden')
+    handleClass('lip3', 'add', 'flex')
+    handleClass('lip3', 'remove', 'hidden')
+    handleClass('lip4', 'add', 'flex')
+    handleClass('lip4', 'remove', 'hidden')
+    handleClass('lip5', 'add', 'flex')
+    handleClass('lip5', 'remove', 'hidden')
+    handleClass('lip6', 'add', 'flex')
+    handleClass('lip6', 'remove', 'hidden')
+    handleClass('lip7', 'add', 'flex')
+    handleClass('lip7', 'remove', 'hidden')
+    handleClass('lip8', 'add', 'flex')
+    handleClass('lip8', 'remove', 'hidden')
+    handleClass('lip9', 'add', 'flex')
+    handleClass('lip9', 'remove', 'hidden')
+    handleClass('lip10', 'add', 'flex')
+    handleClass('lip10', 'remove', 'hidden')
+
+    handleClass('did1', 'add', 'block')
+    handleClass('did1', 'remove', 'hidden')
+    handleClass('did3', 'add', 'block')
+    handleClass('did3', 'remove', 'hidden')
+    handleClass('did4', 'add', 'block')
+    handleClass('did4', 'remove', 'hidden')
+    handleClass('did5', 'add', 'block')
+    handleClass('did5', 'remove', 'hidden')
+}
+
+
+function hideAllProvBlock() {
+    handleClass('provData', 'add', 'hidden')
+    handleClass('provData', 'remove', 'flex')
+    handleClass('bHidebData', 'add', 'hidden')
+    handleClass('bHidebData', 'remove', 'flex')
+
+    handleClass('bShowbData', 'add', 'flex')
+    handleClass('bShowbData', 'remove', 'hidden')
+}
+
+
+function showAllProvBlock() {
+    handleClass('provData', 'add', 'block')
+    handleClass('provData', 'remove', 'hidden')
+    handleClass('bHidebData', 'add', 'flex')
+    handleClass('bHidebData', 'remove', 'hidden')
+    handleClass('bShowbData', 'add', 'hidden')
+    handleClass('bShowbData', 'remove', 'flex')
+
+}
+
+function showProvDescr() {
+    handleClass('showProvDescrip', 'add', 'flex')
+    handleClass('showProvDescrip', 'remove', 'hidden')
+
+
+}
+
+function openAddProvForm() {
+    handleClass('addProvForm', 'remove', 'hidden')
+    handleClass('addProvForm', 'add', 'flex');
+}
+
+function closeAddProvForm() {
+    handleClass('addProvForm', 'remove', 'flex')
+    handleClass('addProvForm', 'add', 'hidden');
+}
