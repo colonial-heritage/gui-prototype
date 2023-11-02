@@ -1,0 +1,394 @@
+[
+    {
+        "itemName": "2000 - 2024",
+        "minval": 2000,
+        "maxval": 25,
+        "itemAmount": 6752,
+        "size": 1,
+        "percent": 5
+    },
+    {
+        "itemName": "1975 - 2000",
+        "minval": 1975,
+        "maxval": 25,
+        "itemAmount": 82689,
+        "size": 1,
+        "percent": 62
+    },
+    {
+        "itemName": "1950 - 1975",
+        "minval": 1950,
+        "maxval": 25,
+        "itemAmount": 103512,
+        "size": 1,
+        "percent": 77
+    },
+    {
+        "itemName": "1925 - 1950",
+        "minval": 1925,
+        "maxval": 25,
+        "itemAmount": 135191,
+        "size": 1,
+        "percent": 100
+    },
+    {
+        "itemName": "1900 - 1925",
+        "minval": 1900,
+        "maxval": 25,
+        "itemAmount": 66001,
+        "size": 1,
+        "percent": 49
+    },
+    {
+        "itemName": "1875 - 1900",
+        "minval": 1875,
+        "maxval": 25,
+        "itemAmount": 29088,
+        "size": 1,
+        "percent": 22
+    },
+    {
+        "itemName": "1850 - 1875",
+        "minval": 1850,
+        "maxval": 25,
+        "itemAmount": 11216,
+        "size": 1,
+        "percent": 9
+    },
+    {
+        "itemName": "1825 - 1850",
+        "minval": 1825,
+        "maxval": 25,
+        "itemAmount": 4301,
+        "size": 1,
+        "percent": 4
+    },
+    {
+        "itemName": "1800 - 1825",
+        "minval": 1800,
+        "maxval": 25,
+        "itemAmount": 3857,
+        "size": 1,
+        "percent": 3
+    },
+    {
+        "itemName": "1775 - 1800",
+        "minval": 1775,
+        "maxval": 25,
+        "itemAmount": 1166,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1750 - 1775",
+        "minval": 1750,
+        "maxval": 25,
+        "itemAmount": 175,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1725 - 1750",
+        "minval": 1725,
+        "maxval": 25,
+        "itemAmount": 75,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1700 - 1725",
+        "minval": 1700,
+        "maxval": 25,
+        "itemAmount": 151,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1675 - 1700",
+        "minval": 1675,
+        "maxval": 25,
+        "itemAmount": 84,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1650 - 1675",
+        "minval": 1650,
+        "maxval": 25,
+        "itemAmount": 59,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1625 - 1650",
+        "minval": 1625,
+        "maxval": 25,
+        "itemAmount": 113,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1600 - 1625",
+        "minval": 1600,
+        "maxval": 25,
+        "itemAmount": 130,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1575 - 1600",
+        "minval": 1575,
+        "maxval": 25,
+        "itemAmount": 119,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1550 - 1575",
+        "minval": 1550,
+        "maxval": 25,
+        "itemAmount": 297,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1525 - 1550",
+        "minval": 1525,
+        "maxval": 25,
+        "itemAmount": 371,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1500 - 1525",
+        "minval": 1500,
+        "maxval": 25,
+        "itemAmount": 424,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1475 - 1500",
+        "minval": 1475,
+        "maxval": 25,
+        "itemAmount": 415,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1450 - 1475",
+        "minval": 1450,
+        "maxval": 25,
+        "itemAmount": 119,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1425 - 1450",
+        "minval": 1425,
+        "maxval": 25,
+        "itemAmount": 122,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1400 - 1425",
+        "minval": 1400,
+        "maxval": 25,
+        "itemAmount": 287,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1375 - 1400",
+        "minval": 1375,
+        "maxval": 25,
+        "itemAmount": 290,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1350 - 1375",
+        "minval": 1350,
+        "maxval": 25,
+        "itemAmount": 6,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1325 - 1350",
+        "minval": 1325,
+        "maxval": 25,
+        "itemAmount": 9,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1300 - 1325",
+        "minval": 1300,
+        "maxval": 25,
+        "itemAmount": 61,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1275 - 1300",
+        "minval": 1275,
+        "maxval": 25,
+        "itemAmount": 100,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1250 - 1275",
+        "minval": 1250,
+        "maxval": 25,
+        "itemAmount": 3,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1225 - 1250",
+        "minval": 1225,
+        "maxval": 25,
+        "itemAmount": 3,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1200 - 1225",
+        "minval": 1200,
+        "maxval": 25,
+        "itemAmount": 68,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1175 - 1200",
+        "minval": 1175,
+        "maxval": 25,
+        "itemAmount": 66,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1150 - 1175",
+        "minval": 1150,
+        "maxval": 25,
+        "itemAmount": 3,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1125 - 1150",
+        "minval": 1125,
+        "maxval": 25,
+        "itemAmount": 3,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1100 - 1125",
+        "minval": 1100,
+        "maxval": 25,
+        "itemAmount": 23,
+        "size": 1,
+        "percent": 1
+    },
+    {
+        "itemName": "1000 - 1100",
+        "minval": 1000,
+        "maxval": 100,
+        "size": 4,
+        "itemAmount": 220,
+        "percent": 1
+    },
+    {
+        "itemName": "900 - 1000",
+        "minval": 900,
+        "maxval": 100,
+        "size": 4,
+        "itemAmount": 424,
+        "percent": 1
+    },
+    {
+        "itemName": "800 - 900",
+        "minval": 800,
+        "maxval": 100,
+        "size": 4,
+        "itemAmount": 207,
+        "percent": 1
+    },
+    {
+        "itemName": "700 - 800",
+        "minval": 700,
+        "maxval": 100,
+        "size": 4,
+        "itemAmount": 39,
+        "percent": 1
+    },
+    {
+        "itemName": "600 - 700",
+        "minval": 600,
+        "maxval": 100,
+        "size": 4,
+        "itemAmount": 147,
+        "percent": 1
+    },
+    {
+        "itemName": "500 - 600",
+        "minval": 500,
+        "maxval": 100,
+        "size": 4,
+        "itemAmount": 133,
+        "percent": 1
+    },
+    {
+        "itemName": "400 - 500",
+        "minval": 400,
+        "maxval": 100,
+        "size": 4,
+        "itemAmount": 88,
+        "percent": 1
+    },
+    {
+        "itemName": "300 - 400",
+        "minval": 300,
+        "maxval": 100,
+        "size": 4,
+        "itemAmount": 110,
+        "percent": 1
+    },
+    {
+        "itemName": "200 - 300",
+        "minval": 200,
+        "maxval": 100,
+        "size": 4,
+        "itemAmount": 88,
+        "percent": 1
+    },
+    {
+        "itemName": "100 - 200",
+        "minval": 100,
+        "maxval": 100,
+        "size": 4,
+        "itemAmount": 12,
+        "percent": 1
+    },
+    {
+        "itemName": "0 - 100",
+        "minval": 0,
+        "maxval": 100,
+        "size": 4,
+        "itemAmount": 112,
+        "percent": 1
+    },
+    {
+        "itemName": "Before Chr",
+        "minval": -100,
+        "maxval": 100,
+        "size": 4,
+        "itemAmount": 209,
+        "percent": 1
+    }
+]
