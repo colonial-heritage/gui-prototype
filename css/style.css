@@ -2010,10 +2010,6 @@ a:hover {
   height: 40vh;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
 .h-\[50vh\] {
   height: 50vh;
 }
@@ -3710,6 +3706,11 @@ a:hover {
   background-color: hsl(216 35% 90% / var(--tw-bg-opacity));
 }
 
+.bg-blueGrey-200 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(216 35% 80% / var(--tw-bg-opacity));
+}
+
 .bg-blueGrey-50 {
   --tw-bg-opacity: 1;
   background-color: hsl(216 35% 97% / var(--tw-bg-opacity));
@@ -3984,26 +3985,8 @@ a:hover {
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
-.bg-purple-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
-}
-
-.bg-blueGrey-200 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(216 35% 80% / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\/images\/bg-line\.svg\'\)\] {
-  background-image: url('/images/bg-line.svg');
-}
-
 .bg-\[url\(\'\/images\/visual-graphic-strip1\.png\'\)\] {
   background-image: url('/images/visual-graphic-strip1.png');
-}
-
-.bg-\[url\(\'\/researchApp\/_dist\/images\/map\.png\'\)\] {
-  background-image: url('/researchApp/_dist/images/map.png');
 }
 
 .bg-\[url\(\'\/researchApp\/_dist\/images\/visual-graphic-strip1\.png\'\)\] {
@@ -4073,10 +4056,6 @@ a:hover {
   background-size: contain;
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -4108,10 +4087,6 @@ a:hover {
 
 .bg-bottom {
   background-position: bottom;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .bg-right {
@@ -5047,6 +5022,11 @@ a:hover {
   color: rgb(113 63 18 / var(--tw-text-opacity));
 }
 
+.text-purple-800 {
+  --tw-text-opacity: 1;
+  color: rgb(107 33 168 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -5135,6 +5115,10 @@ a:hover {
 
 .opacity-90 {
   opacity: 0.9;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .bg-blend-normal {
@@ -6872,27 +6856,6 @@ a:hover {
 .placeholder\:text-sand-400::placeholder {
   --tw-text-opacity: 1;
   color: hsl(36 20% 60% / var(--tw-text-opacity));
-}
-
-.before\:absolute::before {
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.before\:block::before {
-  content: var(--tw-content);
-  display: block;
-}
-
-.before\:border-t::before {
-  content: var(--tw-content);
-  border-top-width: 1px;
-}
-
-.before\:bg-purple-400::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
 }
 
 .after\:invisible::after {
