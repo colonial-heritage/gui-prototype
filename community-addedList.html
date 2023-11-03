@@ -73,10 +73,7 @@
      All communities</a>
 
                 </div>
-                <div class="sm:flex justify-end gap-4 hidden">
-                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300 transition text-neutral-800 flex
-    items-center gap-1">Edit community page</button>
-                </div>
+                <div class="sm:flex justify-end gap-4 hidden"></div>
             </div>
             <div class="
     flex
@@ -95,25 +92,84 @@
     mt-12
     ">
                 <main class="w-full">
-                    <div class="-mb-16 md:-mb-24 w-full flex justify-center">
+                    <div class="w-full block">
+                        <div class="rounded mb-4 flex flex-col items-center md:flex-row justify-between gap-2 bg-neutral-200 w-full mx-auto ">
+                            <div class="bg-orange-400 p-3 rounded-l">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-6 h-6 fill-neutral-700">
+                                    <path fill-rule="evenodd" d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="p-2">
+                                <p>To add narratives or provenance to object you need to add an Orcid ID
+                                    to your community profile.</p>
+                            </div>
+                            <div class="p-2">
+                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-700 hover:bg-neutral-800
+        text-neutral-100 transition flex items-center gap-1">Add&nbsp;Orcid&nbsp;ID</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-end -mb-8">
+                        <button onclick="editCommunity()" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-5 h-5 fill-neutral-700">
+                                <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z"
+                                />
+                                <path d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z"
+                                />
+                            </svg>Edit community</button>
+                    </div>
+                    <div class="-mb-16 md:-mb-24 w-full flex justify-center ">
                         <img src="images/avatrs/communityAvatar3.png" alt="" class="w-32 lg:w-48 h-auto rounded-full">
                     </div>
-                    <div class="w-full rounded-lg bg-[#f3eee2] text-stone-800 pt-16 md:pt-24 pb-6">
-                         <h1 class="text-2xl font-normal w-full text-center mt-4 px-4 my-6">
-            Community of <strong class="font-semibold ml-1">Society Islands / Tōtaiete mā</strong>
-          </h1>
+                    <div class="w-full rounded-lg bg-[#f3eee2] text-stone-800 pt-16 md:pt-24 pb-6 transition"
+                    id="communityBlock">
+                        <div class="w-full flex flex-col" id="communityBlockContent">
+                             <h1 class="text-2xl font-normal w-full text-center mt-4 px-4 my-6">
+              Community of <strong class="font-semibold ml-1">Society Islands / Tōtaiete mā</strong>
+            </h1>
 
-                        <div class="w-full flex flex-col md:flex-row justify-center px-4">
-                            <div class="mb-4 max-w-3xl text-left">The Society Islands officially Archipel de la Société are an archipelago
-                                in the South Pacific Ocean. Politically, they are part of French Polynesia,
-                                an overseas country of the French Republic. Geographically, they form part
-                                of Polynesia.
-                                <br>
-                                <br>The archipelago is believed to have been named by Captain James Cook during
-                                his first voyage in 1769, supposedly in honour of the Royal Society, the
-                                sponsor of the first British scientific survey of the islands; however,
-                                Cook wrote in his journal that he called the islands Society as they lay
-                                contiguous to one another.</div>
+                            <div class="w-full flex flex-col md:flex-row justify-center px-4">
+                                <div class="mb-4 max-w-3xl text-left">The Society Islands officially Archipel de la Société are an archipelago
+                                    in the South Pacific Ocean. Politically, they are part of French Polynesia,
+                                    an overseas country of the French Republic. Geographically, they form part
+                                    of Polynesia.
+                                    <br>
+                                    <br>The archipelago is believed to have been named by Captain James Cook during
+                                    his first voyage in 1769, supposedly in honour of the Royal Society, the
+                                    sponsor of the first British scientific survey of the islands; however,
+                                    Cook wrote in his journal that he called the islands Society as they lay
+                                    contiguous to one another.</div>
+                            </div>
+                        </div>
+                        <div class="hidden flex-col px-4 gap-4 items-center" id="communityBlockForm">
+                             <h1 class="text-2xl font-normal w-full text-center mt-4 px-4 my-2">
+              Edit community</strong>
+            </h1>
+
+                            <div class="flex flex-col max-w-2xl w-full">
+                                <label class="italic">Community name</label>
+                                <input type="text" name="" id="" class="border border-neutral-300 p-2 text-sm"
+                                placeholder="">
+                            </div>
+                            <div class="flex flex-col max-w-2xl w-full">
+                                <label class="italic">Description</label>
+                                <textarea name="" id="" class="border border-neutral-300 p-2 text-sm h-56"></textarea>
+                            </div>
+                            <div class="flex flex-col max-w-2xl w-full">
+                                <label class="italic">Orcid ID</label>
+                                <input type="text" name="" id="" class="border border-neutral-300 p-2 text-sm"
+                                placeholder="">
+                            </div>
+                            <div class="flex flex-row max-w-2xl w-full gap-2">
+                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1">Save</button>
+                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1" onclick="editCloseCommunity()">Cancel</button>
+                            </div>
                         </div>
                     </div>
                     <div class="mt-12">
