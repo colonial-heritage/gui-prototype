@@ -500,39 +500,39 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
                         class="bg-blueGrey-50 rounded-sm w-full mb-10 relative">
                             <div class="overflow-y-scroll w-full">
                                 <div class="mb-12 bg-blueGrey-50 rounded-sm pt-4 pb-24 pl-2 w-[1800px] pr-32">
-                                    <div class=" h-12 relative border-b border-white">
-                                        <div class="absolute text-sm flex justify-center bg-blueGrey-200 rounded-full py-1"
-                                        style="left:0%; width: 40%;">
-                                            <div class="flex items-center justify-center px-2">Of this segment much is unknown. Do you know more of this?
-                                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-        text-neutral-800 transition flex items-center gap-1 ml-2 bg-white">Add&nbsp;provenance</button>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class=" h-10 relative border-b border-white ">
                                         <div class="absolute h-10 border-l border-neutral-400 pl-2 text-sm italic flex items-center gap-2"
                                         style="left:40%">
                                             <img src="images/icon-hist-event.png" alt="" class="h-4 w-auto">Dutch intervention in Lombok and Karangasem (<a href="">Wikipedia</a>)</div>
                                     </div>
                                     <div class="w-full relative h-10 border-b border-white">
-                                        <div class=" absolute text-center flex justify-center items-center  bg-blueGrey-100 rounded-full py-1"
+                                        <div class=" absolute text-center flex justify-center items-center  bg-blueGrey-200 rounded-full py-1"
                                         style="left: 40%; width: 18%;">
                                             <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
                                     " onclick="hideAllProvItem(); showProvItem('lip3')">P1</button>
                                         </div>
                                     </div>
                                     <div class="w-full relative h-10 border-b border-white">
-                                        <div class=" absolute text-center flex justify-center items-center bg-blueGrey-100 rounded-full py-1"
+                                        <div class=" absolute text-center flex justify-center items-center bg-blueGrey-200 rounded-full py-1"
                                         style="left: 60%; width: 13%;">
                                             <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
                                     " onclick="hideAllProvItem(); showProvItem('lip3')">P2</button>
                                         </div>
                                     </div>
                                     <div class="w-full relative h-10">
-                                        <div class=" absolute text-center flex justify-center items-center bg-blueGrey-100 rounded-full py-1"
+                                        <div class=" absolute text-center flex justify-center items-center bg-blueGrey-200 rounded-full py-1"
                                         style="left: 73%; width: 9%;">
                                             <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
                                     " onclick="hideAllProvItem(); showProvItem('lip3')">P3</button>
+                                        </div>
+                                    </div>
+                                    <div class=" h-12 relative border-b border-white">
+                                        <div class="absolute text-sm flex justify-center bg-blueGrey-100 rounded-full py-1"
+                                        style="left:0%; width: 40%;">
+                                            <div class="flex items-center justify-center px-2">Of this segment much is unknown. Do you know more of this?
+                                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
+        text-neutral-800 transition flex items-center gap-1 ml-2 bg-white">Add&nbsp;provenance</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="w-full h-0 relative">
@@ -582,6 +582,10 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
                             id="bAllItems" onclick="showAllProv()">Show&nbsp;all&nbsp;items</button>
                             <select class="rounded p-2 bg-neutral-200 text-sm">
                                 <option value="text-sm">Order by location</option>
+                                <option value="text-sm">Order by transfered from</option>
+                                <option value="text-sm">Order by transfered to</option>
+                                <option value="text-sm">Order by ID</option>
+                                <option value="text-sm">Order by qualifier</option>
                                 <option value="text-sm">Order by date (no date first)</option>
                                 <option value="text-sm">Order by date (no date last)</option>
                             </select>
@@ -589,7 +593,7 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
                     </div>
                     <div class="bg-blueGrey-50 py-2 rounded">
                         <header class="text-sm text-blueGrey-600 pl-8 w-full flex flex-col gap-2 sm:flex-row justify-between py-2 border-b mb-4">
-                            <div class="w-full md:w-1/12">Id / quality</div>
+                            <div class="w-full md:w-1/12">Id / Qualifier</div>
                             <div class="w-full md:w-2/12">Type</div>
                             <div class="w-full md:w-3/12">Transfered from</div>
                             <div class="w-full md:w-3/12">Transfered to</div>
@@ -610,7 +614,7 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-700 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Acquisition (Gift)</div>
@@ -652,7 +656,7 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-700 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Transfer (Loan)</div>
@@ -699,7 +703,7 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-700 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Acquisition (Gift)</div>
@@ -747,7 +751,7 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-700 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Acquisition (Gift)</div>
@@ -788,7 +792,7 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-700 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Acquisition (Gift)</div>
@@ -829,7 +833,7 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-700 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Acquisition (Gift)</div>
@@ -897,7 +901,7 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-700 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Acquisition (Restitution)</div>

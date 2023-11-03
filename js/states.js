@@ -208,7 +208,7 @@ function hideAllProvItem() {
 }
 
 function showProvItem(elemId) {
-    handleClass(elemId, 'add', 'flex');
+    handleClass(elemId, 'add', 'block');
     handleClass(elemId, 'remove', 'hidden')
 
     handleClass('bAllItems', 'add', 'flex')
@@ -222,7 +222,7 @@ function showAllProv() {
     handleClass('lip1', 'remove', 'hidden')
     handleClass('lip2', 'add', 'flex')
     handleClass('lip2', 'remove', 'hidden')
-    handleClass('lip3', 'add', 'flex')
+    handleClass('lip3', 'add', 'block')
     handleClass('lip3', 'remove', 'hidden')
     handleClass('lip4', 'add', 'flex')
     handleClass('lip4', 'remove', 'hidden')
@@ -272,7 +272,7 @@ function showAllProvBlock() {
 }
 
 function showProvDescr() {
-    handleClass('showProvDescrip', 'add', 'flex')
+    handleClass('showProvDescrip', 'add', 'block')
     handleClass('showProvDescrip', 'remove', 'hidden')
 
 
