@@ -393,29 +393,45 @@
                         onclick="openAddProvForm()">complement this data</a>.</p>
                     <div class="flex justify-between items-center my-6">
                         <div class="">
-                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-text-neutral-800 transition flex items-center gap-1" onclick="openAddProvForm()">Add&nbsp;provenance</button>
+                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+bg-neutral-200
+hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1
+" onclick="openAddProvForm()">Add&nbsp;provenance</button>
                         </div>
                         <div class=" flex gap-1">
-                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-text-neutral-800 transition flex items-center gap-1">Hide timeline</button>
-                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-text-neutral-800 transition flex items-center gap-1" onclick="hideAllProvBlock()"
-                            id="bHidebData">Hide Data table</button>
-                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-text-neutral-800 transition flex items-center gap-1 hidden" onclick="showAllProvBlock()"
-                            id="bShowbData">Show Data table</button>
-                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-text-neutral-800 transition flex items-center gap-1">Hide map</button>
+                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+bg-neutral-200
+hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1
+">Hide timeline</button>
+                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+bg-neutral-200
+hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1
+" onclick="hideAllProvBlock()" id="bHidebData">Hide Data table</button>
+                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+bg-neutral-200
+hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1
+ hidden" onclick="showAllProvBlock()" id="bShowbData">Show Data table</button>
+                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+bg-neutral-200
+hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1
+">Hide map</button>
                         </div>
                     </div>
                     <div class="w-full bg-neutral-50 rounded p-4 border border-neutral-100 hidden flex-col"
                     id="addProvForm">
-                        <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
+                        <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-4">
                              <h3 class="">Add provenance</h3>
 
-                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-        text-neutral-800 transition flex items-center gap-1" onclick="closeAddProvForm()">
+                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+        bg-neutral-200
+        hover:bg-neutral-300
+        text-neutral-800 transition flex items-center gap-1
+        " onclick="closeAddProvForm()">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"
@@ -426,14 +442,16 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
                         <div class="flex flex-col md:flex-row mb-6 gap-8">
                             <div class="flex flex-col gap-6 w-1/4">
                                 <div class="flex flex-col">
-                                    <label class="italic">Type</label>
+                                    <label class="flex flex-col gap-1 mb-1"><strong>Type</strong>
+                                    </label>
                                     <select class="rounded p-2 bg-neutral-200 text-sm">
                                         <option value="text-sm">Acquisition</option>
                                         <option value="text-sm">Transfer of Custody</option>
                                     </select>
                                 </div>
                                 <div class="flex flex-col">
-                                    <label class="italic">Classification</label>
+                                    <label class="flex flex-col gap-1 mb-1"><strong>Classification</strong>
+                                    </label>
                                     <select class="rounded p-2 bg-neutral-200 text-sm">
                                         <option value="text-sm">Gift</option>
                                         <option value="text-sm">Purchase</option>
@@ -444,7 +462,8 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
                                     </select>
                                 </div>
                                 <div class="flex flex-col">
-                                    <label class="italic">Level of certainty</label>
+                                    <label class="flex flex-col gap-1 mb-1"><strong>Level of certainty</strong>
+                                    </label>
                                     <select class="rounded p-2 bg-neutral-200 text-sm">
                                         <option value="text-sm">Possibly</option>
                                         <option value="text-sm">Probably</option>
@@ -453,7 +472,8 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
                             </div>
                             <div class="flex flex-col gap-4 w-1/4">
                                 <div class="flex flex-col gap-2">
-                                    <label class="italic">Transferred from</label>
+                                    <label class="flex flex-col gap-1 mb-1"><strong>Transferred from</strong>
+                                    </label>
                                     <select class="rounded p-2 bg-neutral-200 text-sm">
                                         <option value="text-sm">From wikipedia</option>
                                         <option value="text-sm">From collonialcollections.nl</option>
@@ -462,7 +482,8 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
                                     placeholder="Start typing to find a person or institution">
                                 </div>
                                 <div class="flex flex-col gap-2">
-                                    <label class="italic">Transferred to</label>
+                                    <label class="flex flex-col gap-1 mb-1"><strong>Transferred to</strong>
+                                    </label>
                                     <select class="rounded p-2 bg-neutral-200 text-sm">
                                         <option value="text-sm">From wikipedia</option>
                                         <option value="text-sm">From collonialcollections.nl</option>
@@ -473,21 +494,27 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
                             </div>
                             <div class="flex flex-col gap-4 w-1/4">
                                 <div class="flex flex-col gap-2">
-                                    <label class="italic">Location</label>
+                                    <label class="flex flex-col gap-1 mb-1"><strong>Location</strong>
+                                    </label>
                                     <input type="text" name="" id="" class="border border-neutral-300 p-2 text-sm"
                                     placeholder="Start typing to find a location">
                                 </div>
                                 <div class="flex flex-col gap-2">
-                                    <label class="italic">Description</label>
+                                    <label class="flex flex-col gap-1 mb-1"><strong>Description</strong>
+                                    </label>
                                     <textarea name="" id="" class="border border-neutral-300 p-2 text-sm h-40"></textarea>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex items-center gap-6">
-                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-        text-neutral-800 transition flex items-center gap-1">Save provenance</button>
-                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-        text-neutral-800 transition flex items-center gap-1">Cancel</button>
+                        <div class="flex items-center gap-2">
+                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+        bg-neutral-200
+        hover:bg-neutral-300
+        text-neutral-800 transition flex items-center gap-1
+        ">Save provenance</button>
+                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+        text-neutral-800 transition flex items-center gap-1
+        border border-neutral-300">Cancel</button>
                         </div>
                     </div>
                     <div class="w-full" id="provTimeline">
@@ -504,8 +531,11 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
                                         <div class="absolute text-sm flex justify-center bg-blueGrey-200 rounded-full py-1"
                                         style="left:0%; width: 40%;">
                                             <div class="flex items-center justify-center px-2">Of this segment much is unknown. Do you know more of this?
-                                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-        text-neutral-800 transition flex items-center gap-1 ml-2 bg-white">Add&nbsp;provenance</button>
+                                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+        bg-neutral-200
+        hover:bg-neutral-300
+        text-neutral-800 transition flex items-center gap-1
+         ml-2 bg-white">Add&nbsp;provenance</button>
                                             </div>
                                         </div>
                                     </div>
@@ -577,9 +607,11 @@ text-neutral-800 transition flex items-center gap-1">Hide map</button>
                          <h3 class="my-4 w-full pt-4">Provenance data table</h3>
 
                         <div class="flex items-center">
-                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-        text-neutral-800 transition flex items-center gap-1 mr-2 hidden"
-                            id="bAllItems" onclick="showAllProv()">Show&nbsp;all&nbsp;items</button>
+                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+        bg-neutral-200
+        hover:bg-neutral-300
+        text-neutral-800 transition flex items-center gap-1
+         mr-2 hidden" id="bAllItems" onclick="showAllProv()">Show&nbsp;all&nbsp;items</button>
                             <select class="rounded p-2 bg-neutral-200 text-sm">
                                 <option value="text-sm">Order by location</option>
                                 <option value="text-sm">Order by date (no date first)</option>

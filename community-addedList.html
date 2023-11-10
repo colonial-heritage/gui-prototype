@@ -106,10 +106,16 @@
                                     to your community profile.</p>
                             </div>
                             <div class="p-2 flex gap-2">
-                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-700 hover:bg-neutral-800
-        text-neutral-100 transition flex items-center gap-1">Add&nbsp;Orcid&nbsp;ID</button>
-                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-        text-neutral-800 transition flex items-center gap-1 ">
+                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+        bg-neutral-700
+        hover:bg-neutral-800
+        text-neutral-100 transition flex items-center gap-1
+        ">Add&nbsp;Orcid&nbsp;ID</button>
+                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+        bg-neutral-200
+        hover:bg-neutral-300
+        text-neutral-800 transition flex items-center gap-1
+         ">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                     class="w-4 h-4 fill-neutral-700">
                                         <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
@@ -120,8 +126,11 @@
                         </div>
                     </div>
                     <div class="w-full flex justify-end -mb-8">
-                        <button onclick="editCommunity()" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-text-neutral-800 transition flex items-center gap-1">
+                        <button onclick="editCommunity()" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+bg-neutral-200
+hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1
+">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-5 h-5 fill-neutral-700">
                                 <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z"
@@ -158,18 +167,22 @@ text-neutral-800 transition flex items-center gap-1">
               Edit community</strong>
             </h1>
 
-                            <div class="flex flex-col max-w-2xl w-full">
-                                <label class="italic mb-1">Community name</label>
+                            <div class="flex flex-col gap-1 max-w-2xl w-full">
+                                <label class="flex flex-col gap-1 mb-1"> <strong>Community name <span class="font-normal text-neutral-600">*</span></strong>
+
+                                </label>
                                 <input type="text" name="" id="" class="border border-neutral-500 rounded p-2 text-sm"
                                 placeholder="">
                             </div>
-                            <div class="flex flex-col max-w-2xl w-full">
-                                <label class="italic mb-1">Description</label>
+                            <div class="flex flex-col gap-1 max-w-2xl w-full">
+                                <label class="flex flex-col gap-1 mb-1"> <strong>Description <span class="font-normal text-neutral-600">*</span></strong>
+
+                                </label>
                                 <textarea name="" id="" class="border border-neutral-500 rounded p-2 text-sm h-56"></textarea>
                             </div>
-                            <div class="flex flex-col max-w-2xl w-full">
-                                <label class="flex flex-col">
-                                    <div class="italic mb-1">Orcid ID</div>
+                            <div class="flex flex-col gap-1 max-w-2xl w-full">
+                                <label class="flex flex-col gap-1 mb-1"> <strong>Orcid ID</strong>
+
                                     <div class="text-sm mb-1">Some info about Orcid ID and licence.</div>
                                 </label>
                                 <input type="text" name="" id="" class="border border-neutral-500 rounded p-2 text-sm"
@@ -180,21 +193,28 @@ text-neutral-800 transition flex items-center gap-1">
                                         in, impedit consectetur delectus illo, necessitatibus fuga inventore tempora
                                         voluptatum tenetur facere quaerat dolor!</div>
                                     <div class="flex justify-start gap-2">
-                                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                        <label for="vehicle1">I agree with the XX Licence.</label>
+                                        <input type="checkbox" id="v1" name="vehicle1" value="Bike">
+                                        <label class="flex flex-col gap-1 mb-1" for="v1">I agree with the xx licence.</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="flex flex-row max-w-2xl w-full">
                                 <div class=" flex flex-col md:flex-row justify-between  gap-2">
-                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-text-neutral-800 transition flex items-center gap-1">Save</button>
-                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-text-neutral-800 transition flex items-center gap-1" onclick="editCloseCommunity()">Cancel</button>
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+bg-neutral-200
+hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1
+">Save</button>
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1
+border border-neutral-300" onclick="editCloseCommunity()">Cancel</button>
                                 </div>
                                 <div class="flex justify-end w-full">
-                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-text-neutral-800 transition flex items-center gap-1">More settings</button>
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+bg-neutral-200
+hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1
+">More settings</button>
                                 </div>
                             </div>
                         </div>
@@ -489,8 +509,11 @@ Give a description about this list. For example.
                      <h2 class="mb-4">Members</h2>
 
                     <div class="">
-                        <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
-text-neutral-800 transition flex items-center gap-1">Manage members</button>
+                        <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+bg-neutral-200
+hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1
+">Manage members</button>
                     </div>
                 </div>
                 <ul>
