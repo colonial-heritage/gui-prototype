@@ -145,30 +145,39 @@ text-neutral-800 transition flex items-center gap-1">
                                     contiguous to one another.</div>
                             </div>
                         </div>
-                        <div class="hidden flex-col px-4 gap-4 items-center" id="communityBlockForm">
+                        <div class="hidden flex-col px-4 gap-6 items-center" id="communityBlockForm">
                              <h1 class="text-2xl font-normal w-full text-center mt-4 px-4 my-2">
               Edit community</strong>
             </h1>
 
                             <div class="flex flex-col max-w-2xl w-full">
-                                <label class="italic">Community name</label>
-                                <input type="text" name="" id="" class="border border-neutral-300 p-2 text-sm"
+                                <label class="italic mb-1">Community name</label>
+                                <input type="text" name="" id="" class="border border-neutral-500 rounded p-2 text-sm"
                                 placeholder="">
                             </div>
                             <div class="flex flex-col max-w-2xl w-full">
-                                <label class="italic">Description</label>
-                                <textarea name="" id="" class="border border-neutral-300 p-2 text-sm h-56"></textarea>
+                                <label class="italic mb-1">Description</label>
+                                <textarea name="" id="" class="border border-neutral-500 rounded p-2 text-sm h-56"></textarea>
                             </div>
                             <div class="flex flex-col max-w-2xl w-full">
-                                <label class="italic">Orcid ID</label>
-                                <input type="text" name="" id="" class="border border-neutral-300 p-2 text-sm"
+                                <label class="flex flex-col">
+                                    <div class="italic mb-1">Orcid ID</div>
+                                    <div class="text-sm mb-1">Some info about Orcid ID and licence.</div>
+                                </label>
+                                <input type="text" name="" id="" class="border border-neutral-500 rounded p-2 text-sm"
                                 placeholder="">
                             </div>
-                            <div class="flex flex-row max-w-2xl w-full gap-2">
-                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
+                            <div class="flex flex-row max-w-2xl w-full">
+                                <div class=" flex flex-col md:flex-row justify-between  gap-2">
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
 text-neutral-800 transition flex items-center gap-1">Save</button>
-                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
 text-neutral-800 transition flex items-center gap-1" onclick="editCloseCommunity()">Cancel</button>
+                                </div>
+                                <div class="flex justify-end w-full">
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-neutral-200 hover:bg-neutral-300
+text-neutral-800 transition flex items-center gap-1">More settings</button>
+                                </div>
                             </div>
                         </div>
                     </div>

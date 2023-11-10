@@ -289,15 +289,22 @@ function closeAddProvForm() {
 }
 
 function editCommunity() {
-    //communityBlock communityBlockForm communityBlockContent
-    handleClass('communityBlockForm', 'remove', 'hidden')
+    handleClass('communityBlockForm', 'remove', 'hidden');
     handleClass('communityBlockForm', 'add', 'flex');
-    handleClass('communityBlockContent', 'add', 'hidden')
+    handleClass('communityBlockContent', 'add', 'hidden');
     handleClass('communityBlockContent', 'remove', 'flex');
 
-    handleClass('communityBlock', 'add', 'bg-neutral-50')
+    handleClass('communityBlock', 'add', 'bg-neutral-50');
     handleClass('communityBlock', 'remove', 'bg-[#f3eee2]');
 }
 
 function editCloseCommunity() {
-    //comm
+    handleClass('communityBlockForm', 'add', 'hidden');
+    handleClass('communityBlockForm', 'remove', 'flex');
+    handleClass('communityBlockContent', 'remove', 'hidden');
+    handleClass('communityBlockContent', 'add', 'flex');
+
+    handleClass('communityBlock', 'remove', 'bg-neutral-50')
+    handleClass('communityBlock', 'add', 'bg-[#f3eee2]');
+}
+
