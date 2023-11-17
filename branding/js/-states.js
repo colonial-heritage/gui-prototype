@@ -208,7 +208,7 @@ function hideAllProvItem() {
 }
 
 function showProvItem(elemId) {
-    handleClass(elemId, 'add', 'block');
+    handleClass(elemId, 'add', 'flex');
     handleClass(elemId, 'remove', 'hidden')
 
     handleClass('bAllItems', 'add', 'flex')
@@ -222,7 +222,7 @@ function showAllProv() {
     handleClass('lip1', 'remove', 'hidden')
     handleClass('lip2', 'add', 'flex')
     handleClass('lip2', 'remove', 'hidden')
-    handleClass('lip3', 'add', 'block')
+    handleClass('lip3', 'add', 'flex')
     handleClass('lip3', 'remove', 'hidden')
     handleClass('lip4', 'add', 'flex')
     handleClass('lip4', 'remove', 'hidden')
@@ -272,7 +272,7 @@ function showAllProvBlock() {
 }
 
 function showProvDescr() {
-    handleClass('showProvDescrip', 'add', 'block')
+    handleClass('showProvDescrip', 'add', 'flex')
     handleClass('showProvDescrip', 'remove', 'hidden')
 
 
@@ -289,21 +289,19 @@ function closeAddProvForm() {
 }
 
 function editCommunity() {
-    //communityBlock communityBlockForm communityBlockContent
-    handleClass('communityBlockForm', 'remove', 'hidden')
+    handleClass('communityBlockForm', 'remove', 'hidden');
     handleClass('communityBlockForm', 'add', 'flex');
-    handleClass('communityBlockContent', 'add', 'hidden')
+    handleClass('communityBlockContent', 'add', 'hidden');
     handleClass('communityBlockContent', 'remove', 'flex');
 
-    handleClass('communityBlock', 'add', 'bg-neutral-50')
+    handleClass('communityBlock', 'add', 'bg-neutral-50');
     handleClass('communityBlock', 'remove', 'bg-[#f3eee2]');
 }
 
 function editCloseCommunity() {
-    //communityBlock communityBlockForm communityBlockContent
-    handleClass('communityBlockForm', 'add', 'hidden')
+    handleClass('communityBlockForm', 'add', 'hidden');
     handleClass('communityBlockForm', 'remove', 'flex');
-    handleClass('communityBlockContent', 'remove', 'hidden')
+    handleClass('communityBlockContent', 'remove', 'hidden');
     handleClass('communityBlockContent', 'add', 'flex');
 
     handleClass('communityBlock', 'remove', 'bg-neutral-50')
