@@ -35,9 +35,11 @@
             justify-stretch 
             items-stretch
             gap-8">
-            <header class="w-full bg-consortiumBlue-800 text-white">
-                <div class="w-full px-4 sm:px-10 flex flex-col md:flex-row justify-between items-center max-w-[1800px] mx-auto">
-                    <div class="font-semibold"><a href="home.html"><div class="flex items-center gap-2">
+            <header class="w-full bg-consortiumBlue-900 text-white py-2">
+                <div class="w-full px-4 sm:px-10 max-w-[1800px] mx-auto
+      flex flex-col xl:flex-row xl:gap-8 xl:justify-between">
+                    <div class="order-2 xl:order-1 w-full flex flex-col md:flex-row justify-between md:items-center">
+                        <div class=""><a href="home.html"><div class="flex items-center gap-2">
       <div class="w-10"><svg fill="currentColor" class="fill-consortiumGreen-500 w-full h-auto" xmlns="http://www.w3.org/2000/svg"
       width="197.66" height="171.74" viewBox="0 0 197.66 171.74">
     
@@ -62,19 +64,34 @@
       <path
         d="m160.99,102.48c6.04-4.93,6.04-14.15,0-19.08-5.97-4.87-11.03-10.82-15-17.68-3.97-6.88-6.59-14.25-7.83-21.86-1.24-7.69-9.23-12.3-16.52-9.54-7.2,2.73-14.88,4.14-22.81,4.14s-15.63-1.41-22.83-4.15c-7.29-2.77-15.28,1.85-16.52,9.54-1.23,7.61-3.85,14.98-7.82,21.85-3.97,6.88-9.04,12.83-15.02,17.7-6.04,4.93-6.04,14.16,0,19.08,5.98,4.87,11.05,10.82,15.01,17.7,3.96,6.86,6.59,14.22,7.82,21.82,1.25,7.69,9.24,12.3,16.52,9.53,7.21-2.74,14.9-4.15,22.84-4.15s15.62,1.41,22.82,4.14c7.28,2.76,15.27-1.85,16.52-9.54,1.23-7.6,3.86-14.96,7.82-21.83,3.96-6.87,9.03-12.81,15-17.68" />
     </svg></div>
-      <div class=""><img src="images/colonial-collections-consortium.png" alt="" class="h-5"></div>
+      <div class=""><img src="images/colonial-collections-consortium.png" alt="" class="h-4 lg:h-5"></div>
     </div></a>
-                    </div>
-                    <div class="relative flex">
-                        <nav class="flex items-center mr-4"> <a href="search.html" class="text-white font-semibold no-underline py-4 px-3">Search objects</a>
+                        </div>
+                        <nav class="flex items-center flex-wrap"> <a href="search.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap">Search
+              objects</a>
+ <a href="all-community.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap">Communities</a>
 
                             <a
-                            href="all-community.html" class="text-white font-semibold no-underline py-4 px-3">Communities</a> <a href="lists-all.html" class="text-white font-semibold no-underline py-4 px-3">Lists</a>
+                            href="lists-all.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap">Lists</a> <a href="" class="text-white font-semibold no-underline py-2 md:py-4 px-3 flex items-center gap-1 whitespace-nowrap">About
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+      class="w-3 h-3 fill-white">
+      <path fill-rule="evenodd"
+        d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+        clip-rule="evenodd" />
+    </svg>
+    </a>
 
-                                <a
-                                href="" class="text-white font-semibold no-underline py-4 px-3">About</a>
                         </nav>
-                        <div class="flex items-center">
+                    </div>
+                    <div class="order-1 xl:order-2 w-full flex justify-end items-center gap-4 text-sm xl:w-auto">
+                        <div class="flex items-center gap-1">English
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-3 h-3 fill-white">
+                                <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="">
                             <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
     bg-neutral-200/50
     hover:bg-neutral-300/50
@@ -98,8 +115,8 @@
         Beeld / hoofd (figuurvoorstelling)
       </h1>
 
-                <div class=" text-sm flex flex-col sm:flex-row justify-between items-start sm:items-center text-white/60">
-                    <div class="flex flex-row justify-start  gap-1 "> <span class="-ml-4 sm:ml-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-white">
+                <div class=" text-sm flex flex-col sm:flex-row justify-between items-start sm:items-center text-consortiumBlue-100">
+                    <div class="flex flex-row justify-start  gap-1 "> <span class="-ml-4 sm:ml-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-consortiumBlue-100">
         <path d="M18.876,14.136c-.315-1.479-3.352-2.362-5.025-2.758-.081-.022-.334-.069-.334-.069V7.187a10.928,10.928,0,0,0,1.549-1.215.912.912,0,0,0,0-1.473H8.409a.912.912,0,0,0,0,1.473A10.936,10.936,0,0,0,9.958,7.187v4.121s-4.952.916-5.359,2.827a14.876,14.876,0,0,0,.914,6.61c.508,1.155,1.834,3.938,2.409,5.2a1.212,1.212,0,0,0,1.121.619h5.387a1.212,1.212,0,0,0,1.121-.619c.575-1.257,1.9-4.041,2.409-5.2A14.875,14.875,0,0,0,18.876,14.136Z" transform="translate(0.665 -3.529)"/>
         <path d="M15.056,90.812,11.5,93.675l-.3-3.719L8.582,91.078l-.805-4.014L5.814,89.956" transform="translate(0.178 -74.647)" />
     </svg>
@@ -142,13 +159,13 @@
                     <div class=" flex flex-col gap-8 self-stretch">
                         <div class="flex flex-col gap-4 ">
                             <div class="flex flex-col xl:flex-row gap-2 xl:gap-10">
-                                <div class="w-full xl:w-1/5 border-t border-white/10 text-white pt-4">
+                                <div class="w-full xl:w-1/5 border-t border-consortiumBlue-400 text-white pt-4">
                                     <div class=" sticky top-0 bg-consortiumBlue-800 py-1">
                                          <h3 class="text-lg w-full my-1 flex items-center">
                                    Description
                                </h3>
 
-                                        <div class=" text-white/60 text-sm">A short description about the object</div>
+                                        <div class=" text-consortiumBlue-100 text-sm">A short description about the object</div>
                                     </div>
                                 </div>
                                 <div class="w-full xl:w-4/5  flex flex-col gap-2">
@@ -157,7 +174,7 @@
                rounded
                            
                            border-t
-                           border-white/10 text-white
+                           border-consortiumBlue-400 text-white
                            
                            flex
                            flex-col
@@ -180,13 +197,13 @@
                         </div>
                         <div class="flex flex-col gap-4 ">
                             <div class="flex flex-col xl:flex-row gap-2 xl:gap-10">
-                                <div class="w-full xl:w-1/5 border-t border-white/10 text-white pt-4">
+                                <div class="w-full xl:w-1/5 border-t border-consortiumBlue-400 text-white pt-4">
                                     <div class=" sticky top-0 bg-consortiumBlue-800 py-1">
                                          <h3 class="text-lg w-full my-1 flex items-center">
                                    Material
                                </h3>
 
-                                        <div class=" text-white/60 text-sm">What kind of material is used. Click on the i of the material to lean
+                                        <div class=" text-consortiumBlue-100 text-sm">What kind of material is used. Click on the i of the material to lean
                                             more.</div>
                                     </div>
                                 </div>
@@ -196,7 +213,7 @@
                rounded
                            
                            border-t
-                           border-white/10 text-white
+                           border-consortiumBlue-400 text-white
                            
                            flex
                            flex-col
@@ -235,29 +252,29 @@
                         </div>
                         <div class="flex flex-col gap-4 ">
                             <div class="flex flex-col xl:flex-row gap-2 xl:gap-10">
-                                <div class="w-full xl:w-1/5 border-t border-white/10 text-white pt-4">
+                                <div class="w-full xl:w-1/5 border-t border-consortiumBlue-400 text-white pt-4">
                                     <div class=" sticky top-0 bg-consortiumBlue-800 py-1">
                                          <h3 class="text-lg w-full my-1 flex items-center">
                                    Dimensions
                                </h3>
 
-                                        <div class=" text-white/60 text-sm">What is the height, width and depth.</div>
+                                        <div class=" text-consortiumBlue-100 text-sm">What is the height, width and depth.</div>
                                     </div>
                                 </div>
                                 <div class="w-full xl:w-4/5  flex flex-col gap-2">
-                                    <div class="text-blueGrey-700 italic w-full border-t border-white/10 text-white py-6 text-sm">No <span class="lowercase">Dimensions</span> available</div>
+                                    <div class="text-blueGrey-700 italic w-full border-t border-consortiumBlue-400 text-white py-6 text-sm">No <span class="lowercase">Dimensions</span> available</div>
                                 </div>
                             </div>
                         </div>
                         <div class="flex flex-col gap-4 ">
                             <div class="flex flex-col xl:flex-row gap-2 xl:gap-10">
-                                <div class="w-full xl:w-1/5 border-t border-white/10 text-white pt-4">
+                                <div class="w-full xl:w-1/5 border-t border-consortiumBlue-400 text-white pt-4">
                                     <div class=" sticky top-0 bg-consortiumBlue-800 py-1">
                                          <h3 class="text-lg w-full my-1 flex items-center">
                                    Date Made
                                </h3>
 
-                                        <div class=" text-white/60 text-sm">When was the object made. Could be a exact or a date range.</div>
+                                        <div class=" text-consortiumBlue-100 text-sm">When was the object made. Could be a exact or a date range.</div>
                                     </div>
                                 </div>
                                 <div class="w-full xl:w-4/5  flex flex-col gap-2">
@@ -266,7 +283,7 @@
                rounded
                            
                            border-t
-                           border-white/10 text-white
+                           border-consortiumBlue-400 text-white
                            
                            flex
                            flex-col
@@ -284,49 +301,49 @@
                         </div>
                         <div class="flex flex-col gap-4 ">
                             <div class="flex flex-col xl:flex-row gap-2 xl:gap-10">
-                                <div class="w-full xl:w-1/5 border-t border-white/10 text-white pt-4">
+                                <div class="w-full xl:w-1/5 border-t border-consortiumBlue-400 text-white pt-4">
                                     <div class=" sticky top-0 bg-consortiumBlue-800 py-1">
                                          <h3 class="text-lg w-full my-1 flex items-center">
                                    Types
                                </h3>
 
-                                        <div class=" text-white/60 text-sm">Description needed</div>
+                                        <div class=" text-consortiumBlue-100 text-sm">Description needed</div>
                                     </div>
                                 </div>
                                 <div class="w-full xl:w-4/5  flex flex-col gap-2">
-                                    <div class="text-blueGrey-700 italic w-full border-t border-white/10 text-white py-6 text-sm">No <span class="lowercase">Types</span> available</div>
+                                    <div class="text-blueGrey-700 italic w-full border-t border-consortiumBlue-400 text-white py-6 text-sm">No <span class="lowercase">Types</span> available</div>
                                 </div>
                             </div>
                         </div>
                         <div class="flex flex-col gap-4 ">
                             <div class="flex flex-col xl:flex-row gap-2 xl:gap-10">
-                                <div class="w-full xl:w-1/5 border-t border-white/10 text-white pt-4">
+                                <div class="w-full xl:w-1/5 border-t border-consortiumBlue-400 text-white pt-4">
                                     <div class=" sticky top-0 bg-consortiumBlue-800 py-1">
                                          <h3 class="text-lg w-full my-1 flex items-center">
                                    Techniques
                                </h3>
 
-                                        <div class=" text-white/60 text-sm">Description needed</div>
+                                        <div class=" text-consortiumBlue-100 text-sm">Description needed</div>
                                     </div>
                                 </div>
                                 <div class="w-full xl:w-4/5  flex flex-col gap-2">
-                                    <div class="text-blueGrey-700 italic w-full border-t border-white/10 text-white py-6 text-sm">No <span class="lowercase">Techniques</span> available</div>
+                                    <div class="text-blueGrey-700 italic w-full border-t border-consortiumBlue-400 text-white py-6 text-sm">No <span class="lowercase">Techniques</span> available</div>
                                 </div>
                             </div>
                         </div>
                         <div class="flex flex-col gap-4 ">
                             <div class="flex flex-col xl:flex-row gap-2 xl:gap-10">
-                                <div class="w-full xl:w-1/5 border-t border-white/10 text-white pt-4">
+                                <div class="w-full xl:w-1/5 border-t border-consortiumBlue-400 text-white pt-4">
                                     <div class=" sticky top-0 bg-consortiumBlue-800 py-1">
                                          <h3 class="text-lg w-full my-1 flex items-center">
                                    Creators
                                </h3>
 
-                                        <div class=" text-white/60 text-sm">Description needed</div>
+                                        <div class=" text-consortiumBlue-100 text-sm">Description needed</div>
                                     </div>
                                 </div>
                                 <div class="w-full xl:w-4/5  flex flex-col gap-2">
-                                    <div class="text-blueGrey-700 italic w-full border-t border-white/10 text-white py-6 text-sm">No <span class="lowercase">Creators</span> available</div>
+                                    <div class="text-blueGrey-700 italic w-full border-t border-consortiumBlue-400 text-white py-6 text-sm">No <span class="lowercase">Creators</span> available</div>
                                 </div>
                             </div>
                         </div>
@@ -410,7 +427,7 @@
                     </div>
                 </main>
                 <!-- aside -->
-                <aside class="w-full md:w-1/3 self-stretch order-1 md:order-2 md:mx-0  p-1 flex flex-col justify-start md:bg-white/10">
+                <aside class="w-full md:w-1/3 self-stretch order-1 md:order-2 md:mx-0  p-1 flex flex-col justify-start md:bg-consortiumBlue-900">
                     <div class="w-full h-64 flex flex-col justify-center items-center text-neutral-600 text-sm italic">No image available</div>
                 </aside>
             </div>
@@ -419,7 +436,7 @@
                 <div class="mx-auto px-4 sm:px-10 max-w-[1800px]">
                      <h2 id="provenance" class="text-2xl mb-2 mt-20">Provenance</h2>
 
-                    <p class="text-blueGrey-700 text-sm max-w-2xl mb-6">Provenance information shows the trail an object has made before it came
+                    <p class="text-consortiumBlue-50 text-sm max-w-2xl mb-6">Provenance information shows the trail an object has made before it came
                         at the current location. It can contain information about previous owners
                         to technical processing information.
                         <br>This provenance data is often incomplete. We encourage you to <a href=""
@@ -477,7 +494,7 @@ text-neutral-800 transition flex items-center gap-1
                                 <div class="flex flex-col">
                                     <label class="flex flex-col gap-1 mb-1"><strong>Type</strong>
                                     </label>
-                                    <select class="rounded p-2 bg-neutral-200 text-sm">
+                                    <select class="rounded p-2 text-sm border bg-neutral-100  ">
                                         <option value="text-sm">Acquisition</option>
                                         <option value="text-sm">Transfer of Custody</option>
                                     </select>
@@ -485,7 +502,7 @@ text-neutral-800 transition flex items-center gap-1
                                 <div class="flex flex-col">
                                     <label class="flex flex-col gap-1 mb-1"><strong>Classification</strong>
                                     </label>
-                                    <select class="rounded p-2 bg-neutral-200 text-sm">
+                                    <select class="rounded p-2 text-sm border bg-neutral-100  ">
                                         <option value="text-sm">Gift</option>
                                         <option value="text-sm">Purchase</option>
                                         <option value="text-sm">Loan</option>
@@ -497,7 +514,7 @@ text-neutral-800 transition flex items-center gap-1
                                 <div class="flex flex-col">
                                     <label class="flex flex-col gap-1 mb-1"><strong>Level of certainty</strong>
                                     </label>
-                                    <select class="rounded p-2 bg-neutral-200 text-sm">
+                                    <select class="rounded p-2 text-sm border bg-neutral-100  ">
                                         <option value="text-sm">Possibly</option>
                                         <option value="text-sm">Probably</option>
                                     </select>
@@ -507,7 +524,7 @@ text-neutral-800 transition flex items-center gap-1
                                 <div class="flex flex-col gap-2">
                                     <label class="flex flex-col gap-1 mb-1"><strong>Transferred from</strong>
                                     </label>
-                                    <select class="rounded p-2 bg-neutral-200 text-sm">
+                                    <select class="rounded p-2 text-sm border bg-neutral-100  ">
                                         <option value="text-sm">From wikipedia</option>
                                         <option value="text-sm">From collonialcollections.nl</option>
                                     </select>
@@ -517,7 +534,7 @@ text-neutral-800 transition flex items-center gap-1
                                 <div class="flex flex-col gap-2">
                                     <label class="flex flex-col gap-1 mb-1"><strong>Transferred to</strong>
                                     </label>
-                                    <select class="rounded p-2 bg-neutral-200 text-sm">
+                                    <select class="rounded p-2 text-sm border bg-neutral-100  ">
                                         <option value="text-sm">From wikipedia</option>
                                         <option value="text-sm">From collonialcollections.nl</option>
                                     </select>
@@ -553,43 +570,43 @@ text-neutral-800 transition flex items-center gap-1
                     <div class="w-full" id="provTimeline">
                          <h3 class="my-2 w-full pt-4">Provenance timeline</h3>
 
-                        <div class=" text-sm max-w-3xl mb-4">In the timeline visualisation provenance items are plotted out by time.
+                        <div class=" text-sm max-w-3xl mb-4 text-consortiumBlue-100">In the timeline visualisation provenance items are plotted out by time.
                             Click on a item focus that item. Provenance&nbsp;items <strong>P8</strong>, <strong>P9</strong> and <strong>p10</strong> are
                             not plotted on the timeline because we have no dates available.</div>
                         <div
-                        class=" rounded-sm w-full mb-10 relative text-white bg-white/5">
+                        class=" rounded-sm w-full mb-10 relative text-white bg-consortiumBlue-900">
                             <div class="overflow-y-scroll w-full">
-                                <div class="mb-12 rounded-sm pt-4 pb-24 pl-2 w-[1800px] pr-32 text-white bg-white/5">
-                                    <div class=" h-10 relative border-b border-white ">
-                                        <div class="absolute h-10 border-l border-neutral-400 pl-2 text-sm italic flex items-center gap-2"
+                                <div class="mb-12 rounded-sm pt-4 pb-24 pl-2 w-[1800px] pr-32 text-white bg-consortiumBlue-900">
+                                    <div class=" h-10 relative border-b border-consortiumBlue-600 ">
+                                        <div class="absolute h-10 border-l border-consortiumBlue-400 pl-2 text-sm italic flex items-center gap-2"
                                         style="left:40%">
                                             <img src="images/icon-hist-event.png" alt="" class="h-4 w-auto">Dutch intervention in Lombok and Karangasem (<a href="">Wikipedia</a>)</div>
                                     </div>
-                                    <div class="w-full relative h-10 border-b border-white/20">
-                                        <div class=" absolute text-center flex justify-center items-center  bg-blueGrey-200 rounded-full py-1"
+                                    <div class="w-full relative h-10 border-b border-consortiumBlue-600">
+                                        <div class=" absolute text-center flex justify-center items-center  bg-consortiumBlue-500 rounded-full py-1"
                                         style="left: 40%; width: 18%;">
                                             <button class="bg-consortiumBlue-600 hover:bg-consortiumBlue-700 border-white  hover:text-white
                                  rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
                                     " onclick="hideAllProvItem(); showProvItem('lip3')">P1</button>
                                         </div>
                                     </div>
-                                    <div class="w-full relative h-10 border-b border-white/20">
-                                        <div class=" absolute text-center flex justify-center items-center bg-blueGrey-200 rounded-full py-1"
+                                    <div class="w-full relative h-10 border-b border-consortiumBlue-600">
+                                        <div class=" absolute text-center flex justify-center items-center bg-consortiumBlue-500 rounded-full py-1"
                                         style="left: 60%; width: 13%;">
                                             <button class="bg-consortiumBlue-600 hover:bg-consortiumBlue-700 border-white  hover:text-white
                                  rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
                                     " onclick="hideAllProvItem(); showProvItem('lip3')">P2</button>
                                         </div>
                                     </div>
-                                    <div class="w-full relative h-10">
-                                        <div class=" absolute text-center flex justify-center items-center bg-blueGrey-200 rounded-full py-1"
+                                    <div class="w-full relative h-10 border-b border-consortiumBlue-600">
+                                        <div class=" absolute text-center flex justify-center items-center bg-consortiumBlue-500 rounded-full py-1"
                                         style="left: 73%; width: 9%;">
                                             <button class="bg-consortiumBlue-600 hover:bg-consortiumBlue-700 border-white  hover:text-white
                                  rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
                                     " onclick="hideAllProvItem(); showProvItem('lip3')">P3</button>
                                         </div>
                                     </div>
-                                    <div class=" h-12 relative border-b border-white">
+                                    <div class=" h-12 relative  text-consortiumBlue-800">
                                         <div class="absolute text-sm flex justify-center bg-blueGrey-100 rounded-full py-1"
                                         style="left:0%; width: 40%;">
                                             <div class="flex items-center justify-center px-2">Of this segment much is unknown. Do you know more of this?
@@ -603,24 +620,24 @@ text-neutral-800 transition flex items-center gap-1
                                     </div>
                                     <div class="w-full h-0 relative">
                                         <!-- timeline -->
-                                        <div class="w-full border-b-2 h-4 border-neutral-700 absolute"></div>
+                                        <div class="w-full border-b-2 h-4 border-white absolute"></div>
                                         <!-- years -->
-                                        <div class="pt-10 border-l-4 border-white/20  absolute" style="left: 0%;">
+                                        <div class="pt-10 border-l-4 border-consortiumBlue-900  absolute" style="left: 0%;">
                                             <div class="text-sm text-white -rotate-45 ">1500</div>
                                         </div>
-                                        <div class="pt-10 border-l-4 border-white/20  absolute" style="left: 20%;">
+                                        <div class="pt-10 border-l-4 border-consortiumBlue-900  absolute" style="left: 20%;">
                                             <div class="text-sm text-white -rotate-45 ">1600</div>
                                         </div>
-                                        <div class="pt-10 border-l-4 border-white/20  absolute" style="left: 40%;">
+                                        <div class="pt-10 border-l-4 border-consortiumBlue-900  absolute" style="left: 40%;">
                                             <div class="text-sm text-white -rotate-45 ">1700</div>
                                         </div>
-                                        <div class="pt-10 border-l-4 border-white/20  absolute" style="left: 60%;">
+                                        <div class="pt-10 border-l-4 border-consortiumBlue-900  absolute" style="left: 60%;">
                                             <div class="text-sm text-white -rotate-45 ">1800</div>
                                         </div>
-                                        <div class="pt-10 border-l-4 border-white/20  absolute" style="left: 80%;">
+                                        <div class="pt-10 border-l-4 border-consortiumBlue-900  absolute" style="left: 80%;">
                                             <div class="text-sm text-white -rotate-45 ">1900</div>
                                         </div>
-                                        <div class="pt-10 border-l-4 border-white/20  absolute" style="left: 99%;">
+                                        <div class="pt-10 border-l-4 border-consortiumBlue-900  absolute" style="left: 99%;">
                                             <div class="text-sm text-white -rotate-45 ">2023</div>
                                         </div>
                                         <!-- markers -->
@@ -652,15 +669,15 @@ text-neutral-800 transition flex items-center gap-1
         hover:bg-neutral-300/50
         text-neutral-800 transition flex items-center gap-1
          mr-2 hidden" id="bAllItems" onclick="showAllProv()">Show&nbsp;all&nbsp;items</button>
-                            <select class="rounded p-2 bg-neutral-200 text-sm">
+                            <select class="rounded p-2 text-sm border bg-neutral-100  ">
                                 <option value="text-sm">Order by location</option>
                                 <option value="text-sm">Order by date (no date first)</option>
                                 <option value="text-sm">Order by date (no date last)</option>
                             </select>
                         </div>
                     </div>
-                    <div class=" py-2 rounded text-white bg-white/5">
-                        <header class="text-sm text-blueGrey-600 pl-8 w-full flex flex-col gap-2 sm:flex-row justify-between py-2 border-b mb-4 text-white">
+                    <div class=" py-2 rounded text-white bg-consortiumBlue-900">
+                        <header class="text-sm pl-8 w-full flex flex-col gap-2 sm:flex-row justify-between py-2 border-b mb-4 text-consortiumBlue-100 border-consortiumBlue-800">
                             <div class="w-full md:w-1/12">Id / quality</div>
                             <div class="w-full md:w-2/12">Type</div>
                             <div class="w-full md:w-3/12">Transfered from</div>
@@ -668,12 +685,12 @@ text-neutral-800 transition flex items-center gap-1
                             <div class="w-full md:w-1/12">Location</div>
                             <div class="w-full md:w-2/12">Provided by</div>
                         </header>
-                        <div class="border-l-4 mb-16 border-blueGrey-200" id="did">
+                        <div class="border-l-4 mb-16 border-consortiumBlue-970" id="did">
                             <div class="mb-4 pl-4 "><strong>1866-01-07</strong> &mdash; <strong>1866-01-07</strong>
 
                             </div>
-                            <ul class="flex flex-col border-t">
-                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-white/20">
+                            <ul class="flex flex-col border-t border-consortiumBlue-970">
+                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-consortiumBlue-700">
                                     <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                         <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                             <div class="flex flex-col gap-2">
@@ -683,7 +700,7 @@ text-neutral-800 transition flex items-center gap-1
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-100 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Acquisition (Gift)</div>
@@ -713,7 +730,7 @@ text-neutral-800 transition flex items-center gap-1
                                         <div class="w-full md:w-2/12 pr-4 flex items-center justify-between gap-2"></div>
                                     </div>
                                 </li>
-                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-white/20">
+                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-consortiumBlue-700">
                                     <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                         <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                             <div class="flex flex-col gap-2">
@@ -723,7 +740,7 @@ text-neutral-800 transition flex items-center gap-1
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-100 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Transfer (Loan)</div>
@@ -754,11 +771,11 @@ text-neutral-800 transition flex items-center gap-1
                                 </li>
                             </ul>
                         </div>
-                        <div class="border-l-4 mb-16 border-blueGrey-200" id="did">
+                        <div class="border-l-4 mb-16 border-consortiumBlue-970" id="did">
                             <div class="mb-4 pl-4 "><strong>1891-03-1</strong> 
                             </div>
-                            <ul class="flex flex-col border-t">
-                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-white/20">
+                            <ul class="flex flex-col border-t border-consortiumBlue-970">
+                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-consortiumBlue-700">
                                     <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                         <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                             <div class="flex flex-col gap-2">
@@ -768,7 +785,7 @@ text-neutral-800 transition flex items-center gap-1
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-100 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Acquisition (Gift)</div>
@@ -799,12 +816,12 @@ text-neutral-800 transition flex items-center gap-1
                                 </li>
                             </ul>
                         </div>
-                        <div class="border-l-4 mb-16 border-blueGrey-200" id="did">
+                        <div class="border-l-4 mb-16 border-consortiumBlue-970" id="did">
                             <div class="mb-4 pl-4 "><strong>1912-11-23</strong> &mdash; <strong>1914-01-31</strong>
 
                             </div>
-                            <ul class="flex flex-col border-t">
-                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-white/20">
+                            <ul class="flex flex-col border-t border-consortiumBlue-970">
+                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-consortiumBlue-700">
                                     <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                         <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                             <div class="flex flex-col gap-2">
@@ -814,7 +831,7 @@ text-neutral-800 transition flex items-center gap-1
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-100 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Acquisition (Gift)</div>
@@ -843,7 +860,7 @@ text-neutral-800 transition flex items-center gap-1
                                         <div class="w-full md:w-2/12 pr-4 flex items-center justify-between gap-2"></div>
                                     </div>
                                 </li>
-                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-white/20">
+                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-consortiumBlue-700">
                                     <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                         <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                             <div class="flex flex-col gap-2">
@@ -853,7 +870,7 @@ text-neutral-800 transition flex items-center gap-1
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-100 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Acquisition (Gift)</div>
@@ -882,7 +899,7 @@ text-neutral-800 transition flex items-center gap-1
                                         <div class="w-full md:w-2/12 pr-4 flex items-center justify-between gap-2"></div>
                                     </div>
                                 </li>
-                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-white/20">
+                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-consortiumBlue-700">
                                     <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                         <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                             <div class="flex flex-col gap-2">
@@ -892,7 +909,7 @@ text-neutral-800 transition flex items-center gap-1
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-100 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Acquisition (Gift)</div>
@@ -941,11 +958,11 @@ text-neutral-800 transition flex items-center gap-1
                                 </li>
                             </ul>
                         </div>
-                        <div class="border-l-4 mb-16 border-blueGrey-200" id="did">
+                        <div class="border-l-4 mb-16 border-consortiumBlue-970" id="did">
                             <div class="mb-4 pl-4 "><strong>2023-01-01</strong> 
                             </div>
-                            <ul class="flex flex-col border-t">
-                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-white/20">
+                            <ul class="flex flex-col border-t border-consortiumBlue-970">
+                                <li id="lip" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-consortiumBlue-700">
                                     <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                         <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                             <div class="flex flex-col gap-2">
@@ -955,7 +972,7 @@ text-neutral-800 transition flex items-center gap-1
             ">P</button>
                                                 </div>
                                             </div>
-                                            <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row"></div>
+                                            <div class="text-consortiumBlue-100 font-semibold  flex flex-col lg:flex-row"></div>
                                         </div>
                                         <div class="w-full md:w-2/12">
                                             <div class="">Acquisition (Restitution)</div>
