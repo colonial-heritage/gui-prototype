@@ -75,13 +75,13 @@
                 </div>
                 <div class="sm:flex justify-end gap-4 hidden">
                     <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-    bg-neutral-200
-    hover:bg-neutral-300
+    bg-neutral-200/50
+    hover:bg-neutral-300/50
     text-neutral-800 transition flex items-center gap-1
     ">Bookmark object</button>
                     <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-    bg-neutral-200
-    hover:bg-neutral-300
+    bg-neutral-200/50
+    hover:bg-neutral-300/50
     text-neutral-800 transition flex items-center gap-1
     ">Share object</button>
                     <select name="" class="p-1 sm:py-2 sm:px-3 rounded-xl text-xs bg-neutral-100  text-neutral-800 flex items-center gap-1">
@@ -118,36 +118,36 @@ information for more
         Commemorative Queen Mother Head
       </h1>
 
-                <div class="text-neutral-500 text-sm flex flex-col sm:flex-row justify-between items-start sm:items-center">
-                    <div class="flex flex-row justify-start  gap-1 "> <span class="-ml-4 sm:ml-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-neutral-500">
+                <div class=" text-sm flex flex-col sm:flex-row justify-between items-start sm:items-center text-neutral-500">
+                    <div class="flex flex-row justify-start  gap-1 "> <span class="-ml-4 sm:ml-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-consortiumBlueShade-100">
         <path d="M18.876,14.136c-.315-1.479-3.352-2.362-5.025-2.758-.081-.022-.334-.069-.334-.069V7.187a10.928,10.928,0,0,0,1.549-1.215.912.912,0,0,0,0-1.473H8.409a.912.912,0,0,0,0,1.473A10.936,10.936,0,0,0,9.958,7.187v4.121s-4.952.916-5.359,2.827a14.876,14.876,0,0,0,.914,6.61c.508,1.155,1.834,3.938,2.409,5.2a1.212,1.212,0,0,0,1.121.619h5.387a1.212,1.212,0,0,0,1.121-.619c.575-1.257,1.9-4.041,2.409-5.2A14.875,14.875,0,0,0,18.876,14.136Z" transform="translate(0.665 -3.529)"/>
         <path d="M15.056,90.812,11.5,93.675l-.3-3.719L8.582,91.078l-.805-4.014L5.814,89.956" transform="translate(0.178 -74.647)" />
     </svg>
     </span>
  <span class="inline items-center flex-row flex-wrap gap-1">Object,
             <span class="inline items-start sm:items-center flex-wrap gap-1 hover:underline" onclick="openInfoMeta()">
-              <strong class="text-left text-sky-700 cursor-pointer">Nationaal Museum van Wereldculturen and
+              <strong class="text-left underline cursor-pointer">Nationaal Museum van Wereldculturen and
                 Wereldmuseum</strong><span class="hidden sm:inline"> -</span>  <span> Amsterdam</span> 
                         <span
-                        class="text-left text-sky-700 cursor-pointer">(Contact info)</span>
+                        class="text-left underline cursor-pointer">(Contact info)</span>
                             </span>
                     </div>
                     <div class="grow sm:text-right break-keep">Object number: RV-1310-2</div>
                 </div>
                 <div class="flex flex-row gap-4 gap-y-2 items-start flex-wrap">
                     <div class="
-          px-1 border-r pr-4">
+          px-1 border-r border-consortiumBlueShade-400 pr-4">
                         <div class="">Commemorative Queen Mother Head</div>
                     </div>
                     <div class="
-          px-1 border-r pr-4">
+          px-1 border-r border-consortiumBlueShade-400 pr-4">
                         <div class="">Beeld / hoofd (figuurvoorstelling)</div>
-                        <div class="text-xs font-normal text-neutral-500 hidden sm:block">Dutch translation</div>
+                        <div class="text-xs font-normal  hidden sm:block text-neutral-500">Dutch translation</div>
                     </div>
                     <div class="
-          px-1 border-r pr-4">
+          px-1 border-r border-consortiumBlueShade-400 pr-4">
                         <div class="">Uhunmwu elao ọghe Iy’ọba</div>
-                        <div class="text-xs font-normal text-neutral-500 hidden sm:block">Edo translation</div>
+                        <div class="text-xs font-normal  hidden sm:block text-neutral-500">Edo translation</div>
                     </div>
                 </div>
             </div>
@@ -183,7 +183,7 @@ information for more
                                    Description
                                </h3>
 
-                                        <div class="text-blueGrey-700 text-sm">A short description about the object</div>
+                                        <div class=" text-blueGrey-700 text-sm">A short description about the object</div>
                                     </div>
                                 </div>
                                 <div class="w-full xl:w-4/5  flex flex-col gap-2">
@@ -307,26 +307,27 @@ The day book entry of 29 April 1901 acknowledges the
                                 </div>
                             </div>
                         </div>
-                        <div class="flex justify-end">
+                        <div class="flex justify-end text-consortiumBlue-800">
                             <button class="py-2 px-3 p-1 sm:py-2 sm:px-3 rounded-full text-xs
-               bg-neutral-200
-               hover:bg-neutral-300
-               text-neutral-800 transition flex items-center gap-1
-                transition lex items-center gap-1" onclick="openAddNarrForm('f0')">Add
+               bg-consortiumGreen-300
+               text-consortiumBlue-800
+               
+               transition flex items-center gap-1 transition lex items-center gap-1"
+                            onclick="openAddNarrForm('f0')">Add
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 fill-neutral-500">
+                                class="w-4 h-4 fill-consortiumBlue-800">
                                     <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
                                     clip-rule="evenodd" />
                                 </svg>
                             </button>
                         </div>
-                        <div id="f0" class="w-full bg-neutral-50 rounded p-4 border border-neutral-100 rounded-xl self-end hidden flex-col gap-6">
+                        <div id="f0" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100  self-end hidden flex-col gap-6">
                             <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
                                  <h3 class="">Add a narrative</h3>
 
                                 <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                    " onclick="closeAddNarrForm('f0')">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -371,8 +372,8 @@ Select
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
                                     <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                     p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                     <button onclick="closeAddNarrForm('f0')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
@@ -391,7 +392,7 @@ Select
                                    Material
                                </h3>
 
-                                    <div class="text-blueGrey-700 text-sm">What kind of material is used. Click on the i of the material to lean
+                                    <div class=" text-blueGrey-700 text-sm">What kind of material is used. Click on the i of the material to lean
                                         more.</div>
                                 </div>
                             </div>
@@ -411,7 +412,7 @@ Select
                            ">
                                     <div class="w-full lg:w-2/3  py-3  px-2">
                                         <div class="flex flex-wrap gap-2 flex-row">
-                                            <div class="border border-greenGrey-600 text-greenGrey-800 rounded  px-1 flex items-center">Wood
+                                            <div class="border border-white text-white rounded px-1 flex items-center">Wood
                                                 <button class="ml-1" onclick="openInfoThesaurus()">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                     stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-greenGrey-700">
@@ -420,7 +421,7 @@ Select
                                                     </svg>
                                                 </button>
                                             </div>
-                                            <div class="border border-greenGrey-600 text-greenGrey-800 rounded  px-1 flex items-center">Iron
+                                            <div class="border border-white text-white rounded px-1 flex items-center">Iron
                                                 <button class="ml-1" onclick="openInfoThesaurus()">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                     stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-greenGrey-700">
@@ -449,7 +450,7 @@ Select
                            ">
                                     <div class="w-full lg:w-2/3  py-3  px-2">
                                         <div class="flex flex-wrap gap-2 flex-row">
-                                            <div class="border border-greenGrey-600 text-greenGrey-800 rounded  px-1 flex items-center">Wood
+                                            <div class="border border-white text-white rounded px-1 flex items-center">Wood
                                                 <button class="ml-1" onclick="openInfoThesaurus()">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                     stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-greenGrey-700">
@@ -458,7 +459,7 @@ Select
                                                     </svg>
                                                 </button>
                                             </div>
-                                            <div class="border border-greenGrey-600 text-greenGrey-800 rounded  px-1 flex items-center">Ivory
+                                            <div class="border border-white text-white rounded px-1 flex items-center">Ivory
                                                 <button class="ml-1" onclick="openInfoThesaurus()">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                     stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-greenGrey-700">
@@ -467,7 +468,7 @@ Select
                                                     </svg>
                                                 </button>
                                             </div>
-                                            <div class="border border-greenGrey-600 text-greenGrey-800 rounded  px-1 flex items-center">Metal
+                                            <div class="border border-white text-white rounded px-1 flex items-center">Metal
                                                 <button class="ml-1" onclick="openInfoThesaurus()">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                     stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke-greenGrey-700">
@@ -491,26 +492,27 @@ Select
                                 </div>
                             </div>
                         </div>
-                        <div class="flex justify-end">
+                        <div class="flex justify-end text-consortiumBlue-800">
                             <button class="py-2 px-3 p-1 sm:py-2 sm:px-3 rounded-full text-xs
-               bg-neutral-200
-               hover:bg-neutral-300
-               text-neutral-800 transition flex items-center gap-1
-                transition lex items-center gap-1" onclick="openAddNarrForm('f1')">Add
+               bg-consortiumGreen-300
+               text-consortiumBlue-800
+               
+               transition flex items-center gap-1 transition lex items-center gap-1"
+                            onclick="openAddNarrForm('f1')">Add
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 fill-neutral-500">
+                                class="w-4 h-4 fill-consortiumBlue-800">
                                     <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
                                     clip-rule="evenodd" />
                                 </svg>
                             </button>
                         </div>
-                        <div id="f1" class="w-full bg-neutral-50 rounded p-4 border border-neutral-100 rounded-xl self-end hidden flex-col gap-6">
+                        <div id="f1" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100  self-end hidden flex-col gap-6">
                             <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
                                  <h3 class="">Add a narrative</h3>
 
                                 <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                    " onclick="closeAddNarrForm('f1')">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -555,8 +557,8 @@ Select
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
                                     <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                     p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                     <button onclick="closeAddNarrForm('f1')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
@@ -575,33 +577,34 @@ Select
                                    Dimensions
                                </h3>
 
-                                    <div class="text-blueGrey-700 text-sm">What is the height, width and depth.</div>
+                                    <div class=" text-blueGrey-700 text-sm">What is the height, width and depth.</div>
                                 </div>
                             </div>
                             <div class="w-full xl:w-4/5  flex flex-col gap-2">
                                 <div class="text-blueGrey-700 italic w-full border-t border-blueGrey-100 py-6 text-sm">No <span class="lowercase">Dimensions</span> available</div>
                             </div>
                         </div>
-                        <div class="flex justify-end">
+                        <div class="flex justify-end text-consortiumBlue-800">
                             <button class="py-2 px-3 p-1 sm:py-2 sm:px-3 rounded-full text-xs
-               bg-neutral-200
-               hover:bg-neutral-300
-               text-neutral-800 transition flex items-center gap-1
-                transition lex items-center gap-1" onclick="openAddNarrForm('f2')">Add
+               bg-consortiumGreen-300
+               text-consortiumBlue-800
+               
+               transition flex items-center gap-1 transition lex items-center gap-1"
+                            onclick="openAddNarrForm('f2')">Add
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 fill-neutral-500">
+                                class="w-4 h-4 fill-consortiumBlue-800">
                                     <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
                                     clip-rule="evenodd" />
                                 </svg>
                             </button>
                         </div>
-                        <div id="f2" class="w-full bg-neutral-50 rounded p-4 border border-neutral-100 rounded-xl self-end hidden flex-col gap-6">
+                        <div id="f2" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100  self-end hidden flex-col gap-6">
                             <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
                                  <h3 class="">Add a narrative</h3>
 
                                 <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                    " onclick="closeAddNarrForm('f2')">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -646,8 +649,8 @@ Select
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
                                     <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                     p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                     <button onclick="closeAddNarrForm('f2')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
@@ -666,7 +669,7 @@ Select
                                    Date Made
                                </h3>
 
-                                    <div class="text-blueGrey-700 text-sm">When was the object made. Could be a exact or a date range.</div>
+                                    <div class=" text-blueGrey-700 text-sm">When was the object made. Could be a exact or a date range.</div>
                                 </div>
                             </div>
                             <div class="w-full xl:w-4/5  flex flex-col gap-2">
@@ -738,26 +741,27 @@ Select
                                 </div>
                             </div>
                         </div>
-                        <div class="flex justify-end">
+                        <div class="flex justify-end text-consortiumBlue-800">
                             <button class="py-2 px-3 p-1 sm:py-2 sm:px-3 rounded-full text-xs
-               bg-neutral-200
-               hover:bg-neutral-300
-               text-neutral-800 transition flex items-center gap-1
-                transition lex items-center gap-1" onclick="openAddNarrForm('f3')">Add
+               bg-consortiumGreen-300
+               text-consortiumBlue-800
+               
+               transition flex items-center gap-1 transition lex items-center gap-1"
+                            onclick="openAddNarrForm('f3')">Add
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 fill-neutral-500">
+                                class="w-4 h-4 fill-consortiumBlue-800">
                                     <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
                                     clip-rule="evenodd" />
                                 </svg>
                             </button>
                         </div>
-                        <div id="f3" class="w-full bg-neutral-50 rounded p-4 border border-neutral-100 rounded-xl self-end hidden flex-col gap-6">
+                        <div id="f3" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100  self-end hidden flex-col gap-6">
                             <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
                                  <h3 class="">Add a narrative</h3>
 
                                 <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                    " onclick="closeAddNarrForm('f3')">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -802,8 +806,8 @@ Select
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
                                     <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                     p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                     <button onclick="closeAddNarrForm('f3')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
@@ -822,33 +826,34 @@ Select
                                    Types
                                </h3>
 
-                                    <div class="text-blueGrey-700 text-sm">Description needed</div>
+                                    <div class=" text-blueGrey-700 text-sm">Description needed</div>
                                 </div>
                             </div>
                             <div class="w-full xl:w-4/5  flex flex-col gap-2">
                                 <div class="text-blueGrey-700 italic w-full border-t border-blueGrey-100 py-6 text-sm">No <span class="lowercase">Types</span> available</div>
                             </div>
                         </div>
-                        <div class="flex justify-end">
+                        <div class="flex justify-end text-consortiumBlue-800">
                             <button class="py-2 px-3 p-1 sm:py-2 sm:px-3 rounded-full text-xs
-               bg-neutral-200
-               hover:bg-neutral-300
-               text-neutral-800 transition flex items-center gap-1
-                transition lex items-center gap-1" onclick="openAddNarrForm('f4')">Add
+               bg-consortiumGreen-300
+               text-consortiumBlue-800
+               
+               transition flex items-center gap-1 transition lex items-center gap-1"
+                            onclick="openAddNarrForm('f4')">Add
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 fill-neutral-500">
+                                class="w-4 h-4 fill-consortiumBlue-800">
                                     <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
                                     clip-rule="evenodd" />
                                 </svg>
                             </button>
                         </div>
-                        <div id="f4" class="w-full bg-neutral-50 rounded p-4 border border-neutral-100 rounded-xl self-end hidden flex-col gap-6">
+                        <div id="f4" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100  self-end hidden flex-col gap-6">
                             <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
                                  <h3 class="">Add a narrative</h3>
 
                                 <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                    " onclick="closeAddNarrForm('f4')">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -893,8 +898,8 @@ Select
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
                                     <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                     p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                     <button onclick="closeAddNarrForm('f4')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
@@ -913,33 +918,34 @@ Select
                                    Techniques
                                </h3>
 
-                                    <div class="text-blueGrey-700 text-sm">Description needed</div>
+                                    <div class=" text-blueGrey-700 text-sm">Description needed</div>
                                 </div>
                             </div>
                             <div class="w-full xl:w-4/5  flex flex-col gap-2">
                                 <div class="text-blueGrey-700 italic w-full border-t border-blueGrey-100 py-6 text-sm">No <span class="lowercase">Techniques</span> available</div>
                             </div>
                         </div>
-                        <div class="flex justify-end">
+                        <div class="flex justify-end text-consortiumBlue-800">
                             <button class="py-2 px-3 p-1 sm:py-2 sm:px-3 rounded-full text-xs
-               bg-neutral-200
-               hover:bg-neutral-300
-               text-neutral-800 transition flex items-center gap-1
-                transition lex items-center gap-1" onclick="openAddNarrForm('f5')">Add
+               bg-consortiumGreen-300
+               text-consortiumBlue-800
+               
+               transition flex items-center gap-1 transition lex items-center gap-1"
+                            onclick="openAddNarrForm('f5')">Add
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 fill-neutral-500">
+                                class="w-4 h-4 fill-consortiumBlue-800">
                                     <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
                                     clip-rule="evenodd" />
                                 </svg>
                             </button>
                         </div>
-                        <div id="f5" class="w-full bg-neutral-50 rounded p-4 border border-neutral-100 rounded-xl self-end hidden flex-col gap-6">
+                        <div id="f5" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100  self-end hidden flex-col gap-6">
                             <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
                                  <h3 class="">Add a narrative</h3>
 
                                 <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                    " onclick="closeAddNarrForm('f5')">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -984,8 +990,8 @@ Select
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
                                     <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                     p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                     <button onclick="closeAddNarrForm('f5')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
@@ -1004,33 +1010,34 @@ Select
                                    Creators
                                </h3>
 
-                                    <div class="text-blueGrey-700 text-sm">Description needed</div>
+                                    <div class=" text-blueGrey-700 text-sm">Description needed</div>
                                 </div>
                             </div>
                             <div class="w-full xl:w-4/5  flex flex-col gap-2">
                                 <div class="text-blueGrey-700 italic w-full border-t border-blueGrey-100 py-6 text-sm">No <span class="lowercase">Creators</span> available</div>
                             </div>
                         </div>
-                        <div class="flex justify-end">
+                        <div class="flex justify-end text-consortiumBlue-800">
                             <button class="py-2 px-3 p-1 sm:py-2 sm:px-3 rounded-full text-xs
-               bg-neutral-200
-               hover:bg-neutral-300
-               text-neutral-800 transition flex items-center gap-1
-                transition lex items-center gap-1" onclick="openAddNarrForm('f6')">Add
+               bg-consortiumGreen-300
+               text-consortiumBlue-800
+               
+               transition flex items-center gap-1 transition lex items-center gap-1"
+                            onclick="openAddNarrForm('f6')">Add
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-4 h-4 fill-neutral-500">
+                                class="w-4 h-4 fill-consortiumBlue-800">
                                     <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
                                     clip-rule="evenodd" />
                                 </svg>
                             </button>
                         </div>
-                        <div id="f6" class="w-full bg-neutral-50 rounded p-4 border border-neutral-100 rounded-xl self-end hidden flex-col gap-6">
+                        <div id="f6" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100  self-end hidden flex-col gap-6">
                             <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
                                  <h3 class="">Add a narrative</h3>
 
                                 <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                    " onclick="closeAddNarrForm('f6')">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -1075,8 +1082,8 @@ Select
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
                                     <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                   bg-neutral-200
-                   hover:bg-neutral-300
+                   bg-neutral-200/50
+                   hover:bg-neutral-300/50
                    text-neutral-800 transition flex items-center gap-1
                     p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                     <button onclick="closeAddNarrForm('f6')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
@@ -1167,15 +1174,15 @@ Select
             </div>
             </main>
             <!-- aside -->
-            <aside class="w-full md:w-1/3 self-stretch order-1 md:order-2 md:mx-0 md:bg-blueGrey-50 p-1 flex flex-col justify-start">
+            <aside class="w-full md:w-1/3 self-stretch order-1 md:order-2 md:mx-0  p-1 flex flex-col justify-start md:bg-blueGrey-50">
                 <div class="flex flex-row md:flex-col gap-1 sticky top-4 ">
-                    <div class="w-1/2 md:w-full relative flex flex-col justify-center items-center md:border-b-2 border-white">
+                    <div class="w-1/2 md:w-full relative flex flex-col justify-center items-center  ">
                         <div class="">
                             <img src="images/objects/object3.jpg" alt="" class="max-h-[450px] w-auto">
                         </div>
                         <button class="absolute p-1 md:p-3 p-1 sm:py-2 sm:px-3 rounded-full text-xs
-      bg-neutral-200
-      hover:bg-neutral-300
+      bg-neutral-200/50
+      hover:bg-neutral-300/50
       text-neutral-800 transition flex items-center gap-1
         top-2 left-2" onclick="openZoom()">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -1204,7 +1211,7 @@ Select
             <div class="mx-auto px-4 sm:px-10 max-w-[1800px]">
                  <h2 id="provenance" class="text-2xl mb-2 mt-20">Provenance</h2>
 
-                <p class="text-blueGrey-700 text-sm max-w-2xl mb-6">Provenance information shows the trail an object has made before it came
+                <p class="text-consortiumBlueShade-50 text-sm max-w-2xl mb-6">Provenance information shows the trail an object has made before it came
                     at the current location. It can contain information about previous owners
                     to technical processing information.
                     <br>This provenance data is often incomplete. We encourage you to <a href=""
@@ -1212,42 +1219,42 @@ Select
                 <div class="flex justify-between items-center my-6">
                     <div class="">
                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-bg-neutral-200
-hover:bg-neutral-300
+bg-neutral-200/50
+hover:bg-neutral-300/50
 text-neutral-800 transition flex items-center gap-1
 " onclick="openAddProvForm()">Add&nbsp;provenance</button>
                     </div>
                     <div class=" flex gap-1">
                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-bg-neutral-200
-hover:bg-neutral-300
+bg-neutral-200/50
+hover:bg-neutral-300/50
 text-neutral-800 transition flex items-center gap-1
 ">Hide timeline</button>
                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-bg-neutral-200
-hover:bg-neutral-300
+bg-neutral-200/50
+hover:bg-neutral-300/50
 text-neutral-800 transition flex items-center gap-1
 " onclick="hideAllProvBlock()" id="bHidebData">Hide Data table</button>
                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-bg-neutral-200
-hover:bg-neutral-300
+bg-neutral-200/50
+hover:bg-neutral-300/50
 text-neutral-800 transition flex items-center gap-1
  hidden" onclick="showAllProvBlock()" id="bShowbData">Show Data table</button>
                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-bg-neutral-200
-hover:bg-neutral-300
+bg-neutral-200/50
+hover:bg-neutral-300/50
 text-neutral-800 transition flex items-center gap-1
 ">Hide map</button>
                     </div>
                 </div>
-                <div class="w-full bg-neutral-50 rounded p-4 border border-neutral-100 hidden flex-col"
+                <div class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100 hidden flex-col"
                 id="addProvForm">
                     <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-4">
                          <h3 class="">Add provenance</h3>
 
                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-        bg-neutral-200
-        hover:bg-neutral-300
+        bg-neutral-200/50
+        hover:bg-neutral-300/50
         text-neutral-800 transition flex items-center gap-1
         " onclick="closeAddProvForm()">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -1262,7 +1269,7 @@ text-neutral-800 transition flex items-center gap-1
                             <div class="flex flex-col">
                                 <label class="flex flex-col gap-1 mb-1"><strong>Type</strong>
                                 </label>
-                                <select class="rounded p-2 bg-neutral-200 text-sm">
+                                <select class="rounded p-2 text-sm border bg-neutral-100  ">
                                     <option value="text-sm">Acquisition</option>
                                     <option value="text-sm">Transfer of Custody</option>
                                 </select>
@@ -1270,7 +1277,7 @@ text-neutral-800 transition flex items-center gap-1
                             <div class="flex flex-col">
                                 <label class="flex flex-col gap-1 mb-1"><strong>Classification</strong>
                                 </label>
-                                <select class="rounded p-2 bg-neutral-200 text-sm">
+                                <select class="rounded p-2 text-sm border bg-neutral-100  ">
                                     <option value="text-sm">Gift</option>
                                     <option value="text-sm">Purchase</option>
                                     <option value="text-sm">Loan</option>
@@ -1282,7 +1289,7 @@ text-neutral-800 transition flex items-center gap-1
                             <div class="flex flex-col">
                                 <label class="flex flex-col gap-1 mb-1"><strong>Level of certainty</strong>
                                 </label>
-                                <select class="rounded p-2 bg-neutral-200 text-sm">
+                                <select class="rounded p-2 text-sm border bg-neutral-100  ">
                                     <option value="text-sm">Possibly</option>
                                     <option value="text-sm">Probably</option>
                                 </select>
@@ -1292,7 +1299,7 @@ text-neutral-800 transition flex items-center gap-1
                             <div class="flex flex-col gap-2">
                                 <label class="flex flex-col gap-1 mb-1"><strong>Transferred from</strong>
                                 </label>
-                                <select class="rounded p-2 bg-neutral-200 text-sm">
+                                <select class="rounded p-2 text-sm border bg-neutral-100  ">
                                     <option value="text-sm">From wikipedia</option>
                                     <option value="text-sm">From collonialcollections.nl</option>
                                 </select>
@@ -1302,7 +1309,7 @@ text-neutral-800 transition flex items-center gap-1
                             <div class="flex flex-col gap-2">
                                 <label class="flex flex-col gap-1 mb-1"><strong>Transferred to</strong>
                                 </label>
-                                <select class="rounded p-2 bg-neutral-200 text-sm">
+                                <select class="rounded p-2 text-sm border bg-neutral-100  ">
                                     <option value="text-sm">From wikipedia</option>
                                     <option value="text-sm">From collonialcollections.nl</option>
                                 </select>
@@ -1326,8 +1333,8 @@ text-neutral-800 transition flex items-center gap-1
                     </div>
                     <div class="flex items-center gap-2">
                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-        bg-neutral-200
-        hover:bg-neutral-300
+        bg-neutral-200/50
+        hover:bg-neutral-300/50
         text-neutral-800 transition flex items-center gap-1
         ">Save provenance</button>
                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
@@ -1338,86 +1345,99 @@ text-neutral-800 transition flex items-center gap-1
                 <div class="w-full" id="provTimeline">
                      <h3 class="my-2 w-full pt-4">Provenance timeline</h3>
 
-                    <div class="text-blueGrey-700 text-sm max-w-3xl mb-4">In the timeline visualisation provenance items are plotted out by time.
+                    <div class=" text-sm max-w-3xl mb-4 text-consortiumBlueShade-100">In the timeline visualisation provenance items are plotted out by time.
                         Click on a item focus that item. Provenance&nbsp;items <strong>P8</strong>, <strong>P9</strong> and <strong>p10</strong> are
                         not plotted on the timeline because we have no dates available.</div>
                     <div
-                    class="bg-blueGrey-50 rounded-sm w-full mb-10 relative">
+                    class=" rounded-sm w-full mb-10 relative bg-blueGrey-50">
                         <div class="overflow-y-scroll w-full">
-                            <div class="mb-12 bg-blueGrey-50 rounded-sm pt-4 pb-24 pl-2 w-[1800px] pr-32">
-                                <div class=" h-12 relative border-b border-white">
-                                    <div class="absolute text-sm flex justify-center bg-blueGrey-200 rounded-full py-1"
+                            <div class="mb-12 rounded-sm pt-4 pb-24 pl-2 w-[1800px] pr-32 bg-blueGrey-50">
+                                <div class=" h-10 relative border-b border-consortiumBlueShade-600 ">
+                                    <div class="absolute h-10 border-l border-consortiumBlueShade-400 pl-2 text-sm italic flex items-center gap-2"
+                                    style="left:40%">
+                                        <img src="images/icon-hist-event.png" alt="" class="h-4 w-auto">Dutch intervention in Lombok and Karangasem (<a href="">Wikipedia</a>)</div>
+                                </div>
+                                <div class="w-full relative h-10 border-b border-consortiumBlueShade-600">
+                                    <div class=" absolute text-center flex justify-center items-center  bg-consortiumBlueShade-500 rounded-full py-1"
+                                    style="left: 40%; width: 18%;">
+                                        <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+                                 rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
+                                    " onclick="hideAllProvItem(); showProvItem('lip3')">P1</button>
+                                    </div>
+                                </div>
+                                <div class="w-full relative h-10 border-b border-consortiumBlueShade-600">
+                                    <div class=" absolute text-center flex justify-center items-center bg-consortiumBlueShade-500 rounded-full py-1"
+                                    style="left: 60%; width: 13%;">
+                                        <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+                                 rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
+                                    " onclick="hideAllProvItem(); showProvItem('lip3')">P2</button>
+                                    </div>
+                                </div>
+                                <div class="w-full relative h-10 border-b border-consortiumBlueShade-600">
+                                    <div class=" absolute text-center flex justify-center items-center bg-consortiumBlueShade-500 rounded-full py-1"
+                                    style="left: 73%; width: 9%;">
+                                        <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+                                 rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
+                                    " onclick="hideAllProvItem(); showProvItem('lip3')">P3</button>
+                                    </div>
+                                </div>
+                                <div class=" h-12 relative  text-consortiumBlue-800">
+                                    <div class="absolute text-sm flex justify-center bg-blueGrey-100 rounded-full py-1"
                                     style="left:0%; width: 40%;">
                                         <div class="flex items-center justify-center px-2">Of this segment much is unknown. Do you know more of this?
                                             <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-        bg-neutral-200
-        hover:bg-neutral-300
+        bg-neutral-200/50
+        hover:bg-neutral-300/50
         text-neutral-800 transition flex items-center gap-1
          ml-2 bg-white">Add&nbsp;provenance</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" h-10 relative border-b border-white ">
-                                    <div class="absolute h-10 border-l border-neutral-400 pl-2 text-sm italic flex items-center gap-2"
-                                    style="left:40%">
-                                        <img src="images/icon-hist-event.png" alt="" class="h-4 w-auto">Dutch intervention in Lombok and Karangasem (<a href="">Wikipedia</a>)</div>
-                                </div>
-                                <div class="w-full relative h-10 border-b border-white">
-                                    <div class=" absolute text-center flex justify-center items-center  bg-blueGrey-100 rounded-full py-1"
-                                    style="left: 40%; width: 18%;">
-                                        <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
-                                    " onclick="hideAllProvItem(); showProvItem('lip3')">P1</button>
-                                    </div>
-                                </div>
-                                <div class="w-full relative h-10 border-b border-white">
-                                    <div class=" absolute text-center flex justify-center items-center bg-blueGrey-100 rounded-full py-1"
-                                    style="left: 60%; width: 13%;">
-                                        <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
-                                    " onclick="hideAllProvItem(); showProvItem('lip3')">P2</button>
-                                    </div>
-                                </div>
-                                <div class="w-full relative h-10">
-                                    <div class=" absolute text-center flex justify-center items-center bg-blueGrey-100 rounded-full py-1"
-                                    style="left: 73%; width: 9%;">
-                                        <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
-                                    " onclick="hideAllProvItem(); showProvItem('lip3')">P3</button>
-                                    </div>
-                                </div>
                                 <div class="w-full h-0 relative">
                                     <!-- timeline -->
-                                    <div class="w-full border-b-2 h-4 border-neutral-700 absolute"></div>
+                                    <div class="w-full border-b-2 h-4 border-white absolute"></div>
                                     <!-- years -->
-                                    <div class="pt-10 border-l-4 border-blueGrey-50  absolute" style="left: 0%;">
-                                        <div class="text-sm text-neutral-600 -rotate-45 ">1500</div>
+                                    <div class="pt-10 border-l-4 border-consortiumBlueShade-900  absolute"
+                                    style="left: 0%;">
+                                        <div class="text-sm text-white -rotate-45 ">1500</div>
                                     </div>
-                                    <div class="pt-10 border-l-4 border-blueGrey-50  absolute" style="left: 20%;">
-                                        <div class="text-sm text-neutral-600 -rotate-45 ">1600</div>
+                                    <div class="pt-10 border-l-4 border-consortiumBlueShade-900  absolute"
+                                    style="left: 20%;">
+                                        <div class="text-sm text-white -rotate-45 ">1600</div>
                                     </div>
-                                    <div class="pt-10 border-l-4 border-blueGrey-50  absolute" style="left: 40%;">
-                                        <div class="text-sm text-neutral-600 -rotate-45 ">1700</div>
+                                    <div class="pt-10 border-l-4 border-consortiumBlueShade-900  absolute"
+                                    style="left: 40%;">
+                                        <div class="text-sm text-white -rotate-45 ">1700</div>
                                     </div>
-                                    <div class="pt-10 border-l-4 border-blueGrey-50  absolute" style="left: 60%;">
-                                        <div class="text-sm text-neutral-600 -rotate-45 ">1800</div>
+                                    <div class="pt-10 border-l-4 border-consortiumBlueShade-900  absolute"
+                                    style="left: 60%;">
+                                        <div class="text-sm text-white -rotate-45 ">1800</div>
                                     </div>
-                                    <div class="pt-10 border-l-4 border-blueGrey-50  absolute" style="left: 80%;">
-                                        <div class="text-sm text-neutral-600 -rotate-45 ">1900</div>
+                                    <div class="pt-10 border-l-4 border-consortiumBlueShade-900  absolute"
+                                    style="left: 80%;">
+                                        <div class="text-sm text-white -rotate-45 ">1900</div>
                                     </div>
-                                    <div class="pt-10 border-l-4 border-blueGrey-50  absolute" style="left: 99%;">
-                                        <div class="text-sm text-neutral-600 -rotate-45 ">2023</div>
+                                    <div class="pt-10 border-l-4 border-consortiumBlueShade-900  absolute"
+                                    style="left: 99%;">
+                                        <div class="text-sm text-white -rotate-45 ">2023</div>
                                     </div>
                                     <!-- markers -->
-                                    <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                    <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+                             rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
                                  absolute" style="left: 95.6%;" onclick="hideAllProvItem(); showProvItem('lip3')">P4</button>
-                                    <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                    <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+                             rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
                                  absolute" style="left: 96%;" onclick="hideAllProvItem(); showProvItem('lip3')">P5</button>
-                                    <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                    <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+                             rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
                                  absolute" style="left: 97%;" onclick="hideAllProvItem(); showProvItem('lip3')">P6</button>
-                                    <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                    <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+                             rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
                                  absolute" style="left: 99%;" onclick="hideAllProvItem(); showProvItem('lip3')">P7</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="absolute w-32 bg-gradient-to-l from-blueGrey-50  right-0 top-0 bottom-0"></div>
+                        <div class="absolute w-32 bg-gradient-to-l from-consortiumBlue-800  right-0 top-0 bottom-0"></div>
                 </div>
             </div>
             <div class="w-full block" id="provData">
@@ -1426,19 +1446,19 @@ text-neutral-800 transition flex items-center gap-1
 
                     <div class="flex items-center">
                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-        bg-neutral-200
-        hover:bg-neutral-300
+        bg-neutral-200/50
+        hover:bg-neutral-300/50
         text-neutral-800 transition flex items-center gap-1
          mr-2 hidden" id="bAllItems" onclick="showAllProv()">Show&nbsp;all&nbsp;items</button>
-                        <select class="rounded p-2 bg-neutral-200 text-sm">
+                        <select class="rounded p-2 text-sm border bg-neutral-100  ">
                             <option value="text-sm">Order by location</option>
                             <option value="text-sm">Order by date (no date first)</option>
                             <option value="text-sm">Order by date (no date last)</option>
                         </select>
                     </div>
                 </div>
-                <div class="bg-blueGrey-50 py-2 rounded">
-                    <header class="text-sm text-blueGrey-600 pl-8 w-full flex flex-col gap-2 sm:flex-row justify-between py-2 border-b mb-4">
+                <div class=" py-2 rounded bg-blueGrey-50">
+                    <header class="text-sm pl-8 w-full flex flex-col gap-2 sm:flex-row justify-between py-2 border-b mb-4 text-blueGrey-600">
                         <div class="w-full md:w-1/12">Id / quality</div>
                         <div class="w-full md:w-2/12">Type</div>
                         <div class="w-full md:w-3/12">Transfered from</div>
@@ -1446,21 +1466,22 @@ text-neutral-800 transition flex items-center gap-1
                         <div class="w-full md:w-1/12">Location</div>
                         <div class="w-full md:w-2/12">Provided by</div>
                     </header>
-                    <div class="border-l-4 mb-16 border-blueGrey-200" id="did1">
+                    <div class="border-l-4 mb-16 border-consortiumBlueShade-970" id="did1">
                         <div class="mb-4 pl-4 "><strong>1866-01-07</strong> &mdash; <strong>1866-01-07</strong>
 
                         </div>
-                        <ul class="flex flex-col border-t">
-                            <li id="lip1" class="list-none pl-4 w-full text-sm md:text-base  border-b border-blueGrey-100">
+                        <ul class="flex flex-col border-t border-consortiumBlueShade-970">
+                            <li id="lip1" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-blueGrey-100">
                                 <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                     <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                         <div class="flex flex-col gap-2">
                                             <div class="">
-                                                <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                                <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+         rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
             ">P1</button>
                                             </div>
                                         </div>
-                                        <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row">
+                                        <div class="text-consortiumBlueShade-100 font-semibold  flex flex-col lg:flex-row">
                                             <div class="text-xl">*</div>
                                             <div class="text-xl">*</div>
                                             <div class="text-xl">*</div>
@@ -1501,16 +1522,17 @@ text-neutral-800 transition flex items-center gap-1
                                     </div>
                                 </div>
                             </li>
-                            <li id="lip2" class="list-none pl-4 w-full text-sm md:text-base  border-b border-blueGrey-100">
+                            <li id="lip2" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-blueGrey-100">
                                 <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                     <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                         <div class="flex flex-col gap-2">
                                             <div class="">
-                                                <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                                <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+         rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
             ">P2</button>
                                             </div>
                                         </div>
-                                        <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row">
+                                        <div class="text-consortiumBlueShade-100 font-semibold  flex flex-col lg:flex-row">
                                             <div class="">*</div>
                                             <div class=" opacity-50">*</div>
                                             <div class=" opacity-50">*</div>
@@ -1559,21 +1581,22 @@ text-neutral-800 transition flex items-center gap-1
                             </li>
                         </ul>
                     </div>
-                    <div class="border-l-4 mb-16 border-blueGrey-200" id="did2">
+                    <div class="border-l-4 mb-16 border-consortiumBlueShade-970" id="did2">
                         <div class="mb-4 pl-4 "><strong>1891-03-1</strong> 
                         </div>
-                        <ul class="flex flex-col border-t">
-                            <li id="lip3" class="list-none pl-4 w-full text-sm md:text-base  border-b border-blueGrey-100">
+                        <ul class="flex flex-col border-t border-consortiumBlueShade-970">
+                            <li id="lip3" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-blueGrey-100">
                                 <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                     <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                         <div class="flex flex-col gap-2">
                                             <div class="">
-                                                <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                                <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+         rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
             ">P3</button>
                                             </div>
                                             <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-        bg-neutral-200
-        hover:bg-neutral-300
+        bg-neutral-200/50
+        hover:bg-neutral-300/50
         text-neutral-800 transition flex items-center gap-1
         " onclick="showProvDescr()">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -1583,7 +1606,7 @@ text-neutral-800 transition flex items-center gap-1
                                                 </svg>
                                             </button>
                                         </div>
-                                        <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row">
+                                        <div class="text-consortiumBlueShade-100 font-semibold  flex flex-col lg:flex-row">
                                             <div class="text-xl">*</div>
                                             <div class="text-xl">*</div>
                                             <div class="text-xl">*</div>
@@ -1640,21 +1663,22 @@ The day book entry of 29 April 1901 acknowledges
                             </li>
                         </ul>
                     </div>
-                    <div class="border-l-4 mb-16 border-blueGrey-200" id="did3">
+                    <div class="border-l-4 mb-16 border-consortiumBlueShade-970" id="did3">
                         <div class="mb-4 pl-4 "><strong>1912-11-23</strong> &mdash; <strong>1914-01-31</strong>
 
                         </div>
-                        <ul class="flex flex-col border-t">
-                            <li id="lip7" class="list-none pl-4 w-full text-sm md:text-base  border-b border-blueGrey-100">
+                        <ul class="flex flex-col border-t border-consortiumBlueShade-970">
+                            <li id="lip7" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-blueGrey-100">
                                 <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                     <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                         <div class="flex flex-col gap-2">
                                             <div class="">
-                                                <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                                <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+         rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
             ">P7</button>
                                             </div>
                                         </div>
-                                        <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row">
+                                        <div class="text-consortiumBlueShade-100 font-semibold  flex flex-col lg:flex-row">
                                             <div class="text-xl">*</div>
                                             <div class="text-xl">*</div>
                                             <div class="text-xl">*</div>
@@ -1694,16 +1718,17 @@ The day book entry of 29 April 1901 acknowledges
                                     </div>
                                 </div>
                             </li>
-                            <li id="lip5" class="list-none pl-4 w-full text-sm md:text-base  border-b border-blueGrey-100">
+                            <li id="lip5" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-blueGrey-100">
                                 <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                     <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                         <div class="flex flex-col gap-2">
                                             <div class="">
-                                                <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                                <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+         rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
             ">P5</button>
                                             </div>
                                         </div>
-                                        <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row">
+                                        <div class="text-consortiumBlueShade-100 font-semibold  flex flex-col lg:flex-row">
                                             <div class="">*</div>
                                             <div class=" opacity-50">*</div>
                                             <div class=" opacity-50">*</div>
@@ -1750,16 +1775,17 @@ The day book entry of 29 April 1901 acknowledges
                                     </div>
                                 </div>
                             </li>
-                            <li id="lip6" class="list-none pl-4 w-full text-sm md:text-base  border-b border-blueGrey-100">
+                            <li id="lip6" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-blueGrey-100">
                                 <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                     <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                         <div class="flex flex-col gap-2">
                                             <div class="">
-                                                <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                                <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+         rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
             ">P6</button>
                                             </div>
                                         </div>
-                                        <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row">
+                                        <div class="text-consortiumBlueShade-100 font-semibold  flex flex-col lg:flex-row">
                                             <div class="text-lg">*</div>
                                             <div class="text-lg">*</div>
                                             <div class="text-lg opacity-50">*</div>
@@ -1829,20 +1855,21 @@ The day book entry of 29 April 1901 acknowledges
                             </li>
                         </ul>
                     </div>
-                    <div class="border-l-4 mb-16 border-blueGrey-200" id="did4">
+                    <div class="border-l-4 mb-16 border-consortiumBlueShade-970" id="did4">
                         <div class="mb-4 pl-4 "><strong>2023-01-01</strong> 
                         </div>
-                        <ul class="flex flex-col border-t">
-                            <li id="lip4" class="list-none pl-4 w-full text-sm md:text-base  border-b border-blueGrey-100">
+                        <ul class="flex flex-col border-t border-consortiumBlueShade-970">
+                            <li id="lip4" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-blueGrey-100">
                                 <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                     <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                         <div class="flex flex-col gap-2">
                                             <div class="">
-                                                <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                                <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+         rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
             ">P4</button>
                                             </div>
                                         </div>
-                                        <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row">
+                                        <div class="text-consortiumBlueShade-100 font-semibold  flex flex-col lg:flex-row">
                                             <div class="">*</div>
                                             <div class=" opacity-50">*</div>
                                             <div class=" opacity-50">*</div>
@@ -1884,20 +1911,21 @@ The day book entry of 29 April 1901 acknowledges
                             </li>
                         </ul>
                     </div>
-                    <div class="border-l-4 mb-16 border-blueGrey-200" id="did5">
+                    <div class="border-l-4 mb-16 border-consortiumBlueShade-970" id="did5">
                         <div class="mb-4 pl-4 "><strong>No date</strong> 
                         </div>
-                        <ul class="flex flex-col border-t">
-                            <li id="lip8" class="list-none pl-4 w-full text-sm md:text-base  border-b border-blueGrey-100">
+                        <ul class="flex flex-col border-t border-consortiumBlueShade-970">
+                            <li id="lip8" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-blueGrey-100">
                                 <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                     <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                         <div class="flex flex-col gap-2">
                                             <div class="">
-                                                <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                                <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+         rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
             ">P8</button>
                                             </div>
                                         </div>
-                                        <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row">
+                                        <div class="text-consortiumBlueShade-100 font-semibold  flex flex-col lg:flex-row">
                                             <div class="">*</div>
                                             <div class=" opacity-50">*</div>
                                             <div class=" opacity-50">*</div>
@@ -1937,16 +1965,17 @@ The day book entry of 29 April 1901 acknowledges
                                     </div>
                                 </div>
                             </li>
-                            <li id="lip10" class="list-none pl-4 w-full text-sm md:text-base  border-b border-blueGrey-100">
+                            <li id="lip10" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-blueGrey-100">
                                 <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                     <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                         <div class="flex flex-col gap-2">
                                             <div class="">
-                                                <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                                <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+         rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
             ">P10</button>
                                             </div>
                                         </div>
-                                        <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row">
+                                        <div class="text-consortiumBlueShade-100 font-semibold  flex flex-col lg:flex-row">
                                             <div class="text-xl">*</div>
                                             <div class="text-xl">*</div>
                                             <div class="text-xl">*</div>
@@ -1993,16 +2022,17 @@ The day book entry of 29 April 1901 acknowledges
                                     </div>
                                 </div>
                             </li>
-                            <li id="lip9" class="list-none pl-4 w-full text-sm md:text-base  border-b border-blueGrey-100">
+                            <li id="lip9" class="list-none pl-4 w-full text-sm md:text-base  border-b  border-blueGrey-100">
                                 <div class="w-full flex flex-col gap-2 lg:gap-4 sm:flex-row justify-between items-center py-2 ">
                                     <div class="w-full md:w-1/12 flex flex-col lg:flex-row items-center gap-2">
                                         <div class="flex flex-col gap-2">
                                             <div class="">
-                                                <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                                                <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+         rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
             ">P9</button>
                                             </div>
                                         </div>
-                                        <div class="text-purple-800 font-semibold  flex flex-col lg:flex-row">
+                                        <div class="text-consortiumBlueShade-100 font-semibold  flex flex-col lg:flex-row">
                                             <div class="text-xl">*</div>
                                             <div class="text-xl">*</div>
                                             <div class="text-xl">*</div>
@@ -2057,7 +2087,8 @@ The day book entry of 29 April 1901 acknowledges
 
             <div class=" bg-[#9cc2de] mb-40 relative " id="provMap">
                 <img src="images/map.png" alt="" class="w-full h-auto">
-                <button class="bg-white hover:bg-neutral-700 rounded-full  h-8 w-8 flex justify-center items-center border-2 border-neutral-700 hover:border-neutral-700 hover:text-white transition text-xs font-medium hover:z-40 
+                <button class="bg-white hover:bg-neutral-700 border-neutral-700 hover:border-neutral-700 hover:text-white
+             rounded-full  h-8 w-8 flex justify-center items-center border-2  transition text-xs font-medium hover:z-40 
                  absolute" style="left: 50%; top:50%;">P3</button>
             </div>
         </div>

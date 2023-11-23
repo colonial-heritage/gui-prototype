@@ -56,23 +56,28 @@
                 <div class="sm:flex justify-end gap-4 hidden"></div>
             </div>
             <div class="
-            flex flex-col sm:flex-row justify-between 
+            flex flex-col sm:flex-row justify-between items-center
               h-full 
               gap-6
               w-full max-w-[1800px]
               mx-auto
               px-4 sm:px-10
-              pb-4
-              mb-10
               mt-6
               ">
-                <div class="-ml-10">
-                    <div class="px-4 my-4 sm:px-10 w-full max-w-[1800px] mx-auto">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4">
+                    <div class="">
                          <h1 class="text-2xl md:text-4xl">Communities</h1>
 
                     </div>
+                    <div class="">
+                        <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+bg-neutral-200/50
+hover:bg-neutral-300/50
+text-neutral-800 transition flex items-center gap-1
+">Create a community</button>
+                    </div>
                 </div>
-                <div class=" flex items-end gap-4">
+                <div class=" flex flex-col xl:flex-row items-center md:items-end gap-4 justify-end">
                     <div class="">
                         <div class="w-full max-w-[450px] relative">
                             <label for="text-search" class="font-semibold"></label>
@@ -83,17 +88,17 @@
     w-full 
     rounded-l 
     border
-    border-consortiumBlue-700
+    border-neutral-700
     " type="search" id="text-search" name="q" placeholder="Search for community">
                                 <button class="
-    bg-consortiumBlue-700
+    bg-neutral-700
     py-1 
     px-3 
     rounded-r 
     border-t  
     border-b  
     border-r
-    border-consortiumBlue-700" aria-label="Click to search" value="amster">
+    border-neutral-700" aria-label="Click to search" value="amster">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                     class="w-4 h-4 fill-white">
                                         <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
@@ -103,16 +108,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="">
-                        <select name="order" class="mt-1 block  rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-sky-600 focus:outline-none focus:ring-sky-600 sm:text-sm"
-                        aria-label="Select to change the ordering of the communities">
-                            <option value="relevanceDesc">Date created</option>
-                            <option value="nameAsc">Name - Ascending</option>
-                            <option value="nameDesc">Name - Descending</option>
-                            <option value="nameAsc">Most members</option>
+                    <div>
+                        <select class="rounded p-2 text-sm border bg-neutral-100  ">
+                            <option value="text-sm">Order by name - Ascending</option>
+                            <option value="text-sm">Order by name - Descending</option>
+                            <option value="text-sm">Order by Most members</option>
+                            <option value="text-sm">Order by date created</option>
                         </select>
                     </div>
                 </div>
+            </div>
+            <div class="text-sm w-full px-4 sm:px-10 pb-4 mb-4 text-right">
+                <input type="checkbox" id="onlyMy" name="onlyMy">
+                <label for="onlyMy" class="">Show only my communities</label>
             </div>
             <div class="
             grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 
