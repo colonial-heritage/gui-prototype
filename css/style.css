@@ -3846,6 +3846,26 @@ a:hover {
   border-color: rgb(202 138 4 / var(--tw-border-opacity));
 }
 
+.border-consortiumBlue-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(60 84 133 / var(--tw-border-opacity));
+}
+
+.border-consortiumBlue-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 56 110 / var(--tw-border-opacity));
+}
+
+.border-consortiumBlue-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(8 33 84 / var(--tw-border-opacity));
+}
+
+.border-consortiumBlue-970 {
+  --tw-border-opacity: 1;
+  border-color: rgb(6 26 65 / var(--tw-border-opacity));
+}
+
 .bg-\[\#9cc2de\] {
   --tw-bg-opacity: 1;
   background-color: rgb(156 194 222 / var(--tw-bg-opacity));
@@ -4230,6 +4250,16 @@ a:hover {
   background-color: rgb(251 113 133 / var(--tw-bg-opacity));
 }
 
+.bg-consortiumBlue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(60 84 133 / var(--tw-bg-opacity));
+}
+
+.bg-consortiumBlue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 59 110 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/images\/visual-graphic-strip1\.png\'\)\] {
   background-image: url('/images/visual-graphic-strip1.png');
 }
@@ -4548,6 +4578,10 @@ a:hover {
 
 .stroke-consortiumGreen-400 {
   stroke: hsl(145, 65%, 60%);
+}
+
+.stroke-consortiumBlue-100 {
+  stroke: #a9b9db;
 }
 
 .stroke-2 {
@@ -5333,6 +5367,11 @@ a:hover {
 .text-yellow-900 {
   --tw-text-opacity: 1;
   color: rgb(113 63 18 / var(--tw-text-opacity));
+}
+
+.text-consortiumBlue-50 {
+  --tw-text-opacity: 1;
+  color: rgb(198 213 242 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -8008,6 +8047,11 @@ a:hover {
   }
 
   .md\:bg-consortiumBlueShade-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(8 33 84 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-consortiumBlue-900 {
     --tw-bg-opacity: 1;
     background-color: rgb(8 33 84 / var(--tw-bg-opacity));
   }
