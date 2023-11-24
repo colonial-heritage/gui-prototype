@@ -322,3 +322,16 @@ function mainSubnavHide() {
     handleClass('mainSubnav', 'add', 'hidden')
     handleClass('mainSubnav', 'remove', 'flex');
 }
+
+
+function showLangSuggest() {
+    //communityBlock communityBlockForm communityBlockContent
+    handleClass('langSuggest', 'remove', 'hidden')
+    handleClass('langSuggest', 'add', 'flex');
+}
+
+function hideLangSuggest() {
+    //communityBlock communityBlockForm communityBlockContent
+    handleClass('langSuggest', 'add', 'hidden')
+    handleClass('langSuggest', 'remove', 'flex');
+}

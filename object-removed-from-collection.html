@@ -190,14 +190,16 @@ information for more
                                 <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                 <div class="text-xs text-neutral-600 italic">0/300</div>
                             </div>
-                            <div class="flex flex-col w-full lg:w-1/3">
-                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
+                            <div class="flex flex-col w-full lg:w-1/3  gap-4">
+                                <div class="">
+                                    <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
 Select
-                                    the community you speak on behalf of</label>
-                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                    <option value="">Society Islands / Tōtaiete mā community</option>
-                                    <option value="">Culture of Benin community</option>
-                                </select>
+                                        the community you speak on behalf of</label>
+                                    <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                        <option value="">Society Islands / Tōtaiete mā community</option>
+                                        <option value="">Culture of Benin community</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="flex flex-col sm:flex-row gap-4">
@@ -208,7 +210,34 @@ Select
                                 </label>
                                 <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                             </div>
-                            <div class="flex flex-col w-full lg:w-1/3"></div>
+                            <div class="flex flex-col w-full lg:w-1/3">
+                                <div class="flex flex-col gap-1 mb-1">
+                                    <label for=""> <strong>Language</strong>
+
+                                        <div class="">Select a language of the narrative. Start typing to select a language.</div>
+                                    </label>
+                                    <div class="relative">
+                                        <div class="flex justify-between items-center">
+                                            <input type="text" class="border border-neutral-400 rounded-l p-1 w-full"
+                                            onfocus="showLangSuggest()" onblur="hideLangSuggest()">
+                                            <div class="">
+                                                <button class="border border-neutral-400 border-l-0 rounded-r p-2" onclick="showLangSuggest()">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="bg-white border rounded-b divide-y text-sm border-t-0 hidden flex-col absolute w-full shadow-lg"
+                                        id="langSuggest">
+                                            <button class="py-1 px-2 hover:bg-neutral-100 text-left">English</button>
+                                            <button class="py-1 px-2 hover:bg-neutral-100 text-left">Nederlands</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="flex flex-col lg:flex-row gap-4">
                             <div class="w-full lg:w-2/3 flex gap-2">
@@ -417,14 +446,16 @@ The day book entry of 29 April 1901 acknowledges the
                                     <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                     <div class="text-xs text-neutral-600 italic">0/300</div>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3">
-                                    <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
+                                <div class="flex flex-col w-full lg:w-1/3  gap-4">
+                                    <div class="">
+                                        <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
 Select
-                                        the community you speak on behalf of</label>
-                                    <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                        <option value="">Society Islands / Tōtaiete mā community</option>
-                                        <option value="">Culture of Benin community</option>
-                                    </select>
+                                            the community you speak on behalf of</label>
+                                        <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                            <option value="">Society Islands / Tōtaiete mā community</option>
+                                            <option value="">Culture of Benin community</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-4">
@@ -435,7 +466,34 @@ Select
                                     </label>
                                     <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3"></div>
+                                <div class="flex flex-col w-full lg:w-1/3">
+                                    <div class="flex flex-col gap-1 mb-1">
+                                        <label for=""> <strong>Language</strong>
+
+                                            <div class="">Select a language of the narrative. Start typing to select a language.</div>
+                                        </label>
+                                        <div class="relative">
+                                            <div class="flex justify-between items-center">
+                                                <input type="text" class="border border-neutral-400 rounded-l p-1 w-full"
+                                                onfocus="showLangSuggest()" onblur="hideLangSuggest()">
+                                                <div class="">
+                                                    <button class="border border-neutral-400 border-l-0 rounded-r p-2" onclick="showLangSuggest()">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                                            />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white border rounded-b divide-y text-sm border-t-0 hidden flex-col absolute w-full shadow-lg"
+                                            id="langSuggest">
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">English</button>
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">Nederlands</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
@@ -571,14 +629,16 @@ Select
                                     <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                     <div class="text-xs text-neutral-600 italic">0/300</div>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3">
-                                    <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
+                                <div class="flex flex-col w-full lg:w-1/3  gap-4">
+                                    <div class="">
+                                        <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
 Select
-                                        the community you speak on behalf of</label>
-                                    <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                        <option value="">Society Islands / Tōtaiete mā community</option>
-                                        <option value="">Culture of Benin community</option>
-                                    </select>
+                                            the community you speak on behalf of</label>
+                                        <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                            <option value="">Society Islands / Tōtaiete mā community</option>
+                                            <option value="">Culture of Benin community</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-4">
@@ -589,7 +649,34 @@ Select
                                     </label>
                                     <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3"></div>
+                                <div class="flex flex-col w-full lg:w-1/3">
+                                    <div class="flex flex-col gap-1 mb-1">
+                                        <label for=""> <strong>Language</strong>
+
+                                            <div class="">Select a language of the narrative. Start typing to select a language.</div>
+                                        </label>
+                                        <div class="relative">
+                                            <div class="flex justify-between items-center">
+                                                <input type="text" class="border border-neutral-400 rounded-l p-1 w-full"
+                                                onfocus="showLangSuggest()" onblur="hideLangSuggest()">
+                                                <div class="">
+                                                    <button class="border border-neutral-400 border-l-0 rounded-r p-2" onclick="showLangSuggest()">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                                            />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white border rounded-b divide-y text-sm border-t-0 hidden flex-col absolute w-full shadow-lg"
+                                            id="langSuggest">
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">English</button>
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">Nederlands</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
@@ -662,14 +749,16 @@ Select
                                     <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                     <div class="text-xs text-neutral-600 italic">0/300</div>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3">
-                                    <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
+                                <div class="flex flex-col w-full lg:w-1/3  gap-4">
+                                    <div class="">
+                                        <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
 Select
-                                        the community you speak on behalf of</label>
-                                    <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                        <option value="">Society Islands / Tōtaiete mā community</option>
-                                        <option value="">Culture of Benin community</option>
-                                    </select>
+                                            the community you speak on behalf of</label>
+                                        <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                            <option value="">Society Islands / Tōtaiete mā community</option>
+                                            <option value="">Culture of Benin community</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-4">
@@ -680,7 +769,34 @@ Select
                                     </label>
                                     <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3"></div>
+                                <div class="flex flex-col w-full lg:w-1/3">
+                                    <div class="flex flex-col gap-1 mb-1">
+                                        <label for=""> <strong>Language</strong>
+
+                                            <div class="">Select a language of the narrative. Start typing to select a language.</div>
+                                        </label>
+                                        <div class="relative">
+                                            <div class="flex justify-between items-center">
+                                                <input type="text" class="border border-neutral-400 rounded-l p-1 w-full"
+                                                onfocus="showLangSuggest()" onblur="hideLangSuggest()">
+                                                <div class="">
+                                                    <button class="border border-neutral-400 border-l-0 rounded-r p-2" onclick="showLangSuggest()">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                                            />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white border rounded-b divide-y text-sm border-t-0 hidden flex-col absolute w-full shadow-lg"
+                                            id="langSuggest">
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">English</button>
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">Nederlands</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
@@ -818,14 +934,16 @@ Select
                                     <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                     <div class="text-xs text-neutral-600 italic">0/300</div>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3">
-                                    <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
+                                <div class="flex flex-col w-full lg:w-1/3  gap-4">
+                                    <div class="">
+                                        <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
 Select
-                                        the community you speak on behalf of</label>
-                                    <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                        <option value="">Society Islands / Tōtaiete mā community</option>
-                                        <option value="">Culture of Benin community</option>
-                                    </select>
+                                            the community you speak on behalf of</label>
+                                        <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                            <option value="">Society Islands / Tōtaiete mā community</option>
+                                            <option value="">Culture of Benin community</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-4">
@@ -836,7 +954,34 @@ Select
                                     </label>
                                     <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3"></div>
+                                <div class="flex flex-col w-full lg:w-1/3">
+                                    <div class="flex flex-col gap-1 mb-1">
+                                        <label for=""> <strong>Language</strong>
+
+                                            <div class="">Select a language of the narrative. Start typing to select a language.</div>
+                                        </label>
+                                        <div class="relative">
+                                            <div class="flex justify-between items-center">
+                                                <input type="text" class="border border-neutral-400 rounded-l p-1 w-full"
+                                                onfocus="showLangSuggest()" onblur="hideLangSuggest()">
+                                                <div class="">
+                                                    <button class="border border-neutral-400 border-l-0 rounded-r p-2" onclick="showLangSuggest()">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                                            />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white border rounded-b divide-y text-sm border-t-0 hidden flex-col absolute w-full shadow-lg"
+                                            id="langSuggest">
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">English</button>
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">Nederlands</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
@@ -909,14 +1054,16 @@ Select
                                     <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                     <div class="text-xs text-neutral-600 italic">0/300</div>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3">
-                                    <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
+                                <div class="flex flex-col w-full lg:w-1/3  gap-4">
+                                    <div class="">
+                                        <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
 Select
-                                        the community you speak on behalf of</label>
-                                    <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                        <option value="">Society Islands / Tōtaiete mā community</option>
-                                        <option value="">Culture of Benin community</option>
-                                    </select>
+                                            the community you speak on behalf of</label>
+                                        <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                            <option value="">Society Islands / Tōtaiete mā community</option>
+                                            <option value="">Culture of Benin community</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-4">
@@ -927,7 +1074,34 @@ Select
                                     </label>
                                     <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3"></div>
+                                <div class="flex flex-col w-full lg:w-1/3">
+                                    <div class="flex flex-col gap-1 mb-1">
+                                        <label for=""> <strong>Language</strong>
+
+                                            <div class="">Select a language of the narrative. Start typing to select a language.</div>
+                                        </label>
+                                        <div class="relative">
+                                            <div class="flex justify-between items-center">
+                                                <input type="text" class="border border-neutral-400 rounded-l p-1 w-full"
+                                                onfocus="showLangSuggest()" onblur="hideLangSuggest()">
+                                                <div class="">
+                                                    <button class="border border-neutral-400 border-l-0 rounded-r p-2" onclick="showLangSuggest()">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                                            />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white border rounded-b divide-y text-sm border-t-0 hidden flex-col absolute w-full shadow-lg"
+                                            id="langSuggest">
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">English</button>
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">Nederlands</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
@@ -1000,14 +1174,16 @@ Select
                                     <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                     <div class="text-xs text-neutral-600 italic">0/300</div>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3">
-                                    <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
+                                <div class="flex flex-col w-full lg:w-1/3  gap-4">
+                                    <div class="">
+                                        <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
 Select
-                                        the community you speak on behalf of</label>
-                                    <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                        <option value="">Society Islands / Tōtaiete mā community</option>
-                                        <option value="">Culture of Benin community</option>
-                                    </select>
+                                            the community you speak on behalf of</label>
+                                        <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                            <option value="">Society Islands / Tōtaiete mā community</option>
+                                            <option value="">Culture of Benin community</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-4">
@@ -1018,7 +1194,34 @@ Select
                                     </label>
                                     <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3"></div>
+                                <div class="flex flex-col w-full lg:w-1/3">
+                                    <div class="flex flex-col gap-1 mb-1">
+                                        <label for=""> <strong>Language</strong>
+
+                                            <div class="">Select a language of the narrative. Start typing to select a language.</div>
+                                        </label>
+                                        <div class="relative">
+                                            <div class="flex justify-between items-center">
+                                                <input type="text" class="border border-neutral-400 rounded-l p-1 w-full"
+                                                onfocus="showLangSuggest()" onblur="hideLangSuggest()">
+                                                <div class="">
+                                                    <button class="border border-neutral-400 border-l-0 rounded-r p-2" onclick="showLangSuggest()">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                                            />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white border rounded-b divide-y text-sm border-t-0 hidden flex-col absolute w-full shadow-lg"
+                                            id="langSuggest">
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">English</button>
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">Nederlands</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
@@ -1091,14 +1294,16 @@ Select
                                     <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                     <div class="text-xs text-neutral-600 italic">0/300</div>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3">
-                                    <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
+                                <div class="flex flex-col w-full lg:w-1/3  gap-4">
+                                    <div class="">
+                                        <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
 Select
-                                        the community you speak on behalf of</label>
-                                    <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                        <option value="">Society Islands / Tōtaiete mā community</option>
-                                        <option value="">Culture of Benin community</option>
-                                    </select>
+                                            the community you speak on behalf of</label>
+                                        <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                            <option value="">Society Islands / Tōtaiete mā community</option>
+                                            <option value="">Culture of Benin community</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex flex-col sm:flex-row gap-4">
@@ -1109,7 +1314,34 @@ Select
                                     </label>
                                     <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                 </div>
-                                <div class="flex flex-col w-full lg:w-1/3"></div>
+                                <div class="flex flex-col w-full lg:w-1/3">
+                                    <div class="flex flex-col gap-1 mb-1">
+                                        <label for=""> <strong>Language</strong>
+
+                                            <div class="">Select a language of the narrative. Start typing to select a language.</div>
+                                        </label>
+                                        <div class="relative">
+                                            <div class="flex justify-between items-center">
+                                                <input type="text" class="border border-neutral-400 rounded-l p-1 w-full"
+                                                onfocus="showLangSuggest()" onblur="hideLangSuggest()">
+                                                <div class="">
+                                                    <button class="border border-neutral-400 border-l-0 rounded-r p-2" onclick="showLangSuggest()">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                                            />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white border rounded-b divide-y text-sm border-t-0 hidden flex-col absolute w-full shadow-lg"
+                                            id="langSuggest">
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">English</button>
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">Nederlands</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="flex flex-col lg:flex-row gap-4">
                                 <div class="w-full lg:w-2/3 flex gap-2">
