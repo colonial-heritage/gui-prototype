@@ -3866,6 +3866,11 @@ a:hover {
   border-color: rgb(6 26 65 / var(--tw-border-opacity));
 }
 
+.border-neutral-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(82 82 82 / var(--tw-border-opacity));
+}
+
 .bg-\[\#9cc2de\] {
   --tw-bg-opacity: 1;
   background-color: rgb(156 194 222 / var(--tw-bg-opacity));
@@ -4582,6 +4587,10 @@ a:hover {
 
 .stroke-consortiumBlue-100 {
   stroke: #a9b9db;
+}
+
+.stroke-neutral-500 {
+  stroke: #737373;
 }
 
 .stroke-2 {
@@ -7448,6 +7457,10 @@ a:hover {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-black\/10:hover {
+  background-color: rgb(0 0 0 / 0.1);
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -7932,6 +7945,10 @@ a:hover {
 
   .md\:h-5 {
     height: 1.25rem;
+  }
+
+  .md\:h-2\/3 {
+    height: 66.666667%;
   }
 
   .md\:w-1\/12 {
