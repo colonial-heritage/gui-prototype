@@ -310,3 +310,15 @@ function editCloseCommunity() {
     handleClass('communityBlock', 'add', 'bg-[#f3eee2]');
 }
 
+
+function mainSubnav() {
+    //communityBlock communityBlockForm communityBlockContent
+    handleClass('mainSubnav', 'remove', 'hidden')
+    handleClass('mainSubnav', 'add', 'flex');
+}
+
+function mainSubnavHide() {
+    //communityBlock communityBlockForm communityBlockContent
+    handleClass('mainSubnav', 'add', 'hidden')
+    handleClass('mainSubnav', 'remove', 'flex');
+}
