@@ -310,3 +310,28 @@ function editCloseCommunity() {
     handleClass('communityBlock', 'add', 'bg-[#f3eee2]');
 }
 
+
+function mainSubnav() {
+    //communityBlock communityBlockForm communityBlockContent
+    handleClass('mainSubnav', 'remove', 'hidden')
+    handleClass('mainSubnav', 'add', 'flex');
+}
+
+function mainSubnavHide() {
+    //communityBlock communityBlockForm communityBlockContent
+    handleClass('mainSubnav', 'add', 'hidden')
+    handleClass('mainSubnav', 'remove', 'flex');
+}
+
+
+function showLangSuggest() {
+    //communityBlock communityBlockForm communityBlockContent
+    handleClass('langSuggest', 'remove', 'hidden')
+    handleClass('langSuggest', 'add', 'flex');
+}
+
+function hideLangSuggest() {
+    //communityBlock communityBlockForm communityBlockContent
+    handleClass('langSuggest', 'add', 'hidden')
+    handleClass('langSuggest', 'remove', 'flex');
+}
