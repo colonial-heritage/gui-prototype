@@ -4484,16 +4484,16 @@ a:hover {
   stroke: #1d4ed8;
 }
 
+.stroke-blueGrey-600 {
+  stroke: hsl(216, 35%, 40%);
+}
+
 .stroke-blueGrey-700 {
   stroke: hsl(216, 35%, 30%);
 }
 
 .stroke-consortiumBlue-100 {
   stroke: #a9b9db;
-}
-
-.stroke-consortiumGreen-400 {
-  stroke: hsl(145, 65%, 60%);
 }
 
 .stroke-consortiumGreen-500 {
@@ -4538,6 +4538,10 @@ a:hover {
 
 .stroke-white {
   stroke: #fff;
+}
+
+.stroke-consortiumGreen-400 {
+  stroke: hsl(145, 65%, 60%);
 }
 
 .stroke-2 {
@@ -8225,6 +8229,11 @@ a:hover {
     border-style: none;
   }
 
+  .lg\:border-blueGrey-100 {
+    --tw-border-opacity: 1;
+    border-color: hsl(216 35% 90% / var(--tw-border-opacity));
+  }
+
   .lg\:border-white\/10 {
     border-color: rgb(255 255 255 / 0.1);
   }
@@ -8281,10 +8290,6 @@ a:hover {
 
   .xl\:w-1\/5 {
     width: 20%;
-  }
-
-  .xl\:w-2\/3 {
-    width: 66.666667%;
   }
 
   .xl\:w-4\/5 {
