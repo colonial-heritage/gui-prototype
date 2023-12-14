@@ -5362,6 +5362,16 @@ a:hover {
   color: rgb(113 63 18 / var(--tw-text-opacity));
 }
 
+.text-consortiumBlue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(20 47 101 / var(--tw-text-opacity));
+}
+
+.text-neutral-700 {
+  --tw-text-opacity: 1;
+  color: rgb(64 64 64 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
