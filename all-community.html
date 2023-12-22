@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
-    <body class="">
+    <body class="bg-consortiumGreen-300 text-consortiumBlue-800">
         <div class="bg-consortiumGreen-100 text-consortiumBlue-800 w-full flex justify-center ">
             <div class="inline-flex flex-wrap items-center text-sm px-4 sm:px-10 py-2 gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -54,17 +54,79 @@
             items-stretch
             gap-8
             pb-40">
-            <header class="w-full border-b">
-                <div class="w-full px-4 sm:px-10 py-4 flex justify-between items-center max-w-[1800px] mx-auto">
-                    <div class="font-semibold">Heritage Objects Search</div>
-                    <div class="relative flex">
-                        <nav class="flex items-center gap-4 mr-4"> <a href="search.html" class="text-neutral-900 font-semibold no-underline">Search objects</a>
+            <header class="w-full bg-consortiumBlue-900 text-white py-2">
+                <div class="w-full px-4 sm:px-10 max-w-[1800px] mx-auto
+      flex flex-col xl:flex-row xl:gap-8 xl:justify-between">
+                    <div class="order-2 xl:order-1 w-full flex flex-col md:flex-row justify-between md:items-center">
+                        <div class=""><a href="home.html"><div class="flex items-center gap-2">
+      <div class="w-10"><svg fill="currentColor" class="fill-consortiumGreen-500 w-full h-auto" xmlns="http://www.w3.org/2000/svg"
+      width="197.66" height="171.74" viewBox="0 0 197.66 171.74">
+    
+      <path
+        d="m98.84,14.77c13.74,0,26.54-4.01,37.3-10.92,1.75-1.13.94-3.85-1.14-3.85H62.68c-2.09,0-2.9,2.73-1.14,3.85,10.76,6.91,23.56,10.92,37.3,10.92" />
+      <path
+        d="m98.84,33.49c13.72,0,26.51-4,37.26-10.9,1.76-1.13.94-3.85-1.14-3.85H62.72c-2.09,0-2.9,2.73-1.14,3.85,10.75,6.9,23.54,10.9,37.26,10.9" />
+      <path
+        d="m98.84,152.35c-13.74,0-26.54,4.01-37.3,10.92-1.75,1.13-.94,3.85,1.14,3.85h72.32c2.09,0,2.9-2.73,1.14-3.85-10.76-6.91-23.56-10.92-37.3-10.92" />
+      <path
+        d="m47.37,63.21c6.86-11.88,9.79-24.96,9.19-37.72-.1-2.08-2.86-2.75-3.91-.94l-36.12,62.57c-1.04,1.81.91,3.87,2.77,2.92,11.35-5.86,21.21-14.94,28.07-26.82" />
+      <path
+        d="m150.31,122.63c-6.87,11.9-9.8,24.99-9.19,37.76.1,2.08,2.87,2.74,3.91.94l36.16-62.63c1.04-1.81-.91-3.87-2.77-2.92-11.37,5.86-21.24,14.94-28.11,26.84" />
+      <path
+        d="m166.54,132c-6.86,11.88-9.79,24.96-9.19,37.72.1,2.08,2.86,2.75,3.91.94l36.12-62.57c1.04-1.81-.91-3.87-2.77-2.92-11.35,5.86-21.21,14.94-28.07,26.82" />
+      <path
+        d="m31.17,131.99c-6.87-11.9-16.74-20.98-28.11-26.84-1.85-.96-3.81,1.11-2.77,2.92l36.16,62.63c1.04,1.81,3.81,1.15,3.91-.94.61-12.77-2.32-25.87-9.19-37.76" />
+      <path
+        d="m47.37,122.63c-6.86-11.88-16.72-20.96-28.07-26.82-1.85-.96-3.81,1.11-2.77,2.92l36.12,62.57c1.04,1.81,3.81,1.15,3.91-.94.6-12.76-2.33-25.83-9.19-37.72" />
+      <path
+        d="m150.31,63.21c6.87,11.9,16.74,20.98,28.11,26.84,1.85.96,3.81-1.11,2.77-2.92l-36.16-62.63c-1.04-1.81-3.81-1.15-3.91.94-.6,12.77,2.32,25.87,9.19,37.76" />
+      <path
+        d="m160.99,102.48c6.04-4.93,6.04-14.15,0-19.08-5.97-4.87-11.03-10.82-15-17.68-3.97-6.88-6.59-14.25-7.83-21.86-1.24-7.69-9.23-12.3-16.52-9.54-7.2,2.73-14.88,4.14-22.81,4.14s-15.63-1.41-22.83-4.15c-7.29-2.77-15.28,1.85-16.52,9.54-1.23,7.61-3.85,14.98-7.82,21.85-3.97,6.88-9.04,12.83-15.02,17.7-6.04,4.93-6.04,14.16,0,19.08,5.98,4.87,11.05,10.82,15.01,17.7,3.96,6.86,6.59,14.22,7.82,21.82,1.25,7.69,9.24,12.3,16.52,9.53,7.21-2.74,14.9-4.15,22.84-4.15s15.62,1.41,22.82,4.14c7.28,2.76,15.27-1.85,16.52-9.54,1.23-7.6,3.86-14.96,7.82-21.83,3.96-6.87,9.03-12.81,15-17.68" />
+    </svg></div>
+      <div class=""><img src="images/colonial-collections-consortium.png" alt="" class="h-4 lg:h-5"></div>
+    </div></a>
+                        </div>
+                        <nav class="flex items-center flex-wrap"> <a href="search.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap">Search
+              objects</a>
+ <a href="all-community.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap">Communities</a>
 
                             <a
-                            href="all-community.html" class="text-neutral-900 font-semibold no-underline">Communities</a> <a href="" class="text-neutral-900 font-semibold no-underline">About</a>
+                            href="lists-all.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap hidden">Lists</a>
+                                <div class="relative z-10"> <a href="" class="text-white font-semibold no-underline py-2 md:py-4 px-3 flex items-center gap-1 whitespace-nowrap"
+                                    onmousemove="mainSubnav()">About
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+      class="w-3 h-3 fill-white">
+      <path fill-rule="evenodd"
+        d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+        clip-rule="evenodd" />
+    </svg>
+    </a>
 
+                                    <div class="hidden flex-col bg-consortiumBlue-600 absolute z-20 shadow-lg"
+                                    id="mainSubnav" onmouseout="mainSubnavHide()"> <a href="" class="text-white font-semibold no-underline py-2 px-3 whitespace-nowrap">FAQ</a>
+
+                                        <a
+                                        href="" class="text-white font-semibold no-underline py-2 px-3 whitespace-nowrap">Contact</a> <a href="https://colonialcollections.nl" class="text-white font-semibold no-underline py-2 px-3 whitespace-nowrap">Consortium</a>
+
+                                    </div>
+                                </div>
                         </nav>
-                        <button class="px-4 py-2 text-sm rounded-full bg-greenGrey-100 hover:bg-greenGrey-200 transition text-greenGrey-800 flex items-center gap-1">Login</button>
+                    </div>
+                    <div class="order-1 xl:order-2 w-full flex justify-end items-center gap-4 text-sm xl:w-auto">
+                        <div class="flex items-center gap-1">English
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-3 h-3 fill-white">
+                                <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+    bg-neutral-200/50
+    hover:bg-neutral-300/50
+    text-neutral-800 transition flex items-center gap-1
+     text-consortiumBlue-900 bg-white">Login</button>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -83,15 +145,15 @@
               ">
                 <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4">
                     <div class="">
-                         <h1 class="text-2xl md:text-4xl">Communities</h1>
+                         <h1 class="text-2xl md:text-4xl text-consortiumBlue-800">Communities</h1>
 
                     </div>
                     <div class="">
                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-bg-neutral-200/50
-hover:bg-neutral-300/50
-text-neutral-800 transition flex items-center gap-1
-">Create a community</button>
+bg-consortiumBlue-800
+text-consortiumGreen-300
+
+transition flex items-center gap-1">Create a community</button>
                     </div>
                 </div>
                 <div class=" flex flex-col xl:flex-row items-center md:items-end gap-4 justify-end">
@@ -149,19 +211,20 @@ text-neutral-800 transition flex items-center gap-1
               mx-auto
               px-4 sm:px-10
               mt-10
-              "> <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition no-underline">
+              "> <a href="community.html" class=" mb-20 pb-5 group bg-consortiumGreen-300 text-consortiumBlue-800 rounded hover:bg-consortiumGreen-200  transition no-underline bg-[url('/researchApp/_dist/images/visual-graphic-strip1.png')] bg-bottom bg-repeat-x bg-contain border border-consortiumBlue-800">
       
       
       
       
-          <div class="-mt-20 w-full flex justify-center">
-              <div class="w-36 h-36 rounded-full  flex items-center justify-center text-[#7B715B] text-4xl
+              <div class="-mt-20 w-full flex justify-center ">
+                  <div class="w-36 h-36 rounded-full  flex items-center justify-center text-white text-4xl border border-consortiumBlue-800 transition
               bg-gradient-to-b
-              from-[#F5F3C9] 
-              via-[#E5EAD2]
-              to-[#F2E1B7]
+              from-consortiumGreen-500 
+              via-consortiumGreen-700
+              to-consortiumGreen-400
+      
               ">B</div>
-          </div>
+              </div>
       
       
       
@@ -170,20 +233,23 @@ text-neutral-800 transition flex items-center gap-1
           </h1>
           <div class="text-center p-4">Willemstad, a vibrant city known for its colorful architecture and rich cultural heritage.</div>
       
-          <div class="flex border-stone-300 border-t text-sm text-stone-600">
-              <div class="w-1/2 p-4 border-stone-300 border-r">28 members</div>
+          <div class="flex border-consortiumBlue-700 border-y text-sm">
+              <div class="w-1/2 p-4 border-consortiumBlue-700 border-r">28 members</div>
               <div class="w-1/2 p-4">7 lists</div>
           </div>
       
+      
+      
       </a>
- <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition no-underline">
+ <a href="community.html" class=" mb-20 pb-5 group bg-consortiumGreen-300 text-consortiumBlue-800 rounded hover:bg-consortiumGreen-200  transition no-underline bg-[url('/researchApp/_dist/images/visual-graphic-strip1.png')] bg-bottom bg-repeat-x bg-contain border border-consortiumBlue-800">
       
       
       
       
-          <div class="-mt-20 w-full flex justify-center">
-              <img src="images/avatrs/communityAvatar2.png" alt="" class="w-36 h-auto rounded-full">
-          </div>
+              <div class="-mt-20 w-full flex justify-center">
+                  <img src="images/avatrs/communityAvatar2.png" alt=""
+                      class="w-36 h-auto rounded-full border border-consortiumBlue-800 transition">
+              </div>
       
       
       
@@ -192,25 +258,28 @@ text-neutral-800 transition flex items-center gap-1
           </h1>
           <div class="text-center p-4">Paramaribo, a city celebrated for its diverse culture and historic wooden architecture.</div>
       
-          <div class="flex border-stone-300 border-t text-sm text-stone-600">
-              <div class="w-1/2 p-4 border-stone-300 border-r">35 members</div>
+          <div class="flex border-consortiumBlue-700 border-y text-sm">
+              <div class="w-1/2 p-4 border-consortiumBlue-700 border-r">35 members</div>
               <div class="w-1/2 p-4">9 lists</div>
           </div>
       
+      
+      
       </a>
- <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition no-underline">
+ <a href="community.html" class=" mb-20 pb-5 group bg-consortiumGreen-300 text-consortiumBlue-800 rounded hover:bg-consortiumGreen-200  transition no-underline bg-[url('/researchApp/_dist/images/visual-graphic-strip1.png')] bg-bottom bg-repeat-x bg-contain border border-consortiumBlue-800">
       
       
       
       
-          <div class="-mt-20 w-full flex justify-center">
-              <div class="w-36 h-36 rounded-full  flex items-center justify-center text-[#7B715B] text-4xl
+              <div class="-mt-20 w-full flex justify-center ">
+                  <div class="w-36 h-36 rounded-full  flex items-center justify-center text-white text-4xl border border-consortiumBlue-800 transition
               bg-gradient-to-b
-              from-[#F5F3C9] 
-              via-[#E5EAD2]
-              to-[#F2E1B7]
+              from-consortiumGreen-500 
+              via-consortiumGreen-700
+              to-consortiumGreen-400
+      
               ">B</div>
-          </div>
+              </div>
       
       
       
@@ -219,20 +288,23 @@ text-neutral-800 transition flex items-center gap-1
           </h1>
           <div class="text-center p-4">Bali, a tropical paradise known for its stunning beaches and unique Hindu traditions.</div>
       
-          <div class="flex border-stone-300 border-t text-sm text-stone-600">
-              <div class="w-1/2 p-4 border-stone-300 border-r">42 members</div>
+          <div class="flex border-consortiumBlue-700 border-y text-sm">
+              <div class="w-1/2 p-4 border-consortiumBlue-700 border-r">42 members</div>
               <div class="w-1/2 p-4">5 lists</div>
           </div>
       
+      
+      
       </a>
- <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition no-underline">
+ <a href="community.html" class=" mb-20 pb-5 group bg-consortiumGreen-300 text-consortiumBlue-800 rounded hover:bg-consortiumGreen-200  transition no-underline bg-[url('/researchApp/_dist/images/visual-graphic-strip1.png')] bg-bottom bg-repeat-x bg-contain border border-consortiumBlue-800">
       
       
       
       
-          <div class="-mt-20 w-full flex justify-center">
-              <img src="images/avatrs/communityAvatar1.png" alt="" class="w-36 h-auto rounded-full">
-          </div>
+              <div class="-mt-20 w-full flex justify-center">
+                  <img src="images/avatrs/communityAvatar1.png" alt=""
+                      class="w-36 h-auto rounded-full border border-consortiumBlue-800 transition">
+              </div>
       
       
       
@@ -241,20 +313,23 @@ text-neutral-800 transition flex items-center gap-1
           </h1>
           <div class="text-center p-4">Accra, a bustling city celebrated for its lively markets and vibrant street life.</div>
       
-          <div class="flex border-stone-300 border-t text-sm text-stone-600">
-              <div class="w-1/2 p-4 border-stone-300 border-r">19 members</div>
+          <div class="flex border-consortiumBlue-700 border-y text-sm">
+              <div class="w-1/2 p-4 border-consortiumBlue-700 border-r">19 members</div>
               <div class="w-1/2 p-4">8 lists</div>
           </div>
       
+      
+      
       </a>
- <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition no-underline">
+ <a href="community.html" class=" mb-20 pb-5 group bg-consortiumGreen-300 text-consortiumBlue-800 rounded hover:bg-consortiumGreen-200  transition no-underline bg-[url('/researchApp/_dist/images/visual-graphic-strip1.png')] bg-bottom bg-repeat-x bg-contain border border-consortiumBlue-800">
       
       
       
       
-          <div class="-mt-20 w-full flex justify-center">
-              <img src="images/avatrs/communityAvatar2.png" alt="" class="w-36 h-auto rounded-full">
-          </div>
+              <div class="-mt-20 w-full flex justify-center">
+                  <img src="images/avatrs/communityAvatar2.png" alt=""
+                      class="w-36 h-auto rounded-full border border-consortiumBlue-800 transition">
+              </div>
       
       
       
@@ -263,25 +338,28 @@ text-neutral-800 transition flex items-center gap-1
           </h1>
           <div class="text-center p-4">Java, an island of natural beauty with lush landscapes and rich Javanese culture.</div>
       
-          <div class="flex border-stone-300 border-t text-sm text-stone-600">
-              <div class="w-1/2 p-4 border-stone-300 border-r">30 members</div>
+          <div class="flex border-consortiumBlue-700 border-y text-sm">
+              <div class="w-1/2 p-4 border-consortiumBlue-700 border-r">30 members</div>
               <div class="w-1/2 p-4">6 lists</div>
           </div>
       
+      
+      
       </a>
- <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition no-underline">
+ <a href="community.html" class=" mb-20 pb-5 group bg-consortiumGreen-300 text-consortiumBlue-800 rounded hover:bg-consortiumGreen-200  transition no-underline bg-[url('/researchApp/_dist/images/visual-graphic-strip1.png')] bg-bottom bg-repeat-x bg-contain border border-consortiumBlue-800">
       
       
       
       
-          <div class="-mt-20 w-full flex justify-center">
-              <div class="w-36 h-36 rounded-full  flex items-center justify-center text-[#7B715B] text-4xl
+              <div class="-mt-20 w-full flex justify-center ">
+                  <div class="w-36 h-36 rounded-full  flex items-center justify-center text-white text-4xl border border-consortiumBlue-800 transition
               bg-gradient-to-b
-              from-[#F5F3C9] 
-              via-[#E5EAD2]
-              to-[#F2E1B7]
+              from-consortiumGreen-500 
+              via-consortiumGreen-700
+              to-consortiumGreen-400
+      
               ">B</div>
-          </div>
+              </div>
       
       
       
@@ -290,25 +368,28 @@ text-neutral-800 transition flex items-center gap-1
           </h1>
           <div class="text-center p-4">Willemstad, a vibrant city known for its colorful architecture and rich cultural heritage.</div>
       
-          <div class="flex border-stone-300 border-t text-sm text-stone-600">
-              <div class="w-1/2 p-4 border-stone-300 border-r">28 members</div>
+          <div class="flex border-consortiumBlue-700 border-y text-sm">
+              <div class="w-1/2 p-4 border-consortiumBlue-700 border-r">28 members</div>
               <div class="w-1/2 p-4">7 lists</div>
           </div>
       
+      
+      
       </a>
- <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition no-underline">
+ <a href="community.html" class=" mb-20 pb-5 group bg-consortiumGreen-300 text-consortiumBlue-800 rounded hover:bg-consortiumGreen-200  transition no-underline bg-[url('/researchApp/_dist/images/visual-graphic-strip1.png')] bg-bottom bg-repeat-x bg-contain border border-consortiumBlue-800">
       
       
       
       
-          <div class="-mt-20 w-full flex justify-center">
-              <div class="w-36 h-36 rounded-full  flex items-center justify-center text-[#7B715B] text-4xl
+              <div class="-mt-20 w-full flex justify-center ">
+                  <div class="w-36 h-36 rounded-full  flex items-center justify-center text-white text-4xl border border-consortiumBlue-800 transition
               bg-gradient-to-b
-              from-[#F5F3C9] 
-              via-[#E5EAD2]
-              to-[#F2E1B7]
+              from-consortiumGreen-500 
+              via-consortiumGreen-700
+              to-consortiumGreen-400
+      
               ">B</div>
-          </div>
+              </div>
       
       
       
@@ -317,20 +398,23 @@ text-neutral-800 transition flex items-center gap-1
           </h1>
           <div class="text-center p-4">Jogja, the heart of Javanese culture, famous for its temples and traditional arts.</div>
       
-          <div class="flex border-stone-300 border-t text-sm text-stone-600">
-              <div class="w-1/2 p-4 border-stone-300 border-r">23 members</div>
+          <div class="flex border-consortiumBlue-700 border-y text-sm">
+              <div class="w-1/2 p-4 border-consortiumBlue-700 border-r">23 members</div>
               <div class="w-1/2 p-4">4 lists</div>
           </div>
       
+      
+      
       </a>
- <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition no-underline">
+ <a href="community.html" class=" mb-20 pb-5 group bg-consortiumGreen-300 text-consortiumBlue-800 rounded hover:bg-consortiumGreen-200  transition no-underline bg-[url('/researchApp/_dist/images/visual-graphic-strip1.png')] bg-bottom bg-repeat-x bg-contain border border-consortiumBlue-800">
       
       
       
       
-          <div class="-mt-20 w-full flex justify-center">
-              <img src="images/avatrs/communityAvatar2.png" alt="" class="w-36 h-auto rounded-full">
-          </div>
+              <div class="-mt-20 w-full flex justify-center">
+                  <img src="images/avatrs/communityAvatar2.png" alt=""
+                      class="w-36 h-auto rounded-full border border-consortiumBlue-800 transition">
+              </div>
       
       
       
@@ -339,20 +423,23 @@ text-neutral-800 transition flex items-center gap-1
           </h1>
           <div class="text-center p-4">Kumasi, a city steeped in Ashanti history and known for its craftsmanship.</div>
       
-          <div class="flex border-stone-300 border-t text-sm text-stone-600">
-              <div class="w-1/2 p-4 border-stone-300 border-r">15 members</div>
+          <div class="flex border-consortiumBlue-700 border-y text-sm">
+              <div class="w-1/2 p-4 border-consortiumBlue-700 border-r">15 members</div>
               <div class="w-1/2 p-4">10 lists</div>
           </div>
       
+      
+      
       </a>
- <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition no-underline">
+ <a href="community.html" class=" mb-20 pb-5 group bg-consortiumGreen-300 text-consortiumBlue-800 rounded hover:bg-consortiumGreen-200  transition no-underline bg-[url('/researchApp/_dist/images/visual-graphic-strip1.png')] bg-bottom bg-repeat-x bg-contain border border-consortiumBlue-800">
       
       
       
       
-          <div class="-mt-20 w-full flex justify-center">
-              <img src="images/avatrs/communityAvatar3.png" alt="" class="w-36 h-auto rounded-full">
-          </div>
+              <div class="-mt-20 w-full flex justify-center">
+                  <img src="images/avatrs/communityAvatar3.png" alt=""
+                      class="w-36 h-auto rounded-full border border-consortiumBlue-800 transition">
+              </div>
       
       
       
@@ -361,25 +448,28 @@ text-neutral-800 transition flex items-center gap-1
           </h1>
           <div class="text-center p-4">Surabaya, a bustling port city with a rich maritime heritage.</div>
       
-          <div class="flex border-stone-300 border-t text-sm text-stone-600">
-              <div class="w-1/2 p-4 border-stone-300 border-r">33 members</div>
+          <div class="flex border-consortiumBlue-700 border-y text-sm">
+              <div class="w-1/2 p-4 border-consortiumBlue-700 border-r">33 members</div>
               <div class="w-1/2 p-4">3 lists</div>
           </div>
       
+      
+      
       </a>
- <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition no-underline">
+ <a href="community.html" class=" mb-20 pb-5 group bg-consortiumGreen-300 text-consortiumBlue-800 rounded hover:bg-consortiumGreen-200  transition no-underline bg-[url('/researchApp/_dist/images/visual-graphic-strip1.png')] bg-bottom bg-repeat-x bg-contain border border-consortiumBlue-800">
       
       
       
       
-          <div class="-mt-20 w-full flex justify-center">
-              <div class="w-36 h-36 rounded-full  flex items-center justify-center text-[#7B715B] text-4xl
+              <div class="-mt-20 w-full flex justify-center ">
+                  <div class="w-36 h-36 rounded-full  flex items-center justify-center text-white text-4xl border border-consortiumBlue-800 transition
               bg-gradient-to-b
-              from-[#F5F3C9] 
-              via-[#E5EAD2]
-              to-[#F2E1B7]
+              from-consortiumGreen-500 
+              via-consortiumGreen-700
+              to-consortiumGreen-400
+      
               ">B</div>
-          </div>
+              </div>
       
       
       
@@ -388,20 +478,23 @@ text-neutral-800 transition flex items-center gap-1
           </h1>
           <div class="text-center p-4">Cape Coast, home to historic forts and a vibrant fishing community.</div>
       
-          <div class="flex border-stone-300 border-t text-sm text-stone-600">
-              <div class="w-1/2 p-4 border-stone-300 border-r">12 members</div>
+          <div class="flex border-consortiumBlue-700 border-y text-sm">
+              <div class="w-1/2 p-4 border-consortiumBlue-700 border-r">12 members</div>
               <div class="w-1/2 p-4">2 lists</div>
           </div>
       
+      
+      
       </a>
- <a href="community.html" class="rounded-lg mb-20 bg-[#f3eee2] hover:bg-[#f1e9d7] text-stone-800 transition no-underline">
+ <a href="community.html" class=" mb-20 pb-5 group bg-consortiumGreen-300 text-consortiumBlue-800 rounded hover:bg-consortiumGreen-200  transition no-underline bg-[url('/researchApp/_dist/images/visual-graphic-strip1.png')] bg-bottom bg-repeat-x bg-contain border border-consortiumBlue-800">
       
       
       
       
-          <div class="-mt-20 w-full flex justify-center">
-              <img src="images/avatrs/communityAvatar2.png" alt="" class="w-36 h-auto rounded-full">
-          </div>
+              <div class="-mt-20 w-full flex justify-center">
+                  <img src="images/avatrs/communityAvatar2.png" alt=""
+                      class="w-36 h-auto rounded-full border border-consortiumBlue-800 transition">
+              </div>
       
       
       
@@ -410,10 +503,12 @@ text-neutral-800 transition flex items-center gap-1
           </h1>
           <div class="text-center p-4">Curaçao, a diverse island with a love for music, art, and cuisine.</div>
       
-          <div class="flex border-stone-300 border-t text-sm text-stone-600">
-              <div class="w-1/2 p-4 border-stone-300 border-r">25 members</div>
+          <div class="flex border-consortiumBlue-700 border-y text-sm">
+              <div class="w-1/2 p-4 border-consortiumBlue-700 border-r">25 members</div>
               <div class="w-1/2 p-4">5 lists</div>
           </div>
+      
+      
       
       </a>
 
