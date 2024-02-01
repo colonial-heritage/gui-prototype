@@ -2196,6 +2196,10 @@ a:hover {
   min-height: 100vh;
 }
 
+.min-h-\[300px\] {
+  min-height: 300px;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -3099,6 +3103,10 @@ a:hover {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .gap-y-2 {
@@ -8009,6 +8017,10 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .md\:sticky {
+    position: sticky;
+  }
+
   .md\:order-1 {
     order: 1;
   }
