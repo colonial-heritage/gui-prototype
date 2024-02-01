@@ -55,7 +55,7 @@
     <div class=""><img src="images/colonial-collections-consortium.png" alt="" class="h-4 lg:h-5"></div>
   </div></a>
                     </div>
-                    <nav class="flex items-center flex-wrap"> <a href="search.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap">Home</a>
+                    <nav class="flex items-center flex-wrap"> <a href="home.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap">Home</a>
 
                         <a
                         href="search.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap">Search objects</a> <a href="all-community.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap">Communities</a>
@@ -231,7 +231,7 @@ Search</a>
                         <div class="w-full lg:w-2/3 xl:w-3/4 lg:order-1">
                              <h2 class="text-xl">Metadata</h2>
 
-                            <div class=" flex flex-col gap-8 self-stretch">
+                            <div class=" flex flex-col gap-6 self-stretch">
                                 <div class="flex flex-col gap-4 ">
                                     <div class="flex flex-col xl:flex-row gap-2 xl:gap-10">
                                         <div class="w-full xl:w-1/5 border-t border-neutral-400">
@@ -279,7 +279,11 @@ Search</a>
                                                 <div class="px-2 py-3 text-xs  my-1 self-start  
                                                   w-full lg:w-1/3
                                                   bg-consortiumGreen-100 text-consortiumBlue-800 rounded">
-                                                    <div class="">Provided by <a href="community.html"><strong>Culture of Benin</strong> community</a>
+                                                    <div class="">
+                                                        <div class="">Provided by <strong>Amara Okafor</strong>
+                                                        </div>
+                                                        <div class="">Behalf of the <a href="community.html"><strong>Culture of Benin</strong> community</a>
+                                                        </div>
                                                     </div>
                                                     <div class="flex flex-col justify-between">
                                                         <div class="">on 12-12-2018</div>
@@ -288,7 +292,7 @@ Search</a>
                                                 </div>
                                             </div>
                                             <div class="
-                                  
+                                  border-neutral-200
                                   
                                   border-t first:border-0
                                   border-neutral-200
@@ -302,35 +306,35 @@ Search</a>
                                                 <div class="w-full lg:w-2/3  py-3  px-2">Uhunmwu elao ọghe Iy’ọba
                                                     <div class="text-xs font-normal">Edo</div>
                                                 </div>
-                                                <div class="px-2 py-3 text-xs  my-1 self-start  
-                                                  w-full lg:w-1/3
-                                                  bg-consortiumGreen-100 text-consortiumBlue-800 rounded">
-                                                    <div class="">Provided by <a href="community.html"><strong>Culture of Benin</strong> community</a>
-                                                    </div>
-                                                    <div class="flex flex-col justify-between">
-                                                        <div class="">on 12-12-2018</div>
-                                                        <div class=""></div>
-                                                    </div>
+                                                <div class="w-full lg:w-1/3 px-2 py-3 text-xs lg:border-l ">Provided by <strong>Elena Costa</strong>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="flex justify-end text-consortiumBlue-800 ">
-                                        <button class="py-2 px-3  transition lex items-center gap-1 p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                                        <button class="py-2 px-3 transition flex items-start gap-2 p-1 sm:py-2 sm:px-3 rounded-full text-xs
                       bg-consortiumGreen-300
                       text-consortiumBlue-800
-                      
-                      transition flex items-center gap-1" onclick="openAddNarrForm('f0')">Add your narrative to Title
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                            fill="currentColor" class="w-4 h-4 fill-consortiumBlue-800">
-                                                <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
-                                                clip-rule="evenodd" />
-                                            </svg>
+                      hover:bg-consortiumGreen-200
+                      transition flex items-center gap-1 hover:bg-consortiumGreen-200"
+                                        onclick="openAddNarrForm('f0')">
+                                            <div class="flex justify-start">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-consortiumBlue-800">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="flex flex-col items-start">
+                                                <div class="">Add your narrative</div>
+                                                <div class="lowercase">to Title</div>
+                                            </div>
                                         </button>
                                     </div>
-                                    <div id="f0" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100 text-neutral-800  self-end hidden flex-col gap-6">
-                                        <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
-                                             <h3 class="">Add a narrative</h3>
+                                    <div id="f0" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 self-end hidden flex-col gap-6 mb-4">
+                                        <div class="flex justify-between items-center border-b border-neutral-300 -mx-4 px-4 pb-2 mb-2">
+                                             <h3 class="">Add a narrative to <span class="lowercase">Title</span></h3>
 
                                             <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
                               bg-neutral-200/50
@@ -344,39 +348,18 @@ Search</a>
                                                 </svg>
                                             </button>
                                         </div>
-                                        <div class="flex flex-col lg:flex-row gap-4">
+                                        <div class="flex flex-col lg:flex-row gap-4 lg:gap-12">
                                             <div class="flex flex-col w-full lg:w-2/3">
                                                 <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Narrative <span class="font-normal text-neutral-600">*</span></strong>
 
-                                                    <div>Here you can add your own narrative to the Title of this object.
-                                                        <span
-                                                        class="text-sm text-neutral-600 italic">Max 300 characters</span>
+                                                    <div>Here you can add your own narrative to the <span class="lowercase">Title</span> of
+                                                        this object. <span class="text-sm text-neutral-600 italic">Max 300 characters</span>
                                                     </div>
                                                 </label>
                                                 <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                                 <div class="text-xs text-neutral-600 italic">0/300</div>
                                             </div>
-                                            <div class="flex flex-col w-full lg:w-1/3  gap-4">
-                                                <div class="">
-                                                    <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
-Select
-                                                        the community you speak on behalf of</label>
-                                                    <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                                        <option value="">Society Islands / Tōtaiete mā community</option>
-                                                        <option value="">Culture of Benin community</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col sm:flex-row gap-4">
-                                            <div class="flex flex-col w-full lg:w-2/3">
-                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
-
-                                                    <div>Please provide information that supports your narrative.</div>
-                                                </label>
-                                                <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
-                                            </div>
-                                            <div class="flex flex-col w-full lg:w-1/3">
+                                            <div class="flex flex-col w-full lg:w-1/3 gap-4">
                                                 <div class="flex flex-col gap-1 mb-1">
                                                     <label for=""> <strong>Language</strong>
 
@@ -405,13 +388,47 @@ Select
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="flex flex-col sm:flex-row gap-4 lg:gap-12">
+                                            <div class="flex flex-col w-full lg:w-2/3">
+                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
+
+                                                    <div>Please provide information that supports your narrative.</div>
+                                                </label>
+                                                <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                            </div>
+                                            <div class="flex flex-col w-full lg:w-1/3 gap-4">
+                                                <div class="">
+                                                    <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Behalve of community</strong>
+If you speak behalf of a community,
+                                                        you can select the community here.</label>
+                                                    <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                                        <option value="">No community</option>
+                                                        <option value="">Society Islands / Tōtaiete mā community</option>
+                                                        <option value="">Culture of Benin community</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col w-full lg:w-2/3">
+                                            <div class=""> <strong>Licence info:</strong> Lorem ipsum dolor sit, amet consectetur
+                                                adipisicing elit. Dolore, voluptas quasi perspiciatis incidunt distinctio
+                                                repudiandae corporis in, impedit consectetur delectus illo, necessitatibus
+                                                fuga inventore tempora voluptatum tenetur facere quaerat dolor!
+                                                <div class="flex gap-2">
+                                                    <input type="checkbox" name="licenseAgree" id="licenseAgree">
+                                                    <label for="licenseAgree" class="font-semibold">I agree with the xx licence.<span class="font-normal text-neutral-600">*</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class=""></div>
+                                        </div>
                                         <div class="flex flex-col lg:flex-row gap-4">
                                             <div class="w-full lg:w-2/3 flex gap-2">
                                                 <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                              bg-neutral-200/50
-                              hover:bg-neutral-300/50
-                              text-neutral-800 transition flex items-center gap-1
-                               p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
+                              bg-consortiumGreen-300
+                              text-consortiumBlue-800
+                              hover:bg-consortiumGreen-200
+                              transition flex items-center gap-1 p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                                 <button onclick="closeAddNarrForm('f0')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
                               text-neutral-800 transition flex items-center gap-1
                               border border-neutral-300 p-1 sm:py-2 sm:px-3 text-xs transition flex items-center gap-1">Cancel</button>
@@ -473,7 +490,11 @@ Select
                                                 class="px-2 py-3 text-xs  my-1 self-start  
                                                   w-full lg:w-1/3
                                                   bg-consortiumGreen-100 text-consortiumBlue-800 rounded">
-                                                    <div class="">Provided by <a href="community.html"><strong>Culture of Benin</strong> community</a>
+                                                    <div class="">
+                                                        <div class="">Provided by <strong>Sita Rajapakse</strong>
+                                                        </div>
+                                                        <div class="">Behalf of the <a href="community.html"><strong>Culture of Benin</strong> community</a>
+                                                        </div>
                                                     </div>
                                                     <div class="flex flex-col justify-between">
                                                         <div class="">on 08-12-2024</div>
@@ -508,7 +529,11 @@ The day book entry of 29 April 1901 acknowledges the
                                             <div class="px-2 py-3 text-xs  my-1 self-start  
                                                   w-full lg:w-1/3
                                                   bg-consortiumGreen-100 text-consortiumBlue-800 rounded">
-                                                <div class="">Provided by <a href="community.html"><strong>Society Islands / Tōtaiete mā</strong> community</a>
+                                                <div class="">
+                                                    <div class="">Provided by <strong>Amara Okafor</strong>
+                                                    </div>
+                                                    <div class="">Behalf of the <a href="community.html"><strong>Society Islands / Tōtaiete mā</strong> community</a>
+                                                    </div>
                                                 </div>
                                                 <div class="flex flex-col justify-between">
                                                     <div class="">on 02-15-2024</div>
@@ -537,7 +562,11 @@ The day book entry of 29 April 1901 acknowledges the
                                             <div class="px-2 py-3 text-xs  my-1 self-start  
                                                   w-full lg:w-1/3
                                                   bg-consortiumGreen-100 text-consortiumBlue-800 rounded">
-                                                <div class="">Provided by <a href="community.html"><strong>Culture of Benin</strong> community</a>
+                                                <div class="">
+                                                    <div class="">Provided by <strong>Kamal Singh</strong>
+                                                    </div>
+                                                    <div class="">Behalf of the <a href="community.html"><strong>Culture of Benin</strong> community</a>
+                                                    </div>
                                                 </div>
                                                 <div class="flex flex-col justify-between">
                                                     <div class="">on 10-11-2024</div>
@@ -548,21 +577,28 @@ The day book entry of 29 April 1901 acknowledges the
                                     </div>
                                 </div>
                                 <div class="flex justify-end text-consortiumBlue-800 ">
-                                    <button class="py-2 px-3  transition lex items-center gap-1 p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                                    <button class="py-2 px-3 transition flex items-start gap-2 p-1 sm:py-2 sm:px-3 rounded-full text-xs
                       bg-consortiumGreen-300
                       text-consortiumBlue-800
-                      
-                      transition flex items-center gap-1" onclick="openAddNarrForm('f1')">Add your narrative to Description
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-consortiumBlue-800">
-                                            <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
-                                            clip-rule="evenodd" />
-                                        </svg>
+                      hover:bg-consortiumGreen-200
+                      transition flex items-center gap-1 hover:bg-consortiumGreen-200"
+                                    onclick="openAddNarrForm('f1')">
+                                        <div class="flex justify-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-consortiumBlue-800">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col items-start">
+                                            <div class="">Add your narrative</div>
+                                            <div class="lowercase">to Description</div>
+                                        </div>
                                     </button>
                                 </div>
-                                <div id="f1" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100 text-neutral-800  self-end hidden flex-col gap-6">
-                                    <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
-                                         <h3 class="">Add a narrative</h3>
+                                <div id="f1" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 self-end hidden flex-col gap-6 mb-4">
+                                    <div class="flex justify-between items-center border-b border-neutral-300 -mx-4 px-4 pb-2 mb-2">
+                                         <h3 class="">Add a narrative to <span class="lowercase">Description</span></h3>
 
                                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
                               bg-neutral-200/50
@@ -576,39 +612,18 @@ The day book entry of 29 April 1901 acknowledges the
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="flex flex-col lg:flex-row gap-4">
+                                    <div class="flex flex-col lg:flex-row gap-4 lg:gap-12">
                                         <div class="flex flex-col w-full lg:w-2/3">
                                             <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Narrative <span class="font-normal text-neutral-600">*</span></strong>
 
-                                                <div>Here you can add your own narrative to the Description of this object.
-                                                    <span
-                                                    class="text-sm text-neutral-600 italic">Max 300 characters</span>
+                                                <div>Here you can add your own narrative to the <span class="lowercase">Description</span> of
+                                                    this object. <span class="text-sm text-neutral-600 italic">Max 300 characters</span>
                                                 </div>
                                             </label>
                                             <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                             <div class="text-xs text-neutral-600 italic">0/300</div>
                                         </div>
-                                        <div class="flex flex-col w-full lg:w-1/3  gap-4">
-                                            <div class="">
-                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
-Select
-                                                    the community you speak on behalf of</label>
-                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                                    <option value="">Society Islands / Tōtaiete mā community</option>
-                                                    <option value="">Culture of Benin community</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col sm:flex-row gap-4">
-                                        <div class="flex flex-col w-full lg:w-2/3">
-                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
-
-                                                <div>Please provide information that supports your narrative.</div>
-                                            </label>
-                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
-                                        </div>
-                                        <div class="flex flex-col w-full lg:w-1/3">
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
                                             <div class="flex flex-col gap-1 mb-1">
                                                 <label for=""> <strong>Language</strong>
 
@@ -637,13 +652,47 @@ Select
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="flex flex-col sm:flex-row gap-4 lg:gap-12">
+                                        <div class="flex flex-col w-full lg:w-2/3">
+                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
+
+                                                <div>Please provide information that supports your narrative.</div>
+                                            </label>
+                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                        </div>
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
+                                            <div class="">
+                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Behalve of community</strong>
+If you speak behalf of a community,
+                                                    you can select the community here.</label>
+                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                                    <option value="">No community</option>
+                                                    <option value="">Society Islands / Tōtaiete mā community</option>
+                                                    <option value="">Culture of Benin community</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full lg:w-2/3">
+                                        <div class=""> <strong>Licence info:</strong> Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing elit. Dolore, voluptas quasi perspiciatis incidunt distinctio
+                                            repudiandae corporis in, impedit consectetur delectus illo, necessitatibus
+                                            fuga inventore tempora voluptatum tenetur facere quaerat dolor!
+                                            <div class="flex gap-2">
+                                                <input type="checkbox" name="licenseAgree" id="licenseAgree">
+                                                <label for="licenseAgree" class="font-semibold">I agree with the xx licence.<span class="font-normal text-neutral-600">*</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=""></div>
+                                    </div>
                                     <div class="flex flex-col lg:flex-row gap-4">
                                         <div class="w-full lg:w-2/3 flex gap-2">
                                             <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                              bg-neutral-200/50
-                              hover:bg-neutral-300/50
-                              text-neutral-800 transition flex items-center gap-1
-                               p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
+                              bg-consortiumGreen-300
+                              text-consortiumBlue-800
+                              hover:bg-consortiumGreen-200
+                              transition flex items-center gap-1 p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                             <button onclick="closeAddNarrForm('f1')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
                               text-neutral-800 transition flex items-center gap-1
                               border border-neutral-300 p-1 sm:py-2 sm:px-3 text-xs transition flex items-center gap-1">Cancel</button>
@@ -719,7 +768,11 @@ Select
                                             <div class="px-2 py-3 text-xs  my-1 self-start  
                                                   w-full lg:w-1/3
                                                   bg-consortiumGreen-100 text-consortiumBlue-800 rounded">
-                                                <div class="">Provided by <a href="community.html"><strong>Culture of Benin</strong> community</a>
+                                                <div class="">
+                                                    <div class="">Provided by <strong>Sita Rajapakse</strong>
+                                                    </div>
+                                                    <div class="">Behalf of the <a href="community.html"><strong>Culture of Benin</strong> community</a>
+                                                    </div>
                                                 </div>
                                                 <div class="flex flex-col justify-between">
                                                     <div class="">on 12-12-2018</div>
@@ -754,7 +807,11 @@ Select
                                             <div class="px-2 py-3 text-xs  my-1 self-start  
                                                   w-full lg:w-1/3
                                                   bg-consortiumGreen-100 text-consortiumBlue-800 rounded">
-                                                <div class="">Provided by <a href="community.html"><strong>Culture of Benin</strong> community</a>
+                                                <div class="">
+                                                    <div class="">Provided by <strong>Kamal Singh</strong>
+                                                    </div>
+                                                    <div class="">Behalf of the <a href="community.html"><strong>Culture of Benin</strong> community</a>
+                                                    </div>
                                                 </div>
                                                 <div class="flex flex-col justify-between">
                                                     <div class="">on 12-12-2018</div>
@@ -765,21 +822,28 @@ Select
                                     </div>
                                 </div>
                                 <div class="flex justify-end text-consortiumBlue-800 ">
-                                    <button class="py-2 px-3  transition lex items-center gap-1 p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                                    <button class="py-2 px-3 transition flex items-start gap-2 p-1 sm:py-2 sm:px-3 rounded-full text-xs
                       bg-consortiumGreen-300
                       text-consortiumBlue-800
-                      
-                      transition flex items-center gap-1" onclick="openAddNarrForm('f2')">Add your narrative to Date made
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-consortiumBlue-800">
-                                            <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
-                                            clip-rule="evenodd" />
-                                        </svg>
+                      hover:bg-consortiumGreen-200
+                      transition flex items-center gap-1 hover:bg-consortiumGreen-200"
+                                    onclick="openAddNarrForm('f2')">
+                                        <div class="flex justify-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-consortiumBlue-800">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col items-start">
+                                            <div class="">Add your narrative</div>
+                                            <div class="lowercase">to Date made</div>
+                                        </div>
                                     </button>
                                 </div>
-                                <div id="f2" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100 text-neutral-800  self-end hidden flex-col gap-6">
-                                    <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
-                                         <h3 class="">Add a narrative</h3>
+                                <div id="f2" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 self-end hidden flex-col gap-6 mb-4">
+                                    <div class="flex justify-between items-center border-b border-neutral-300 -mx-4 px-4 pb-2 mb-2">
+                                         <h3 class="">Add a narrative to <span class="lowercase">Date made</span></h3>
 
                                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
                               bg-neutral-200/50
@@ -793,39 +857,18 @@ Select
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="flex flex-col lg:flex-row gap-4">
+                                    <div class="flex flex-col lg:flex-row gap-4 lg:gap-12">
                                         <div class="flex flex-col w-full lg:w-2/3">
                                             <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Narrative <span class="font-normal text-neutral-600">*</span></strong>
 
-                                                <div>Here you can add your own narrative to the Date made of this object.
-                                                    <span
-                                                    class="text-sm text-neutral-600 italic">Max 300 characters</span>
+                                                <div>Here you can add your own narrative to the <span class="lowercase">Date made</span> of
+                                                    this object. <span class="text-sm text-neutral-600 italic">Max 300 characters</span>
                                                 </div>
                                             </label>
                                             <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                             <div class="text-xs text-neutral-600 italic">0/300</div>
                                         </div>
-                                        <div class="flex flex-col w-full lg:w-1/3  gap-4">
-                                            <div class="">
-                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
-Select
-                                                    the community you speak on behalf of</label>
-                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                                    <option value="">Society Islands / Tōtaiete mā community</option>
-                                                    <option value="">Culture of Benin community</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col sm:flex-row gap-4">
-                                        <div class="flex flex-col w-full lg:w-2/3">
-                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
-
-                                                <div>Please provide information that supports your narrative.</div>
-                                            </label>
-                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
-                                        </div>
-                                        <div class="flex flex-col w-full lg:w-1/3">
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
                                             <div class="flex flex-col gap-1 mb-1">
                                                 <label for=""> <strong>Language</strong>
 
@@ -854,13 +897,47 @@ Select
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="flex flex-col sm:flex-row gap-4 lg:gap-12">
+                                        <div class="flex flex-col w-full lg:w-2/3">
+                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
+
+                                                <div>Please provide information that supports your narrative.</div>
+                                            </label>
+                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                        </div>
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
+                                            <div class="">
+                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Behalve of community</strong>
+If you speak behalf of a community,
+                                                    you can select the community here.</label>
+                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                                    <option value="">No community</option>
+                                                    <option value="">Society Islands / Tōtaiete mā community</option>
+                                                    <option value="">Culture of Benin community</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full lg:w-2/3">
+                                        <div class=""> <strong>Licence info:</strong> Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing elit. Dolore, voluptas quasi perspiciatis incidunt distinctio
+                                            repudiandae corporis in, impedit consectetur delectus illo, necessitatibus
+                                            fuga inventore tempora voluptatum tenetur facere quaerat dolor!
+                                            <div class="flex gap-2">
+                                                <input type="checkbox" name="licenseAgree" id="licenseAgree">
+                                                <label for="licenseAgree" class="font-semibold">I agree with the xx licence.<span class="font-normal text-neutral-600">*</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=""></div>
+                                    </div>
                                     <div class="flex flex-col lg:flex-row gap-4">
                                         <div class="w-full lg:w-2/3 flex gap-2">
                                             <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                              bg-neutral-200/50
-                              hover:bg-neutral-300/50
-                              text-neutral-800 transition flex items-center gap-1
-                               p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
+                              bg-consortiumGreen-300
+                              text-consortiumBlue-800
+                              hover:bg-consortiumGreen-200
+                              transition flex items-center gap-1 p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                             <button onclick="closeAddNarrForm('f2')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
                               text-neutral-800 transition flex items-center gap-1
                               border border-neutral-300 p-1 sm:py-2 sm:px-3 text-xs transition flex items-center gap-1">Cancel</button>
@@ -936,7 +1013,11 @@ Select
                                             <div class="px-2 py-3 text-xs  my-1 self-start  
                                                   w-full lg:w-1/3
                                                   bg-consortiumGreen-100 text-consortiumBlue-800 rounded">
-                                                <div class="">Provided by <a href="community.html"><strong>Culture of Benin</strong> community</a>
+                                                <div class="">
+                                                    <div class="">Provided by <strong>Sita Rajapakse</strong>
+                                                    </div>
+                                                    <div class="">Behalf of the <a href="community.html"><strong>Culture of Benin</strong> community</a>
+                                                    </div>
                                                 </div>
                                                 <div class="flex flex-col justify-between">
                                                     <div class="">on 12-12-2018</div>
@@ -947,21 +1028,28 @@ Select
                                     </div>
                                 </div>
                                 <div class="flex justify-end text-consortiumBlue-800 ">
-                                    <button class="py-2 px-3  transition lex items-center gap-1 p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                                    <button class="py-2 px-3 transition flex items-start gap-2 p-1 sm:py-2 sm:px-3 rounded-full text-xs
                       bg-consortiumGreen-300
                       text-consortiumBlue-800
-                      
-                      transition flex items-center gap-1" onclick="openAddNarrForm('f3')">Add your narrative to Material
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-consortiumBlue-800">
-                                            <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
-                                            clip-rule="evenodd" />
-                                        </svg>
+                      hover:bg-consortiumGreen-200
+                      transition flex items-center gap-1 hover:bg-consortiumGreen-200"
+                                    onclick="openAddNarrForm('f3')">
+                                        <div class="flex justify-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-consortiumBlue-800">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col items-start">
+                                            <div class="">Add your narrative</div>
+                                            <div class="lowercase">to Material</div>
+                                        </div>
                                     </button>
                                 </div>
-                                <div id="f3" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100 text-neutral-800  self-end hidden flex-col gap-6">
-                                    <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
-                                         <h3 class="">Add a narrative</h3>
+                                <div id="f3" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 self-end hidden flex-col gap-6 mb-4">
+                                    <div class="flex justify-between items-center border-b border-neutral-300 -mx-4 px-4 pb-2 mb-2">
+                                         <h3 class="">Add a narrative to <span class="lowercase">Material</span></h3>
 
                                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
                               bg-neutral-200/50
@@ -975,39 +1063,18 @@ Select
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="flex flex-col lg:flex-row gap-4">
+                                    <div class="flex flex-col lg:flex-row gap-4 lg:gap-12">
                                         <div class="flex flex-col w-full lg:w-2/3">
                                             <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Narrative <span class="font-normal text-neutral-600">*</span></strong>
 
-                                                <div>Here you can add your own narrative to the Material of this object.
-                                                    <span
-                                                    class="text-sm text-neutral-600 italic">Max 300 characters</span>
+                                                <div>Here you can add your own narrative to the <span class="lowercase">Material</span> of
+                                                    this object. <span class="text-sm text-neutral-600 italic">Max 300 characters</span>
                                                 </div>
                                             </label>
                                             <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                             <div class="text-xs text-neutral-600 italic">0/300</div>
                                         </div>
-                                        <div class="flex flex-col w-full lg:w-1/3  gap-4">
-                                            <div class="">
-                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
-Select
-                                                    the community you speak on behalf of</label>
-                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                                    <option value="">Society Islands / Tōtaiete mā community</option>
-                                                    <option value="">Culture of Benin community</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col sm:flex-row gap-4">
-                                        <div class="flex flex-col w-full lg:w-2/3">
-                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
-
-                                                <div>Please provide information that supports your narrative.</div>
-                                            </label>
-                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
-                                        </div>
-                                        <div class="flex flex-col w-full lg:w-1/3">
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
                                             <div class="flex flex-col gap-1 mb-1">
                                                 <label for=""> <strong>Language</strong>
 
@@ -1036,13 +1103,47 @@ Select
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="flex flex-col sm:flex-row gap-4 lg:gap-12">
+                                        <div class="flex flex-col w-full lg:w-2/3">
+                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
+
+                                                <div>Please provide information that supports your narrative.</div>
+                                            </label>
+                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                        </div>
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
+                                            <div class="">
+                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Behalve of community</strong>
+If you speak behalf of a community,
+                                                    you can select the community here.</label>
+                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                                    <option value="">No community</option>
+                                                    <option value="">Society Islands / Tōtaiete mā community</option>
+                                                    <option value="">Culture of Benin community</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full lg:w-2/3">
+                                        <div class=""> <strong>Licence info:</strong> Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing elit. Dolore, voluptas quasi perspiciatis incidunt distinctio
+                                            repudiandae corporis in, impedit consectetur delectus illo, necessitatibus
+                                            fuga inventore tempora voluptatum tenetur facere quaerat dolor!
+                                            <div class="flex gap-2">
+                                                <input type="checkbox" name="licenseAgree" id="licenseAgree">
+                                                <label for="licenseAgree" class="font-semibold">I agree with the xx licence.<span class="font-normal text-neutral-600">*</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=""></div>
+                                    </div>
                                     <div class="flex flex-col lg:flex-row gap-4">
                                         <div class="w-full lg:w-2/3 flex gap-2">
                                             <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                              bg-neutral-200/50
-                              hover:bg-neutral-300/50
-                              text-neutral-800 transition flex items-center gap-1
-                               p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
+                              bg-consortiumGreen-300
+                              text-consortiumBlue-800
+                              hover:bg-consortiumGreen-200
+                              transition flex items-center gap-1 p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                             <button onclick="closeAddNarrForm('f3')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
                               text-neutral-800 transition flex items-center gap-1
                               border border-neutral-300 p-1 sm:py-2 sm:px-3 text-xs transition flex items-center gap-1">Cancel</button>
@@ -1067,21 +1168,28 @@ Select
                                     </div>
                                 </div>
                                 <div class="flex justify-end text-consortiumBlue-800 ">
-                                    <button class="py-2 px-3  transition lex items-center gap-1 p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                                    <button class="py-2 px-3 transition flex items-start gap-2 p-1 sm:py-2 sm:px-3 rounded-full text-xs
                       bg-consortiumGreen-300
                       text-consortiumBlue-800
-                      
-                      transition flex items-center gap-1" onclick="openAddNarrForm('f4')">Add your narrative to Dimensions
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-consortiumBlue-800">
-                                            <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
-                                            clip-rule="evenodd" />
-                                        </svg>
+                      hover:bg-consortiumGreen-200
+                      transition flex items-center gap-1 hover:bg-consortiumGreen-200"
+                                    onclick="openAddNarrForm('f4')">
+                                        <div class="flex justify-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-consortiumBlue-800">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col items-start">
+                                            <div class="">Add your narrative</div>
+                                            <div class="lowercase">to Dimensions</div>
+                                        </div>
                                     </button>
                                 </div>
-                                <div id="f4" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100 text-neutral-800  self-end hidden flex-col gap-6">
-                                    <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
-                                         <h3 class="">Add a narrative</h3>
+                                <div id="f4" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 self-end hidden flex-col gap-6 mb-4">
+                                    <div class="flex justify-between items-center border-b border-neutral-300 -mx-4 px-4 pb-2 mb-2">
+                                         <h3 class="">Add a narrative to <span class="lowercase">Dimensions</span></h3>
 
                                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
                               bg-neutral-200/50
@@ -1095,39 +1203,18 @@ Select
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="flex flex-col lg:flex-row gap-4">
+                                    <div class="flex flex-col lg:flex-row gap-4 lg:gap-12">
                                         <div class="flex flex-col w-full lg:w-2/3">
                                             <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Narrative <span class="font-normal text-neutral-600">*</span></strong>
 
-                                                <div>Here you can add your own narrative to the Dimensions of this object.
-                                                    <span
-                                                    class="text-sm text-neutral-600 italic">Max 300 characters</span>
+                                                <div>Here you can add your own narrative to the <span class="lowercase">Dimensions</span> of
+                                                    this object. <span class="text-sm text-neutral-600 italic">Max 300 characters</span>
                                                 </div>
                                             </label>
                                             <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                             <div class="text-xs text-neutral-600 italic">0/300</div>
                                         </div>
-                                        <div class="flex flex-col w-full lg:w-1/3  gap-4">
-                                            <div class="">
-                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
-Select
-                                                    the community you speak on behalf of</label>
-                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                                    <option value="">Society Islands / Tōtaiete mā community</option>
-                                                    <option value="">Culture of Benin community</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col sm:flex-row gap-4">
-                                        <div class="flex flex-col w-full lg:w-2/3">
-                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
-
-                                                <div>Please provide information that supports your narrative.</div>
-                                            </label>
-                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
-                                        </div>
-                                        <div class="flex flex-col w-full lg:w-1/3">
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
                                             <div class="flex flex-col gap-1 mb-1">
                                                 <label for=""> <strong>Language</strong>
 
@@ -1156,13 +1243,47 @@ Select
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="flex flex-col sm:flex-row gap-4 lg:gap-12">
+                                        <div class="flex flex-col w-full lg:w-2/3">
+                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
+
+                                                <div>Please provide information that supports your narrative.</div>
+                                            </label>
+                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                        </div>
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
+                                            <div class="">
+                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Behalve of community</strong>
+If you speak behalf of a community,
+                                                    you can select the community here.</label>
+                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                                    <option value="">No community</option>
+                                                    <option value="">Society Islands / Tōtaiete mā community</option>
+                                                    <option value="">Culture of Benin community</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full lg:w-2/3">
+                                        <div class=""> <strong>Licence info:</strong> Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing elit. Dolore, voluptas quasi perspiciatis incidunt distinctio
+                                            repudiandae corporis in, impedit consectetur delectus illo, necessitatibus
+                                            fuga inventore tempora voluptatum tenetur facere quaerat dolor!
+                                            <div class="flex gap-2">
+                                                <input type="checkbox" name="licenseAgree" id="licenseAgree">
+                                                <label for="licenseAgree" class="font-semibold">I agree with the xx licence.<span class="font-normal text-neutral-600">*</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=""></div>
+                                    </div>
                                     <div class="flex flex-col lg:flex-row gap-4">
                                         <div class="w-full lg:w-2/3 flex gap-2">
                                             <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                              bg-neutral-200/50
-                              hover:bg-neutral-300/50
-                              text-neutral-800 transition flex items-center gap-1
-                               p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
+                              bg-consortiumGreen-300
+                              text-consortiumBlue-800
+                              hover:bg-consortiumGreen-200
+                              transition flex items-center gap-1 p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                             <button onclick="closeAddNarrForm('f4')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
                               text-neutral-800 transition flex items-center gap-1
                               border border-neutral-300 p-1 sm:py-2 sm:px-3 text-xs transition flex items-center gap-1">Cancel</button>
@@ -1187,21 +1308,28 @@ Select
                                     </div>
                                 </div>
                                 <div class="flex justify-end text-consortiumBlue-800 ">
-                                    <button class="py-2 px-3  transition lex items-center gap-1 p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                                    <button class="py-2 px-3 transition flex items-start gap-2 p-1 sm:py-2 sm:px-3 rounded-full text-xs
                       bg-consortiumGreen-300
                       text-consortiumBlue-800
-                      
-                      transition flex items-center gap-1" onclick="openAddNarrForm('f5')">Add your narrative to Types
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                        fill="currentColor" class="w-4 h-4 fill-consortiumBlue-800">
-                                            <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
-                                            clip-rule="evenodd" />
-                                        </svg>
+                      hover:bg-consortiumGreen-200
+                      transition flex items-center gap-1 hover:bg-consortiumGreen-200"
+                                    onclick="openAddNarrForm('f5')">
+                                        <div class="flex justify-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-consortiumBlue-800">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col items-start">
+                                            <div class="">Add your narrative</div>
+                                            <div class="lowercase">to Types</div>
+                                        </div>
                                     </button>
                                 </div>
-                                <div id="f5" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100 text-neutral-800  self-end hidden flex-col gap-6">
-                                    <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
-                                         <h3 class="">Add a narrative</h3>
+                                <div id="f5" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 self-end hidden flex-col gap-6 mb-4">
+                                    <div class="flex justify-between items-center border-b border-neutral-300 -mx-4 px-4 pb-2 mb-2">
+                                         <h3 class="">Add a narrative to <span class="lowercase">Types</span></h3>
 
                                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
                               bg-neutral-200/50
@@ -1215,39 +1343,18 @@ Select
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="flex flex-col lg:flex-row gap-4">
+                                    <div class="flex flex-col lg:flex-row gap-4 lg:gap-12">
                                         <div class="flex flex-col w-full lg:w-2/3">
                                             <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Narrative <span class="font-normal text-neutral-600">*</span></strong>
 
-                                                <div>Here you can add your own narrative to the Types of this object.
-                                                    <span
-                                                    class="text-sm text-neutral-600 italic">Max 300 characters</span>
+                                                <div>Here you can add your own narrative to the <span class="lowercase">Types</span> of
+                                                    this object. <span class="text-sm text-neutral-600 italic">Max 300 characters</span>
                                                 </div>
                                             </label>
                                             <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                             <div class="text-xs text-neutral-600 italic">0/300</div>
                                         </div>
-                                        <div class="flex flex-col w-full lg:w-1/3  gap-4">
-                                            <div class="">
-                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
-Select
-                                                    the community you speak on behalf of</label>
-                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                                    <option value="">Society Islands / Tōtaiete mā community</option>
-                                                    <option value="">Culture of Benin community</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col sm:flex-row gap-4">
-                                        <div class="flex flex-col w-full lg:w-2/3">
-                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
-
-                                                <div>Please provide information that supports your narrative.</div>
-                                            </label>
-                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
-                                        </div>
-                                        <div class="flex flex-col w-full lg:w-1/3">
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
                                             <div class="flex flex-col gap-1 mb-1">
                                                 <label for=""> <strong>Language</strong>
 
@@ -1276,13 +1383,47 @@ Select
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="flex flex-col sm:flex-row gap-4 lg:gap-12">
+                                        <div class="flex flex-col w-full lg:w-2/3">
+                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
+
+                                                <div>Please provide information that supports your narrative.</div>
+                                            </label>
+                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                        </div>
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
+                                            <div class="">
+                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Behalve of community</strong>
+If you speak behalf of a community,
+                                                    you can select the community here.</label>
+                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                                    <option value="">No community</option>
+                                                    <option value="">Society Islands / Tōtaiete mā community</option>
+                                                    <option value="">Culture of Benin community</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full lg:w-2/3">
+                                        <div class=""> <strong>Licence info:</strong> Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing elit. Dolore, voluptas quasi perspiciatis incidunt distinctio
+                                            repudiandae corporis in, impedit consectetur delectus illo, necessitatibus
+                                            fuga inventore tempora voluptatum tenetur facere quaerat dolor!
+                                            <div class="flex gap-2">
+                                                <input type="checkbox" name="licenseAgree" id="licenseAgree">
+                                                <label for="licenseAgree" class="font-semibold">I agree with the xx licence.<span class="font-normal text-neutral-600">*</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=""></div>
+                                    </div>
                                     <div class="flex flex-col lg:flex-row gap-4">
                                         <div class="w-full lg:w-2/3 flex gap-2">
                                             <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                              bg-neutral-200/50
-                              hover:bg-neutral-300/50
-                              text-neutral-800 transition flex items-center gap-1
-                               p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
+                              bg-consortiumGreen-300
+                              text-consortiumBlue-800
+                              hover:bg-consortiumGreen-200
+                              transition flex items-center gap-1 p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                             <button onclick="closeAddNarrForm('f5')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
                               text-neutral-800 transition flex items-center gap-1
                               border border-neutral-300 p-1 sm:py-2 sm:px-3 text-xs transition flex items-center gap-1">Cancel</button>
@@ -1307,21 +1448,28 @@ Select
                                     </div>
                                 </div>
                                 <div class="flex justify-end text-consortiumBlue-800 ">
-                                    <button class="py-2 px-3  transition lex items-center gap-1 p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                                    <button class="py-2 px-3 transition flex items-start gap-2 p-1 sm:py-2 sm:px-3 rounded-full text-xs
                       bg-consortiumGreen-300
                       text-consortiumBlue-800
-                      
-                      transition flex items-center gap-1" onclick="openAddNarrForm('f6')">Add your narrative to Techniques
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-consortiumBlue-800">
-                                            <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
-                                            clip-rule="evenodd" />
-                                        </svg>
+                      hover:bg-consortiumGreen-200
+                      transition flex items-center gap-1 hover:bg-consortiumGreen-200"
+                                    onclick="openAddNarrForm('f6')">
+                                        <div class="flex justify-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-consortiumBlue-800">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col items-start">
+                                            <div class="">Add your narrative</div>
+                                            <div class="lowercase">to Techniques</div>
+                                        </div>
                                     </button>
                                 </div>
-                                <div id="f6" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100 text-neutral-800  self-end hidden flex-col gap-6">
-                                    <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
-                                         <h3 class="">Add a narrative</h3>
+                                <div id="f6" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 self-end hidden flex-col gap-6 mb-4">
+                                    <div class="flex justify-between items-center border-b border-neutral-300 -mx-4 px-4 pb-2 mb-2">
+                                         <h3 class="">Add a narrative to <span class="lowercase">Techniques</span></h3>
 
                                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
                               bg-neutral-200/50
@@ -1335,39 +1483,18 @@ Select
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="flex flex-col lg:flex-row gap-4">
+                                    <div class="flex flex-col lg:flex-row gap-4 lg:gap-12">
                                         <div class="flex flex-col w-full lg:w-2/3">
                                             <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Narrative <span class="font-normal text-neutral-600">*</span></strong>
 
-                                                <div>Here you can add your own narrative to the Techniques of this object.
-                                                    <span
-                                                    class="text-sm text-neutral-600 italic">Max 300 characters</span>
+                                                <div>Here you can add your own narrative to the <span class="lowercase">Techniques</span> of
+                                                    this object. <span class="text-sm text-neutral-600 italic">Max 300 characters</span>
                                                 </div>
                                             </label>
                                             <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                             <div class="text-xs text-neutral-600 italic">0/300</div>
                                         </div>
-                                        <div class="flex flex-col w-full lg:w-1/3  gap-4">
-                                            <div class="">
-                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
-Select
-                                                    the community you speak on behalf of</label>
-                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                                    <option value="">Society Islands / Tōtaiete mā community</option>
-                                                    <option value="">Culture of Benin community</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col sm:flex-row gap-4">
-                                        <div class="flex flex-col w-full lg:w-2/3">
-                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
-
-                                                <div>Please provide information that supports your narrative.</div>
-                                            </label>
-                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
-                                        </div>
-                                        <div class="flex flex-col w-full lg:w-1/3">
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
                                             <div class="flex flex-col gap-1 mb-1">
                                                 <label for=""> <strong>Language</strong>
 
@@ -1396,13 +1523,47 @@ Select
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="flex flex-col sm:flex-row gap-4 lg:gap-12">
+                                        <div class="flex flex-col w-full lg:w-2/3">
+                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
+
+                                                <div>Please provide information that supports your narrative.</div>
+                                            </label>
+                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                        </div>
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
+                                            <div class="">
+                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Behalve of community</strong>
+If you speak behalf of a community,
+                                                    you can select the community here.</label>
+                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                                    <option value="">No community</option>
+                                                    <option value="">Society Islands / Tōtaiete mā community</option>
+                                                    <option value="">Culture of Benin community</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full lg:w-2/3">
+                                        <div class=""> <strong>Licence info:</strong> Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing elit. Dolore, voluptas quasi perspiciatis incidunt distinctio
+                                            repudiandae corporis in, impedit consectetur delectus illo, necessitatibus
+                                            fuga inventore tempora voluptatum tenetur facere quaerat dolor!
+                                            <div class="flex gap-2">
+                                                <input type="checkbox" name="licenseAgree" id="licenseAgree">
+                                                <label for="licenseAgree" class="font-semibold">I agree with the xx licence.<span class="font-normal text-neutral-600">*</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=""></div>
+                                    </div>
                                     <div class="flex flex-col lg:flex-row gap-4">
                                         <div class="w-full lg:w-2/3 flex gap-2">
                                             <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                              bg-neutral-200/50
-                              hover:bg-neutral-300/50
-                              text-neutral-800 transition flex items-center gap-1
-                               p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
+                              bg-consortiumGreen-300
+                              text-consortiumBlue-800
+                              hover:bg-consortiumGreen-200
+                              transition flex items-center gap-1 p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                             <button onclick="closeAddNarrForm('f6')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
                               text-neutral-800 transition flex items-center gap-1
                               border border-neutral-300 p-1 sm:py-2 sm:px-3 text-xs transition flex items-center gap-1">Cancel</button>
@@ -1427,21 +1588,28 @@ Select
                                     </div>
                                 </div>
                                 <div class="flex justify-end text-consortiumBlue-800 ">
-                                    <button class="py-2 px-3  transition lex items-center gap-1 p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                                    <button class="py-2 px-3 transition flex items-start gap-2 p-1 sm:py-2 sm:px-3 rounded-full text-xs
                       bg-consortiumGreen-300
                       text-consortiumBlue-800
-                      
-                      transition flex items-center gap-1" onclick="openAddNarrForm('f7')">Add your narrative to Creators
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-consortiumBlue-800">
-                                            <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
-                                            clip-rule="evenodd" />
-                                        </svg>
+                      hover:bg-consortiumGreen-200
+                      transition flex items-center gap-1 hover:bg-consortiumGreen-200"
+                                    onclick="openAddNarrForm('f7')">
+                                        <div class="flex justify-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-consortiumBlue-800">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col items-start">
+                                            <div class="">Add your narrative</div>
+                                            <div class="lowercase">to Creators</div>
+                                        </div>
                                     </button>
                                 </div>
-                                <div id="f7" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-100 text-neutral-800  self-end hidden flex-col gap-6">
-                                    <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-2">
-                                         <h3 class="">Add a narrative</h3>
+                                <div id="f7" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 self-end hidden flex-col gap-6 mb-4">
+                                    <div class="flex justify-between items-center border-b border-neutral-300 -mx-4 px-4 pb-2 mb-2">
+                                         <h3 class="">Add a narrative to <span class="lowercase">Creators</span></h3>
 
                                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
                               bg-neutral-200/50
@@ -1455,39 +1623,18 @@ Select
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="flex flex-col lg:flex-row gap-4">
+                                    <div class="flex flex-col lg:flex-row gap-4 lg:gap-12">
                                         <div class="flex flex-col w-full lg:w-2/3">
                                             <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Narrative <span class="font-normal text-neutral-600">*</span></strong>
 
-                                                <div>Here you can add your own narrative to the Creators of this object.
-                                                    <span
-                                                    class="text-sm text-neutral-600 italic">Max 300 characters</span>
+                                                <div>Here you can add your own narrative to the <span class="lowercase">Creators</span> of
+                                                    this object. <span class="text-sm text-neutral-600 italic">Max 300 characters</span>
                                                 </div>
                                             </label>
                                             <textarea name="nar" id="" cols="30" rows="4" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
                                             <div class="text-xs text-neutral-600 italic">0/300</div>
                                         </div>
-                                        <div class="flex flex-col w-full lg:w-1/3  gap-4">
-                                            <div class="">
-                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community <span class="font-normal text-neutral-600">*</span></strong>
-Select
-                                                    the community you speak on behalf of</label>
-                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
-                                                    <option value="">Society Islands / Tōtaiete mā community</option>
-                                                    <option value="">Culture of Benin community</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col sm:flex-row gap-4">
-                                        <div class="flex flex-col w-full lg:w-2/3">
-                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
-
-                                                <div>Please provide information that supports your narrative.</div>
-                                            </label>
-                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
-                                        </div>
-                                        <div class="flex flex-col w-full lg:w-1/3">
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
                                             <div class="flex flex-col gap-1 mb-1">
                                                 <label for=""> <strong>Language</strong>
 
@@ -1516,13 +1663,47 @@ Select
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="flex flex-col sm:flex-row gap-4 lg:gap-12">
+                                        <div class="flex flex-col w-full lg:w-2/3">
+                                            <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Resource <span class="font-normal text-neutral-600">*</span></strong>
+
+                                                <div>Please provide information that supports your narrative.</div>
+                                            </label>
+                                            <textarea name="nar" id="" cols="30" rows="2" class="border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                        </div>
+                                        <div class="flex flex-col w-full lg:w-1/3 gap-4">
+                                            <div class="">
+                                                <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Behalve of community</strong>
+If you speak behalf of a community,
+                                                    you can select the community here.</label>
+                                                <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm">
+                                                    <option value="">No community</option>
+                                                    <option value="">Society Islands / Tōtaiete mā community</option>
+                                                    <option value="">Culture of Benin community</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full lg:w-2/3">
+                                        <div class=""> <strong>Licence info:</strong> Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing elit. Dolore, voluptas quasi perspiciatis incidunt distinctio
+                                            repudiandae corporis in, impedit consectetur delectus illo, necessitatibus
+                                            fuga inventore tempora voluptatum tenetur facere quaerat dolor!
+                                            <div class="flex gap-2">
+                                                <input type="checkbox" name="licenseAgree" id="licenseAgree">
+                                                <label for="licenseAgree" class="font-semibold">I agree with the xx licence.<span class="font-normal text-neutral-600">*</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class=""></div>
+                                    </div>
                                     <div class="flex flex-col lg:flex-row gap-4">
                                         <div class="w-full lg:w-2/3 flex gap-2">
                                             <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-                              bg-neutral-200/50
-                              hover:bg-neutral-300/50
-                              text-neutral-800 transition flex items-center gap-1
-                               p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
+                              bg-consortiumGreen-300
+                              text-consortiumBlue-800
+                              hover:bg-consortiumGreen-200
+                              transition flex items-center gap-1 p-1 sm:py-2 sm:px-3  text-xs transition flex items-center gap-1">Add narrative</button>
                                             <button onclick="closeAddNarrForm('f7')" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
                               text-neutral-800 transition flex items-center gap-1
                               border border-neutral-300 p-1 sm:py-2 sm:px-3 text-xs transition flex items-center gap-1">Cancel</button>
