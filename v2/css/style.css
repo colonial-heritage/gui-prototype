@@ -1367,10 +1367,6 @@ a:hover {
   top: 2.25rem;
 }
 
-.right-10 {
-  right: 2.5rem;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -1497,10 +1493,6 @@ a:hover {
 
 .m-4 {
   margin: 1rem;
-}
-
-.-m-44 {
-  margin: -11rem;
 }
 
 .m-auto {
@@ -1924,18 +1916,6 @@ a:hover {
   margin-top: 1.5rem;
 }
 
-.-mb-44 {
-  margin-bottom: -11rem;
-}
-
-.-mb-36 {
-  margin-bottom: -9rem;
-}
-
-.-mb-48 {
-  margin-bottom: -12rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -2184,6 +2164,10 @@ a:hover {
   min-height: 250px;
 }
 
+.min-h-\[300px\] {
+  min-height: 300px;
+}
+
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
@@ -2194,10 +2178,6 @@ a:hover {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[300px\] {
-  min-height: 300px;
 }
 
 .w-0 {
@@ -3085,6 +3065,10 @@ a:hover {
   gap: 0.5rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -3103,10 +3087,6 @@ a:hover {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-20 {
-  gap: 5rem;
 }
 
 .gap-y-2 {
@@ -3869,11 +3849,6 @@ a:hover {
   border-color: rgb(202 138 4 / var(--tw-border-opacity));
 }
 
-.border-pink-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(251 207 232 / var(--tw-border-opacity));
-}
-
 .bg-\[\#623278\] {
   --tw-bg-opacity: 1;
   background-color: rgb(98 50 120 / var(--tw-bg-opacity));
@@ -4278,25 +4253,6 @@ a:hover {
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
 
-.bg-pink-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
-}
-
-.bg-consortiumBlue-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(69 93 141 / var(--tw-bg-opacity));
-}
-
-.bg-white\/30 {
-  background-color: rgb(255 255 255 / 0.3);
-}
-
-.bg-purple-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\/images\/visual-graphic-strip1\.png\'\)\] {
   background-image: url('/images/visual-graphic-strip1.png');
 }
@@ -4537,6 +4493,14 @@ a:hover {
   fill: #fff;
 }
 
+.fill-consortiumGreen-200 {
+  fill: hsl(145, 65%, 80%);
+}
+
+.fill-consortiumGreen-300 {
+  fill: hsl(145, 65%, 70%);
+}
+
 .stroke-blue-700 {
   stroke: #1d4ed8;
 }
@@ -4555,6 +4519,10 @@ a:hover {
 
 .stroke-consortiumBlue-600 {
   stroke: #1e386e;
+}
+
+.stroke-consortiumBlue-800 {
+  stroke: hsl(220, 82%, 20%);
 }
 
 .stroke-consortiumGreen-400 {
@@ -4603,10 +4571,6 @@ a:hover {
 
 .stroke-white {
   stroke: #fff;
-}
-
-.stroke-consortiumBlue-800 {
-  stroke: hsl(220, 82%, 20%);
 }
 
 .stroke-2 {
@@ -8294,6 +8258,14 @@ a:hover {
     padding-top: 6rem;
   }
 
+  .md\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .md\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -8329,28 +8301,12 @@ a:hover {
     position: sticky;
   }
 
-  .lg\:top-0 {
-    top: 0px;
-  }
-
-  .lg\:right-0 {
-    right: 0px;
-  }
-
-  .lg\:right-10 {
-    right: 2.5rem;
-  }
-
-  .lg\:-right-20 {
-    right: -5rem;
-  }
-
-  .lg\:-right-32 {
-    right: -8rem;
-  }
-
   .lg\:-right-28 {
     right: -7rem;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
   }
 
   .lg\:order-1 {
@@ -8411,10 +8367,6 @@ a:hover {
 
   .lg\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .lg\:-mb-48 {
-    margin-bottom: -12rem;
   }
 
   .lg\:flex {
@@ -8481,27 +8433,8 @@ a:hover {
     width: 12rem;
   }
 
-  .lg\:max-w-\[400px\] {
-    max-width: 400px;
-  }
-
   .lg\:max-w-\[370px\] {
     max-width: 370px;
-  }
-
-  .lg\:-translate-y-20 {
-    --tw-translate-y: -5rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .lg\:-translate-y-40 {
-    --tw-translate-y: -10rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .lg\:-translate-y-28 {
-    --tw-translate-y: -7rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:-translate-y-36 {
@@ -8509,28 +8442,8 @@ a:hover {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .lg\:rotate-12 {
-    --tw-rotate: 12deg;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .lg\:rotate-6 {
-    --tw-rotate: 6deg;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .lg\:rotate-3 {
-    --tw-rotate: 3deg;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .lg\:rotate-2 {
     --tw-rotate: 2deg;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .lg\:rotate-1 {
-    --tw-rotate: 1deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -8583,12 +8496,12 @@ a:hover {
     gap: 2.5rem;
   }
 
-  .lg\:gap-4 {
-    gap: 1rem;
-  }
-
   .lg\:gap-12 {
     gap: 3rem;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 
   .lg\:rounded-xl {
@@ -8668,22 +8581,6 @@ a:hover {
 }
 
 @media (min-width: 1280px) {
-  .xl\:-right-10 {
-    right: -2.5rem;
-  }
-
-  .xl\:-right-20 {
-    right: -5rem;
-  }
-
-  .xl\:-right-32 {
-    right: -8rem;
-  }
-
-  .xl\:-right-40 {
-    right: -10rem;
-  }
-
   .xl\:-right-48 {
     right: -12rem;
   }
@@ -8769,6 +8666,14 @@ a:hover {
 
   .xl\:pb-40 {
     padding-bottom: 10rem;
+  }
+
+  .xl\:pt-36 {
+    padding-top: 9rem;
+  }
+
+  .xl\:pb-20 {
+    padding-bottom: 5rem;
   }
 }
 
