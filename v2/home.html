@@ -119,7 +119,7 @@
               mx-auto
               ">
                 <main class="w-full flex flex-col  text-white relative">
-                    <div class="w-full bg-consortiumBlue-800 flex flex-col justify-center text-white items-center min-h-[60vh] relative">
+                    <div class="w-full bg-consortiumBlue-800 flex flex-col justify-center text-consortiumGreen-400 items-center min-h-[60vh] relative">
                         <div class="flex justify-center w-full max-w-6xl absolute bottom-0 opacity-20">
                             <svg version="1.1" fill="currentColor" class="w-full h-auto fill-consortiumGreen-500"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -151,15 +151,14 @@
                              <h1 class="text-3xl lg:text-5xl mt-4">Dutch Colonial Collection Datahub</h1>
 
                             <p class="max-w-2xl text-lg">The Dutch Colonial Collection Datahub is a place to explore for objects
-                                that have their origins in former Dutch colonial countries like Suriname,
-                                Indonesia, Sri Lanka, South Afrika, The Dutch Antiles and many more countries.
-                                You can <em>add your own narrative</em> to these objects and tell your own
-                                story.</p>
+                                that are currently located in the Netherlands but have their origins in
+                                former Dutch colonial countries like Suriname, Indonesia, Sri Lanka, South
+                                Afrika, The Dutch Antiles and many more countries.</p>
                             <div class="flex flex-col gap-2 max-w-3xl">
                                 <label for="s1"> <strong>Search for herritage objects</strong>
 
                                 </label>
-                                <div class="w-full flex justify-between">
+                                <div class="w-full lg:w-3/5 flex justify-between">
                                     <input type="text" name="s1" id="s1" placeholder="Tip: start searching for a location, e.g. Suriname"
                                     class="p-3 rounded-l placeholder:text-blueGrey-500 placeholder:italic w-full text-consortiumBlueOld-800 not-italic">
                                     <button class="flex items-center p-3 rounded-r bg-consortiumGreen-300"
@@ -173,21 +172,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full max-w-3xl relative">
-                            <div class="bg-white p-4 rounded-lg text-consortiumBlue-800 absolute bottom-0 right-10 lg:right-0 xl:-right-32 -mb-48 flex flex-col gap-3">
-                                <div class="">
-                                    <h2>Add your own narrative</h2>
-                                </div>
-                                <div class="">With an account you can:
-                                    <ul>
-                                        <li>Become a member of a community</li>
-                                        <li>Create your own community</li>
-                                        <li>Create lists to group objects</li>
-                                    </ul>
-                                </div>
-                                <div class="">
-                                    <button class="rounded-full px-2 py-1 sm:px-4 sm:py-2 text-xs md:text-sm bg-consortiumGreen-300 text-consortiumBlue-800">Create an account</button>
-                                </div>
+                    </div>
+                    <div class="w-full max-w-3xl m-auto relative z-50">
+                        <div class="bg-white p-6 lg:rounded-xl text-consortiumBlue-800 flex flex-col gap-3 lg:shadow-xl lg:rotate-2
+            lg:absolute lg:-translate-y-36 lg:-right-28 xl:-right-48 2xl:-right-60
+            w-full lg:max-w-[370px]">
+                            <div class="">
+                                 <h2 class="text-xl mb-2">Add your narrative to the objects</h2>
+
+                                <p>Your knowledge about the objects is vital to us. With your stories we
+                                    can put these objects in their original context.</p>
+                            </div>
+                            <div class="">
+                                <p></p>When you create an account you can tell your story about these objects,
+                                use communities and create lists.</div>
+                            <div class="flex gap-2 lg:justify-between my-2"> <a href="register.html" class="rounded-full px-2 py-1 sm:px-4 sm:py-2 text-xs md:text-sm bg-consortiumGreen-300 text-consortiumBlue-800 no-underline">Learn more...</a>
+
+                                <a
+                                href="register.html#registerform" class="rounded-full px-2 py-1 sm:px-4 sm:py-2 text-xs md:text-sm bg-consortiumGreen-300 text-consortiumBlue-800 no-underline">Create an account</a>
                             </div>
                         </div>
                     </div>

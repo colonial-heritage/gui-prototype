@@ -1503,6 +1503,10 @@ a:hover {
   margin: -11rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .-mx-10 {
   margin-left: -2.5rem;
   margin-right: -2.5rem;
@@ -4274,6 +4278,10 @@ a:hover {
 .bg-consortiumBlue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(69 93 141 / var(--tw-bg-opacity));
+}
+
+.bg-white\/30 {
+  background-color: rgb(255 255 255 / 0.3);
 }
 
 .bg-\[url\(\'\/images\/visual-graphic-strip1\.png\'\)\] {
@@ -8296,6 +8304,10 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:sticky {
     position: sticky;
   }
@@ -8306,6 +8318,22 @@ a:hover {
 
   .lg\:right-0 {
     right: 0px;
+  }
+
+  .lg\:right-10 {
+    right: 2.5rem;
+  }
+
+  .lg\:-right-20 {
+    right: -5rem;
+  }
+
+  .lg\:-right-32 {
+    right: -8rem;
+  }
+
+  .lg\:-right-28 {
+    right: -7rem;
   }
 
   .lg\:order-1 {
@@ -8366,6 +8394,10 @@ a:hover {
 
   .lg\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .lg\:-mb-48 {
+    margin-bottom: -12rem;
   }
 
   .lg\:flex {
@@ -8432,6 +8464,59 @@ a:hover {
     width: 12rem;
   }
 
+  .lg\:max-w-\[400px\] {
+    max-width: 400px;
+  }
+
+  .lg\:max-w-\[370px\] {
+    max-width: 370px;
+  }
+
+  .lg\:-translate-y-20 {
+    --tw-translate-y: -5rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:-translate-y-40 {
+    --tw-translate-y: -10rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:-translate-y-28 {
+    --tw-translate-y: -7rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:-translate-y-36 {
+    --tw-translate-y: -9rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:rotate-12 {
+    --tw-rotate: 12deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:rotate-6 {
+    --tw-rotate: 6deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:rotate-3 {
+    --tw-rotate: 3deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:rotate-2 {
+    --tw-rotate: 2deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:rotate-1 {
+    --tw-rotate: 1deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .lg\:columns-2 {
     -moz-columns: 2;
          columns: 2;
@@ -8487,6 +8572,10 @@ a:hover {
 
   .lg\:gap-12 {
     gap: 3rem;
+  }
+
+  .lg\:rounded-xl {
+    border-radius: 0.75rem;
   }
 
   .lg\:border-l {
@@ -8545,6 +8634,12 @@ a:hover {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .lg\:shadow-xl {
+    --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -8566,6 +8661,14 @@ a:hover {
 
   .xl\:-right-32 {
     right: -8rem;
+  }
+
+  .xl\:-right-40 {
+    right: -10rem;
+  }
+
+  .xl\:-right-48 {
+    right: -12rem;
   }
 
   .xl\:order-1 {
@@ -8653,6 +8756,10 @@ a:hover {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:-right-60 {
+    right: -15rem;
+  }
+
   .\32xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
