@@ -5411,6 +5411,14 @@ a:hover {
   text-decoration-color: rgb(23 23 23 / 0.3);
 }
 
+.decoration-white {
+  text-decoration-color: #fff;
+}
+
+.decoration-consortiumBlue-100 {
+  text-decoration-color: #a9b9db;
+}
+
 .decoration-solid {
   text-decoration-style: solid;
 }
