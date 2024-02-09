@@ -2272,6 +2272,14 @@ a:hover {
   width: 1.5rem;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
 .w-7 {
   width: 1.75rem;
 }
@@ -2304,12 +2312,20 @@ a:hover {
   width: 22%;
 }
 
+.w-\[220px\] {
+  width: 220px;
+}
+
 .w-\[3\%\] {
   width: 3%;
 }
 
 .w-\[300px\] {
   width: 300px;
+}
+
+.w-\[350px\] {
+  width: 350px;
 }
 
 .w-\[4\%\] {
@@ -2504,8 +2520,33 @@ a:hover {
   border-collapse: separate;
 }
 
+.-translate-x-48 {
+  --tw-translate-x: -12rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-72 {
+  --tw-translate-x: -18rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-translate-y-9 {
   --tw-translate-y: -2.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-48 {
+  --tw-translate-x: 12rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-72 {
+  --tw-translate-x: 18rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -4105,6 +4146,11 @@ a:hover {
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
 }
 
+.bg-p3D-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(73 134 199 / var(--tw-bg-opacity));
+}
+
 .bg-pink-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(252 231 243 / var(--tw-bg-opacity));
@@ -4269,6 +4315,10 @@ a:hover {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
 .bg-none {
   background-image: none;
 }
@@ -4297,6 +4347,12 @@ a:hover {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-p3D-800 {
+  --tw-gradient-from: #255bc7;
+  --tw-gradient-to: rgb(37 91 199 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-white {
   --tw-gradient-from: #fff;
   --tw-gradient-to: rgb(255 255 255 / 0);
@@ -4310,6 +4366,10 @@ a:hover {
 
 .to-\[\#F2E1B7\] {
   --tw-gradient-to: #F2E1B7;
+}
+
+.to-p3D-100 {
+  --tw-gradient-to: #99e6c8;
 }
 
 .decoration-slice {
@@ -4417,6 +4477,10 @@ a:hover {
   fill: hsl(220, 82%, 20%);
 }
 
+.fill-consortiumGreen-300 {
+  fill: hsl(145, 65%, 70%);
+}
+
 .fill-consortiumGreen-500 {
   fill: hsl(145, 65%, 50%);
 }
@@ -4491,14 +4555,6 @@ a:hover {
 
 .fill-white {
   fill: #fff;
-}
-
-.fill-consortiumGreen-200 {
-  fill: hsl(145, 65%, 80%);
-}
-
-.fill-consortiumGreen-300 {
-  fill: hsl(145, 65%, 70%);
 }
 
 .stroke-blue-700 {
@@ -4721,6 +4777,11 @@ a:hover {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .py-4 {
@@ -5407,16 +5468,12 @@ a:hover {
   text-decoration-line: none;
 }
 
-.decoration-neutral-900\/30 {
-  text-decoration-color: rgb(23 23 23 / 0.3);
-}
-
-.decoration-white {
-  text-decoration-color: #fff;
-}
-
 .decoration-consortiumBlue-100 {
   text-decoration-color: #a9b9db;
+}
+
+.decoration-neutral-900\/30 {
+  text-decoration-color: rgb(23 23 23 / 0.3);
 }
 
 .decoration-solid {
@@ -5724,6 +5781,26 @@ a:hover {
 
 .blur {
   --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[0px\] {
+  --tw-blur: blur(0px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[1px\] {
+  --tw-blur: blur(1px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[3px\] {
+  --tw-blur: blur(3px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[\{\{blur\}\}px\] {
+  --tw-blur: blur({{blur}}px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -8250,6 +8327,10 @@ a:hover {
     padding-bottom: 2rem;
   }
 
+  .md\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
   .md\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -8262,16 +8343,12 @@ a:hover {
     padding-top: 2.5rem;
   }
 
-  .md\:pt-24 {
-    padding-top: 6rem;
-  }
-
   .md\:pt-20 {
     padding-top: 5rem;
   }
 
-  .md\:pb-16 {
-    padding-bottom: 4rem;
+  .md\:pt-24 {
+    padding-top: 6rem;
   }
 
   .md\:text-2xl {
@@ -8496,6 +8573,14 @@ a:hover {
     align-items: center;
   }
 
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .lg\:justify-end {
+    justify-content: flex-end;
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
   }
@@ -8540,10 +8625,6 @@ a:hover {
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .lg\:pt-10 {
-    padding-top: 2.5rem;
   }
 
   .lg\:pt-16 {
@@ -8667,9 +8748,8 @@ a:hover {
     padding-right: 2.5rem;
   }
 
-  .xl\:py-36 {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+  .xl\:pb-20 {
+    padding-bottom: 5rem;
   }
 
   .xl\:pb-40 {
@@ -8678,10 +8758,6 @@ a:hover {
 
   .xl\:pt-36 {
     padding-top: 9rem;
-  }
-
-  .xl\:pb-20 {
-    padding-bottom: 5rem;
   }
 }
 
