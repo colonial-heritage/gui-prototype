@@ -335,3 +335,40 @@ function hideLangSuggest() {
     handleClass('langSuggest', 'add', 'hidden')
     handleClass('langSuggest', 'remove', 'flex');
 }
+
+
+
+function showComListInfoEdit() {
+    handleClass('communityListForm', 'remove', 'hidden');
+    handleClass('communityListForm', 'add', 'flex');
+    
+    handleClass('communityListInfo', 'add', 'hidden');
+    handleClass('communityListInfo', 'remove', 'block');
+}
+
+function showComListInfo() {
+    handleClass('communityListInfo', 'remove', 'hidden');
+    handleClass('communityListInfo', 'add', 'block');
+
+    handleClass('communityListForm', 'add', 'hidden')
+    handleClass('communityListForm', 'remove', 'flex');
+}
+
+
+
+
+function showComListEdit() {
+    handleClass('comListEdit', 'remove', 'hidden');
+    handleClass('comListEdit', 'add', 'block');
+    
+    handleClass('comList', 'add', 'hidden');
+    handleClass('comList', 'remove', 'flex');
+}
+
+function showComList() {
+    handleClass('comList', 'remove', 'hidden');
+    handleClass('comList', 'add', 'flex');
+
+    handleClass('comListEdit', 'add', 'hidden')
+    handleClass('comListEdit', 'remove', 'block');
+}

@@ -1658,6 +1658,11 @@ a:hover {
   margin-bottom: 2.25rem;
 }
 
+.-my-3 {
+  margin-top: -0.75rem;
+  margin-bottom: -0.75rem;
+}
+
 .-mb-16 {
   margin-bottom: -4rem;
 }
@@ -4062,6 +4067,11 @@ a:hover {
   border-color: rgb(163 163 163 / var(--tw-border-opacity));
 }
 
+.border-neutral-50 {
+  --tw-border-opacity: 1;
+  border-color: rgb(250 250 250 / var(--tw-border-opacity));
+}
+
 .border-neutral-500 {
   --tw-border-opacity: 1;
   border-color: rgb(115 115 115 / var(--tw-border-opacity));
@@ -4186,11 +4196,6 @@ a:hover {
 .border-yellow-600 {
   --tw-border-opacity: 1;
   border-color: rgb(202 138 4 / var(--tw-border-opacity));
-}
-
-.border-neutral-50 {
-  --tw-border-opacity: 1;
-  border-color: rgb(250 250 250 / var(--tw-border-opacity));
 }
 
 .bg-\[\#623278\] {
@@ -4611,6 +4616,16 @@ a:hover {
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
 
+.bg-emerald-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(167 243 208 / var(--tw-bg-opacity));
+}
+
+.bg-greenGrey-700 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(170 35% 30% / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/images\/visual-graphic-strip1\.png\'\)\] {
   background-image: url('/images/visual-graphic-strip1.png');
 }
@@ -4681,6 +4696,12 @@ a:hover {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-neutral-50 {
+  --tw-gradient-from: #fafafa var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(250 250 250 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-p3D-700 {
   --tw-gradient-from: #2765e6 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(39 101 230 / 0) var(--tw-gradient-to-position);
@@ -4696,12 +4717,6 @@ a:hover {
 .from-white {
   --tw-gradient-from: #fff var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-neutral-50 {
-  --tw-gradient-from: #fafafa var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(250 250 250 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -4836,6 +4851,10 @@ a:hover {
   fill: hsl(220, 82%, 20%);
 }
 
+.fill-consortiumGreen-300 {
+  fill: hsl(145, 65%, 70%);
+}
+
 .fill-consortiumGreen-500 {
   fill: hsl(145, 65%, 50%);
 }
@@ -4912,10 +4931,6 @@ a:hover {
   fill: #fff;
 }
 
-.fill-consortiumGreen-300 {
-  fill: hsl(145, 65%, 70%);
-}
-
 .stroke-blue-700 {
   stroke: #1d4ed8;
 }
@@ -4934,6 +4949,10 @@ a:hover {
 
 .stroke-consortiumBlue-600 {
   stroke: #1e386e;
+}
+
+.stroke-consortiumBlue-800 {
+  stroke: hsl(220, 82%, 20%);
 }
 
 .stroke-consortiumGreen-400 {
@@ -4986,10 +5005,6 @@ a:hover {
 
 .stroke-white {
   stroke: #fff;
-}
-
-.stroke-consortiumBlue-800 {
-  stroke: hsl(220, 82%, 20%);
 }
 
 .stroke-2 {
@@ -5305,6 +5320,10 @@ a:hover {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pt-16 {
@@ -7726,10 +7745,6 @@ a:hover {
   }
 }
 
-.\*\:border > * {
-  border-width: 1px;
-}
-
 .placeholder\:italic::-moz-placeholder {
   font-style: italic;
 }
@@ -7881,6 +7896,11 @@ a:hover {
 
 .first\:border-0:first-child {
   border-width: 0px;
+}
+
+.odd\:bg-neutral-100:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
 .hover\:z-40:hover {
@@ -8620,6 +8640,10 @@ a:hover {
     display: block;
   }
 
+  .md\:inline {
+    display: inline;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -8848,10 +8872,6 @@ a:hover {
     padding-bottom: 2rem;
   }
 
-  .md\:pb-16 {
-    padding-bottom: 4rem;
-  }
-
   .md\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -8862,10 +8882,6 @@ a:hover {
 
   .md\:pt-10 {
     padding-top: 2.5rem;
-  }
-
-  .md\:pt-20 {
-    padding-top: 5rem;
   }
 
   .md\:pt-24 {
@@ -9162,6 +9178,10 @@ a:hover {
     padding-bottom: 1.5rem;
   }
 
+  .lg\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
   .lg\:pt-16 {
     padding-top: 4rem;
   }
@@ -9275,16 +9295,8 @@ a:hover {
     padding-right: 2.5rem;
   }
 
-  .xl\:pb-20 {
-    padding-bottom: 5rem;
-  }
-
   .xl\:pb-40 {
     padding-bottom: 10rem;
-  }
-
-  .xl\:pt-36 {
-    padding-top: 9rem;
   }
 
   .xl\:text-base {
