@@ -356,6 +356,24 @@ function showComListInfo() {
 
 
 
+function showComListButton() {
+    handleClass('editButton', 'remove', 'hidden');
+    handleClass('editButton', 'add', 'flex');
+    
+    handleClass('editInfo', 'add', 'hidden');
+    handleClass('editInfo', 'remove', 'flex');
+}
+
+function showComListButtonInfo() {
+    handleClass('editInfo', 'remove', 'hidden');
+    handleClass('editInfo', 'add', 'flex');
+
+    handleClass('editButton', 'add', 'hidden')
+    handleClass('editButton', 'remove', 'flex');
+}
+
+
+
 
 function showComListEdit() {
     handleClass('comListEdit', 'remove', 'hidden');
