@@ -164,7 +164,8 @@ transition flex items-center gap-1 items-center">
   mt-12
   ">
                 <main class="w-full">
-                    <div class="hidden flex-col px-4 gap-6 items-center" id="communityBlockForm">
+                    <div class="hidden flex-col px-4 gap-6 items-center bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800"
+                    id="communityBlockForm">
                          <h1 class="text-2xl font-normal w-full text-center mt-4 px-4 my-2">
             Edit community</strong>
           </h1>
@@ -181,24 +182,6 @@ transition flex items-center gap-1 items-center">
 
                             </label>
                             <textarea name="" id="" class="border border-neutral-500 rounded p-2 text-sm h-56"></textarea>
-                        </div>
-                        <div class="flex flex-col gap-1 max-w-2xl w-full">
-                            <label class="flex flex-col gap-1 mb-1"> <strong>Orcid ID</strong>
-
-                                <div class="text-sm mb-1">Some info about Orcid ID and licence.</div>
-                            </label>
-                            <input type="text" name="" id="" class="border border-neutral-500 rounded p-2 text-sm"
-                            placeholder="">
-                            <div class="mt-4">
-                                <div class="text-sm mb-1">Licence info: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Dolore, voluptas quasi perspiciatis incidunt distinctio repudiandae corporis
-                                    in, impedit consectetur delectus illo, necessitatibus fuga inventore tempora
-                                    voluptatum tenetur facere quaerat dolor!</div>
-                                <div class="flex justify-start gap-2">
-                                    <input type="checkbox" id="v1" name="vehicle1" value="Bike">
-                                    <label class="flex flex-col gap-1 mb-1" for="v1">I agree with the xx licence.</label>
-                                </div>
-                            </div>
                         </div>
                         <div class="flex flex-row max-w-2xl w-full">
                             <div class=" flex flex-col md:flex-row justify-between  gap-2">
@@ -218,6 +201,10 @@ hover:bg-neutral-300/50
 text-neutral-800 transition flex items-center gap-1
 ">More settings</button>
                             </div>
+                        </div>
+                        <div class="flex justify-end w-full">
+                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs transition flex items-center gap-1
+ bg-red-700 hover:bg-red-800 text-white">Delete this community</button>
                         </div>
                     </div>
                     <div class="mt-12">
