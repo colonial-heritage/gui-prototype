@@ -4235,6 +4235,11 @@ a:hover {
   border-color: rgb(202 138 4 / var(--tw-border-opacity));
 }
 
+.border-orange-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 237 213 / var(--tw-border-opacity));
+}
+
 .bg-\[\#623278\] {
   --tw-bg-opacity: 1;
   background-color: rgb(98 50 120 / var(--tw-bg-opacity));
@@ -4656,6 +4661,11 @@ a:hover {
 .bg-zinc-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+.bg-orange-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 247 237 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/images\/visual-graphic-strip1\.png\'\)\] {
@@ -8362,8 +8372,16 @@ a:hover {
   text-overflow: ellipsis;
 }
 
+.prose-headings\:font-semibold :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"] *))) {
+  font-weight: 600;
+}
+
 .prose-headings\:underline :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"] *))) {
   text-decoration-line: underline;
+}
+
+.prose-h1\:mb-10 :is(:where(h1):not(:where([class~="not-prose"] *))) {
+  margin-bottom: 2.5rem;
 }
 
 .prose-h1\:text-center :is(:where(h1):not(:where([class~="not-prose"] *))) {
@@ -8375,13 +8393,40 @@ a:hover {
   line-height: 2.25rem;
 }
 
+.prose-h1\:text-2xl :is(:where(h1):not(:where([class~="not-prose"] *))) {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.prose-h2\:mb-1 :is(:where(h2):not(:where([class~="not-prose"] *))) {
+  margin-bottom: 0.25rem;
+}
+
+.prose-h2\:mt-10 :is(:where(h2):not(:where([class~="not-prose"] *))) {
+  margin-top: 2.5rem;
+}
+
 .prose-h2\:text-2xl :is(:where(h2):not(:where([class~="not-prose"] *))) {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
+.prose-h2\:text-xl :is(:where(h2):not(:where([class~="not-prose"] *))) {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.prose-h3\:mb-2 :is(:where(h3):not(:where([class~="not-prose"] *))) {
+  margin-bottom: 0.5rem;
+}
+
 .prose-h3\:text-xl :is(:where(h3):not(:where([class~="not-prose"] *))) {
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.prose-h3\:text-lg :is(:where(h3):not(:where([class~="not-prose"] *))) {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -8407,6 +8452,15 @@ a:hover {
 
 .prose-a\:font-bold :is(:where(a):not(:where([class~="not-prose"] *))) {
   font-weight: 700;
+}
+
+.prose-a\:text-sky-700 :is(:where(a):not(:where([class~="not-prose"] *))) {
+  --tw-text-opacity: 1;
+  color: rgb(3 105 161 / var(--tw-text-opacity));
+}
+
+.prose-a\:no-underline :is(:where(a):not(:where([class~="not-prose"] *))) {
+  text-decoration-line: none;
 }
 
 .prose-blockquote\:italic :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
