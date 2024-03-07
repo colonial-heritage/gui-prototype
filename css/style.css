@@ -5083,6 +5083,10 @@ a:hover {
   stroke: #737373;
 }
 
+.stroke-neutral-800 {
+  stroke: #262626;
+}
+
 .stroke-2 {
   stroke-width: 2;
 }
