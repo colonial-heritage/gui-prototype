@@ -1380,6 +1380,10 @@ a:hover {
   bottom: 0px;
 }
 
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -1398,6 +1402,14 @@ a:hover {
 
 .top-0 {
   top: 0px;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-12 {
+  top: 3rem;
 }
 
 .top-2 {
@@ -1574,6 +1586,11 @@ a:hover {
 
 .m-auto {
   margin: auto;
+}
+
+.-mx-1 {
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
 }
 
 .-mx-10 {
@@ -2242,8 +2259,20 @@ a:hover {
   height: 100vh;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
 .max-h-60 {
   max-height: 15rem;
+}
+
+.max-h-\[400px\] {
+  max-height: 400px;
 }
 
 .max-h-\[450px\] {
@@ -2256,6 +2285,10 @@ a:hover {
 
 .max-h-screen {
   max-height: 100vh;
+}
+
+.min-h-96 {
+  min-height: 24rem;
 }
 
 .min-h-\[150px\] {
@@ -2290,6 +2323,10 @@ a:hover {
   width: 0px;
 }
 
+.w-1\/12 {
+  width: 8.333333%;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -2320,6 +2357,14 @@ a:hover {
 
 .w-16 {
   width: 4rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
 }
 
 .w-2\/3 {
@@ -2502,6 +2547,10 @@ a:hover {
   width: 65px;
 }
 
+.w-\[700px\] {
+  width: 700px;
+}
+
 .w-\[77\%\] {
   width: 77%;
 }
@@ -2560,6 +2609,10 @@ a:hover {
 
 .max-w-7xl {
   max-width: 80rem;
+}
+
+.max-w-96 {
+  max-width: 24rem;
 }
 
 .max-w-\[1200px\] {
@@ -2956,6 +3009,10 @@ a:hover {
 
 .snap-always {
   scroll-snap-stop: always;
+}
+
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
 }
 
 .scroll-mt-36 {
@@ -3974,6 +4031,11 @@ a:hover {
   border-color: rgb(169 185 219 / var(--tw-border-opacity));
 }
 
+.border-consortiumBlue-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(109 130 171 / var(--tw-border-opacity));
+}
+
 .border-consortiumBlue-400 {
   --tw-border-opacity: 1;
   border-color: rgb(60 84 133 / var(--tw-border-opacity));
@@ -4131,6 +4193,11 @@ a:hover {
 .border-pureblue-600 {
   --tw-border-opacity: 1;
   border-color: hsl(220 79% 40% / var(--tw-border-opacity));
+}
+
+.border-purple-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(147 51 234 / var(--tw-border-opacity));
 }
 
 .border-red-100 {
@@ -4344,6 +4411,10 @@ a:hover {
   background-color: hsl(220 82% 20% / var(--tw-bg-opacity));
 }
 
+.bg-consortiumBlue-800\/90 {
+  background-color: hsl(220 82% 20% / 0.9);
+}
+
 .bg-consortiumBlue-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(8 33 84 / var(--tw-bg-opacity));
@@ -4458,6 +4529,11 @@ a:hover {
   background-color: rgb(229 229 229 / 0.5);
 }
 
+.bg-neutral-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+
 .bg-neutral-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
@@ -4540,6 +4616,11 @@ a:hover {
   background-color: rgb(252 231 243 / var(--tw-bg-opacity));
 }
 
+.bg-pink-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
+}
+
 .bg-purple-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 232 255 / var(--tw-bg-opacity));
@@ -4575,9 +4656,9 @@ a:hover {
   background-color: hsl(48 15% 97% / var(--tw-bg-opacity));
 }
 
-.bg-rpBrand2-300 {
+.bg-rpBrand2-200 {
   --tw-bg-opacity: 1;
-  background-color: hsl(195 30% 70% / var(--tw-bg-opacity));
+  background-color: hsl(195 30% 80% / var(--tw-bg-opacity));
 }
 
 .bg-rpBrand2-700 {
@@ -4680,18 +4761,6 @@ a:hover {
 .bg-zinc-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
-}
-
-.bg-white\/80 {
-  background-color: rgb(255 255 255 / 0.8);
-}
-
-.bg-consortiumBlue-800\/80 {
-  background-color: hsl(220 82% 20% / 0.8);
-}
-
-.bg-consortiumBlue-800\/90 {
-  background-color: hsl(220 82% 20% / 0.9);
 }
 
 .bg-\[url\(\'\/images\/visual-graphic-strip1\.png\'\)\] {
@@ -5043,8 +5112,16 @@ a:hover {
   stroke: #d1d5db;
 }
 
+.stroke-neutral-500 {
+  stroke: #737373;
+}
+
 .stroke-neutral-700 {
   stroke: #404040;
+}
+
+.stroke-neutral-800 {
+  stroke: #262626;
 }
 
 .stroke-neutral-900 {
@@ -5077,14 +5154,6 @@ a:hover {
 
 .stroke-white {
   stroke: #fff;
-}
-
-.stroke-neutral-500 {
-  stroke: #737373;
-}
-
-.stroke-neutral-800 {
-  stroke: #262626;
 }
 
 .stroke-2 {
@@ -5195,6 +5264,11 @@ a:hover {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .py-1 {
@@ -7794,6 +7868,30 @@ a:hover {
   }
 }
 
+.\*\:ml-4 > * {
+  margin-left: 1rem;
+}
+
+.\*\:border-r > * {
+  border-right-width: 1px;
+}
+
+.\*\:pb-4 > * {
+  padding-bottom: 1rem;
+}
+
+.\*\:pr-4 > * {
+  padding-right: 1rem;
+}
+
+.\*\:pt-2 > * {
+  padding-top: 0.5rem;
+}
+
+.\*\:no-underline > * {
+  text-decoration-line: none;
+}
+
 .placeholder\:italic::-moz-placeholder {
   font-style: italic;
 }
@@ -7957,6 +8055,15 @@ a:hover {
   border-width: 0px;
 }
 
+.last\:border-b-0:last-child {
+  border-bottom-width: 0px;
+}
+
+.odd\:bg-neutral-50:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
 .hover\:z-40:hover {
   z-index: 40;
 }
@@ -8070,6 +8177,11 @@ a:hover {
 .hover\:bg-consortiumGreen-200:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(145 65% 80% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-consortiumGreen-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(145 65% 60% / var(--tw-bg-opacity));
 }
 
 .hover\:bg-consortiumGreen-700:hover {
@@ -8196,16 +8308,6 @@ a:hover {
 .hover\:bg-zinc-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-consortiumGreen-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(145 65% 40% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-consortiumGreen-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(145 65% 60% / var(--tw-bg-opacity));
 }
 
 .hover\:pt-0:hover {
@@ -8586,10 +8688,6 @@ a:hover {
 
   .sm\:hidden {
     display: none;
-  }
-
-  .sm\:h-10 {
-    height: 2.5rem;
   }
 
   .sm\:h-8 {
@@ -9184,6 +9282,10 @@ a:hover {
     width: 21%;
   }
 
+  .lg\:w-auto {
+    width: auto;
+  }
+
   .lg\:max-w-\[370px\] {
     max-width: 370px;
   }
@@ -9392,6 +9494,10 @@ a:hover {
 
   .xl\:order-2 {
     order: 2;
+  }
+
+  .xl\:inline {
+    display: inline;
   }
 
   .xl\:w-1\/3 {

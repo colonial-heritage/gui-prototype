@@ -1,5 +1,36 @@
 //const { log } = require("handlebars")
 
+function showSuggestions(id, useLoader) {
+    if (useLoader) {
+        document.getElementById("inputSugg").value = 'groni'
+        document.getElementById("loader"+id).classList.add('flex');
+        document.getElementById("loader"+id).classList.remove('hidden');
+        const myTimeout = setTimeout(function(){
+            document.getElementById("loader"+id).classList.add('hidden');
+            document.getElementById("loader"+id).classList.remove('flex');
+            
+            document.getElementById(id).classList.add('flex');
+            document.getElementById(id).classList.remove('hidden');
+            document.getElementById(id).classList.add('z-50');
+
+        }, 2000);
+        
+    } else {
+        document.getElementById(id).classList.add('flex');
+        document.getElementById(id).classList.remove('hidden');
+        document.getElementById(id).classList.add('z-50');
+    }
+    
+}
+function hideSuggestions(id) {
+    document.getElementById(id).classList.remove('flex');
+    document.getElementById(id).classList.add('hidden');
+    document.getElementById(id).classList.remove('z-50');
+}
+
+
+
+
 function setState(id, state) {
     let toSetStates = []
     for (const [key, value] of Object.entries(states)) {
