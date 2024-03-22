@@ -2151,6 +2151,10 @@ a:hover {
   height: 0.5rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-24 {
   height: 6rem;
 }
@@ -2227,6 +2231,10 @@ a:hover {
   height: 300px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .h-\[40vh\] {
   height: 40vh;
 }
@@ -2257,14 +2265,6 @@ a:hover {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-16 {
-  height: 4rem;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .max-h-60 {
@@ -4616,11 +4616,6 @@ a:hover {
   background-color: rgb(252 231 243 / var(--tw-bg-opacity));
 }
 
-.bg-pink-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
-}
-
 .bg-purple-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 232 255 / var(--tw-bg-opacity));
@@ -4761,6 +4756,11 @@ a:hover {
 .bg-zinc-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+.bg-pink-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 114 182 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/images\/visual-graphic-strip1\.png\'\)\] {
@@ -5112,10 +5112,6 @@ a:hover {
   stroke: #d1d5db;
 }
 
-.stroke-neutral-500 {
-  stroke: #737373;
-}
-
 .stroke-neutral-700 {
   stroke: #404040;
 }
@@ -5154,6 +5150,10 @@ a:hover {
 
 .stroke-white {
   stroke: #fff;
+}
+
+.stroke-neutral-500 {
+  stroke: #737373;
 }
 
 .stroke-2 {
@@ -9374,6 +9374,10 @@ a:hover {
 
   .lg\:gap-4 {
     gap: 1rem;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:space-x-6 > :not([hidden]) ~ :not([hidden]) {

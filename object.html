@@ -226,7 +226,7 @@ Search</a>
                     </div>
                 </div>
             </div>s
-            <div class="w-full bg-consortiumBlue-800 text-consortiumBlue-100 sticky top-9 -translate-y-9 z-10 text-xs shadow-lg">
+            <div class="w-full bg-consortiumBlue-800 text-consortiumBlue-100 sticky top-9 -translate-y-9 z-10 text-xs shadow-lg ">
                 <div class="px-4 sm:px-10 max-w-[1800px] mx-auto flex justify-between items-center">
                     <div class="font-semibold truncate w-auto py-2">Geborduurde zakdoek waarop afgebeeld een kotomisi met daarboven de tekst
                         Suriname</div>
@@ -2439,9 +2439,9 @@ text-neutral-800 transition flex items-center gap-1
 ">Hide map</button>
                             </div>
                     </div>
-                    <div class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 hidden flex-col"
+                    <div class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 flex flex-col"
                     id="addProvForm">
-                        <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2 mb-4">
+                        <div class="flex justify-between items-center border-b  -mx-4 px-4 pb-2">
                              <h3 class="">Add provenance</h3>
 
                             <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
@@ -2457,9 +2457,183 @@ text-neutral-800 transition flex items-center gap-1
                             </button>
                         </div>
                         <div class="flex flex-col gap-4" id="addprov01">
-                            <div class="flex max-w-7xl gap-6">
-                                <div class="flex flex-col w-1/3">
-                                    <label class="flex flex-col gap-1 mb-1"><strong>Transferred from</strong>
+                            <div class="w-full pb-4 pt-8 flex flex-row flex-wrap gap-4 lg:gap-8 border-b  -mx-4 px-4 mb-4 italic">
+                                <button class="opacity-100 flex gap-1 items-end hover:opacity-100 transition"
+                                onclick="toggleVis('addprov01', 'show');toggleVis('addprov02', 'hide');toggleVis('addprov03', 'hide')">
+                                    <div class="text-xl font-semibold">1</div>What happened</button>
+                                <button class="opacity-40 flex gap-1 items-end hover:opacity-100 transition"
+                                onclick="toggleVis('addprov01', 'hide');toggleVis('addprov02', 'show');toggleVis('addprov03', 'hide')">
+                                    <div class="text-xl font-semibold">2</div>Who, where and when</button>
+                                <button class="opacity-40 flex gap-1 items-end hover:opacity-100 transition"
+                                onclick="toggleVis('addprov01', 'hide');toggleVis('addprov02', 'hide');toggleVis('addprov03', 'show')">
+                                    <div class="text-xl font-semibold">3</div>More info</button>
+                            </div>
+                            <div class="flex flex-col lg:flex-row max-w-7xl gap-6">
+                                <div class="flex flex-col w-full lg:w-1/3">
+                                    <label class="flex flex-col gap-1 mb-1"> <strong>What happened to the object?</strong>
+ <span class="text-sm text-neutral-600">
+        
+                            </span>
+
+                                    </label>
+                                    <div class="relative w-full">
+                                        <button class="rounded p-2 text-sm border bg-neutral-100 flex items-center justify-between w-full"
+                                        onclick="toggleVis('allOptions', 'show')">
+                                            <div>Select what happened</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                                />
+                                            </svg>
+                                        </button>
+                                        <div class="w-full bg-white hidden flex-col absolute z-50 h-[400px] overflow-y-scroll shadow-xl"
+                                        id="allOptions" onmouseleave="toggleVis('allOptions', 'hide')">
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Lost</div>
+                                                <div class="px-4 pb-4">The object for some reason is not available anymore and no one knows where
+                                                    it is.</div>
+                                            </button>
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Exchange</div>
+                                                <div class="px-4 pb-4">The object transferd from one actor to another.</div>
+                                            </button>
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Perished</div>
+                                                <div class="px-4 pb-4">Recipient, used for letters only | the linked constituent is the receipent
+                                                    and nmvw is the sender</div>
+                                            </button>
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Sale</div>
+                                                <div class="px-4 pb-4">Might indicate that the linked Object was part of the linked Constituent&#x27;s
+                                                    collection; unclear</div>
+                                            </button>
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Unknown</div>
+                                                <div class="px-4 pb-4">Recipient, used for letters only | the linked constituent is the receipent
+                                                    and nmvw is the sender</div>
+                                            </button>
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Return to owner</div>
+                                                <div class="px-4 pb-4">Might indicate that the linked Object was part of the linked Constituent&#x27;s
+                                                    collection; unclear</div>
+                                            </button>
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Stolen</div>
+                                                <div class="px-4 pb-4">Recipient, used for letters only | the linked constituent is the receipent
+                                                    and nmvw is the sender</div>
+                                            </button>
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Did not return</div>
+                                                <div class="px-4 pb-4">Might indicate that the linked Object was part of the linked Constituent&#x27;s
+                                                    collection; unclear</div>
+                                            </button>
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Destruction</div>
+                                                <div class="px-4 pb-4">Recipient, used for letters only | the linked constituent is the receipent
+                                                    and nmvw is the sender</div>
+                                            </button>
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Restitution</div>
+                                                <div class="px-4 pb-4">Might indicate that the linked Object was part of the linked Constituent&#x27;s
+                                                    collection; unclear</div>
+                                            </button>
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Transfer</div>
+                                                <div class="px-4 pb-4"></div>
+                                            </button>
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Return collection TM</div>
+                                                <div class="px-4 pb-4"></div>
+                                            </button>
+                                            <button class="flex flex-col border-b text-left hover:bg-neutral-100 transition py-2">
+                                                <div class="font-semibold px-4 py-1">Donation</div>
+                                                <div class="px-4 pb-4"></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="w-full text-sm text-right mt-2 relative">
+                                        <button class="italic text-xs text-neutral-600" onclick="toggleVis('11', 'show')">Add motivation</button>
+                                        <div class="w-full bg-neutral-100 p-4 hidden flex-col gap-2 absolute shadow-xl z-40 text-left border border-neutral-200"
+                                        id="11">
+                                            <label for="" class="text-sm text-neutral-600">In this motivation field you can add an extra motivation about and only
+                                                about the above field. It will only be display at the provenance section
+                                                and will affect the search results.</label>
+                                            <textarea name="" id="" class="h-28 border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                            <div class="flex gap-2">
+                                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                        bg-consortiumGreen-300
+                        text-consortiumBlue-800
+                        hover:bg-consortiumGreen-200
+                        transition flex items-center gap-1 text-right"
+                                                onclick="toggleVis('11', 'hide')">Save motivation</button>
+                                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+                        text-neutral-800 transition flex items-center gap-1
+                        border border-neutral-300 text-right" onclick="toggleVis('11', 'hide')">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col w-full lg:w-1/3">
+                                    <label class="flex flex-col gap-1 mb-1"> <strong>Classification</strong>
+ <span class="text-sm text-neutral-600">
+        
+                            </span>
+                                    </label>
+                                    <select class="rounded p-2 text-sm border bg-neutral-100  ">
+                                        <option value="text-sm">Gift</option>
+                                        <option value="text-sm">Purchase</option>
+                                        <option value="text-sm">Loan</option>
+                                        <option value="text-sm">Movement</option>
+                                        <option value="text-sm">Theft</option>
+                                        <option value="text-sm">Loss</option>
+                                    </select>
+                                    <div class="w-full text-sm text-right mt-2 relative">
+                                        <button class="italic text-xs text-neutral-600" onclick="toggleVis('331', 'show')">Add motivation</button>
+                                        <div class="w-full bg-neutral-100 p-4 hidden flex-col gap-2 absolute shadow-xl z-40 text-left border border-neutral-200"
+                                        id="331">
+                                            <label for="" class="text-sm text-neutral-600">In this motivation field you can add an extra motivation about and only
+                                                about the above field. It will only be display at the provenance section
+                                                and will affect the search results.</label>
+                                            <textarea name="" id="" class="h-28 border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                            <div class="flex gap-2">
+                                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                        bg-consortiumGreen-300
+                        text-consortiumBlue-800
+                        hover:bg-consortiumGreen-200
+                        transition flex items-center gap-1 text-right"
+                                                onclick="toggleVis('331', 'hide')">Save motivation</button>
+                                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+                        text-neutral-800 transition flex items-center gap-1
+                        border border-neutral-300 text-right" onclick="toggleVis('331', 'hide')">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-4 flex gap-3">
+                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none text-neutral-800 flex items-center gap-1 border border-neutral-300 opacity-50"
+                                disabled>Previous step</button>
+                                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+        text-neutral-800 transition flex items-center gap-1
+        border border-neutral-300" onclick="toggleVis('addprov01', 'hide');toggleVis('addprov02', 'show')">Next step</button>
+                            </div>
+                        </div>
+                        <div class="hidden flex-col gap-4" id="addprov02">
+                            <div class="w-full pb-4 pt-8 flex flex-row flex-wrap gap-4 lg:gap-8 border-b  -mx-4 px-4 mb-4 italic">
+                                <button class="opacity-40 flex gap-1 items-end hover:opacity-100 transition"
+                                onclick="toggleVis('addprov01', 'show');toggleVis('addprov02', 'hide');toggleVis('addprov03', 'hide')">
+                                    <div class="text-xl font-semibold">1</div>What happened</button>
+                                <button class="opacity-100 flex gap-1 items-end hover:opacity-100 transition"
+                                onclick="toggleVis('addprov01', 'hide');toggleVis('addprov02', 'show');toggleVis('addprov03', 'hide')">
+                                    <div class="text-xl font-semibold">2</div>Who, where and when</button>
+                                <button class="opacity-40 flex gap-1 items-end hover:opacity-100 transition"
+                                onclick="toggleVis('addprov01', 'hide');toggleVis('addprov02', 'hide');toggleVis('addprov03', 'show')">
+                                    <div class="text-xl font-semibold">3</div>More info</button>
+                            </div>
+                            <div class="flex flex-col lg:flex-row max-w-7xl gap-6">
+                                <div class="flex flex-col w-full lg:w-1/3">
+                                    <label class="flex flex-col gap-1 mb-1"><strong>Who owned it <em>BEFORE</em> the
+                                transition</strong>
  <span class="text-sm text-neutral-600">
                                 Select or add a person or institution from whom the object has been tranferred.
                             </span>
@@ -2526,9 +2700,29 @@ text-neutral-800 transition flex items-center gap-1
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="flex flex-col w-1/3">
-                                <label class="flex flex-col gap-1 mb-1"><strong>Transferred to</strong>
+                                <div class="w-full text-sm text-right mt-2 relative">
+                                    <button class="italic text-xs text-neutral-600" onclick="toggleVis('1123', 'show')">Add motivation</button>
+                                    <div class="w-full bg-neutral-100 p-4 hidden flex-col gap-2 absolute shadow-xl z-40 text-left border border-neutral-200"
+                                    id="1123">
+                                        <label for="" class="text-sm text-neutral-600">In this motivation field you can add an extra motivation about and only
+                                            about the above field. It will only be display at the provenance section
+                                            and will affect the search results.</label>
+                                        <textarea name="" id="" class="h-28 border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                        <div class="flex gap-2">
+                                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                        bg-consortiumGreen-300
+                        text-consortiumBlue-800
+                        hover:bg-consortiumGreen-200
+                        transition flex items-center gap-1 text-right"
+                                            onclick="toggleVis('1123', 'hide')">Save motivation</button>
+                                            <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+                        text-neutral-800 transition flex items-center gap-1
+                        border border-neutral-300 text-right" onclick="toggleVis('1123', 'hide')">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="flex flex-col gap-1 mb-1 mt-8"><strong>Who owned it <em>AFTER</em> the
+                                transition</strong>
  <span class="text-sm text-neutral-600">
                                 Select or add a person or institution to whom the object has been tranferred.
                             </span>
@@ -2594,18 +2788,29 @@ text-neutral-800 transition flex items-center gap-1
                                     </div>
                                 </div>
                             </div>
-                            <label class="flex flex-col gap-1 mb-1 mt-4"><strong>Role</strong>
- <span class="text-sm text-neutral-600">
-                                What role did the new owner had.
-                            </span>
-                            </label>
-                            <select class="rounded p-2 text-sm border bg-neutral-100  ">
-                                <option value="text-sm">Pedigree: bruikleengever</option>
-                                <option value="text-sm">Pedigree: vroegere eigenaar</option>
-                                <option value="text-sm">Pedigree: verzamelaar</option>
-                            </select>
+                            <div class="w-full text-sm text-right mt-2 relative">
+                                <button class="italic text-xs text-neutral-600" onclick="toggleVis('153', 'show')">Add motivation</button>
+                                <div class="w-full bg-neutral-100 p-4 hidden flex-col gap-2 absolute shadow-xl z-40 text-left border border-neutral-200"
+                                id="153">
+                                    <label for="" class="text-sm text-neutral-600">In this motivation field you can add an extra motivation about and only
+                                        about the above field. It will only be display at the provenance section
+                                        and will affect the search results.</label>
+                                    <textarea name="" id="" class="h-28 border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                    <div class="flex gap-2">
+                                        <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                        bg-consortiumGreen-300
+                        text-consortiumBlue-800
+                        hover:bg-consortiumGreen-200
+                        transition flex items-center gap-1 text-right"
+                                        onclick="toggleVis('153', 'hide')">Save motivation</button>
+                                        <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+                        text-neutral-800 transition flex items-center gap-1
+                        border border-neutral-300 text-right" onclick="toggleVis('153', 'hide')">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex flex-col w-1/3">
+                        <div class="flex flex-col w-full lg:w-1/3">
                             <label class="flex flex-col gap-1 mb-1"><strong>Location</strong>
  <span class="text-sm text-neutral-600">
                                 What is the new location of the object. Start typing to select a location.
@@ -2672,77 +2877,148 @@ text-neutral-800 transition flex items-center gap-1
                                 </div>
                             </div>
                         </div>
+                        <div class="w-full text-sm text-right mt-2 relative">
+                            <button class="italic text-xs text-neutral-600" onclick="toggleVis('1543', 'show')">Add motivation</button>
+                            <div class="w-full bg-neutral-100 p-4 hidden flex-col gap-2 absolute shadow-xl z-40 text-left border border-neutral-200"
+                            id="1543">
+                                <label for="" class="text-sm text-neutral-600">In this motivation field you can add an extra motivation about and only
+                                    about the above field. It will only be display at the provenance section
+                                    and will affect the search results.</label>
+                                <textarea name="" id="" class="h-28 border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                <div class="flex gap-2">
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                        bg-consortiumGreen-300
+                        text-consortiumBlue-800
+                        hover:bg-consortiumGreen-200
+                        transition flex items-center gap-1 text-right"
+                                    onclick="toggleVis('1543', 'hide')">Save motivation</button>
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+                        text-neutral-800 transition flex items-center gap-1
+                        border border-neutral-300 text-right" onclick="toggleVis('1543', 'hide')">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="py-4">
-                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-        bg-consortiumGreen-300
-        text-consortiumBlue-800
-        hover:bg-consortiumGreen-200
-        transition flex items-center gap-1" onclick="toggleVis('addprov01', 'hide');toggleVis('addprov02', 'show')">Next step</button>
-                </div>
-            </div>
-            <div class="hidden flex-col gap-4" id="addprov02">
-                <div class="flex max-w-4xl gap-6">
-                    <div class="flex flex-col w-1/2">
+                    <div class="flex flex-col w-full lg:w-1/3">
                         <label class="flex flex-col gap-1 mb-1"><strong>Start Date</strong>
  <span class="text-sm text-neutral-600">
-                                If you have an exact date you can fill it in here. If you are not shure about the date you can select a range of dates in which the event occurd.
+                                If you have an exact date you can fill it in here. If you are not shure about the date you can
+                                select a range of dates in which the event occurd.
                             </span>
 
                         </label>
                         <input type="date" name="" id="inputSugg" class="w-full border border-neutral-300 p-2 text-sm">
-                    </div>
-                    <div class="flex flex-col w-1/2">
-                        <label class="flex flex-col gap-1 mb-1 h-20"> <strong>End Date</strong>
+                        <div class="w-full text-sm text-right mt-2 relative">
+                            <button class="italic text-xs text-neutral-600" onclick="toggleVis('411', 'show')">Add motivation</button>
+                            <div class="w-full bg-neutral-100 p-4 hidden flex-col gap-2 absolute shadow-xl z-40 text-left border border-neutral-200"
+                            id="411">
+                                <label for="" class="text-sm text-neutral-600">In this motivation field you can add an extra motivation about and only
+                                    about the above field. It will only be display at the provenance section
+                                    and will affect the search results.</label>
+                                <textarea name="" id="" class="h-28 border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                <div class="flex gap-2">
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                        bg-consortiumGreen-300
+                        text-consortiumBlue-800
+                        hover:bg-consortiumGreen-200
+                        transition flex items-center gap-1 text-right"
+                                    onclick="toggleVis('411', 'hide')">Save motivation</button>
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+                        text-neutral-800 transition flex items-center gap-1
+                        border border-neutral-300 text-right" onclick="toggleVis('411', 'hide')">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="flex flex-col gap-1 mb-1 mt-8"> <strong>End Date</strong>
  <span class="text-sm text-neutral-600">
                                 If the start date is an axact date, you can leave the end dat open.
                             </span>
 
                         </label>
                         <input type="date" name="" id="inputSugg" class="w-full border border-neutral-300 p-2 text-sm">
+                        <div class="w-full text-sm text-right mt-2 relative">
+                            <button class="italic text-xs text-neutral-600" onclick="toggleVis('', 'show')">Add motivation</button>
+                            <div class="w-full bg-neutral-100 p-4 hidden flex-col gap-2 absolute shadow-xl z-40 text-left border border-neutral-200"
+                            id="">
+                                <label for="" class="text-sm text-neutral-600">In this motivation field you can add an extra motivation about and only
+                                    about the above field. It will only be display at the provenance section
+                                    and will affect the search results.</label>
+                                <textarea name="" id="" class="h-28 border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                <div class="flex gap-2">
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                        bg-consortiumGreen-300
+                        text-consortiumBlue-800
+                        hover:bg-consortiumGreen-200
+                        transition flex items-center gap-1 text-right"
+                                    onclick="toggleVis('', 'hide')">Save motivation</button>
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+                        text-neutral-800 transition flex items-center gap-1
+                        border border-neutral-300 text-right" onclick="toggleVis('', 'hide')">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="py-4 flex gap-3">
-                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-        bg-consortiumGreen-300
-        text-consortiumBlue-800
-        hover:bg-consortiumGreen-200
-        transition flex items-center gap-1" onclick="toggleVis('addprov02', 'hide');toggleVis('addprov01', 'show')">Previous step</button>
-                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-        bg-consortiumGreen-300
-        text-consortiumBlue-800
-        hover:bg-consortiumGreen-200
-        transition flex items-center gap-1" onclick="toggleVis('addprov02', 'hide');toggleVis('addprov03', 'show')">Next step</button>
+                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+        text-neutral-800 transition flex items-center gap-1
+        border border-neutral-300" onclick="toggleVis('addprov02', 'hide');toggleVis('addprov01', 'show')">Previous step</button>
+                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+        text-neutral-800 transition flex items-center gap-1
+        border border-neutral-300" onclick="toggleVis('addprov02', 'hide');toggleVis('addprov03', 'show')">Next step</button>
                 </div>
             </div>
             <div class="hidden flex-col gap-4" id="addprov03">
-                <div class="flex max-w-7xl gap-6">
-                    <div class="flex flex-col w-1/3">
-                        <label class="flex flex-col gap-1 mb-1"><strong>Type</strong>
-                        </label>
-                        <select class="rounded p-2 text-sm border bg-neutral-100  ">
-                            <option value="text-sm">Acquisition</option>
-                            <option value="text-sm">Transfer of Custody</option>
-                        </select>
-                        <label class="flex flex-col gap-1 mb-1 mt-4"><strong>Classification</strong>
-                        </label>
-                        <select class="rounded p-2 text-sm border bg-neutral-100  ">
-                            <option value="text-sm">Gift</option>
-                            <option value="text-sm">Purchase</option>
-                            <option value="text-sm">Loan</option>
-                            <option value="text-sm">Movement</option>
-                            <option value="text-sm">Theft</option>
-                            <option value="text-sm">Loss</option>
-                        </select>
-                        <label class="flex flex-col gap-1 mb-1 mt-4"><strong>Level of certainty</strong>
+                <div class="w-full pb-4 pt-8 flex flex-row flex-wrap gap-4 lg:gap-8 border-b  -mx-4 px-4 mb-4 italic">
+                    <button class="opacity-40 flex gap-1 items-end hover:opacity-100 transition"
+                    onclick="toggleVis('addprov01', 'show');toggleVis('addprov02', 'hide');toggleVis('addprov03', 'hide')">
+                        <div class="text-xl font-semibold">1</div>What happened</button>
+                    <button class="opacity-40 flex gap-1 items-end hover:opacity-100 transition"
+                    onclick="toggleVis('addprov01', 'hide');toggleVis('addprov02', 'show');toggleVis('addprov03', 'hide')">
+                        <div class="text-xl font-semibold">2</div>Who, where and when</button>
+                    <button class="opacity-100 flex gap-1 items-end hover:opacity-100 transition"
+                    onclick="toggleVis('addprov01', 'hide');toggleVis('addprov02', 'hide');toggleVis('addprov03', 'show')">
+                        <div class="text-xl font-semibold">3</div>More info</button>
+                </div>
+                <div class="flex flex-col lg:flex-row max-w-7xl gap-6">
+                    <div class="flex flex-col w-full lg:w-1/3">
+                        <label class="flex flex-col gap-1 mb-1"><strong>Level of certainty</strong>
                         </label>
                         <select class="rounded p-2 text-sm border bg-neutral-100  ">
                             <option value="text-sm">Possibly</option>
                             <option value="text-sm">Probably</option>
                         </select>
+                        <div class="w-full text-sm text-right mt-2 relative">
+                            <button class="italic text-xs text-neutral-600" onclick="toggleVis('111', 'show')">Add motivation</button>
+                            <div class="w-full bg-neutral-100 p-4 hidden flex-col gap-2 absolute shadow-xl z-40 text-left border border-neutral-200"
+                            id="111">
+                                <label for="" class="text-sm text-neutral-600">In this motivation field you can add an extra motivation about and only
+                                    about the above field. It will only be display at the provenance section
+                                    and will affect the search results.</label>
+                                <textarea name="" id="" class="h-28 border border-neutral-400 rounded p-2 text-sm"></textarea>
+                                <div class="flex gap-2">
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+                        bg-consortiumGreen-300
+                        text-consortiumBlue-800
+                        hover:bg-consortiumGreen-200
+                        transition flex items-center gap-1 text-right"
+                                    onclick="toggleVis('111', 'hide')">Save motivation</button>
+                                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
+                        text-neutral-800 transition flex items-center gap-1
+                        border border-neutral-300 text-right" onclick="toggleVis('111', 'hide')">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex flex-col w-1/3">
+                        <label class="flex flex-col gap-1 mb-1"> <strong>Resource</strong>
+ <span class="text-sm text-neutral-600">Tell us more about the resource from which this information
+                                came.</span>
+
+                        </label>
+                        <textarea name="" id="" class="border border-neutral-300 p-2 text-sm h-30"></textarea>
+                    </div>
+                    <div class="flex flex-col w-full lg:w-1/3">
                         <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Community</strong>
  <span class="text-sm text-neutral-600">Select the community you speak on behalf of.</span>
 
@@ -2752,308 +3028,17 @@ text-neutral-800 transition flex items-center gap-1
                             <option value="">Culture of Benin community</option>
                         </select>
                     </div>
-                    <div class="flex flex-col w-1/3">
-                        <label class="flex flex-col gap-1 mb-1"> <strong>Description</strong>
- <span class="text-sm text-neutral-600">Tell us more about the resource from which this information came.</span>
-
-                        </label>
-                        <textarea name="" id="" class="border border-neutral-300 p-2 text-sm h-40"></textarea>
-                    </div>
                 </div>
                 <div class="flex items-center gap-2 mt-4">
                     <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
         text-neutral-800 transition flex items-center gap-1
         border border-neutral-300" onclick="toggleVis('addprov03', 'hide');toggleVis('addprov02', 'show')">Previous step</button>
-                </div>
-                <div class="flex items-center gap-2 mt-4">
                     <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
         bg-consortiumGreen-300
         text-consortiumBlue-800
         hover:bg-consortiumGreen-200
         transition flex items-center gap-1" onclick="toggleVis('addProvForm', 'hide')">Save provenance</button>
-                    <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
-        text-neutral-800 transition flex items-center gap-1
-        border border-neutral-300" onclick="toggleVis('addProvForm', 'hide')">Cancel</button>
                 </div>
-            </div>
-            <div class="flex flex-col md:flex-row mb-6 gap-8 hidden">
-                <div class="flex flex-col gap-6 w-1/2 md:w-1/4">
-                    <div class="flex flex-col">
-                        <label class="flex flex-col gap-1 mb-1"><strong>Date</strong>
- <span class="text-sm text-neutral-600">
-                                Because most of the time there is no exact date available you can select a date range in which the event occurd.
-                            </span>
-
-                        </label>
-                        <input type="date" name="" id="inputSugg" class="w-full border border-neutral-300 p-2 text-sm">
-                    </div>
-                    <div class="flex flex-col">
-                        <label class="flex flex-col gap-1 mb-1">Select an enddate of the range.</label>
-                        <input type="date" name="" id="inputSugg"
-                        class="w-full border border-neutral-300 p-2 text-sm">
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4 w-1/2 md:w-1/4">
-                    <div class="flex flex-col gap-2">
-                        <label class="flex flex-col gap-1 mb-1"><strong>Transferred from</strong>
- <span class="text-sm text-neutral-600">
-                                Select or add a person or institution from whom the object has been tranferred.
-                            </span>
-
-                        </label>
-                        <div class="relative flex flex-col w-full max-w-96">
-                            <input type="text" name="" id="inputSugg" class="w-full border border-neutral-300 p-2 text-sm"
-                            placeholder="Start typing to find a persons or institutions" onfocus="showSuggestions('persons_or_institutions', true)"
-                            onfocusout="hideSuggestions('persons_or_institutions')">
-                            <div class="w-full bg-neutral-100 border border-neutral-300 absolute top-9 z-0">
-                                <div id="loaderpersons_or_institutions" class="hidden p-2 items-center gap-2 shadow-lg text-sm italic"><span class="text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" class="w-5 h-5 animate-spin"
-                          fill="currentColor">
-                          <g id="Loader" transform="translate(-331 -185.463)">
-                            <rect id="Rectangle_89" data-name="Rectangle 89" width="58" height="58" transform="translate(331 185.463)"
-                              fill="none" />
-                            <g id="Group_121" data-name="Group 121" transform="translate(333 190.464)">
-                              <g id="Group_103" data-name="Group 103" transform="translate(16.651)">
-                                <path id="Path_97" data-name="Path 97"
-                                  d="M40.928,22.642a18.888,18.888,0,0,0,10.259-3.007.579.579,0,0,0-.309-1.064H30.99a.579.579,0,0,0-.309,1.064A18.888,18.888,0,0,0,40.94,22.642Z"
-                                  transform="translate(-30.404 -18.57)" />
-                                <path id="Path_98" data-name="Path 98"
-                                  d="M40.925,26.8A18.941,18.941,0,0,0,51.172,23.8a.579.579,0,0,0-.309-1.064H31a.579.579,0,0,0-.309,1.064A18.941,18.941,0,0,0,40.938,26.8Z"
-                                  transform="translate(-30.402 -17.579)" />
-                                <path id="Path_99" data-name="Path 99"
-                                  d="M40.93,52.43a18.888,18.888,0,0,0-10.259,3.007A.579.579,0,0,0,30.98,56.5H50.868a.579.579,0,0,0,.309-1.064A18.888,18.888,0,0,0,40.918,52.43Z"
-                                  transform="translate(-30.406 -10.526)" />
-                              </g>
-                              <g id="Group_104" data-name="Group 104" transform="translate(4.46 6.483)">
-                                <path id="Path_100" data-name="Path 100"
-                                  d="M29.125,34.726A18.888,18.888,0,0,0,31.65,24.355a.579.579,0,0,0-1.077-.26L20.635,41.3a.576.576,0,0,0,.755.8,18.962,18.962,0,0,0,7.722-7.376Z"
-                                  transform="translate(-20.556 -23.809)" />
-                                <path id="Path_101" data-name="Path 101"
-                                  d="M50.839,47.261a18.8,18.8,0,0,0-2.525,10.383.579.579,0,0,0,1.077.26l9.95-17.227a.576.576,0,0,0-.755-.8,18.916,18.916,0,0,0-7.735,7.376Z"
-                                  transform="translate(-13.967 -20.008)" />
-                                <path id="Path_102" data-name="Path 102"
-                                  d="M54.449,49.338a18.888,18.888,0,0,0-2.525,10.371.579.579,0,0,0,1.077.26l9.938-17.2a.576.576,0,0,0-.755-.8,18.962,18.962,0,0,0-7.722,7.376Z"
-                                  transform="translate(-13.109 -19.512)" />
-                              </g>
-                              <g id="Group_105" data-name="Group 105" transform="translate(0 6.458)">
-                                <path id="Path_103" data-name="Path 103"
-                                  d="M25.526,49.338a18.916,18.916,0,0,0-7.735-7.376.575.575,0,0,0-.755.8l9.95,17.227a.579.579,0,0,0,1.077-.26,19.011,19.011,0,0,0-2.525-10.383Z"
-                                  transform="translate(-16.952 -19.487)" />
-                                <path id="Path_104" data-name="Path 104"
-                                  d="M29.123,47.258A18.886,18.886,0,0,0,21.4,39.883a.575.575,0,0,0-.755.8l9.938,17.2a.579.579,0,0,0,1.077-.26,18.97,18.97,0,0,0-2.525-10.371Z"
-                                  transform="translate(-16.094 -19.981)" />
-                                <path id="Path_105" data-name="Path 105"
-                                  d="M50.841,34.73a18.916,18.916,0,0,0,7.735,7.376.575.575,0,0,0,.755-.8l-9.95-17.227a.579.579,0,0,0-1.077.26,19.011,19.011,0,0,0,2.525,10.383Z"
-                                  transform="translate(-9.509 -23.789)" />
-                              </g>
-                              <path id="Path_106" data-name="Path 106"
-                                d="M59.532,44.991a3.389,3.389,0,0,0,0-5.247A17.373,17.373,0,0,1,55.41,34.88a17.642,17.642,0,0,1-2.153-6.015,3.4,3.4,0,0,0-4.542-2.624,17.664,17.664,0,0,1-6.274,1.139,17.565,17.565,0,0,1-6.274-1.139,3.4,3.4,0,0,0-4.542,2.624,17.717,17.717,0,0,1-2.153,6.015,17.446,17.446,0,0,1-4.133,4.864,3.4,3.4,0,0,0,0,5.247,17.82,17.82,0,0,1,6.287,10.866,3.4,3.4,0,0,0,4.542,2.624,17.892,17.892,0,0,1,12.561,0,3.4,3.4,0,0,0,4.542-2.624,17.881,17.881,0,0,1,6.274-10.866Z"
-                                transform="translate(-15.254 -16.8)" />
-                            </g>
-                          </g>
-                        </svg>
-                        
-                        </span>Loading suggestions from WikiData.</div>
-                                <div
-                                id="persons_or_institutions" class="hidden flex-col border-b border-neutral-300 shadow-lg">
-                                    <button class="border border-neutral-300 p-2 flex flex-col items-start hover:bg-neutral-200">Jan de Vries <span class="text text-sm italic">1730 - 1790</span>
-                                    </button>
-                                    <button class="p-2 flex flex-col items-start hover:bg-neutral-200">Jan de Vries <span class="text-sm italic">1740 - 1784</span>
-                                    </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                    <label class="flex flex-col gap-1 mb-1"><strong>Transferred to</strong>
- <span class="text-sm text-neutral-600">
-                                Select or add a person or institution to whom the object has been tranferred.
-                            </span>
-                    </label>
-                    <div class="relative flex flex-col w-full max-w-96">
-                        <input type="text" name="" id="inputSugg" class="w-full border border-neutral-300 p-2 text-sm"
-                        placeholder="Start typing to find a person or institution" onfocus="showSuggestions('person_or_institution', true)"
-                        onfocusout="hideSuggestions('person_or_institution')">
-                        <div class="w-full bg-neutral-100 border border-neutral-300 absolute top-9 z-0">
-                            <div id="loaderperson_or_institution" class="hidden p-2 items-center gap-2 shadow-lg text-sm italic"><span class="text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" class="w-5 h-5 animate-spin"
-                          fill="currentColor">
-                          <g id="Loader" transform="translate(-331 -185.463)">
-                            <rect id="Rectangle_89" data-name="Rectangle 89" width="58" height="58" transform="translate(331 185.463)"
-                              fill="none" />
-                            <g id="Group_121" data-name="Group 121" transform="translate(333 190.464)">
-                              <g id="Group_103" data-name="Group 103" transform="translate(16.651)">
-                                <path id="Path_97" data-name="Path 97"
-                                  d="M40.928,22.642a18.888,18.888,0,0,0,10.259-3.007.579.579,0,0,0-.309-1.064H30.99a.579.579,0,0,0-.309,1.064A18.888,18.888,0,0,0,40.94,22.642Z"
-                                  transform="translate(-30.404 -18.57)" />
-                                <path id="Path_98" data-name="Path 98"
-                                  d="M40.925,26.8A18.941,18.941,0,0,0,51.172,23.8a.579.579,0,0,0-.309-1.064H31a.579.579,0,0,0-.309,1.064A18.941,18.941,0,0,0,40.938,26.8Z"
-                                  transform="translate(-30.402 -17.579)" />
-                                <path id="Path_99" data-name="Path 99"
-                                  d="M40.93,52.43a18.888,18.888,0,0,0-10.259,3.007A.579.579,0,0,0,30.98,56.5H50.868a.579.579,0,0,0,.309-1.064A18.888,18.888,0,0,0,40.918,52.43Z"
-                                  transform="translate(-30.406 -10.526)" />
-                              </g>
-                              <g id="Group_104" data-name="Group 104" transform="translate(4.46 6.483)">
-                                <path id="Path_100" data-name="Path 100"
-                                  d="M29.125,34.726A18.888,18.888,0,0,0,31.65,24.355a.579.579,0,0,0-1.077-.26L20.635,41.3a.576.576,0,0,0,.755.8,18.962,18.962,0,0,0,7.722-7.376Z"
-                                  transform="translate(-20.556 -23.809)" />
-                                <path id="Path_101" data-name="Path 101"
-                                  d="M50.839,47.261a18.8,18.8,0,0,0-2.525,10.383.579.579,0,0,0,1.077.26l9.95-17.227a.576.576,0,0,0-.755-.8,18.916,18.916,0,0,0-7.735,7.376Z"
-                                  transform="translate(-13.967 -20.008)" />
-                                <path id="Path_102" data-name="Path 102"
-                                  d="M54.449,49.338a18.888,18.888,0,0,0-2.525,10.371.579.579,0,0,0,1.077.26l9.938-17.2a.576.576,0,0,0-.755-.8,18.962,18.962,0,0,0-7.722,7.376Z"
-                                  transform="translate(-13.109 -19.512)" />
-                              </g>
-                              <g id="Group_105" data-name="Group 105" transform="translate(0 6.458)">
-                                <path id="Path_103" data-name="Path 103"
-                                  d="M25.526,49.338a18.916,18.916,0,0,0-7.735-7.376.575.575,0,0,0-.755.8l9.95,17.227a.579.579,0,0,0,1.077-.26,19.011,19.011,0,0,0-2.525-10.383Z"
-                                  transform="translate(-16.952 -19.487)" />
-                                <path id="Path_104" data-name="Path 104"
-                                  d="M29.123,47.258A18.886,18.886,0,0,0,21.4,39.883a.575.575,0,0,0-.755.8l9.938,17.2a.579.579,0,0,0,1.077-.26,18.97,18.97,0,0,0-2.525-10.371Z"
-                                  transform="translate(-16.094 -19.981)" />
-                                <path id="Path_105" data-name="Path 105"
-                                  d="M50.841,34.73a18.916,18.916,0,0,0,7.735,7.376.575.575,0,0,0,.755-.8l-9.95-17.227a.579.579,0,0,0-1.077.26,19.011,19.011,0,0,0,2.525,10.383Z"
-                                  transform="translate(-9.509 -23.789)" />
-                              </g>
-                              <path id="Path_106" data-name="Path 106"
-                                d="M59.532,44.991a3.389,3.389,0,0,0,0-5.247A17.373,17.373,0,0,1,55.41,34.88a17.642,17.642,0,0,1-2.153-6.015,3.4,3.4,0,0,0-4.542-2.624,17.664,17.664,0,0,1-6.274,1.139,17.565,17.565,0,0,1-6.274-1.139,3.4,3.4,0,0,0-4.542,2.624,17.717,17.717,0,0,1-2.153,6.015,17.446,17.446,0,0,1-4.133,4.864,3.4,3.4,0,0,0,0,5.247,17.82,17.82,0,0,1,6.287,10.866,3.4,3.4,0,0,0,4.542,2.624,17.892,17.892,0,0,1,12.561,0,3.4,3.4,0,0,0,4.542-2.624,17.881,17.881,0,0,1,6.274-10.866Z"
-                                transform="translate(-15.254 -16.8)" />
-                            </g>
-                          </g>
-                        </svg>
-                        
-                        </span>Loading suggestions from WikiData.</div>
-                            <div
-                            id="person_or_institution" class="hidden flex-col border-b border-neutral-300 shadow-lg">
-                                <button class="border border-neutral-300 p-2 flex flex-col items-start hover:bg-neutral-200">Jan de Vries <span class="text text-sm italic">1730 - 1790</span>
-                                </button>
-                                <button class="p-2 flex flex-col items-start hover:bg-neutral-200">Jan de Vries <span class="text-sm italic">1740 - 1784</span>
-                                </button>
-                        </div>
-                    </div>
-                </div>
-                <label class="flex flex-col gap-1 mb-1"><strong>Role</strong>
- <span class="text-sm text-neutral-600">
-                                What role did the new owner had.
-                            </span>
-                </label>
-                <select class="rounded p-2 text-sm border bg-neutral-100  ">
-                    <option value="text-sm">Pedigree: bruikleengever</option>
-                    <option value="text-sm">Pedigree: vroegere eigenaar</option>
-                    <option value="text-sm">Pedigree: verzamelaar</option>
-                </select>
-            </div>
-            </div>
-            <div class="flex flex-col gap-4 w-1/2 md:w-1/4">
-                <div class="flex flex-col gap-2">
-                    <label class="flex flex-col gap-1 mb-1"><strong>Location</strong>
-                    </label>
-                    <div class="relative flex flex-col w-full max-w-96">
-                        <input type="text" name="" id="inputSugg" class="w-full border border-neutral-300 p-2 text-sm"
-                        placeholder="Start typing to find a location" onfocus="showSuggestions('location', true)"
-                        onfocusout="hideSuggestions('location')">
-                        <div class="w-full bg-neutral-100 border border-neutral-300 absolute top-9 z-0">
-                            <div id="loaderlocation" class="hidden p-2 items-center gap-2 shadow-lg text-sm italic"><span class="text-neutral-400"><svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" class="w-5 h-5 animate-spin"
-                          fill="currentColor">
-                          <g id="Loader" transform="translate(-331 -185.463)">
-                            <rect id="Rectangle_89" data-name="Rectangle 89" width="58" height="58" transform="translate(331 185.463)"
-                              fill="none" />
-                            <g id="Group_121" data-name="Group 121" transform="translate(333 190.464)">
-                              <g id="Group_103" data-name="Group 103" transform="translate(16.651)">
-                                <path id="Path_97" data-name="Path 97"
-                                  d="M40.928,22.642a18.888,18.888,0,0,0,10.259-3.007.579.579,0,0,0-.309-1.064H30.99a.579.579,0,0,0-.309,1.064A18.888,18.888,0,0,0,40.94,22.642Z"
-                                  transform="translate(-30.404 -18.57)" />
-                                <path id="Path_98" data-name="Path 98"
-                                  d="M40.925,26.8A18.941,18.941,0,0,0,51.172,23.8a.579.579,0,0,0-.309-1.064H31a.579.579,0,0,0-.309,1.064A18.941,18.941,0,0,0,40.938,26.8Z"
-                                  transform="translate(-30.402 -17.579)" />
-                                <path id="Path_99" data-name="Path 99"
-                                  d="M40.93,52.43a18.888,18.888,0,0,0-10.259,3.007A.579.579,0,0,0,30.98,56.5H50.868a.579.579,0,0,0,.309-1.064A18.888,18.888,0,0,0,40.918,52.43Z"
-                                  transform="translate(-30.406 -10.526)" />
-                              </g>
-                              <g id="Group_104" data-name="Group 104" transform="translate(4.46 6.483)">
-                                <path id="Path_100" data-name="Path 100"
-                                  d="M29.125,34.726A18.888,18.888,0,0,0,31.65,24.355a.579.579,0,0,0-1.077-.26L20.635,41.3a.576.576,0,0,0,.755.8,18.962,18.962,0,0,0,7.722-7.376Z"
-                                  transform="translate(-20.556 -23.809)" />
-                                <path id="Path_101" data-name="Path 101"
-                                  d="M50.839,47.261a18.8,18.8,0,0,0-2.525,10.383.579.579,0,0,0,1.077.26l9.95-17.227a.576.576,0,0,0-.755-.8,18.916,18.916,0,0,0-7.735,7.376Z"
-                                  transform="translate(-13.967 -20.008)" />
-                                <path id="Path_102" data-name="Path 102"
-                                  d="M54.449,49.338a18.888,18.888,0,0,0-2.525,10.371.579.579,0,0,0,1.077.26l9.938-17.2a.576.576,0,0,0-.755-.8,18.962,18.962,0,0,0-7.722,7.376Z"
-                                  transform="translate(-13.109 -19.512)" />
-                              </g>
-                              <g id="Group_105" data-name="Group 105" transform="translate(0 6.458)">
-                                <path id="Path_103" data-name="Path 103"
-                                  d="M25.526,49.338a18.916,18.916,0,0,0-7.735-7.376.575.575,0,0,0-.755.8l9.95,17.227a.579.579,0,0,0,1.077-.26,19.011,19.011,0,0,0-2.525-10.383Z"
-                                  transform="translate(-16.952 -19.487)" />
-                                <path id="Path_104" data-name="Path 104"
-                                  d="M29.123,47.258A18.886,18.886,0,0,0,21.4,39.883a.575.575,0,0,0-.755.8l9.938,17.2a.579.579,0,0,0,1.077-.26,18.97,18.97,0,0,0-2.525-10.371Z"
-                                  transform="translate(-16.094 -19.981)" />
-                                <path id="Path_105" data-name="Path 105"
-                                  d="M50.841,34.73a18.916,18.916,0,0,0,7.735,7.376.575.575,0,0,0,.755-.8l-9.95-17.227a.579.579,0,0,0-1.077.26,19.011,19.011,0,0,0,2.525,10.383Z"
-                                  transform="translate(-9.509 -23.789)" />
-                              </g>
-                              <path id="Path_106" data-name="Path 106"
-                                d="M59.532,44.991a3.389,3.389,0,0,0,0-5.247A17.373,17.373,0,0,1,55.41,34.88a17.642,17.642,0,0,1-2.153-6.015,3.4,3.4,0,0,0-4.542-2.624,17.664,17.664,0,0,1-6.274,1.139,17.565,17.565,0,0,1-6.274-1.139,3.4,3.4,0,0,0-4.542,2.624,17.717,17.717,0,0,1-2.153,6.015,17.446,17.446,0,0,1-4.133,4.864,3.4,3.4,0,0,0,0,5.247,17.82,17.82,0,0,1,6.287,10.866,3.4,3.4,0,0,0,4.542,2.624,17.892,17.892,0,0,1,12.561,0,3.4,3.4,0,0,0,4.542-2.624,17.881,17.881,0,0,1,6.274-10.866Z"
-                                transform="translate(-15.254 -16.8)" />
-                            </g>
-                          </g>
-                        </svg>
-                        
-                        </span>Loading suggestions from GeoNames .</div>
-                            <div
-                            id="location" class="hidden flex-col border-b border-neutral-300 shadow-lg">
-                                <button class="border border-neutral-300 p-2 flex flex-col items-start hover:bg-neutral-200">Groningen <span class="text text-sm italic">City</span>
-                                </button>
-                                <button class="p-2 flex flex-col items-start hover:bg-neutral-200">Groningen <span class="text-sm italic">Province / county</span>
-                                </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col gap-2">
-                <label class="flex flex-col gap-1 mb-1"><strong>Description</strong>
-                </label>
-                <textarea name="" id="" class="border border-neutral-300 p-2 text-sm h-40"></textarea>
-            </div>
-            </div>
-            <div class="flex flex-col gap-6 w-1/2 md:w-1/4 ">
-                <div class="flex flex-col">
-                    <label class="flex flex-col gap-1 mb-1"><strong>Type</strong>
-                    </label>
-                    <select class="rounded p-2 text-sm border bg-neutral-100  ">
-                        <option value="text-sm">Acquisition</option>
-                        <option value="text-sm">Transfer of Custody</option>
-                    </select>
-                </div>
-                <div class="flex flex-col">
-                    <label class="flex flex-col gap-1 mb-1"><strong>Classification</strong>
-                    </label>
-                    <select class="rounded p-2 text-sm border bg-neutral-100  ">
-                        <option value="text-sm">Gift</option>
-                        <option value="text-sm">Purchase</option>
-                        <option value="text-sm">Loan</option>
-                        <option value="text-sm">Movement</option>
-                        <option value="text-sm">Theft</option>
-                        <option value="text-sm">Loss</option>
-                    </select>
-                </div>
-                <div class="flex flex-col">
-                    <label class="flex flex-col gap-1 mb-1"><strong>Level of certainty</strong>
-                    </label>
-                    <select class="rounded p-2 text-sm border bg-neutral-100  ">
-                        <option value="text-sm">Possibly</option>
-                        <option value="text-sm">Probably</option>
-                    </select>
-                </div>
-            </div>
-            </div>
-            <div class="flex items-center gap-2 hidden">
-                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
-        bg-consortiumGreen-300
-        text-consortiumBlue-800
-        hover:bg-consortiumGreen-200
-        transition flex items-center gap-1">Save provenance</button>
-                <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs bg-none hover:bg-neutral-300
-        text-neutral-800 transition flex items-center gap-1
-        border border-neutral-300">Cancel</button>
             </div>
             </div>
             <div class="w-full" id="provTimeline">
