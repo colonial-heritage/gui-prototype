@@ -4125,13 +4125,18 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                          <h2 class="text-xl">20 objects</h2>
 
                         <div class="flex flex-col sm:flex-row justify-end gap-4">
-                            <div class="flex items-end">
-                                <button class="bg-green-200 hidden" onclick="toggleVis('resultsGrid', 'show');toggleVis('resultsList', 'hide')">Add to list</button>
-                                <button class="bg-pink-200 hidden" onclick="toggleVis('resultsGrid', 'hide');toggleVis('resultsList', 'show')">Export</button>
+                            <div class="flex flex-col gap-1 justify-between"> <span class="text-sm text-neutral-600 text-right">View</span>
+
+                                <div class="flex items-end">
+                                    <button class="rounded-l-full px-2 py-1 sm:px-4 sm:pt-1 sm:pb-2 text-xs md:text-sm bg-neutral-300 hover:bg-neutral-200 transition border-r border-white"
+                                    onclick="toggleVis('resultsGrid', 'show');toggleVis('resultsList', 'hide')">Grid</button>
+                                    <button class="rounded-r-full px-2 py-1 sm:px-4 sm:pt-1 sm:pb-2 text-xs md:text-sm bg-neutral-200 hover:bg-neutral-300 transition"
+                                    onclick="toggleVis('resultsGrid', 'hide');toggleVis('resultsList', 'show')">List / Edit</button>
+                                </div>
                             </div>
                             <div class="flex flex-col gap-1">
                                 <label for="resultAmount" class="text-sm text-neutral-600">Result amount</label>
-                                <select name="resultAmount" class="mt-1 block  rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-sky-600 focus:outline-none focus:ring-sky-600 sm:text-sm"
+                                <select name="resultAmount" class="mt-1 block rounded-md border-neutral-200 bg-neutral-200 py-2 pl-3 pr-10 text-base sm:text-sm"
                                 aria-label="Select to change the ordering of the result">
                                     <option value="nameAsc">10</option>
                                     <option value="nameDesc">25</option>
@@ -4141,7 +4146,7 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                             </div>
                             <div class="flex flex-col gap-1">
                                 <label for="resultAmount" class="text-sm text-neutral-600 text-right">Result order</label>
-                                <select name="location" class="mt-1 block  rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-sky-600 focus:outline-none focus:ring-sky-600 sm:text-sm"
+                                <select name="location" class="mt-1 block rounded-md border-neutral-200 bg-neutral-200 py-2 pl-3 pr-10 text-base sm:text-sm"
                                 aria-label="Select to change the ordering of the result">
                                     <option value="nameAsc">Name - Ascending</option>
                                     <option value="nameDesc">Name - Descending</option>
@@ -4149,13 +4154,16 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                                     <option value="nameDesc">Date added - Descending</option>
                                 </select>
                             </div>
-                            <div class="flex items-end">
-                                <button class="bg-green-200 hidden" onclick="toggleVis('resultsGrid', 'show');toggleVis('resultsList', 'hide')">Cards</button>
-                                <button class="bg-pink-200 hidden" onclick="toggleVis('resultsGrid', 'hide');toggleVis('resultsList', 'show')">List</button>
-                            </div>
                         </div>
                     </div>
-                    <div class="hidden" id="resultsList">
+                    <div class="hidden flex-col" id="resultsList">
+                        <div class="flex gap-2 w-full justify-end mt-3 items-center">
+                            <div class="italic text-sm text-neutral-400 grow">Select one or more items to export or add to a list.</div>
+                            <button class="rounded-full px-2 py-1 sm:px-4 sm:pt-1 sm:pb-2 text-xs md:text-sm bg-neutral-200 hover:bg-neutral-300 transition"
+                            onclick="toggleVis('resultsGrid', 'show');toggleVis('resultsList', 'hide')">Add to list</button>
+                            <button class="rounded-full px-2 py-1 sm:px-4 sm:pt-1 sm:pb-2 text-xs md:text-sm bg-neutral-200 hover:bg-neutral-300 transition"
+                            onclick="toggleVis('resultsGrid', 'hide');toggleVis('resultsList', 'show')">Export</button>
+                        </div>
                         <div class="flex flex-col mt-6 w-full">
                             <div class="flex flex-row justify-start items-center gap-4 border-t border-neutral-200 py-3 w-full">
                                 <div class="">
