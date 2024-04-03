@@ -61,7 +61,7 @@
 
                             <a
                             href="lists-all.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap hidden">Lists</a>
-                                <div class="relative z-10"> <a href="" class="text-white font-semibold no-underline py-2 md:py-4 px-3 flex items-center gap-1 whitespace-nowrap"
+                                <div class="relative"> <a href="" class="text-white font-semibold no-underline py-2 md:py-4 px-3 flex items-center gap-1 whitespace-nowrap"
                                     onmousemove="mainSubnav()">About
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
     class="w-3 h-3 fill-white">
@@ -71,7 +71,7 @@
   </svg>
   </a>
 
-                                    <div class="hidden flex-col bg-consortiumBlue-600 absolute z-20 shadow-lg"
+                                    <div class="hidden flex-col bg-consortiumBlue-600 absolute z-50 shadow-lg"
                                     id="mainSubnav" onmouseout="mainSubnavHide()"> <a href="" class="text-white font-semibold no-underline py-2 px-3 whitespace-nowrap">FAQ</a>
 
                                         <a
@@ -4066,24 +4066,6 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                     </div>
                 </aside>
                 <main class="w-full md:w-2/3 lg:w-4/5  order-2 md:order-1">
-                    <div class="flex flex-col sm:flex-row sm:justify-between">
-                         <h2 class="text-xl">10 Heritage objects</h2>
-
-                        <div class="flex flex-col sm:flex-row justify-end gap-2">
-                            <select class="rounded p-2 text-sm border bg-neutral-100  bg-consortiumBlueOld-50 text-neutral-800">
-                                <option value="text-sm">Result amount</option>
-                                <option value="text-sm">10</option>
-                                <option value="text-sm">25</option>
-                                <option value="text-sm">50</option>
-                                <option value="text-sm">100</option>
-                            </select>
-                            <select class="rounded p-2 text-sm border bg-neutral-100  bg-consortiumBlueOld-50 text-neutral-800">
-                                <option value="text-sm">Relevance</option>
-                                <option value="text-sm">Name - Ascending</option>
-                                <option value="text-sm">Name - Descending</option>
-                            </select>
-                        </div>
-                    </div>
                     <div class="flex flex-row items-center gap-2  mb-6 py-6 flex-wrap">
                         <div class="text-sm text-neutral-500">Selected facets:</div>
                         <!-- selected filter badge -->
@@ -4139,7 +4121,157 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                         </buttton>
                         <!-- // selected filter badge -->
                     </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 mt-6"> <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-end mt-4">
+                         <h2 class="text-xl">20 objects</h2>
+
+                        <div class="flex flex-col sm:flex-row justify-end gap-4">
+                            <div class="flex items-end">
+                                <button class="bg-green-200" onclick="toggleVis('resultsGrid', 'show');toggleVis('resultsList', 'hide')">Add to list</button>
+                                <button class="bg-pink-200" onclick="toggleVis('resultsGrid', 'hide');toggleVis('resultsList', 'show')">Export</button>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <label for="resultAmount" class="text-sm text-neutral-600">Result amount</label>
+                                <select name="resultAmount" class="mt-1 block  rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-sky-600 focus:outline-none focus:ring-sky-600 sm:text-sm"
+                                aria-label="Select to change the ordering of the result">
+                                    <option value="nameAsc">10</option>
+                                    <option value="nameDesc">25</option>
+                                    <option value="nameDesc">50</option>
+                                    <option value="nameDesc">100</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <label for="resultAmount" class="text-sm text-neutral-600 text-right">Result order</label>
+                                <select name="location" class="mt-1 block  rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-sky-600 focus:outline-none focus:ring-sky-600 sm:text-sm"
+                                aria-label="Select to change the ordering of the result">
+                                    <option value="nameAsc">Name - Ascending</option>
+                                    <option value="nameDesc">Name - Descending</option>
+                                    <option value="nameAsc">Date added - Ascending</option>
+                                    <option value="nameDesc">Date added - Descending</option>
+                                </select>
+                            </div>
+                            <div class="flex items-end">
+                                <button class="bg-green-200" onclick="toggleVis('resultsGrid', 'show');toggleVis('resultsList', 'hide')">Cards</button>
+                                <button class="bg-pink-200" onclick="toggleVis('resultsGrid', 'hide');toggleVis('resultsList', 'show')">List</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden" id="resultsList">
+                        <div class="flex flex-col mt-6 w-full">
+                            <div class="flex flex-row justify-start items-center gap-4 border-t border-neutral-200 py-3 w-full">
+                                <div class="">
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div class="w-20 flex flex-col justify-center items-center text-xs text-neutral-400">No image</div>
+                                <div class="flex flex-col items-baseline gap-1">
+                                    <div class="">Houten beeld van een visser.</div>
+                                    <div class="text-sm text-neutral-600">Museum Bronbeek, Arnhem</div>
+                                </div>
+                                <div class="md:py-2 grow flex justify-end"></div>
+                            </div>
+                            <div class="flex flex-row justify-start items-center gap-4 border-t border-neutral-200 py-3 w-full">
+                                <div class="">
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div class="w-30">
+                                    <img src="images/objects/haan.png" alt="" class="w-20 -my-3">
+                                </div>
+                                <div class="flex flex-col items-baseline gap-1">
+                                    <div class="">Beeld van een haan</div>
+                                    <div class="text-sm text-neutral-600">Nationaal Museum van Wereldculturen and Wereldmuseum</div>
+                                </div>
+                                <div class="md:py-2 grow flex justify-end"></div>
+                            </div>
+                            <div class="flex flex-row justify-start items-center gap-4 border-t border-neutral-200 py-3 w-full">
+                                <div class="">
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div class="w-20 flex flex-col justify-center items-center text-xs text-neutral-400">No image</div>
+                                <div class="flex flex-col items-baseline gap-1">
+                                    <div class="">Houten beeld van de godin Sri, die waakt over de vruchtbaarheid van de
+                                        aarde.</div>
+                                    <div class="text-sm text-neutral-600">Museum Bronbeek, Arnhem</div>
+                                </div>
+                                <div class="md:py-2 grow flex justify-end"></div>
+                            </div>
+                            <div class="flex flex-row justify-start items-center gap-4 border-t border-neutral-200 py-3 w-full">
+                                <div class="">
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div class="w-20 flex flex-col justify-center items-center text-xs text-neutral-400">No image</div>
+                                <div class="flex flex-col items-baseline gap-1">
+                                    <div class="">Houtsnijwerk in de vorm van een ovaal lotusblad met een afbeelding van
+                                        planten en vechtende reigers.</div>
+                                    <div class="text-sm text-neutral-600">Museum Bronbeek, Arnhem</div>
+                                </div>
+                                <div class="md:py-2 grow flex justify-end"></div>
+                            </div>
+                            <div class="flex flex-row justify-start items-center gap-4 border-t border-neutral-200 py-3 w-full">
+                                <div class="">
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div class="w-30">
+                                    <img src="images/objects/runderkop.png" alt="" class="w-20 -my-3">
+                                </div>
+                                <div class="flex flex-col items-baseline gap-1">
+                                    <div class="">Reliëfplaat met runderkop</div>
+                                    <div class="text-sm text-neutral-600">Nationaal Museum van Wereldculturen and Wereldmuseum</div>
+                                </div>
+                                <div class="md:py-2 grow flex justify-end"></div>
+                            </div>
+                            <div class="flex flex-row justify-start items-center gap-4 border-t border-neutral-200 py-3 w-full">
+                                <div class="">
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div class="w-20 flex flex-col justify-center items-center text-xs text-neutral-400">No image</div>
+                                <div class="flex flex-col items-baseline gap-1">
+                                    <div class="">Houten beeld van de god Vishnu op zijn rijdier Garuda, waaronder een schildpad
+                                        en twee slangachtige monsters.</div>
+                                    <div class="text-sm text-neutral-600">Museum Bronbeek, Arnhem</div>
+                                </div>
+                                <div class="md:py-2 grow flex justify-end"></div>
+                            </div>
+                            <div class="flex flex-row justify-start items-center gap-4 border-t border-neutral-200 py-3 w-full">
+                                <div class="">
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div class="w-20 flex flex-col justify-center items-center text-xs text-neutral-400">No image</div>
+                                <div class="flex flex-col items-baseline gap-1">
+                                    <div class="">Houtsnijwerk, vermoedelijk een Japanse militair met karwats voorstellend,
+                                        oorlogssouvenir</div>
+                                    <div class="text-sm text-neutral-600">Museum Bronbeek, Arnhem</div>
+                                </div>
+                                <div class="md:py-2 grow flex justify-end"></div>
+                            </div>
+                            <div class="flex flex-row justify-start items-center gap-4 border-t border-neutral-200 py-3 w-full">
+                                <div class="">
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div class="w-30">
+                                    <img src="images/objects/heupsieraad.png" alt="" class="w-20 -my-3">
+                                </div>
+                                <div class="flex flex-col items-baseline gap-1">
+                                    <div class="">Heupsieraad</div>
+                                    <div class="text-sm text-neutral-600">Nationaal Museum van Wereldculturen and Wereldmuseum</div>
+                                </div>
+                                <div class="md:py-2 grow flex justify-end"></div>
+                            </div>
+                            <div class="flex flex-row justify-start items-center gap-4 border-t border-neutral-200 py-3 w-full">
+                                <div class="">
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                                <div class="w-30">
+                                    <img src="images/objects/reliefplaat.png" alt="" class="w-20 -my-3">
+                                </div>
+                                <div class="flex flex-col items-baseline gap-1">
+                                    <div class="">Reliëfplaat: Europeaan met musket</div>
+                                    <div class="text-sm text-neutral-600">Nationaal Museum van Wereldculturen and Wereldmuseum</div>
+                                </div>
+                                <div class="md:py-2 grow flex justify-end"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 mt-6"
+                    id="resultsGrid"> <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
                 flex
                 flex-col
                 sm:flex-row
@@ -4163,8 +4295,7 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                 </div>
             
             
-            </a>
- <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
+            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
                 flex
                 flex-col
                 sm:flex-row
@@ -4190,8 +4321,7 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
             
             
             
-            </a>
- <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
+            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
                 flex
                 flex-col
                 sm:flex-row
@@ -4216,8 +4346,7 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                     
             </div>
             
-            </a>
- <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
+            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
                 flex
                 flex-col
                 sm:flex-row
@@ -4241,8 +4370,7 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                 </div>
             
             
-            </a>
- <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
+            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
                 flex
                 flex-col
                 sm:flex-row
@@ -4268,8 +4396,7 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
             
             
             
-            </a>
- <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
+            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
                 flex
                 flex-col
                 sm:flex-row
@@ -4293,8 +4420,7 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                 </div>
             
             
-            </a>
- <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
+            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
                 flex
                 flex-col
                 sm:flex-row
@@ -4318,8 +4444,7 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                 </div>
             
             
-            </a>
- <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
+            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
                 flex
                 flex-col
                 sm:flex-row
@@ -4345,8 +4470,7 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
             
             
             
-            </a>
- <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
+            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
                 flex
                 flex-col
                 sm:flex-row
@@ -4373,7 +4497,6 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
             
             
             </a>
-
                     </div>
                     <nav aria-label="Pagination" class="mt-10 w-full">
                         <ul class="list-style-none flex gap-1 justify-center   text-white">
