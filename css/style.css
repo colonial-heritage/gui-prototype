@@ -1352,10 +1352,6 @@ a:hover {
   bottom: 0px;
 }
 
-.-left-10 {
-  left: -2.5rem;
-}
-
 .-left-12 {
   left: -3rem;
 }
@@ -1438,10 +1434,6 @@ a:hover {
 
 .top-9 {
   top: 2.25rem;
-}
-
-.-left-20 {
-  left: -5rem;
 }
 
 .isolate {
@@ -2691,10 +2683,6 @@ a:hover {
   flex: 1 1 0%;
 }
 
-.flex-none {
-  flex: none;
-}
-
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -2713,10 +2701,6 @@ a:hover {
 
 .grow {
   flex-grow: 1;
-}
-
-.grow-0 {
-  flex-grow: 0;
 }
 
 .table-auto {
@@ -2820,11 +2804,6 @@ a:hover {
 
 .translate-y-4 {
   --tw-translate-y: 1rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-y-4 {
-  --tw-translate-y: -1rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -4314,21 +4293,6 @@ a:hover {
   border-color: rgb(202 138 4 / var(--tw-border-opacity));
 }
 
-.border-consortiumBlue-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(34 59 110 / var(--tw-border-opacity));
-}
-
-.border-consortiumGreen-500 {
-  --tw-border-opacity: 1;
-  border-color: hsl(145 65% 50% / var(--tw-border-opacity));
-}
-
-.border-consortiumGreen-400 {
-  --tw-border-opacity: 1;
-  border-color: hsl(145 65% 60% / var(--tw-border-opacity));
-}
-
 .bg-\[\#623278\] {
   --tw-bg-opacity: 1;
   background-color: rgb(98 50 120 / var(--tw-bg-opacity));
@@ -4603,6 +4567,10 @@ a:hover {
   background-color: rgb(254 215 170 / var(--tw-bg-opacity));
 }
 
+.bg-orange-200\/50 {
+  background-color: rgb(254 215 170 / 0.5);
+}
+
 .bg-orange-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
@@ -4645,6 +4613,11 @@ a:hover {
 .bg-pink-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(252 231 243 / var(--tw-bg-opacity));
+}
+
+.bg-pink-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
 }
 
 .bg-purple-100 {
@@ -4787,20 +4760,6 @@ a:hover {
 .bg-zinc-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
-}
-
-.bg-pink-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
-}
-
-.bg-orange-200\/50 {
-  background-color: rgb(254 215 170 / 0.5);
-}
-
-.bg-consortiumGreen-200 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(145 65% 80% / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/images\/visual-graphic-strip1\.png\'\)\] {
@@ -5032,6 +4991,10 @@ a:hover {
   fill: hsl(220, 82%, 20%);
 }
 
+.fill-consortiumGreen-300 {
+  fill: hsl(145, 65%, 70%);
+}
+
 .fill-consortiumGreen-500 {
   fill: hsl(145, 65%, 50%);
 }
@@ -5108,10 +5071,6 @@ a:hover {
   fill: #fff;
 }
 
-.fill-consortiumGreen-300 {
-  fill: hsl(145, 65%, 70%);
-}
-
 .stroke-blue-700 {
   stroke: #1d4ed8;
 }
@@ -5152,8 +5111,16 @@ a:hover {
   stroke: #d1d5db;
 }
 
+.stroke-neutral-500 {
+  stroke: #737373;
+}
+
 .stroke-neutral-700 {
   stroke: #404040;
+}
+
+.stroke-neutral-800 {
+  stroke: #262626;
 }
 
 .stroke-neutral-900 {
@@ -5186,18 +5153,6 @@ a:hover {
 
 .stroke-white {
   stroke: #fff;
-}
-
-.stroke-neutral-500 {
-  stroke: #737373;
-}
-
-.stroke-neutral-800 {
-  stroke: #262626;
-}
-
-.stroke-orange-700 {
-  stroke: #c2410c;
 }
 
 .stroke-2 {
@@ -6039,21 +5994,6 @@ a:hover {
 .text-yellow-900 {
   --tw-text-opacity: 1;
   color: rgb(113 63 18 / var(--tw-text-opacity));
-}
-
-.text-consortiumBlue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(60 84 133 / var(--tw-text-opacity));
-}
-
-.text-consortiumGreen-800 {
-  --tw-text-opacity: 1;
-  color: hsl(145 65% 20% / var(--tw-text-opacity));
-}
-
-.text-consortiumGreen-900 {
-  --tw-text-opacity: 1;
-  color: hsl(145 65% 10% / var(--tw-text-opacity));
 }
 
 .underline {
@@ -8127,10 +8067,6 @@ a:hover {
   z-index: 40;
 }
 
-.hover\:block:hover {
-  display: block;
-}
-
 .hover\:flex:hover {
   display: flex;
 }
@@ -8371,11 +8307,6 @@ a:hover {
 .hover\:bg-zinc-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-consortiumGreen-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(145 65% 90% / var(--tw-bg-opacity));
 }
 
 .hover\:pt-0:hover {
