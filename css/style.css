@@ -8825,6 +8825,10 @@ a:hover {
     padding-bottom: 0.5rem;
   }
 
+  .sm\:pt-2 {
+    padding-top: 0.5rem;
+  }
+
   .sm\:text-right {
     text-align: right;
   }
