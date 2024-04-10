@@ -4121,7 +4121,7 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                         </buttton>
                         <!-- // selected filter badge -->
                     </div>
-                    <div class="flex flex-col md:flex-row md:justify-between md:items-end mt-4">
+                    <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end mt-4">
                          <h2 class="text-xl">20 objects</h2>
 
                         <div class="flex flex-col sm:flex-row justify-end gap-4">
@@ -4134,7 +4134,7 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                                     onclick="toggleVis('resultsGrid', 'hide');toggleVis('resultsList', 'show');toggleVis('resultsListEdit', 'hide')">List</button>
                                 </div>
                             </div>
-                            <div class="flex items-end">
+                            <div class="hidden items-end">
                                 <button class="rounded-full px-2 py-1 sm:px-4 sm:pt-1 sm:pb-2 text-xs md:text-sm bg-neutral-200 hover:bg-neutral-300 transition"
                                 onclick="toggleVis('resultsGrid', 'hide');toggleVis('resultsListEdit', 'show');toggleVis('resultsList', 'hide')">Edit / Export</button>
                             </div>
@@ -4371,233 +4371,82 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                             </div>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 mt-6"
-                    id="resultsGrid"> <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
-                flex
-                flex-col
-                sm:flex-row
-                justify-between
-                gap-2
-                cursor-pointer
-                no-underline
-                transition
-                ">
+                    <div class="masonry lg:masonry-lg xl:masonry-xl mt-6 *:break-inside" id="resultsGrid"> <a href="object.html" class="bg-neutral-100 mb-6 flex flex-col gap-2 hover:bg-white min-h-48 no-underline group transition-all border-2 border-white hover:border-consortiumBlue-800 rounded-sm">
             
+            <div class="font-semibold leading-5 px-2 pt-6">Houten beeld van een visser.</div>
+            <div class="text-sm text-neutral-600 px-2 mb-4">Museum Bronbeek, Arnhem</div>
+        
             
+          </a>
+ <a href="object.html" class="bg-neutral-100 mb-6 flex flex-col gap-2 hover:bg-white min-h-48 no-underline group transition-all border-2 border-white hover:border-consortiumBlue-800 rounded-sm">
             
-                <div class="w-full flex flex-col justify-between gap-2 min-h-[200px]">
-                    <div class="font-semibold m-4 leading-5">Houten beeld van een visser.</div>
-                    <div class="text-sm text-neutral-600 m-4">Museum Bronbeek, Arnhem</div>
-                </div>
-            
-            
-                <div class=" w-full sm:w-10 flex flex-col justify-center items-end rotate-90 whitespace-nowrap text-xs text-neutral-600">
-                    No image
-                </div>
-            
-            
-            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
-                flex
-                flex-col
-                sm:flex-row
-                justify-between
-                gap-2
-                cursor-pointer
-                no-underline
-                transition
-                ">
-            
-            
-            
-                <div class="w-full flex flex-col justify-between gap-2 min-h-[200px]">
-                    <div class="font-semibold m-4 leading-5">Beeld van een haan</div>
-                    <div class="text-sm text-neutral-600 m-4">Nationaal Museum van Wereldculturen and Wereldmuseum</div>
-                </div>
-            
-                <div class="w-full flex justify-start items-start border-l border-neutral-200">
-                    <div class="w-full flex justify-start items-start">
-                        <img src="images/objects/haan.png" alt="" class="w-full">
-                    </div>
-                </div>
-            
-            
-            
-            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
-                flex
-                flex-col
-                sm:flex-row
-                justify-between
-                gap-2
-                cursor-pointer
-                no-underline
-                transition
-                ">
-            
-            
-            
-                <div class="w-full flex flex-col justify-between gap-2 min-h-[200px]">
-                    <div class="font-semibold m-4 leading-5">Houten beeld van de godin Sri, die waakt over de vruchtbaarheid van de aarde.</div>
-                    <div class="text-sm text-neutral-600 m-4">Museum Bronbeek, Arnhem</div>
-                </div>
-            
-            
-            
-            <div class="w-full md:w-2/5 flex justify-start items-start border-l border-neutral-200 text-xs text-neutral-600">
-                <div class="border-b border-neutral-200 p-4">Image currently not available</div>
-                    
+            <div class="font-semibold leading-5 px-2 pt-6">Beeld van een haan</div>
+            <div class="text-sm text-neutral-600 px-2 mb-4">Nationaal Museum van Wereldculturen and Wereldmuseum</div>
+        
+            <div class="">
+              <img src="images/objects/haan.png" alt="" class="w-full max-h-72 object-cover object-center">
             </div>
             
-            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
-                flex
-                flex-col
-                sm:flex-row
-                justify-between
-                gap-2
-                cursor-pointer
-                no-underline
-                transition
-                ">
+          </a>
+ <a href="object.html" class="bg-neutral-100 mb-6 flex flex-col gap-2 hover:bg-white min-h-48 no-underline group transition-all border-2 border-white hover:border-consortiumBlue-800 rounded-sm">
             
+            <div class="font-semibold leading-5 px-2 pt-6">Houten beeld van de godin Sri, die waakt over de vruchtbaarheid van de aarde.</div>
+            <div class="text-sm text-neutral-600 px-2 mb-4">Museum Bronbeek, Arnhem</div>
+        
             
+          </a>
+ <a href="object.html" class="bg-neutral-100 mb-6 flex flex-col gap-2 hover:bg-white min-h-48 no-underline group transition-all border-2 border-white hover:border-consortiumBlue-800 rounded-sm">
             
-                <div class="w-full flex flex-col justify-between gap-2 min-h-[200px]">
-                    <div class="font-semibold m-4 leading-5">Houtsnijwerk in de vorm van een ovaal lotusblad met een afbeelding van planten en vechtende reigers.</div>
-                    <div class="text-sm text-neutral-600 m-4">Museum Bronbeek, Arnhem</div>
-                </div>
+            <div class="font-semibold leading-5 px-2 pt-6">Houtsnijwerk in de vorm van een ovaal lotusblad met een afbeelding van planten en vechtende reigers.</div>
+            <div class="text-sm text-neutral-600 px-2 mb-4">Museum Bronbeek, Arnhem</div>
+        
             
+          </a>
+ <a href="object.html" class="bg-neutral-100 mb-6 flex flex-col gap-2 hover:bg-white min-h-48 no-underline group transition-all border-2 border-white hover:border-consortiumBlue-800 rounded-sm">
             
-                <div class=" w-full sm:w-10 flex flex-col justify-center items-end rotate-90 whitespace-nowrap text-xs text-neutral-600">
-                    No image
-                </div>
+            <div class="font-semibold leading-5 px-2 pt-6">Reliëfplaat met runderkop</div>
+            <div class="text-sm text-neutral-600 px-2 mb-4">Nationaal Museum van Wereldculturen and Wereldmuseum</div>
+        
+            <div class="">
+              <img src="images/objects/runderkop.png" alt="" class="w-full max-h-72 object-cover object-center">
+            </div>
             
+          </a>
+ <a href="object.html" class="bg-neutral-100 mb-6 flex flex-col gap-2 hover:bg-white min-h-48 no-underline group transition-all border-2 border-white hover:border-consortiumBlue-800 rounded-sm">
             
-            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
-                flex
-                flex-col
-                sm:flex-row
-                justify-between
-                gap-2
-                cursor-pointer
-                no-underline
-                transition
-                ">
+            <div class="font-semibold leading-5 px-2 pt-6">Houten beeld van de god Vishnu op zijn rijdier Garuda, waaronder een schildpad en twee slangachtige monsters.</div>
+            <div class="text-sm text-neutral-600 px-2 mb-4">Museum Bronbeek, Arnhem</div>
+        
             
+          </a>
+ <a href="object.html" class="bg-neutral-100 mb-6 flex flex-col gap-2 hover:bg-white min-h-48 no-underline group transition-all border-2 border-white hover:border-consortiumBlue-800 rounded-sm">
             
+            <div class="font-semibold leading-5 px-2 pt-6">Houtsnijwerk, vermoedelijk een Japanse militair met karwats voorstellend, oorlogssouvenir</div>
+            <div class="text-sm text-neutral-600 px-2 mb-4">Museum Bronbeek, Arnhem</div>
+        
             
-                <div class="w-full flex flex-col justify-between gap-2 min-h-[200px]">
-                    <div class="font-semibold m-4 leading-5">Reliëfplaat met runderkop</div>
-                    <div class="text-sm text-neutral-600 m-4">Nationaal Museum van Wereldculturen and Wereldmuseum</div>
-                </div>
+          </a>
+ <a href="object.html" class="bg-neutral-100 mb-6 flex flex-col gap-2 hover:bg-white min-h-48 no-underline group transition-all border-2 border-white hover:border-consortiumBlue-800 rounded-sm">
             
-                <div class="w-full flex justify-start items-start border-l border-neutral-200">
-                    <div class="w-full flex justify-start items-start">
-                        <img src="images/objects/runderkop.png" alt="" class="w-full">
-                    </div>
-                </div>
+            <div class="font-semibold leading-5 px-2 pt-6">Heupsieraad</div>
+            <div class="text-sm text-neutral-600 px-2 mb-4">Nationaal Museum van Wereldculturen and Wereldmuseum</div>
+        
+            <div class="">
+              <img src="images/objects/heupsieraad.png" alt="" class="w-full max-h-72 object-cover object-center">
+            </div>
             
+          </a>
+ <a href="object.html" class="bg-neutral-100 mb-6 flex flex-col gap-2 hover:bg-white min-h-48 no-underline group transition-all border-2 border-white hover:border-consortiumBlue-800 rounded-sm">
             
+            <div class="font-semibold leading-5 px-2 pt-6">Reliëfplaat: Europeaan met musket</div>
+            <div class="text-sm text-neutral-600 px-2 mb-4">Nationaal Museum van Wereldculturen and Wereldmuseum</div>
+        
+            <div class="">
+              <img src="images/objects/reliefplaat.png" alt="" class="w-full max-h-72 object-cover object-center">
+            </div>
             
-            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
-                flex
-                flex-col
-                sm:flex-row
-                justify-between
-                gap-2
-                cursor-pointer
-                no-underline
-                transition
-                ">
-            
-            
-            
-                <div class="w-full flex flex-col justify-between gap-2 min-h-[200px]">
-                    <div class="font-semibold m-4 leading-5">Houten beeld van de god Vishnu op zijn rijdier Garuda, waaronder een schildpad en twee slangachtige monsters.</div>
-                    <div class="text-sm text-neutral-600 m-4">Museum Bronbeek, Arnhem</div>
-                </div>
-            
-            
-                <div class=" w-full sm:w-10 flex flex-col justify-center items-end rotate-90 whitespace-nowrap text-xs text-neutral-600">
-                    No image
-                </div>
-            
-            
-            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
-                flex
-                flex-col
-                sm:flex-row
-                justify-between
-                gap-2
-                cursor-pointer
-                no-underline
-                transition
-                ">
-            
-            
-            
-                <div class="w-full flex flex-col justify-between gap-2 min-h-[200px]">
-                    <div class="font-semibold m-4 leading-5">Houtsnijwerk, vermoedelijk een Japanse militair met karwats voorstellend, oorlogssouvenir</div>
-                    <div class="text-sm text-neutral-600 m-4">Museum Bronbeek, Arnhem</div>
-                </div>
-            
-            
-                <div class=" w-full sm:w-10 flex flex-col justify-center items-end rotate-90 whitespace-nowrap text-xs text-neutral-600">
-                    No image
-                </div>
-            
-            
-            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
-                flex
-                flex-col
-                sm:flex-row
-                justify-between
-                gap-2
-                cursor-pointer
-                no-underline
-                transition
-                ">
-            
-            
-            
-                <div class="w-full flex flex-col justify-between gap-2 min-h-[200px]">
-                    <div class="font-semibold m-4 leading-5">Heupsieraad</div>
-                    <div class="text-sm text-neutral-600 m-4">Nationaal Museum van Wereldculturen and Wereldmuseum</div>
-                </div>
-            
-                <div class="w-full flex justify-start items-start border-l border-neutral-200">
-                    <div class="w-full flex justify-start items-start">
-                        <img src="images/objects/heupsieraad.png" alt="" class="w-full">
-                    </div>
-                </div>
-            
-            
-            
-            </a>  <a href="object.html" class="bg-neutral-100 border border-neutral-200 hover:border-consortiumBlue-800 rounded-none
-                flex
-                flex-col
-                sm:flex-row
-                justify-between
-                gap-2
-                cursor-pointer
-                no-underline
-                transition
-                ">
-            
-            
-            
-                <div class="w-full flex flex-col justify-between gap-2 min-h-[200px]">
-                    <div class="font-semibold m-4 leading-5">Reliëfplaat: Europeaan met musket</div>
-                    <div class="text-sm text-neutral-600 m-4">Nationaal Museum van Wereldculturen and Wereldmuseum</div>
-                </div>
-            
-                <div class="w-full flex justify-start items-start border-l border-neutral-200">
-                    <div class="w-full flex justify-start items-start">
-                        <img src="images/objects/reliefplaat.png" alt="" class="w-full">
-                    </div>
-                </div>
-            
-            
-            
-            </a>
+          </a>
+
                     </div>
                     <nav aria-label="Pagination" class="mt-10 w-full">
                         <ul class="list-style-none flex gap-1 justify-center   text-white">

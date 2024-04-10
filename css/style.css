@@ -466,6 +466,18 @@ a:hover {
   text-decoration-color: rgb(23 23 23 / 0.6);
 }
 
+.masonry {
+  -moz-column-gap: 1.5em;
+       column-gap: 1.5em;
+  -moz-column-count: 2;
+       column-count: 2;
+}
+
+.break-inside {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -2004,6 +2016,10 @@ a:hover {
   margin-top: 6rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -2018,10 +2034,6 @@ a:hover {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .box-border {
@@ -2271,6 +2283,10 @@ a:hover {
   max-height: 15rem;
 }
 
+.max-h-72 {
+  max-height: 18rem;
+}
+
 .max-h-\[400px\] {
   max-height: 400px;
 }
@@ -2285,6 +2301,10 @@ a:hover {
 
 .max-h-screen {
   max-height: 100vh;
+}
+
+.min-h-48 {
+  min-height: 12rem;
 }
 
 .min-h-96 {
@@ -2357,10 +2377,6 @@ a:hover {
 
 .w-16 {
   width: 4rem;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .w-2\/12 {
@@ -3826,9 +3842,19 @@ a:hover {
   border-bottom-left-radius: 0.25rem;
 }
 
+.rounded-l-full {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
 .rounded-r {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-r-full {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
 }
 
 .rounded-s {
@@ -3839,16 +3865,6 @@ a:hover {
 .rounded-t {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-}
-
-.rounded-l-full {
-  border-top-left-radius: 9999px;
-  border-bottom-left-radius: 9999px;
-}
-
-.rounded-r-full {
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
 }
 
 .rounded-bl {
@@ -4629,11 +4645,6 @@ a:hover {
   background-color: rgb(252 231 243 / var(--tw-bg-opacity));
 }
 
-.bg-pink-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
-}
-
 .bg-purple-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 232 255 / var(--tw-bg-opacity));
@@ -4867,6 +4878,24 @@ a:hover {
 .from-white {
   --tw-gradient-from: #fff var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-indigo-500 {
+  --tw-gradient-from: #6366f1 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(99 102 241 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-neutral-200 {
+  --tw-gradient-from: #e5e5e5 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(229 229 229 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-neutral-200\/50 {
+  --tw-gradient-from: rgb(229 229 229 / 0.5) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(229 229 229 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -5200,6 +5229,11 @@ a:hover {
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-0 {
@@ -6495,6 +6529,29 @@ a:hover {
 .\[column-fill\:_balance\] {
   -moz-column-fill: balance;
        column-fill: balance;
+}
+
+.\*\:break-inside > * {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+@media (min-width: 1024px) {
+  .lg\:masonry-lg {
+    -moz-column-gap: 1.5em;
+         column-gap: 1.5em;
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:masonry-xl {
+    -moz-column-gap: 1.5em;
+         column-gap: 1.5em;
+    -moz-column-count: 5;
+         column-count: 5;
+  }
 }
 
 .hover\:prose-lg:hover {
@@ -8804,25 +8861,12 @@ a:hover {
     padding-bottom: 0.5rem;
   }
 
-  .sm\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
-  .sm\:pb-0 {
-    padding-bottom: 0px;
+  .sm\:pb-2 {
+    padding-bottom: 0.5rem;
   }
 
   .sm\:pt-1 {
     padding-top: 0.25rem;
-  }
-
-  .sm\:pb-1 {
-    padding-bottom: 0.25rem;
-  }
-
-  .sm\:pb-2 {
-    padding-bottom: 0.5rem;
   }
 
   .sm\:pt-2 {
@@ -9388,6 +9432,10 @@ a:hover {
 
   .lg\:flex-col {
     flex-direction: column;
+  }
+
+  .lg\:items-end {
+    align-items: flex-end;
   }
 
   .lg\:items-center {
