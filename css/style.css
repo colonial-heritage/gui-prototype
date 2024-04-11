@@ -2599,6 +2599,10 @@ a:hover {
   width: 1px;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .min-w-\[33px\] {
   min-width: 33px;
 }
@@ -4785,6 +4789,16 @@ a:hover {
 .bg-zinc-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 163 163 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/images\/visual-graphic-strip1\.png\'\)\] {
