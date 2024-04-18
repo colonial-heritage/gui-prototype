@@ -1,7 +1,7 @@
 function toggleVis(id, state, flexType) {
 
     let flex = 'flex';
-    if ( (flexType = '') || (flexType === undefined)) {
+    if ( (flexType != '') && (flexType !== undefined)) {
         flex = flexType;
     }
 

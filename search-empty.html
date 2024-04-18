@@ -169,191 +169,134 @@ transition flex items-center gap-1 inline-flex items-center md:hidden justify-ce
                 <main class="w-full md:w-2/3 lg:w-4/5  order-2 md:order-1">
                      <h2 class="text-xl">Search for Heritage Objects (52,267)</h2>
 
-                    <div class="flex flex-col gap-2 border rounded mt-6 p-6 max-w-3xl">
+                    <div class="flex flex-col gap-1 border rounded mt-6 p-6 max-w-3xl">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-6 h-6 fill-neutral-500">
                                 <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z"
                                 clip-rule="evenodd" />
                             </svg>
-                        </div>
-                        <p>Start by typing a keyword to search.</p>
+                        </div> <strong>Start by typing a keyword to search.</strong>
+
                         <p>After this initial text search, search facets will appear to refine yor
                             search results.</p>
                     </div>
-                </main>
-            </div>
-        </div>
-        <aside id="sidePanel" class="fixed bg-white top-0 right-0 bottom-0 border-l p-6 w-full md:w-96 shadow-2xl hidden flex-col gap-4 z-50">
-            <div class="flex flex-row justify-end items-center w-full">
-                <button class="p-1 rounded" onclick="closeAside()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="w-8 h-8 fill-sand-800">
-                        <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
-                        clip-rule="evenodd" />
-                    </svg>
-                </button>
-            </div>
-            <div class="flex flex-col gap-4 mt-4" id="form1">
-                 <h2 class="text-lg">Add metatdata</h2>
+                    <div class="flex flex-col gap-1 border rounded mt-6 p-6 max-w-3xl"> <strong>Data usage</strong>
 
-                <label for="11">
-                    <div class="font-semibold">Description</div>
-                    <div class=" text-sm">Add your narrative to the the description of this object. It will be displayed
-                        with your name and organisation. Other visitors can react on your narrative
-                        by clicking the Helpful button</div>
-                </label>
-                <textarea name="11" id="" class="border border-neutral-200 w-full h-40"></textarea>
-                <div class="">
-                    <button class="py-2 px-3 rounded-full text-xs bg-sand-700 hover:bg-sand-800 transition text-sand-50 flex items-center gap-1">Add your description to this object</button>
+                        <p>You can decrease the amount of data that this site is using. You can change
+                            this setting in the <em>View settings</em> on the result page</p>
+                        <div class="mt-2 flex gap-6">
+                            <div class="bg-neutral-100 rounded p-2 w-full md:w-1/3">
+                                <input type="radio" id="html1" name="img" value="Hide images">
+                                <label for="html1">Hide images</label>
+                            </div>
+                            <div class="bg-neutral-100 rounded p-2 w-full md:w-1/3">
+                                <input type="radio" id="html2" name="img" value="Show smaller images">
+                                <label for="html2">Show smaller images</label>
+                            </div>
+                            <div class="bg-neutral-100 rounded p-2 w-full md:w-1/3">
+                                <input type="radio" id="html3" name="img" value="Show larger images" checked>
+                                <label for="html3">Show larger images</label>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </main>
+        </div>
+        </div>
+        <div class="fixed bottom-4 right-4">
+            <button class="w-9 h-9 bg-consortiumBlue-50 text-consortiumBlue-800 border border-consortiumBlue-100 flex items-center justify-center text-xl rounded-full shadow-xl"
+            onclick="toggleVis('helpPop', 'show');">?</button>
+            <div class="hidden flex-col gap-2 absolute bottom-10 right-0 w-[250px] bg-consortiumBlue-50 text-consortiumBlue-800 shadow-xl rounded border border-consortiumBlue-100"
+            id="helpPop">
+                <div class="pt-4 px-4 flex justify-end">
+                    <button onclick="toggleVis('helpPop', 'hide');">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-4 h-4 fill-neutral-800">
+                            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                            clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="px-4">
+                    <button onclick="toggleVis('helpPop', 'hide');toggleVis('helpModal', 'show')">Help with search</button>
+                </div>
+                <div class="px-4">
+                    <button onclick="toggleVis('helpPop', 'hide');toggleVis('helpModal', 'show')">Help with objects</button>
+                </div>
+                <div class="px-4">
+                    <button onclick="toggleVis('helpPop', 'hide');toggleVis('helpModal', 'show')">Help with communities</button>
+                </div>
+                <div class="px-4 pb-6">
+                    <button onclick="toggleVis('helpPop', 'hide');toggleVis('helpModal', 'show')">Help with lists</button>
                 </div>
             </div>
-            <div id="info1" class="hidden flex-col gap-4 mt-4">
-                 <h2>Browse history</h2>
- <a href="object.html" class="bg-neutral-100 hover:bg-neutral-200 rounded-sm p-3 no-underline">
-        <div class=" flex gap-1 items-center text-sm mb-4"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke--neutral-600">
-      <path d="M18.876,14.136c-.315-1.479-3.352-2.362-5.025-2.758-.081-.022-.334-.069-.334-.069V7.187a10.928,10.928,0,0,0,1.549-1.215.912.912,0,0,0,0-1.473H8.409a.912.912,0,0,0,0,1.473A10.936,10.936,0,0,0,9.958,7.187v4.121s-4.952.916-5.359,2.827a14.876,14.876,0,0,0,.914,6.61c.508,1.155,1.834,3.938,2.409,5.2a1.212,1.212,0,0,0,1.121.619h5.387a1.212,1.212,0,0,0,1.121-.619c.575-1.257,1.9-4.041,2.409-5.2A14.875,14.875,0,0,0,18.876,14.136Z" transform="translate(0.665 -3.529)"/>
-      <path d="M15.056,90.812,11.5,93.675l-.3-3.719L8.582,91.078l-.805-4.014L5.814,89.956" transform="translate(0.178 -74.647)" />
-  </svg>
-   Object page</div>
-        <h3>ZAKDOEK MET EEN KOTOMISI EN ONDERSCHRIFT SURINAME</h3>
-      </a>
- <a href="object.html" class="bg-neutral-100 hover:bg-neutral-200 rounded-sm p-3 no-underline">
-        <div class=" flex gap-1 items-center text-sm mb-4"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke--neutral-600">
-      <path d="M18.876,14.136c-.315-1.479-3.352-2.362-5.025-2.758-.081-.022-.334-.069-.334-.069V7.187a10.928,10.928,0,0,0,1.549-1.215.912.912,0,0,0,0-1.473H8.409a.912.912,0,0,0,0,1.473A10.936,10.936,0,0,0,9.958,7.187v4.121s-4.952.916-5.359,2.827a14.876,14.876,0,0,0,.914,6.61c.508,1.155,1.834,3.938,2.409,5.2a1.212,1.212,0,0,0,1.121.619h5.387a1.212,1.212,0,0,0,1.121-.619c.575-1.257,1.9-4.041,2.409-5.2A14.875,14.875,0,0,0,18.876,14.136Z" transform="translate(0.665 -3.529)"/>
-      <path d="M15.056,90.812,11.5,93.675l-.3-3.719L8.582,91.078l-.805-4.014L5.814,89.956" transform="translate(0.178 -74.647)" />
-  </svg>
-   Object page</div>
-        <h3>HOOFDDOEK 1965 JB IN SURINAME</h3>
-      </a>
- <a href="search.html" class="bg-neutral-100 hover:bg-neutral-200 rounded-sm p-3 no-underline">
-        <div class=" flex gap-1 items-center  text-sm mb-4"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke--neutral-600">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-  </svg>
-  
-  
-   Search page</div>
-        <h3 class="flex gap-2">
-  <!-- selected filter badge -->
-  <buttton class="
-          rounded 
-          bg-consortiumBlue-100
-          text-neutral-900
-          py-1 
-          px-1 
-          text-sm 
-          flex 
-          flex-row
-          items-center">
-    
-    <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)">
-    <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
-  </svg>
-  
-  
-  </span>
-    <span class="">Kris</span>
-    <span class="ml-1"> 
-      
-      </span>
-  </buttton>
-  <!-- // selected filter badge -->
-          
-  <!-- selected filter badge -->
-  <buttton class="
-          rounded 
-          bg-consortiumBlue-100
-          text-neutral-900
-          py-1 
-          px-1 
-          text-sm 
-          flex 
-          flex-row
-          items-center">
-    
-    <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)">
-    <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-  </svg>
-  
-  
-  </span>
-    <span class="">Suriname</span>
-    <span class="ml-1"> 
-      
-      </span>
-  </buttton>
-  <!-- // selected filter badge --></h3>
-      </a>
- <a href="search.html" class="bg-neutral-100 hover:bg-neutral-200 rounded-sm p-3 no-underline">
-        <div class=" flex gap-1 items-center  text-sm mb-4"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 stroke--neutral-600">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-  </svg>
-  
-  
-   Search page</div>
-        <h3 class="flex gap-2">
-  <!-- selected filter badge -->
-  <buttton class="
-          rounded 
-          bg-consortiumBlue-100
-          text-neutral-900
-          py-1 
-          px-1 
-          text-sm 
-          flex 
-          flex-row
-          items-center">
-    
-    <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)">
-    <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
-  </svg>
-  
-  
-  </span>
-    <span class="">Wayang</span>
-    <span class="ml-1"> 
-      
-      </span>
-  </buttton>
-  <!-- // selected filter badge -->
-          
-  <!-- selected filter badge -->
-  <buttton class="
-          rounded 
-          bg-consortiumBlue-100
-          text-neutral-900
-          py-1 
-          px-1 
-          text-sm 
-          flex 
-          flex-row
-          items-center">
-    
-    <span class="mr-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-(lookup . &#x27;twColor&#x27;)">
-    <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-  </svg>
-  
-  
-  </span>
-    <span class="">Indonesia</span>
-    <span class="ml-1"> 
-      
-      </span>
-  </buttton>
-  <!-- // selected filter badge --></h3>
-      </a>
+        </div>
+        <div class="fixed top-0 bottom-0 left-0 right-0 bg-consortiumBlue-800/90 z-50 hidden flex-col items-center justify-center p-10"
+        id="helpModal">
+            <dialog open class="w-full max-w-5xl bg-transparent">
+                <div class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 flex-col gap-4">
+                    <div class="py-4 flex justify-between">
+                         <h2>Help</h2>
 
-            </div>
-            <div id="info2" class="hidden flex-col gap-4 mt-4">
-                 <h2>Information about <em>Material</em></h2>
-
-                <p>This category includes a range of Ceremonial Regalia which were most likely
-                    worn by Oba's, chiefs and members of the Benin royal palace societies until
-                    1897. Certain clothing and objects would be worn to mark status and rank,
-                    often at ceremonial occasions and the use of certain materials such as
-                    ivory, coral, brass and bronze would be controlled by the Oba.</p>
-            </div>
-        </aside>
+                        <div>
+                            <button onclick="toggleVis('helpModal', 'hide');">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-4 h-4 fill-neutral-800">
+                                    <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex flex-row md:flex-col w-full md:w-1/4 gap-2 pt-4 flex-wrap">
+                            <button class="text-left bg-consortiumBlue-50 px-2 py-1 rounded text-sm hover:bg-neutral-300">Search for objects</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Objects page</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Add an narrative to an object</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Add an Traditional Knowledge label to an object</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Communities</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Add a community</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Lists</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Add an object to a list</button>
+                        </div>
+                        <div class="flex flex-col w-full md:w-3/4">
+                            <div class="bg-neutral-200 rounded-t p-2">
+                                <img src="images/helpscreen01.png" alt="">
+                            </div>
+                            <div class="bg-neutral-200 rounded-b p-2 flex justify-between items-center">
+                                <div class="">
+                                    <button class="bg-neutral-200 p-2 rounded hover:bg-neutral-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-4 h-4 fill-neutral-800">
+                                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                                            clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="">
+                                    <button class="bg-neutral-200 px-2 rounded hover:bg-neutral-300 border border-neutral-400">1</button>
+                                    <button class="bg-neutral-200 px-2 rounded hover:bg-neutral-300">2</button>
+                                    <button class="bg-neutral-200 px-2 rounded hover:bg-neutral-300">3</button>
+                                    <button class="bg-neutral-200 px-2 rounded hover:bg-neutral-300">4</button>
+                                </div>
+                                <div class="">
+                                    <button class="bg-neutral-200 p-2 rounded hover:bg-neutral-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-4 h-4 fill-neutral-800">
+                                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                                            clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="py-4 px-4">1. Start typing a keyword in the <em>Search for text</em> field and click
+                                on the search button.</div>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+        </div>
         <script src="js/states.js"></script>
         <script src="js/toggleVis.js"></script>
     </body>

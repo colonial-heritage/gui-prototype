@@ -421,6 +421,99 @@ text-neutral-800 transition flex items-center gap-1
             </aside>
             </div>
         </main>
+        <div class="fixed bottom-4 right-4">
+            <button class="w-9 h-9 bg-consortiumBlue-50 text-consortiumBlue-800 border border-consortiumBlue-100 flex items-center justify-center text-xl rounded-full shadow-xl"
+            onclick="toggleVis('helpPop', 'show');">?</button>
+            <div class="hidden flex-col gap-2 absolute bottom-10 right-0 w-[250px] bg-consortiumBlue-50 text-consortiumBlue-800 shadow-xl rounded border border-consortiumBlue-100"
+            id="helpPop">
+                <div class="pt-4 px-4 flex justify-end">
+                    <button onclick="toggleVis('helpPop', 'hide');">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-4 h-4 fill-neutral-800">
+                            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                            clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="px-4">
+                    <button onclick="toggleVis('helpPop', 'hide');toggleVis('helpModal', 'show')">Help with search</button>
+                </div>
+                <div class="px-4">
+                    <button onclick="toggleVis('helpPop', 'hide');toggleVis('helpModal', 'show')">Help with objects</button>
+                </div>
+                <div class="px-4">
+                    <button onclick="toggleVis('helpPop', 'hide');toggleVis('helpModal', 'show')">Help with communities</button>
+                </div>
+                <div class="px-4 pb-6">
+                    <button onclick="toggleVis('helpPop', 'hide');toggleVis('helpModal', 'show')">Help with lists</button>
+                </div>
+            </div>
+        </div>
+        <div class="fixed top-0 bottom-0 left-0 right-0 bg-consortiumBlue-800/90 z-50 hidden flex-col items-center justify-center p-10"
+        id="helpModal">
+            <dialog open class="w-full max-w-5xl bg-transparent">
+                <div class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 flex-col gap-4">
+                    <div class="py-4 flex justify-between">
+                         <h2>Help</h2>
+
+                        <div>
+                            <button onclick="toggleVis('helpModal', 'hide');">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-4 h-4 fill-neutral-800">
+                                    <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                                    clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex flex-row md:flex-col w-full md:w-1/4 gap-2 pt-4 flex-wrap">
+                            <button class="text-left bg-consortiumBlue-50 px-2 py-1 rounded text-sm hover:bg-neutral-300">Search for objects</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Objects page</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Add an narrative to an object</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Add an Traditional Knowledge label to an object</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Communities</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Add a community</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Lists</button>
+                            <button class="text-left bg-neutral-200 px-2 py-1 rounded text-sm hover:bg-neutral-300">Add an object to a list</button>
+                        </div>
+                        <div class="flex flex-col w-full md:w-3/4">
+                            <div class="bg-neutral-200 rounded-t p-2">
+                                <img src="images/helpscreen01.png" alt="">
+                            </div>
+                            <div class="bg-neutral-200 rounded-b p-2 flex justify-between items-center">
+                                <div class="">
+                                    <button class="bg-neutral-200 p-2 rounded hover:bg-neutral-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-4 h-4 fill-neutral-800">
+                                            <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                                            clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="">
+                                    <button class="bg-neutral-200 px-2 rounded hover:bg-neutral-300 border border-neutral-400">1</button>
+                                    <button class="bg-neutral-200 px-2 rounded hover:bg-neutral-300">2</button>
+                                    <button class="bg-neutral-200 px-2 rounded hover:bg-neutral-300">3</button>
+                                    <button class="bg-neutral-200 px-2 rounded hover:bg-neutral-300">4</button>
+                                </div>
+                                <div class="">
+                                    <button class="bg-neutral-200 p-2 rounded hover:bg-neutral-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-4 h-4 fill-neutral-800">
+                                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                                            clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="py-4 px-4">1. Start typing a keyword in the <em>Search for text</em> field and click
+                                on the search button.</div>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+        </div>
         <script src="js/states.js"></script>
         <script src="js/toggleVis.js"></script>
     </body>
