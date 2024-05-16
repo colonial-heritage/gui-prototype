@@ -24,11 +24,11 @@
 
             </div>
         </div>
-        <header class="w-full bg-consortiumBlue-900 text-white py-2">
-            <div class="w-full px-4 sm:px-10 max-w-[1800px] mx-auto flex flex-col xl:flex-row xl:gap-8 xl:justify-between">
-                <div class="order-2 xl:order-1 w-full flex flex-col lg:flex-row justify-between lg:items-center">
-                    <div class=""><a href="home.html"><div class="flex items-start gap-2">
-    <div class="w-10"><svg fill="currentColor" class="fill-consortiumGreen-500 w-full h-auto" xmlns="http://www.w3.org/2000/svg"
+        <header class="w-full bg-consortiumBlue-900  text-white py-2">
+            <!-- sm:bg-green-800 md:bg-red-800 lg:bg-cyan-800 -->
+            <div class="w-full px-4 sm:px-10 max-w-[1800px] mx-auto flex flex-row flex-wrap gap-2 md:gap-4">
+                <div class="order-1  grow"><a href="home.html"><div class="flex items-center gap-2">
+    <div class="w-5 sm:w-10"><svg fill="currentColor" class="fill-consortiumGreen-500 w-full h-auto" xmlns="http://www.w3.org/2000/svg"
     width="197.66" height="171.74" viewBox="0 0 197.66 171.74">
   
     <path
@@ -52,19 +52,19 @@
     <path
       d="m160.99,102.48c6.04-4.93,6.04-14.15,0-19.08-5.97-4.87-11.03-10.82-15-17.68-3.97-6.88-6.59-14.25-7.83-21.86-1.24-7.69-9.23-12.3-16.52-9.54-7.2,2.73-14.88,4.14-22.81,4.14s-15.63-1.41-22.83-4.15c-7.29-2.77-15.28,1.85-16.52,9.54-1.23,7.61-3.85,14.98-7.82,21.85-3.97,6.88-9.04,12.83-15.02,17.7-6.04,4.93-6.04,14.16,0,19.08,5.98,4.87,11.05,10.82,15.01,17.7,3.96,6.86,6.59,14.22,7.82,21.82,1.25,7.69,9.24,12.3,16.52,9.53,7.21-2.74,14.9-4.15,22.84-4.15s15.62,1.41,22.82,4.14c7.28,2.76,15.27-1.85,16.52-9.54,1.23-7.6,3.86-14.96,7.82-21.83,3.96-6.87,9.03-12.81,15-17.68" />
   </svg></div>
-    <div class=""><img src="images/logo-colonial-collections-datahub-alpha.png" alt="" class="h-7 md:h-9"></div>
+    <div class=""><img src="images/logo-colonial-collections-datahub-alpha.png" alt="" class="h-6 sm:h-9"></div>
   </div></a>
-                    </div>
-                    <nav class="flex items-center flex-wrap"> <a href="home.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap">Home</a>
+                </div>
+                <nav class="order-5 lg:order-2  w-full lg:w-auto flex justify-end items-center gap-2 sm:gap-3 lg:gap-4 text-sm sm:text-base sm:font-semibold"> <a href="search.html">Search objects</a>
+ <a href="all-community.html">Communities</a>
 
-                        <a
-                        href="search.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap">Search objects</a> <a href="all-community.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap">Communities</a>
+                    <!--
+                    <a href="">Lists</a> --> <a href="research-guide.html">Research Guide</a>
 
-                            <a
-                            href="lists-all.html" class="text-white font-semibold no-underline py-2 md:py-4 px-3 whitespace-nowrap hidden">Lists</a>
-                                <div class="relative"> <a href="" class="text-white font-semibold no-underline py-2 md:py-4 px-3 flex items-center gap-1 whitespace-nowrap"
-                                    onmousemove="mainSubnav()">About
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                </nav>
+                <nav class="order-2 lg:order-3 text-sm  grow flex items-center justify-end gap-2"> <a href="home.html" class="flex items-center">Home</a>
+ <a href="home.html"
+                    class="flex items-center gap-1">About  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
     class="w-3 h-3 fill-white">
     <path fill-rule="evenodd"
       d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
@@ -72,29 +72,20 @@
   </svg>
   </a>
 
-                                    <div class="hidden flex-col bg-consortiumBlue-600 absolute z-50 shadow-lg"
-                                    id="mainSubnav" onmouseout="mainSubnavHide()"> <a href="" class="text-white font-semibold no-underline py-2 px-3 whitespace-nowrap">FAQ</a>
+                </nav>
+                <div class="order-4 lg:order-4 text-sm  flex items-center"> <a href="" class="flex items-center gap-1">English <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+    class="w-3 h-3 fill-white">
+    <path fill-rule="evenodd"
+      d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+      clip-rule="evenodd" />
+  </svg>
+  </a>
 
-                                        <a
-                                        href="" class="text-white font-semibold no-underline py-2 px-3 whitespace-nowrap">Contact</a> <a href="https://colonialcollections.nl" class="text-white font-semibold no-underline py-2 px-3 whitespace-nowrap">Consortium</a>
-
-                                    </div>
-                                </div>
-                    </nav>
                 </div>
-                <div class="order-1 xl:order-2 w-full flex justify-end items-center gap-4 text-sm xl:w-auto">
-                    <div class="flex items-center gap-1">English
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                        class="w-3 h-3 fill-white">
-                            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                            clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                    <div class="">
-                        <div class="flex items-center justify-end gap-1 rounded-lg whitespace-nowrap">
-                            <div class="h-8 w-8">
-                                <img src="images/avatrs/avtr4.png" alt="" class=" h-8 w-8 rounded-full">
-                            </div>
+                <div class="order-3 lg:order-5 text-sm ">
+                    <div class="flex items-center justify-end gap-1 rounded-lg whitespace-nowrap">
+                        <div class="h-8 w-8">
+                            <img src="images/avatrs/avtr4.png" alt="" class=" h-8 w-8 rounded-full">
                         </div>
                     </div>
                 </div>
