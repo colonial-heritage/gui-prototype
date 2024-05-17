@@ -2315,6 +2315,10 @@ a:hover {
   height: 100vh;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .max-h-60 {
   max-height: 15rem;
 }
@@ -3118,6 +3122,11 @@ a:hover {
   -webkit-appearance: auto;
      -moz-appearance: auto;
           appearance: auto;
+}
+
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
 }
 
 .break-before-auto {
@@ -4526,6 +4535,11 @@ a:hover {
 .bg-consortiumGreen-500 {
   --tw-bg-opacity: 1;
   background-color: hsl(145 65% 50% / var(--tw-bg-opacity));
+}
+
+.bg-consortiumSand-100 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(47 8% 95% / var(--tw-bg-opacity));
 }
 
 .bg-cyan-100 {
