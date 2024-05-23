@@ -1464,6 +1464,10 @@ a:hover {
   top: 2.25rem;
 }
 
+.top-28 {
+  top: 7rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -9843,8 +9847,58 @@ a:hover {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:fixed {
+    position: fixed;
+  }
+
+  .\32xl\:absolute {
+    position: absolute;
+  }
+
+  .\32xl\:sticky {
+    position: sticky;
+  }
+
   .\32xl\:-right-60 {
     right: -15rem;
+  }
+
+  .\32xl\:top-12 {
+    top: 3rem;
+  }
+
+  .\32xl\:inline {
+    display: inline;
+  }
+
+  .\32xl\:translate-x-28 {
+    --tw-translate-x: 7rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .\32xl\:-translate-x-28 {
+    --tw-translate-x: -7rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .\32xl\:-translate-x-48 {
+    --tw-translate-x: -12rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .\32xl\:-translate-x-56 {
+    --tw-translate-x: -14rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .\32xl\:-translate-x-52 {
+    --tw-translate-x: -13rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .\32xl\:-translate-x-32 {
+    --tw-translate-x: -8rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .\32xl\:grid-cols-3 {
@@ -9857,6 +9911,31 @@ a:hover {
 
   .\32xl\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .\32xl\:flex-col {
+    flex-direction: column;
+  }
+
+  .\32xl\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .\32xl\:gap-1 {
+    gap: 0.25rem;
+  }
+
+  .\32xl\:bg-green-50 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(240 253 244 / var(--tw-bg-opacity));
+  }
+
+  .\32xl\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .\32xl\:pt-24 {
+    padding-top: 6rem;
   }
 
   .\32xl\:text-5xl {
