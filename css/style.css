@@ -2072,6 +2072,10 @@ a:hover {
   margin-top: 24rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -5224,10 +5228,6 @@ a:hover {
   stroke: #1e386e;
 }
 
-.stroke-consortiumBlue-800 {
-  stroke: hsl(220, 82%, 20%);
-}
-
 .stroke-consortiumGreen-400 {
   stroke: hsl(145, 65%, 60%);
 }
@@ -5246,10 +5246,6 @@ a:hover {
 
 .stroke-neutral-500 {
   stroke: #737373;
-}
-
-.stroke-neutral-600 {
-  stroke: #525252;
 }
 
 .stroke-neutral-700 {
@@ -5286,6 +5282,14 @@ a:hover {
 
 .stroke-white {
   stroke: #fff;
+}
+
+.stroke-consortiumBlue-800 {
+  stroke: hsl(220, 82%, 20%);
+}
+
+.stroke-neutral-600 {
+  stroke: #525252;
 }
 
 .stroke-neutral-800 {
@@ -5967,6 +5971,11 @@ a:hover {
   color: hsl(145 65% 30% / var(--tw-text-opacity));
 }
 
+.text-consortiumSand-50 {
+  --tw-text-opacity: 1;
+  color: rgb(250 247 234 / var(--tw-text-opacity));
+}
+
 .text-consortiumSand-800 {
   --tw-text-opacity: 1;
   color: rgb(80 75 60 / var(--tw-text-opacity));
@@ -6155,11 +6164,6 @@ a:hover {
 .text-yellow-900 {
   --tw-text-opacity: 1;
   color: rgb(113 63 18 / var(--tw-text-opacity));
-}
-
-.text-consortiumSand-50 {
-  --tw-text-opacity: 1;
-  color: rgb(250 247 234 / var(--tw-text-opacity));
 }
 
 .underline {
