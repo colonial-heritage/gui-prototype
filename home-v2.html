@@ -91,7 +91,7 @@
             </div>
         </header>
         <div class="w-full bg-consortiumBlue-800 relative text-consortiumGreen-300">
-            <div class="w-full max-w-7xl mx-auto min-h-[45vh] flex items-center justify-start">
+            <div class="w-full max-w-7xl mx-auto min-h-[30vh] lg:min-h-[45vh] flex items-center justify-start">
                 <div class="flex justify-center w-full max-w-6xl absolute bottom-0 opacity-20 z-0">
                     <svg version="1.1" fill="currentColor" class="w-full h-auto fill-consortiumGreen-500"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -149,6 +149,7 @@
         <div class="max-w-7xl w-full mx-auto flex flex-row flex-wrap">
             <div class="px-4 sm:px-10 py-10 w-full lg:w-1/3 flex flex-col gap-3 justify-between bg-neutral-50">
                 <div class="flex flex-col gap-3 grow">
+                    <div class="test-xs italic text-consortiumBlue-500">Objects</div>
                      <h2 class="text-xl">Add your narratives and provenance to objects</h2>
 
                     <p>Your knowledge about the heritage on this platform is vital. With your
@@ -167,23 +168,43 @@ transition flex items-center gap-1 text-white text-base">Create an Account</butt
             </div>
             <div class="px-4 sm:px-10 py-10 w-full md:w-1/2 lg:w-1/3 bg-consortiumGreen-200 flex flex-col gap-3 justify-between">
                 <div class="flex flex-col gap-3 grow">
+                    <div class="test-xs italic text-consortiumBlue-500">Communities</div>
                      <h2 class="text-xl">Be part of a community</h2> 
                     <p>Upon creating an account, every individual or group of people can start
                         their own community on this platform. A community is able to create lists
                         of objects, bringing together their heritage. Communities can also add
                         narratives to the objects in these collections.</p>
+                    <div class="flex flex-col items-center">
+                        <div class="h-7 w-7 border border-consortiumBlue-800 flex justify-center items-center bg-consortiumGreen-100 rounded-full translate-y-3 text-sm">M</div>
+                        <div class="w-full px-4 py-2 text-sm rounded-xl border border-consortiumBlue-800 flex justify-center bg-consortiumGreen-100 gap-1">Community of <span class="font-semibold">Suriname</span>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="flex justify-center">
                     <button onclick="editCommunity()" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
 bg-consortiumBlue-800
 text-consortiumGreen-300
 
-transition flex items-center gap-1 text-base">See all communities</button>
+transition flex items-center gap-1 ">See all communities</button>
                 </div>
             </div>
-            <div class="px-4 sm:px-10 py-10 w-full md:w-1/2 lg:w-1/3 bg-consortiumLightBlue-200 flex flex-col gap-3">
-                 <h2 class="text-xl">Create and share lists</h2> 
-                <p>You can group object to create thematic lists.</p>
+            <div class="px-4 sm:px-10 py-10 w-full md:w-1/2 lg:w-1/3 bg-consortiumLightBlue-200 flex flex-col gap-3 justify-between">
+                <div class="flec flex-col">
+                    <div class="test-xs italic text-consortiumBlue-500">Lists</div>
+                     <h2 class="text-xl">Create and share lists</h2> 
+                    <p>You can group object to create thematic lists.</p>
+                    <div class="-mx-4 sm:-mx-10 flex justify-end mt-20 items-end grow">
+                        <img src="images/listrows.png" class="w-80" alt="" loading="lazy">
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <button onclick="editCommunity()" class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
+bg-consortiumBlue-800
+text-consortiumGreen-300
+
+transition flex items-center gap-1 ">See list</button>
+                </div>
             </div>
         </div>
         <div class="max-w-7xl w-full mx-auto bg-consortiumSand-100 my-16 rounded text-consortiumSand-800 flex">
@@ -208,7 +229,7 @@ transition flex items-center gap-1 text-base text-consortiumSand-50">Got to the 
         </div>
         <footer class="w-full bg-consortiumBlue-800 text-consortiumBlue-50 pt-20 pb-52 px-4 sm:px-10 relative">
             <div class="max-w-7xl w-full flex flex-col gap-4 lg:gap-10 lg:flex-row mx-auto">
-                <div class="flex justify-center w-full max-w-6xl absolute bottom-0 opacity-10 z-0">
+                <div class="flex justify-center w-full max-w-6xl absolute bottom-0 opacity-20 z-0">
                     <svg version="1.1" fill="currentColor" class="w-full h-auto fill-consortiumGreen-500"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     x="0px" y="0px" viewBox="0 0 1474 314" xml:space="preserve">

@@ -2391,6 +2391,10 @@ a:hover {
   min-height: 100vh;
 }
 
+.min-h-\[30vh\] {
+  min-height: 30vh;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -2657,6 +2661,10 @@ a:hover {
 
 .w-px {
   width: 1px;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .min-w-\[33px\] {
@@ -4895,6 +4903,11 @@ a:hover {
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
 
+.bg-pink-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/images\/visual-graphic-strip1\.png\'\)\] {
   background-image: url('/images/visual-graphic-strip1.png');
 }
@@ -6164,6 +6177,11 @@ a:hover {
 .text-yellow-900 {
   --tw-text-opacity: 1;
   color: rgb(113 63 18 / var(--tw-text-opacity));
+}
+
+.text-consortiumGreen-600 {
+  --tw-text-opacity: 1;
+  color: hsl(145 65% 40% / var(--tw-text-opacity));
 }
 
 .underline {
@@ -8898,6 +8916,11 @@ a:hover {
     margin-bottom: -1px;
   }
 
+  .sm\:-mx-10 {
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+  }
+
   .sm\:-mb-9 {
     margin-bottom: -2.25rem;
   }
@@ -9503,6 +9526,10 @@ a:hover {
 
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:min-h-\[45vh\] {
+    min-height: 45vh;
   }
 
   .lg\:w-1\/2 {
