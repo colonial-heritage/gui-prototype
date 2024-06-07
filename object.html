@@ -2034,12 +2034,12 @@ Select
                             </div>
                         </div>
                         <div class="my-16" id="tklabels">
-                             <h2 class="text-2xl mb-4 scroll-mt-20" id="traditionalKnowledge">Traditional Knowledge Labels</h2>
+                             <h2 class="text-2xl mb-4 scroll-mt-20" id="traditionalKnowledge">Local Context Notices</h2>
 
-                            <p class="text-neutral-600 text-sm max-w-xl mb-6">The TK Labels and notices support the inclusion of local protocols for
+                            <p class="text-neutral-600 text-sm max-w-xl mb-6">The Local Context notices support the inclusion of local protocols for
                                 access and use to cultural heritage that is digitally circulating outside
-                                community contexts. <a href="https://localcontexts.org/labels/traditional-knowledge-labels/"
-                                target="_blank" rel="noopener noreferrer">Learn more about the Traditional Knowledge Labels</a>.</p>
+                                community contexts. <a href="https://localcontexts.org/notices/about-the-notices/"
+                                target="_blank" rel="noopener noreferrer">Learn more about the Local Context notices</a>.</p>
                             <button
                             class="py-2 px-3 transition flex items-start gap-2 p-1 sm:py-2 sm:px-3 rounded-full text-xs
             bg-consortiumGreen-300
@@ -2055,12 +2055,12 @@ Select
                                     </svg>
                                 </div>
                                 <div class="flex flex-col items-start">
-                                    <div class="">Add your TK Label</div>
+                                    <div class="">Add your Local Context Notice</div>
                                 </div>
                                 </button>
                                 <div id="tkAddForm" class="w-full bg-neutral-50 rounded-xl p-4 border border-neutral-300 text-neutral-800 self-end flex-col gap-6 my-4 hidden">
                                     <div class="flex justify-between items-center border-b border-neutral-300 -mx-4 px-4 pb-2 mb-2">
-                                         <h3 class="">Add a Traditional Knowledge label</h3>
+                                         <h3 class="">Add a Local Context Notice</h3>
 
                                         <button class="p-1 sm:py-2 sm:px-3 rounded-full text-xs
                 bg-neutral-200/50
@@ -2074,107 +2074,47 @@ Select
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="">Select one of the TK label. Click on a label for more information.
+                                    <div class="">Select one of the Notices. Click on a label for more information.
                                         <div
                                         class="w-full flex gap-2 overflow-x-scroll mt-4">
                                             <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Attribution</div>
-                                                <img src="images/tk/tk_label_a.png" class="w-10" alt=""
+                                                <div class="w-32 text-sm">Authorization</div>
+                                                <img src="images/tk/tk_notice_authorization.png" class="w-10"
+                                                alt="" loading="lazy">
+                                            </button>
+                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
+                                                <div class="w-32 text-sm">Belonging</div>
+                                                <img src="images/tk/tk_notice_belonging.png" class="w-10"
+                                                alt="" loading="lazy">
+                                            </button>
+                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
+                                                <div class="w-32 text-sm">Caring</div>
+                                                <img src="images/tk/tk_notice_caring.png" class="w-10" alt=""
                                                 loading="lazy">
                                             </button>
                                             <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Clan</div>
-                                                <img src="images/tk/tk_label_cl.png" class="w-10" alt=""
-                                                loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Family</div>
-                                                <img src="images/tk/tk_label_f.png" class="w-10" alt=""
-                                                loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Multiple Communities</div>
-                                                <img src="images/tk/tk_label_mc.png" class="w-10"
+                                                <div class="w-32 text-sm">Gender Aware</div>
+                                                <img src="images/tk/tk_notice_gender-aware.png" class="w-10"
                                                 alt="" loading="lazy">
                                             </button>
                                             <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Community Voice</div>
-                                                <img src="images/tk/tk_label_cv.png" class="w-10"
-                                                alt="" loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Creative</div>
-                                                <img src="images/tk/tk_label_cr.png" class="w-10" alt=""
-                                                loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Verified</div>
-                                                <img src="images/tk/tk_label_v.png" class="w-10" alt=""
-                                                loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Non-Verified</div>
-                                                <img src="images/tk/tk_label_nv.png" class="w-10"
-                                                alt="" loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Seasonal</div>
-                                                <img src="images/tk/tk_label_s.png" class="w-10" alt=""
-                                                loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Women General</div>
-                                                <img src="images/tk/tk_label_wg.png" class="w-10"
-                                                alt="" loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Men General</div>
-                                                <img src="images/tk/tk_label_mg.png" class="w-10"
-                                                alt="" loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Men Restricted</div>
-                                                <img src="images/tk/tk_label_mr.png" class="w-10"
-                                                alt="" loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Women Restricted</div>
-                                                <img src="images/tk/tk_label_wr.png" class="w-10"
-                                                alt="" loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Culturally Sensitive</div>
-                                                <img src="images/tk/tk_label_cs.png" class="w-10"
-                                                alt="" loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Secret / Sacred</div>
-                                                <img src="images/tk/tk_label_ss.png" class="w-10"
-                                                alt="" loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Open to Commercialization</div>
-                                                <img src="images/tk/tk_label_oc.png"
+                                                <div class="w-32 text-sm">Leave Undisturbed</div>
+                                                <img src="images/tk/tk_notice_leave-undisturbed.png"
                                                 class="w-10" alt="" loading="lazy">
                                             </button>
                                             <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Non-Commercial</div>
-                                                <img src="images/tk/tk_label_nc.png" class="w-10"
-                                                alt="" loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Community Use Only</div>
-                                                <img src="images/tk/tk_label_co.png" class="w-10"
-                                                alt="" loading="lazy">
-                                            </button>
-                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Outreach</div>
-                                                <img src="images/tk/tk_label_o.png" class="w-10" alt=""
+                                                <div class="w-32 text-sm">Safety</div>
+                                                <img src="images/tk/tk_notice_safety.png" class="w-10" alt=""
                                                 loading="lazy">
                                             </button>
                                             <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
-                                                <div class="w-32 text-sm">TK Open to Collaboration</div>
-                                                <img src="images/tk/tk_label_cb.png" class="w-10"
+                                                <div class="w-32 text-sm">Viewing</div>
+                                                <img src="images/tk/tk_notice_viewing.png" class="w-10" alt=""
+                                                loading="lazy">
+                                            </button>
+                                            <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
+                                                <div class="w-32 text-sm">Withholding</div>
+                                                <img src="images/tk/tk_notice_withholding.png" class="w-10"
                                                 alt="" loading="lazy">
                                             </button>
                                     </div>
@@ -2183,9 +2123,9 @@ Select
                                     <div class="w-full md:w-1/2">
                                         <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Label text <span class="font-normal text-neutral-600">*</span></strong>
 
-                                            <div>Here you can insert text about the use of this label.</div>
+                                            <div>Here you can insert text about the use of this Notice.</div>
                                         </label>
-                                        <textarea name="nar" id="" rows="4" class="border border-neutral-400 rounded p-2 text-sm w-full whitespace-normal max-w-xl">This Label is being used to correct historical mistakes or exclusions
+                                        <textarea name="nar" id="" rows="4" class="border border-neutral-400 rounded p-2 text-sm w-full whitespace-normal max-w-xl">This Notice is being used to correct historical mistakes or exclusions
                                             pertaining to this material. This is especially in relation to the names
                                             of the people involved in performing or making this work and/or correctly
                                             naming the community from which it originally derives. As a user you are
@@ -2235,16 +2175,14 @@ Select
                 
                  Label information</strong>
 
-                                    <p>This Label should be used when you would like anyone who uses this material
+                                    <p>This Notices should b used when you would like anyone who uses this material
                                         to know who the correct sources, custodians, or owners are. This is especially
                                         useful if this material has been wrongly attributed or important names
                                         of the people involved in making this material or safeguarding this material,
                                         are missing. This Label allows you to correct historical mistakes in terms
                                         of naming and acknowledging the legitimate authorities for this material.
                                         This Label asks for future users to also apply the correct names and attribution.</p>
-                                    <p>Each Label is meant to be customized by a community. See below for a Label
-                                        template text.</p>
-                                    <p><a href="http://" target="_blank" rel="noopener noreferrer">More information on localcontext.org</a>
+                                    <p><a href="http://www.localcontext.org" target="_blank" rel="noopener noreferrer">More information on localcontext.org</a>
 
                                     </p>
                                 </div>
@@ -2268,10 +2206,10 @@ Select
                             <div class="w-full xl:w-1/5 border-t border-neutral-400">
                                 <div class=" sticky top-8 py-1">
                                      <h3 class="text-lg w-full my-1 flex items-center">
-                                    Attribution
+                                    Authorization
                                 </h3>
 
-                                    <img src="images/tk/tk_label_a.png" class="w-20" alt="" loading="lazy">
+                                    <img src="images/tk/tk_notice_authorization.png" class="w-20" alt="" loading="lazy">
                                 </div>
                             </div>
                             <div class="w-full xl:w-4/5 flex flex-col gap-2 border-t border-neutral-400 pb-12">
@@ -2289,24 +2227,11 @@ Select
                                             </span>
 
                                             </div>
-                                            <div class="">
-                                                <div class="font-semibold">How it is done</div>
-                                                <div class="text-xs text-neutral-600"></div> <span class="inline-flex items-end gap-1 text-xs italic text-neutral-600  ">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-600 scale-90">
-                                              <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
-                                            </svg>
-                                            
-                                            
-                                                English
-                                            </span>
-
-                                            </div>
                                         </div>
-                                        <p>When using anything that has this Label, please use the correct attribution.
-                                            This may include individual Passamaquoddy names, it may include Passamaqoddy
-                                            as the correct cultural affiliation or it may include Passamaquoddy Tribe
-                                            as the tribal designation. If you want further advise about using any material
-                                            that has this Label, please contact: Donald Soctomah (passamaquoddypeople@gmail.com).</p>
+                                        <p>The Authorization Notice is being used to indicate that distinct Tribal
+                                            or community authorization through consultation needs to be obtained for
+                                            any reproduction of this item, including for the use in exhibitions and
+                                            publications in print or online.</p>
                                     </div>
                                     <div class="p-2 py-3 text-xs  my-1 self-start w-full lg:w-1/3 bg-consortiumGreen-100 text-consortiumBlue-800 rounded">
                                         <div class="">
@@ -2328,10 +2253,11 @@ Select
                             <div class="w-full xl:w-1/5 border-t border-neutral-400">
                                 <div class=" sticky top-8 py-1">
                                      <h3 class="text-lg w-full my-1 flex items-center">
-                                    Outreach
+                                    Leave Undisturbed
                                 </h3>
 
-                                    <img src="images/tk/tk_label_o.png" class="w-20" alt="" loading="lazy">
+                                    <img src="images/tk/tk_notice_leave-undisturbed.png" class="w-20" alt=""
+                                    loading="lazy">
                                 </div>
                             </div>
                             <div class="w-full xl:w-4/5 flex flex-col gap-2 border-t border-neutral-400 pb-12">
@@ -2349,27 +2275,10 @@ Select
                                             </span>
 
                                             </div>
-                                            <div class="">
-                                                <div class="font-semibold">Educational</div>
-                                                <div class="text-xs text-neutral-600"></div> <span class="inline-flex items-end gap-1 text-xs italic text-neutral-600  ">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-600 scale-90">
-                                              <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
-                                            </svg>
-                                            
-                                            
-                                                English
-                                            </span>
-
-                                            </div>
                                         </div>
-                                        <p>This Label is being used to indicate that this material is traditionally
-                                            and usually not publicly available. The Label is correcting a misunderstanding
-                                            about the circulation options for this material and letting any users know
-                                            that this material can be used for educational outreach activities. This
-                                            Label asks you to respect the designated circulation conditions for this
-                                            material and additionally, where possible, to develop a means for fair
-                                            and equitable reciprocal exchange for the use of this material with the
-                                            relevant TK holders.</p>
+                                        <p>The Leave Undisturbed Notice is being used to indicate that items in a
+                                            collection should not be disturbed. They should only be moved or disturbed
+                                            under very limited circumstances according to community guidance.</p>
                                     </div>
                                     <div class="p-2 py-3 text-xs  my-1 self-start w-full lg:w-1/3 bg-consortiumGreen-100 text-consortiumBlue-800 rounded">
                                         <div class="">
