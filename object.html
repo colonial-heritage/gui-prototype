@@ -91,31 +91,7 @@
             </div>
         </header>
         <main class="relative">
-            <div class="w-full bg-consortiumBlue-800 text-consortiumBlue-100 sticky top-0 z-0 text-xs shadow-lg">
-                <div class="px-4 sm:px-10 max-w-[1800px] mx-auto flex justify-between items-center">
-                    <div class="font-semibold truncate w-auto py-2">Geborduurde zakdoek waarop afgebeeld een kotomisi met daarboven de tekst
-                        Suriname</div>
-                    <div class="w-auto lg:flex lg:justify-end relative py-2 pl-3 border-l border-consortiumBlue-200">
-                        <button class="peer lg:hidden p-2 w-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke--white">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                                />
-                            </svg>
-                        </button>
-                        <div class="hidden peer-hover:flex hover:flex w-[200px] lg:w-auto flex-col lg:flex lg:flex-row gap-3 absolute lg:relative right-0 bg-consortiumBlue-800 p-2 lg:p-0"> <a class="whitespace-nowrap no-underline" href="#metadata">Metadata</a>
-
-                            <a
-                            class="whitespace-nowrap no-underline" href="#localcontextnotices"><span class="hidden xl:inline">Local Context </span>Notices</a> <a class="whitespace-nowrap no-underline"
-                                href="#provenance">Provenance</a>
- <a class="whitespace-nowrap no-underline"
-                                href="#dataprovider">Data provider</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-consortiumBlue-800 text-white relative -mt-9">
+            <div class="bg-consortiumBlue-800 text-white relative">
                 <div class="w-full px-4 sm:px-10 max-w-[1800px] mx-auto pt-4 xl:pt-10 flex justify-between">
                     <div class="flex gap-2"> <a href="search.html" class="no-underline rounded-full px-2 py-1 sm:px-4 sm:py-2 text-xs md:text-sm bg-consortiumBlue-100 text-consortiumBlue-800 flex gap-1 items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 fill-consortiumBlue-800">
   <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
@@ -156,7 +132,7 @@ Search</a>
                         onclick="openInfoMeta()">Browse history</button>
                     </div>
                 </div>
-                <div class="w-full px-4 sm:px-10 max-w-[1800px] mx-auto flex flex-col lg:flex-row gap-4 xl:gap-10 py-4 xl:mb-10 ">
+                <div class="w-full px-4 sm:px-10 max-w-[1800px] mx-auto flex flex-col lg:flex-row gap-4 xl:gap-10 py-4">
                     <div class="w-full lg:w-2/3 xl:w-3/4">
                         <div class="text-sm text-consortiumBlue-100 mb-4 flex gap-1">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -194,6 +170,28 @@ Search</a>
                         </div>
                         <div class="text-sm my-4 xl:my-10 text-consortiumBlue-100">Data provider or current object holder: <span class="text-white">Wereldmuseum</span>,
                             Leiden</div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full bg-consortiumBlue-800 text-consortiumBlue-100 sticky top-0 z-30 text-xs shadow-lg border-t border-consortiumBlue-600">
+                <div class="px-4 sm:px-10 max-w-[1800px] mx-auto flex justify-between items-center">
+                    <div class="w-auto lg:flex lg:justify-end relative py-2 ">
+                        <button class="peer lg:hidden p-2 w-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke--white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                />
+                            </svg>
+                        </button>
+                        <div class="hidden peer-hover:flex hover:flex w-[200px] lg:w-auto flex-col lg:flex lg:flex-row gap-3 absolute lg:relative left-0 bg-consortiumBlue-800 p-2 lg:p-0"> <a class="whitespace-nowrap no-underline" href="#metadata">Metadata</a>
+
+                            <a
+                            class="whitespace-nowrap no-underline" href="#localcontextnotices"><span class="hidden xl:inline">Local Context </span>Notices</a> <a class="whitespace-nowrap no-underline"
+                                href="#provenance">Provenance</a>
+ <a class="whitespace-nowrap no-underline"
+                                href="#dataprovider">Data provider</a>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2074,7 +2072,7 @@ Select
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="">Select one of the Notices. Click on a label for more information.
+                                    <div class="">Select one of the Notices. Click on a notice for more information.
                                         <div
                                         class="w-full flex gap-2 overflow-x-scroll mt-4">
                                             <button class="w-32 flex flex-col justify-between items-center mb-2 bg-neutral-50 border border-neutral-200 p-2 hover:bg-neutral-200 gap-1">
@@ -2119,9 +2117,22 @@ Select
                                             </button>
                                     </div>
                                 </div>
+                                <div class="w-full max-w-4xl pb-4"> <strong class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                </svg>
+                
+                 Notice information</strong>
+
+                                    <p>The Authorization Notice is being used to indicate that distinct Tribal
+                                        or community authorization through consultation needs to be obtained for
+                                        any reproduction of this item, including for the use in exhibitions and
+                                        publications in print or online. <a href="http://www.localcontext.org" target="_blank"
+                                        rel="noopener noreferrer">More information on localcontext.org</a>
+
+                                </div>
                                 <div class="flex flex-col md:flex-row gap-10">
                                     <div class="w-full md:w-1/2">
-                                        <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Label text <span class="font-normal text-neutral-600">*</span></strong>
+                                        <label for="nar" class="flex flex-col gap-1 mb-1"> <strong>Notice motivation <span class="font-normal text-neutral-600">*</span></strong>
 
                                             <div>Here you can insert text about the use of this Notice.</div>
                                         </label>
@@ -2131,59 +2142,43 @@ Select
                                             naming the community from which it originally derives. As a user you are
                                             being asked to also apply the correct attribution in any future use of
                                             this work.</textarea>
-                                        <div class="flex flex-col md:flex-row mt-8">
-                                            <div class="w-full ">
-                                                <label for="" class="flex flex-col gap-1 mb-1"> <strong>Language <span class="font-normal text-neutral-600">*</span></strong>
+                                    </div>
+                                    <div class="w-full md:w-1/2">
+                                        <div class="w-full ">
+                                            <label for="" class="flex flex-col gap-1 mb-1"> <strong>Language <span class="font-normal text-neutral-600">*</span></strong>
 
-                                                    <div
-                                                    class="">Select a language of the narrative. Start typing to select a language.</div>
-                                            </label>
-                                            <div class="relative">
-                                                <div class="flex justify-between items-center">
-                                                    <input type="text" class="border border-neutral-400 rounded-l p-1 w-full"
-                                                    onfocus="showLangSuggest()" onblur="hideLangSuggest()">
-                                                    <div class="">
-                                                        <button class="border border-neutral-400 border-l-0 rounded-r p-2" onclick="showLangSuggest()">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                            stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                                                                />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="bg-white border rounded-b divide-y text-sm border-t-0 hidden flex-col absolute w-full shadow-lg"
-                                                id="langSuggest">
-                                                    <button class="py-1 px-2 hover:bg-neutral-100 text-left">English</button>
-                                                    <button class="py-1 px-2 hover:bg-neutral-100 text-left">Nederlands</button>
+                                                <div
+                                                class="">Select a language of the narrative. Start typing to select a language.</div>
+                                        </label>
+                                        <div class="relative">
+                                            <div class="flex justify-between items-center">
+                                                <input type="text" class="border border-neutral-400 rounded-l p-1 w-full"
+                                                onfocus="showLangSuggest()" onblur="hideLangSuggest()">
+                                                <div class="">
+                                                    <button class="border border-neutral-400 border-l-0 rounded-r p-2" onclick="showLangSuggest()">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                                            />
+                                                        </svg>
+                                                    </button>
                                                 </div>
                                             </div>
-                                            <label for="nar" class="flex flex-col gap-1 mb-1 mt-8"> <strong>Community</strong>
+                                            <div class="bg-white border rounded-b divide-y text-sm border-t-0 hidden flex-col absolute w-full shadow-lg"
+                                            id="langSuggest">
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">English</button>
+                                                <button class="py-1 px-2 hover:bg-neutral-100 text-left">Nederlands</button>
+                                            </div>
+                                        </div>
+                                        <label for="nar" class="flex flex-col gap-1 mb-1 mt-8"> <strong>Community</strong>
  <span class="text-sm text-neutral-600">Select the community you speak on behalf of.</span>
 
-                                            </label>
-                                            <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm max-w-xl w-full">
-                                                <option value="">Society Islands / Tōtaiete mā community</option>
-                                                <option value="">Culture of Benin community</option>
-                                            </select>
-                                        </div>
+                                        </label>
+                                        <select name="" id="" class="border border-neutral-400 rounded p-2 text-sm max-w-xl w-full">
+                                            <option value="">Society Islands / Tōtaiete mā community</option>
+                                            <option value="">Culture of Benin community</option>
+                                        </select>
                                     </div>
-                                </div>
-                                <div class="w-full md:w-1/2 prose"> <strong class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-900">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-                </svg>
-                
-                 Label information</strong>
-
-                                    <p>This Notices should b used when you would like anyone who uses this material
-                                        to know who the correct sources, custodians, or owners are. This is especially
-                                        useful if this material has been wrongly attributed or important names
-                                        of the people involved in making this material or safeguarding this material,
-                                        are missing. This Label allows you to correct historical mistakes in terms
-                                        of naming and acknowledging the legitimate authorities for this material.
-                                        This Label asks for future users to also apply the correct names and attribution.</p>
-                                    <p><a href="http://www.localcontext.org" target="_blank" rel="noopener noreferrer">More information on localcontext.org</a>
-
                                     </p>
                                 </div>
                         </div>
@@ -2215,23 +2210,26 @@ Select
                             <div class="w-full xl:w-4/5 flex flex-col gap-2 border-t border-neutral-400 pb-12">
                                 <div class="border-t first:border-0 border-neutral-200 flex flex-col lg:flex-row justify-between gap-2 ">
                                     <div class="w-full lg:w-2/3 py-3">
-                                        <div class="flex gap-6 mb-4">
-                                            <div class="">
-                                                <div class="font-semibold">Elihtasik</div> <span class="inline-flex items-end gap-1 text-xs italic text-neutral-600  ">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-600 scale-90">
-                                              <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
-                                            </svg>
-                                            
-                                            
-                                                Passamaquoddy
-                                            </span>
-
-                                            </div>
-                                        </div>
-                                        <p>The Authorization Notice is being used to indicate that distinct Tribal
+                                        <div class="bg-neutral-50 p-4 rounded-sm italic text-neutral-600 text-sm">The Authorization Notice is being used to indicate that distinct Tribal
                                             or community authorization through consultation needs to be obtained for
                                             any reproduction of this item, including for the use in exhibitions and
-                                            publications in print or online.</p>
+                                            publications in print or online.
+                                            <div class="w-full flex justify-end pt-1">
+                                                <img src="images/logo-local-contexts.png" class="w-20" alt="Logo local context"
+                                                loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="my-1">Approved by chief Chan of the indigenous tribe.</div>
+                                        <div class=""><span class="inline-flex items-end gap-1 text-xs italic text-neutral-600  ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-600 scale-90">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+                    </svg>
+                    
+                    
+                        English
+                    </span>
+
+                                        </div>
                                     </div>
                                     <div class="p-2 py-3 text-xs  my-1 self-start w-full lg:w-1/3 bg-consortiumGreen-100 text-consortiumBlue-800 rounded">
                                         <div class="">
@@ -2263,22 +2261,14 @@ Select
                             <div class="w-full xl:w-4/5 flex flex-col gap-2 border-t border-neutral-400 pb-12">
                                 <div class="border-t first:border-0 border-neutral-200 flex flex-col lg:flex-row justify-between gap-2 ">
                                     <div class="w-full lg:w-2/3 py-3">
-                                        <div class="flex gap-6 mb-4">
-                                            <div class="">
-                                                <div class="font-semibold">Ekehkimkewey</div> <span class="inline-flex items-end gap-1 text-xs italic text-neutral-600  ">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 stroke-neutral-600 scale-90">
-                                              <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
-                                            </svg>
-                                            
-                                            
-                                                Passamaquoddy
-                                            </span>
-
+                                        <div class="bg-neutral-50 p-4 rounded-sm italic text-neutral-600 text-sm">The Leave Undisturbed Notice is being used to indicate that items in a
+                                            collection should not be disturbed. They should only be moved or disturbed
+                                            under very limited circumstances according to community guidance.
+                                            <div class="w-full flex justify-end pt-1">
+                                                <img src="images/logo-local-contexts.png" class="w-20" alt="Logo local context"
+                                                loading="lazy">
                                             </div>
                                         </div>
-                                        <p>The Leave Undisturbed Notice is being used to indicate that items in a
-                                            collection should not be disturbed. They should only be moved or disturbed
-                                            under very limited circumstances according to community guidance.</p>
                                     </div>
                                     <div class="p-2 py-3 text-xs  my-1 self-start w-full lg:w-1/3 bg-consortiumGreen-100 text-consortiumBlue-800 rounded">
                                         <div class="">
