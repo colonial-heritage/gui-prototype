@@ -5261,6 +5261,10 @@ a:hover {
   stroke: #1e386e;
 }
 
+.stroke-consortiumBlue-800 {
+  stroke: hsl(220, 82%, 20%);
+}
+
 .stroke-consortiumGreen-400 {
   stroke: hsl(145, 65%, 60%);
 }
@@ -5279,6 +5283,10 @@ a:hover {
 
 .stroke-neutral-500 {
   stroke: #737373;
+}
+
+.stroke-neutral-600 {
+  stroke: #525252;
 }
 
 .stroke-neutral-700 {
@@ -5319,14 +5327,6 @@ a:hover {
 
 .stroke-white {
   stroke: #fff;
-}
-
-.stroke-consortiumBlue-800 {
-  stroke: hsl(220, 82%, 20%);
-}
-
-.stroke-neutral-600 {
-  stroke: #525252;
 }
 
 .stroke-neutral-800 {
