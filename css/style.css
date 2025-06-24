@@ -2849,16 +2849,12 @@ a:hover {
   min-width: 2.5rem;
 }
 
-.min-w-\[33px\] {
-  min-width: 33px;
-}
-
-.min-w-32 {
-  min-width: 8rem;
-}
-
 .min-w-28 {
   min-width: 7rem;
+}
+
+.min-w-\[33px\] {
+  min-width: 33px;
 }
 
 .max-w-2xl {
@@ -5065,11 +5061,6 @@ a:hover {
   background-color: rgb(242 238 223 / var(--tw-bg-opacity));
 }
 
-.bg-consortiumSand-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 247 234 / var(--tw-bg-opacity));
-}
-
 .bg-cyan-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(207 250 254 / var(--tw-bg-opacity));
@@ -5925,12 +5916,12 @@ a:hover {
   stroke: hsl(220, 82%, 20%);
 }
 
-.stroke-neutral-600 {
-  stroke: #525252;
-}
-
 .stroke-neutral-800 {
   stroke: #262626;
+}
+
+.stroke-neutral-600 {
+  stroke: #525252;
 }
 
 .stroke-2 {
