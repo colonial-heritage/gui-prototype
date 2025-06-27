@@ -24,7 +24,7 @@
 
             </div>
         </div>
-        <header class="w-full bg-consortiumBlue-900  text-white py-2">
+        <header class="w-full bg-consortiumBlue-900  text-white py-2" id="top">
             <!-- sm:bg-green-800 md:bg-red-800 lg:bg-cyan-800 -->
             <div class="w-full px-4 sm:px-10 max-w-[1800px] mx-auto flex flex-row flex-wrap gap-2 md:gap-4">
                 <div class="order-1  grow"><a href="home.html"><div class="flex items-center gap-2">
@@ -188,8 +188,12 @@ Search</a>
 
                             </div>
                         </div>
-                        <div class="text-sm my-4 xl:my-10 text-consortiumBlue-100">Data provider or current object holder: <span class="text-white">Wereldmuseum</span>,
-                            Leiden</div>
+                        <div class="text-sm my-4 xl:my-10 text-consortiumBlue-100">
+                            <div class="">Data provider or current object holder: <span class="text-white">Wereldmuseum</span>,
+                                Leiden</div>
+                            <div class="">Reference or object ID: <span class="text-white">RV-1310-2</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -203,13 +207,18 @@ Search</a>
                                 />
                             </svg>
                         </button>
-                        <div class="hidden peer-hover:flex hover:flex w-[200px] lg:w-auto flex-col lg:flex lg:flex-row gap-3 absolute lg:relative left-0 bg-consortiumBlue-800 p-2 lg:p-0"> <a class="whitespace-nowrap no-underline" href="#metadata">Metadata</a>
+                        <div class="hidden peer-hover:flex hover:flex w-[200px] lg:w-auto flex-col lg:flex lg:flex-row items-center gap-3 absolute lg:relative left-0 bg-consortiumBlue-800 p-2 lg:p-0">
+                            <div class="italic text-sm">Page segments:</div> <a class="whitespace-nowrap no-underline rounded-full px-2 py-1 text-xs md:text-xs bg-consortiumBlue-100 hover:bg-consortiumBlue-50 text-consortiumBlue-800 transitions"
+                            href="#metadata">Metadata</a>
+ <a class="whitespace-nowrap no-underline rounded-full px-2 py-1 text-xs md:text-xs bg-consortiumBlue-100 hover:bg-consortiumBlue-50 text-consortiumBlue-800 transitions"
+                            href="#localcontextnotices"><span class="hidden xl:inline">Local Context </span>Notices</a>
 
                             <a
-                            class="whitespace-nowrap no-underline" href="#localcontextnotices"><span class="hidden xl:inline">Local Context </span>Notices</a> <a class="whitespace-nowrap no-underline"
-                                href="#provenance">Provenance</a>
- <a class="whitespace-nowrap no-underline"
+                            class="whitespace-nowrap no-underline rounded-full px-2 py-1 text-xs md:text-xs bg-consortiumBlue-100 hover:bg-consortiumBlue-50 text-consortiumBlue-800 transitions"
+                            href="#provenance">Provenance</a> <a class="whitespace-nowrap no-underline rounded-full px-2 py-1 text-xs md:text-xs bg-consortiumBlue-100 hover:bg-consortiumBlue-50 text-consortiumBlue-800 transitions"
                                 href="#dataprovider">Data provider</a>
+ <a class="whitespace-nowrap no-underline rounded-full px-2 py-1 text-xs md:text-xs bg-consortiumBlue-100 hover:bg-consortiumBlue-50 text-consortiumBlue-800 transitions"
+                                href="#top">Top &#8593;</a>
 
                         </div>
                     </div>
