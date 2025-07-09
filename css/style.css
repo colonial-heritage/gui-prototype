@@ -1817,6 +1817,11 @@ a:hover {
   margin-bottom: 2.25rem;
 }
 
+.-mx-2 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
 .-mb-16 {
   margin-bottom: -4rem;
 }
@@ -2849,12 +2854,20 @@ a:hover {
   min-width: 2.5rem;
 }
 
+.min-w-12 {
+  min-width: 3rem;
+}
+
 .min-w-28 {
   min-width: 7rem;
 }
 
 .min-w-\[33px\] {
   min-width: 33px;
+}
+
+.\!max-w-3xl {
+  max-width: 48rem !important;
 }
 
 .max-w-2xl {
@@ -3369,6 +3382,10 @@ a:hover {
   scroll-snap-stop: always;
 }
 
+.scroll-m-16 {
+  scroll-margin: 4rem;
+}
+
 .scroll-mt-20 {
   scroll-margin-top: 5rem;
 }
@@ -3407,6 +3424,11 @@ a:hover {
   -webkit-appearance: auto;
      -moz-appearance: auto;
           appearance: auto;
+}
+
+.columns-1 {
+  -moz-columns: 1;
+       columns: 1;
 }
 
 .columns-2 {
@@ -4500,6 +4522,11 @@ a:hover {
   border-color: hsl(216 35% 97% / var(--tw-border-opacity));
 }
 
+.border-consortium-purple-200 {
+  --tw-border-opacity: 1;
+  border-color: hsl(258 26% 80% / var(--tw-border-opacity));
+}
+
 .border-consortiumBlue-100 {
   --tw-border-opacity: 1;
   border-color: rgb(169 185 219 / var(--tw-border-opacity));
@@ -4844,6 +4871,11 @@ a:hover {
   background-color: rgb(0 12 72 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#001f48\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 31 72 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#032939\] {
   --tw-bg-opacity: 1;
   background-color: rgb(3 41 57 / var(--tw-bg-opacity));
@@ -4976,6 +5008,16 @@ a:hover {
 .bg-blueGrey-50 {
   --tw-bg-opacity: 1;
   background-color: hsl(216 35% 97% / var(--tw-bg-opacity));
+}
+
+.bg-consortium-purple-100 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(258 26% 90% / var(--tw-bg-opacity));
+}
+
+.bg-consortium-purple-200 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(258 26% 80% / var(--tw-bg-opacity));
 }
 
 .bg-consortiumBlue-100 {
@@ -5916,12 +5958,12 @@ a:hover {
   stroke: hsl(220, 82%, 20%);
 }
 
-.stroke-neutral-800 {
-  stroke: #262626;
-}
-
 .stroke-neutral-600 {
   stroke: #525252;
+}
+
+.stroke-neutral-800 {
+  stroke: #262626;
 }
 
 .stroke-2 {
@@ -6263,6 +6305,10 @@ a:hover {
   padding-top: 3rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -6600,6 +6646,21 @@ a:hover {
   color: hsl(216 35% 10% / var(--tw-text-opacity));
 }
 
+.text-consortium-purple-300 {
+  --tw-text-opacity: 1;
+  color: hsl(258 26% 70% / var(--tw-text-opacity));
+}
+
+.text-consortium-purple-600 {
+  --tw-text-opacity: 1;
+  color: hsl(258 26% 40% / var(--tw-text-opacity));
+}
+
+.text-consortium-purple-700 {
+  --tw-text-opacity: 1;
+  color: hsl(258 26% 30% / var(--tw-text-opacity));
+}
+
 .text-consortiumBlue-100 {
   --tw-text-opacity: 1;
   color: rgb(169 185 219 / var(--tw-text-opacity));
@@ -6633,6 +6694,11 @@ a:hover {
 .text-consortiumBlue-900 {
   --tw-text-opacity: 1;
   color: rgb(8 33 84 / var(--tw-text-opacity));
+}
+
+.text-consortiumBlue-950 {
+  --tw-text-opacity: 1;
+  color: rgb(7 30 74 / var(--tw-text-opacity));
 }
 
 .text-consortiumGreen-300 {
@@ -8880,6 +8946,16 @@ a:hover {
   line-height: 1.25rem;
 }
 
+.\*\:text-consortiumBlue-800 > * {
+  --tw-text-opacity: 1;
+  color: hsl(220 82% 20% / var(--tw-text-opacity));
+}
+
+.\*\:text-consortiumBlue-900 > * {
+  --tw-text-opacity: 1;
+  color: rgb(8 33 84 / var(--tw-text-opacity));
+}
+
 .\*\:text-neutral-600 > * {
   --tw-text-opacity: 1;
   color: rgb(82 82 82 / var(--tw-text-opacity));
@@ -9287,6 +9363,16 @@ a:hover {
 .hover\:bg-blueGrey-50:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(216 35% 97% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-consortium-purple-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(258 26% 90% / var(--tw-bg-opacity));
+}
+
+.hover\:bg-consortium-purple-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(258 26% 70% / var(--tw-bg-opacity));
 }
 
 .hover\:bg-consortiumBlue-50:hover {
@@ -9936,6 +10022,11 @@ a:hover {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .sm\:columns-2 {
+    -moz-columns: 2;
+         columns: 2;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -10210,6 +10301,11 @@ a:hover {
          columns: 1;
   }
 
+  .md\:columns-2 {
+    -moz-columns: 2;
+         columns: 2;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -10240,6 +10336,10 @@ a:hover {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 
   .md\:justify-between {
@@ -10400,6 +10500,11 @@ a:hover {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .md\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .\*\:md\:p-2 > * {
@@ -10616,6 +10721,10 @@ a:hover {
     width: auto;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:max-w-\[370px\] {
     max-width: 370px;
   }
@@ -10649,6 +10758,11 @@ a:hover {
   .lg\:columns-2 {
     -moz-columns: 2;
          columns: 2;
+  }
+
+  .lg\:columns-3 {
+    -moz-columns: 3;
+         columns: 3;
   }
 
   .lg\:grid-cols-2 {
@@ -10798,6 +10912,11 @@ a:hover {
     padding-right: 2rem;
   }
 
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -10825,6 +10944,10 @@ a:hover {
 
   .lg\:pt-60 {
     padding-top: 15rem;
+  }
+
+  .lg\:pt-14 {
+    padding-top: 3.5rem;
   }
 
   .lg\:text-center {
@@ -10963,6 +11086,10 @@ a:hover {
     min-height: 50vh;
   }
 
+  .xl\:w-1\/2 {
+    width: 50%;
+  }
+
   .xl\:w-1\/3 {
     width: 33.333333%;
   }
@@ -10994,6 +11121,16 @@ a:hover {
   .xl\:columns-3 {
     -moz-columns: 3;
          columns: 3;
+  }
+
+  .xl\:columns-4 {
+    -moz-columns: 4;
+         columns: 4;
+  }
+
+  .xl\:columns-2 {
+    -moz-columns: 2;
+         columns: 2;
   }
 
   .xl\:grid-cols-2 {
@@ -11134,6 +11271,11 @@ a:hover {
 
   .\32xl\:border-r {
     border-right-width: 1px;
+  }
+
+  .\32xl\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .\32xl\:pt-24 {
