@@ -9844,29 +9844,12 @@ a:hover {
   color: rgb(3 105 161 / var(--tw-text-opacity));
 }
 
-.prose-a\:text-cyan-500 :is(:where(a):not(:where([class~="not-prose"] *))) {
-  --tw-text-opacity: 1;
-  color: rgb(6 182 212 / var(--tw-text-opacity));
-}
-
 .prose-a\:no-underline :is(:where(a):not(:where([class~="not-prose"] *))) {
   text-decoration-line: none;
 }
 
-.prose-a\:decoration-red-700 :is(:where(a):not(:where([class~="not-prose"] *))) {
-  text-decoration-color: #b91c1c;
-}
-
-.prose-a\:decoration-neutral-500 :is(:where(a):not(:where([class~="not-prose"] *))) {
-  text-decoration-color: #737373;
-}
-
 .prose-a\:decoration-neutral-400 :is(:where(a):not(:where([class~="not-prose"] *))) {
   text-decoration-color: #a3a3a3;
-}
-
-.prose-a\:decoration-neutral-300 :is(:where(a):not(:where([class~="not-prose"] *))) {
-  text-decoration-color: #d4d4d4;
 }
 
 .prose-blockquote\:italic :is(:where(blockquote):not(:where([class~="not-prose"] *))) {
