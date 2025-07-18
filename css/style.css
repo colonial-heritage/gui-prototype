@@ -4527,6 +4527,11 @@ a:hover {
   border-color: hsl(258 26% 80% / var(--tw-border-opacity));
 }
 
+.border-consortium-purple-300 {
+  --tw-border-opacity: 1;
+  border-color: hsl(258 26% 70% / var(--tw-border-opacity));
+}
+
 .border-consortiumBlue-100 {
   --tw-border-opacity: 1;
   border-color: rgb(169 185 219 / var(--tw-border-opacity));
@@ -4840,6 +4845,11 @@ a:hover {
 .border-zinc-200 {
   --tw-border-opacity: 1;
   border-color: rgb(228 228 231 / var(--tw-border-opacity));
+}
+
+.border-consortium-purple-100 {
+  --tw-border-opacity: 1;
+  border-color: hsl(258 26% 90% / var(--tw-border-opacity));
 }
 
 .border-b-neutral-200\/70 {
